@@ -1,0 +1,61 @@
+@import "../colors";
+
+.footer {
+  border-top: 1px solid rgba(228, 228, 231, 0.05);
+  border-bottom: 1px solid rgba(228, 228, 231, 0.2);
+  padding-top: 45px;
+  padding-bottom: 69px;
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+
+  .header {
+    // font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px;
+  }
+
+  .listItem {
+    // font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    color: #e4e4e799;
+
+    // letter-spacing: 0em;
+    // text-align: left;
+  }
+  .connect {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .topSpacing {
+    margin-top: 40px;
+  }
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.tradeMarkText {
+  //   font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  color: $white;
+}
