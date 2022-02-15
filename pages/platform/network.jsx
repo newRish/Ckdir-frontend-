@@ -14,6 +14,7 @@ import coordinatingDevicesImg from "../../public/icons/coordinating-devices.svg"
 import governanceImg from "../../public/icons/central-governance.svg";
 import privecyImg from "../../public/icons/lock-privecy.svg";
 import React from "react";
+import ConnectNetowrkSection from "../../components/ConnectNetowrkSection";
 
 const Platform = ({ platFormCardData }) => {
   return (
@@ -101,14 +102,10 @@ const Platform = ({ platFormCardData }) => {
       </div>
 
       {/* test network section */}
-      <div className={styles.testNW}>
-        <div className={styles.testNWheading}>
-          Test Public Network to be Launched this June!
-        </div>
-        <div className={styles.contactBtn}>
-          <Button title={"Contact"} url={"/contact"} />
-        </div>
-      </div>
+      <ConnectNetowrkSection
+        heading={"Test Public Network to be Launched this June!"}
+        url={"/contact"}
+      />
 
       {/* use case section */}
       <div className={styles.useCase}>

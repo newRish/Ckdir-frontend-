@@ -5,7 +5,14 @@ import securityShieldImg from "../../public/icons/securityShiedl.svg"
 import decentralisedImg from "../../public/icons/Decentralised-fill.svg"
 import logsImg from "../../public/icons/Immutable-logs.svg";
 import cs1Img from "../../public/Rectangle_630.png"
-import kpImg from "../../public/laptop-which-there-is-world-people-drawn.png";
+import kpImg from "../../public/laptop-network.png";
+import rightIcon from "../../public/icons/right-circle.svg"
+import soundIcon from "../../public/icons/sound.svg";
+import zeroKpIcon from "../../public/icons/zerokp.svg"
+import phonesImg from "../../public/phoneGroup.png";
+import locationImg from "../../public/icons/location.svg"
+import proofDocIcon from "../../public/icons/proofDoc.svg";
+import authorityProof from "../../public/icons/authorityProof.svg";
 
 
 const Blockchain = ({
@@ -64,6 +71,55 @@ const Blockchain = ({
         </div>
       </div>
 
+      {/* Protokollo section */}
+      <div className={styles.protokollo}>
+        <div className={styles.heading}>Protokollo</div>
+        <div className={styles.glowCircle}></div>
+        <div className={styles.pImg}>
+          <Image
+            src={phonesImg}
+            alt={"phones"}
+          />
+        </div>
+
+        <div className={styles.pCards}>
+          <div className={styles.pCard}>
+            <div className={styles.pImg}>
+              <Image
+                src={locationImg}
+                alt="icon"
+              />
+            </div>
+            <div className={styles.pText}>Proof of location</div>
+          </div>
+          <div className={styles.pCard}>
+            <div className={styles.pImg}>
+              <Image
+                src={proofDocIcon}
+                alt="icon"
+              />
+            </div>
+            <div className={styles.pText}>Proof of activity</div>
+          </div>
+          <div className={styles.pCard}>
+            <div className={styles.pImg}>
+              <Image
+                src={authorityProof}
+                alt="icon"
+              />
+            </div>
+            <div className={styles.pText}>Proof of authority</div>
+          </div>
+        </div>
+      </div>
+
+      {/* platform picture */}
+      <div className={styles.platformPic}>
+
+      </div>
+
+
+
       {/* 0 knowledge proof section */}
       <div className={styles.kp}>
         <div className={styles.heading}>
@@ -90,6 +146,47 @@ const Blockchain = ({
             <Image
               src={kpImg}
             />
+          </div>
+        </div>
+
+        <div className={styles.cards}>
+          <div className={styles.card}>
+            <div className={styles.cardImg}>
+              <Image
+                src={rightIcon}
+                alt="right icon"
+              />
+            </div>
+            <div className={styles.cardHeading}>Complete</div>
+            <div className={styles.cardText}>
+              Conclusive that the knowledge obtained is accurate.
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.cardImg}>
+              <Image
+                src={soundIcon}
+                alt="icon"
+              />
+            </div>
+            <div className={styles.cardHeading}>Sound</div>
+            <div className={styles.cardText}>
+              Prove that the proof is true.
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.cardImg}>
+              <Image
+                src={zeroKpIcon}
+                alt="icon"
+              />
+            </div>
+            <div className={styles.cardHeading}>Zero knowledge proof</div>
+            <div className={styles.cardText}>
+              Without divulging any additional information in the process.
+            </div>
           </div>
         </div>
       </div>

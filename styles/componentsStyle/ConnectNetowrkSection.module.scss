@@ -1,0 +1,45 @@
+@import "../colors";
+@import "../mixins.scss";
+
+.testNW {
+  background-image: url("../../public/cloud-computing-banner-background-smart-city-1.png");
+  @include bg-norepeat-cover;
+  height: 418px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testNWheading {
+  @include heading2;
+  color: $white;
+  font-family: Outfit;
+  line-height: 60px;
+  text-align: center;
+  width: 559px;
+}
+
+.text {
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  color: $white;
+  max-width: 780px;
+}
+
+.contactBtn {
+  width: 175px;
+  height: 60px;
+  z-index: 10;
+
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}

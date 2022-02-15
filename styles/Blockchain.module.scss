@@ -118,6 +118,67 @@
   top: 150px;
 }
 
+// Protokollo section
+.protokollo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  .heading {
+    text-align: center;
+  }
+}
+.pImg {
+  align-self: center;
+}
+
+.glowCircle {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 478px;
+  height: 478px;
+  background: rgba(35, 156, 124, 0.6);
+  border: 3px solid rgba(251, 251, 251, 0.05);
+  box-sizing: border-box;
+  filter: blur(300px);
+}
+
+.pCards {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  gap: 20px;
+}
+
+.pCard {
+  z-index: 10;
+  background: #0f0f0f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+  flex: 1;
+}
+
+.pText {
+  font-family: "Inter";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  color: $white;
+}
+
+.platformPic {
+  height: 665px;
+  margin: 70px 60px;
+
+  background: #0f0f0f;
+  border-radius: 10px;
+}
+
 // 0 knowledge proof
 .kp {
   color: $white;
@@ -132,6 +193,7 @@
 
 .kpPoints {
   display: flex;
+  margin-top: 28px;
 }
 
 .kpItem {
@@ -158,7 +220,48 @@
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 28px;
+  width: 708px;
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.card {
+  flex: 1;
+  // width: 426px;
+  height: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+
+  background: #0f0f0f;
+  border-radius: 10px;
+}
+
+.cardHeading {
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: justified;
+}
+
+.cardText {
+  width: 269px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
 }
 
 // H/W section

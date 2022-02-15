@@ -37,7 +37,7 @@ const Header = () => {
                             options: []
                         },
                         {
-                            heading: 'Artificial Intelligence',
+                            heading: <Link href={'/platform/ai'}><a>Artificial Intelligence</a></Link>,
                             options: []
                         }
                     ]}
@@ -53,7 +53,7 @@ const Header = () => {
                 <NavDropDown
                     ddList={[
                         {
-                            heading: 'Chokidr Hardware',
+                            heading: <Link href={'/product/chokidr-hardware'}><a>Chokidr Hardware </a></Link>,
                             options: []
                         },
                         {
