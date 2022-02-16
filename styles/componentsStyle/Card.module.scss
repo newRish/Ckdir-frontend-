@@ -1,0 +1,20 @@
+.card {
+  position: relative;
+
+  .cardText {
+    z-index: 10;
+  }
+
+  .cardDarkLayer {
+    position: absolute;
+    z-index: 9;
+  }
+}
+
+.cardDarkLayer,
+.card {
+  background: rgba(15, 15, 15, 0.5);
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,169 @@
+@import "./mixins.scss";
+@import "./colors";
+
+.landing {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  color: $white;
+
+  .quotes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .quoteText {
+      font-family: Outfit;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+  .mainText {
+    padding-left: 60px;
+    z-index: 20;
+  }
+
+  .para {
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 30px;
+    width: 638px;
+  }
+
+  .glowCircle {
+    position: absolute;
+    @include glowCircle;
+    z-index: 5;
+    width: 700px;
+    height: 500px;
+    left: 621px;
+    top: 83px;
+    filter: blur(600px);
+  }
+
+  .devicesImg {
+    position: absolute;
+    width: 577px;
+    height: 280px;
+    right: 0;
+    top: 19%;
+    z-index: 10;
+    background-image: url("../public/chokidrHW.png");
+    transform: rotate(-0.13deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .phoneImg {
+    position: absolute;
+    width: 128px;
+    height: 248px;
+    right: 540px;
+    top: 29%;
+    z-index: 10;
+    background-image: url("../public/iphoneFull2.png");
+  }
+}
+
+// device list
+.deviceList {
+  background-color: rgba(7, 7, 7, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 50px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $white;
+    }
+  }
+}
+
+// case studies
+.subHeading {
+  font-family: Outfit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.cs {
+  display: flex;
+  color: $white;
+  padding: 100px 60px;
+
+  .cards {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cardLeft {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+  }
+
+  .card {
+    padding: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f0f0f;
+    border-radius: 10px;
+  }
+
+  .cardSq {
+    width: 141px;
+    height: 144.38px;
+
+    border: 1px solid rgba(251, 251, 251, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  .cardHeading {
+    font-family: Vollkorn;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .cardSummary {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justified;
+    max-width: 524px;
+  }
+
+  .subHeading {
+    flex: 0.3;
+  }
+}

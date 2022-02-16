@@ -1,0 +1,429 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.home {
+  background-color: $black;
+}
+.landingContainer {
+  background-image: url("../public/landingBg.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.heading1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 85px;
+  letter-spacing: 5%;
+  font-family: "Outfit", sans-serif;
+}
+
+.heading2 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  font-family: Outfit;
+  font-style: normal;
+}
+
+.heading3 {
+  // font-family: Outfit;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.heading1,
+.heading2,
+.heading3 {
+  color: $white;
+}
+
+.readMoreText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: $white;
+  margin-bottom: 20px;
+}
+
+.para {
+  // font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  color: $white;
+}
+
+.darkLayer {
+  background-color: rgba(0, 0, 0, 0.767);
+  height: 100%;
+}
+
+.landingPage {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 6rem;
+
+  .landingText {
+    font-family: Inter;
+    font-style: normal;
+    margin: auto;
+    max-width: 60%;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    color: #fff;
+  }
+  .readMore {
+    width: 159px;
+    height: 47px;
+    margin: auto;
+  }
+}
+
+// balck box section styling
+
+.balckBoxContainer {
+  background-image: url("../public/Group.png");
+  background-size: contain;
+  min-height: 100vh;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  position: relative;
+  overflow-x: hidden;
+
+  .chokidarImg {
+    position: absolute;
+    width: 629px;
+    height: 464px;
+    right: -260px;
+    user-select: none;
+  }
+
+  .balckBoxIconList {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .backBoxListText {
+    font-family: Inter;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .blackBoxIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .balckBoxIconImg {
+    width: 61px;
+    height: 64px;
+  }
+}
+
+// revolution through change container
+.revolutionaCotainer {
+  // background-color: $black;
+  text-align: center;
+  min-height: 100vh;
+
+  .revolutionList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 153px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .revolutionItemText {
+    color: $white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .revolutionCardSubHeading {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+  }
+
+  .revolutionCard {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 10px;
+    @include glassCard;
+
+    .circle1,
+    .circle2,
+    .circle3 {
+      position: absolute;
+      width: 180px;
+      height: 380px;
+      @include glowCircle;
+      z-index: 5;
+    }
+
+    .circle1 {
+      left: 172px;
+      top: -274px;
+    }
+
+    .circle2 {
+      left: -76px;
+      top: 188px;
+      // background: rgba(35, 156, 124, 0.6);
+      // bottom: 0;
+    }
+    .circle3 {
+      width: 149px;
+      height: 149px;
+      right: -80px;
+      top: 90px;
+      filter: blur(50px);
+    }
+
+    .revolutionCardList {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 30px 10px 30px;
+      z-index: 9;
+    }
+  }
+
+  .revolutionCardSubHeading,
+  .revolutionCardText {
+    color: $white;
+  }
+}
+
+.revolutionAtomImg {
+  animation: spin 2.5s linear infinite;
+  width: fit-content;
+  margin: auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Protokollo section
+.protokolloContiner {
+  position: relative;
+  // background-color: $black;
+  text-align: center;
+  padding-top: 175px;
+  padding-bottom: 100px;
+
+  .protokolloBg1 {
+    position: absolute;
+    width: 759px;
+    height: 363px;
+    left: 749px;
+    top: 80px;
+    background-image: url("../public/toppng_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .protokolloBg2 {
+    position: absolute;
+    width: 759px;
+    height: 363px;
+    left: -272px;
+    bottom: 205px;
+    background: url("../public/toppng_2.png");
+    background-image: url("../public/toppng_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(-180deg);
+  }
+
+  .protokolloSummary {
+    padding-top: 30px;
+    padding-bottom: 39px;
+    width: 48.5%;
+    margin: auto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $white;
+  }
+
+  .protocolList {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: auto;
+    padding-top: 60px;
+  }
+
+  .protocolItemText {
+    // font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: $white;
+    margin-top: 20px;
+  }
+}
+
+.aditionalProtoKollo {
+  .aditionalProtoKolloBgImg {
+    background-image: url("../public/train.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aditionalProtoKolloLeft,
+  .aditionalProtoKolloRight {
+    width: 36%;
+    min-height: 100%;
+    background: rgba(7, 7, 7, 0.8);
+    padding: 34px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .readMoreText {
+    text-align: right;
+  }
+}
+
+// Case Studies section
+
+.caseStudies {
+  min-height: 100vh;
+  // background-color: $black;
+  text-align: center;
+  padding-top: 100px;
+
+  .heading2 {
+    line-height: 50px;
+  }
+  .cardList {
+    display: flex;
+    justify-content: space-between;
+    padding: 39px 54px;
+
+    .cardItem {
+      width: 427px;
+      height: 427px;
+
+      // background: rgba(15, 15, 15, 0.5);
+      // border-radius: 10px;
+
+      .caseStudiesCard {
+        position: relative;
+        background-color: gray;
+        // font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $white;
+        padding: 50px;
+        @include centralized;
+      }
+
+      .cardImg3 {
+        background-image: url("../public/soldier-using-virtual-tablet-hologram-army-technology_1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .cardImg1 {
+        background-image: url("../public/coast.png");
+      }
+      .cardImg2 {
+        background-image: url("../public/interior-view-steel-factory_1.png");
+      }
+    }
+  }
+}
+
+.networkingContainer {
+  padding-bottom: 100px;
+
+  .networking {
+    position: relative;
+    // background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding-top: 60px;
+    z-index: 10;
+
+    .readMore {
+      width: 176px;
+      height: 47px;
+    }
+
+    .globeBg {
+      z-index: -9;
+      position: absolute;
+      width: 582px;
+      height: 582px;
+      top: 0;
+      background-image: url("../public/icons/globe.svg");
+    }
+
+    .colorFade {
+      position: absolute;
+      height: 100%;
+      width: 70%;
+      left: -252px;
+      top: 88px;
+      z-index: -10;
+      background: rgba(35, 156, 124, 0.9);
+      border: 3px solid rgba(251, 251, 251, 0.05);
+      box-sizing: border-box;
+      filter: blur(600px);
+    }
+  }
+}
+
+// footer section

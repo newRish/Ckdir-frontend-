@@ -1,0 +1,55 @@
+@import "../colors";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem;
+  height: 8rem;
+  z-index: 10;
+
+  .logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    user-select: none;
+
+    .logoImg {
+      width: 100px;
+    }
+  }
+
+  .navList {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+
+    .navItem {
+      font-weight: bold;
+      display: flex;
+      align-items: flex-end;
+      cursor: pointer;
+
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(251, 251, 251, 0.8);
+      }
+
+      svg {
+        font-size: 1rem;
+        font-weight: unset;
+        color: rgba(251, 251, 251, 0.8);
+      }
+
+      &:hover {
+        span,
+        svg {
+          color: $green;
+        }
+      }
+    }
+  }
+}

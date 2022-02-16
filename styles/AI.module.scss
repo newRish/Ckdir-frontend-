@@ -1,0 +1,306 @@
+@import "./mixins.scss";
+@import "./colors";
+
+.landing {
+  background-image: url("../public/ai-bg.png");
+
+  @include bg-norepeat-cover;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.darkLayer {
+  position: absolute;
+  background: rgba(52, 52, 52, 0.64);
+  width: 100%;
+  height: 100%;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: initial;
+  padding: 0 3.5rem;
+  flex: 1;
+  z-index: 2;
+}
+
+.landingText {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: $white;
+  width: 1104px;
+  font-family: "Outfit";
+  font-style: normal;
+  line-height: 80px;
+  text-align: center;
+}
+
+.chart {
+  margin: 100px 60px;
+}
+.chartImg {
+  margin: auto;
+  width: fit-content;
+}
+
+// salient feature section
+
+.sf {
+  margin-top: 85px;
+  .heading {
+    text-align: center;
+  }
+}
+
+.heading {
+  font-family: "Outfit";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  color: $white;
+  //   text-align: center;
+  margin-bottom: 22px;
+  margin-top: 80px;
+}
+
+.sfList {
+  color: $white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sfItem {
+  text-align: center;
+}
+
+.sfText {
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  width: 194px;
+  margin-top: 1rem;
+}
+
+.glassCard {
+  @include glassCard;
+  background: #0f0f0f;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  position: absolute;
+  @include glowCircle;
+  z-index: 5;
+}
+
+.circle1 {
+  position: absolute;
+  width: 149px;
+  height: 149px;
+  left: -76px;
+  top: 188px;
+}
+.circle2 {
+  width: 208px;
+  height: 208px;
+  left: 200px;
+  top: -154px;
+}
+.circle3 {
+  width: 115px;
+  height: 115px;
+  left: 662px;
+  top: 233px;
+}
+
+.circle4 {
+  width: 129px;
+  height: 129px;
+  right: 70px;
+  top: 150px;
+}
+
+// card section
+.cardList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 80px 60px;
+  gap: 25px;
+}
+
+.platformCard {
+  width: 650px;
+  height: 739px;
+  background: #0f0f0f;
+  border-radius: 10px;
+}
+
+.platformCardImage {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.platformTextContainer {
+  padding: 22px 53px;
+  text-align: center;
+}
+
+.platformCardHading {
+  font-family: Outfit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  padding-bottom: 39px;
+  color: $white;
+}
+
+.platformCardText {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: $white;
+}
+
+// software section
+.software {
+  .heading {
+    text-align: center;
+  }
+}
+
+.sCards {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 159px;
+  margin-bottom: 100px;
+}
+
+.sCard {
+  display: flex;
+  // width: 1440px;
+  height: 374px;
+  background: #0f0f0f;
+  color: $white;
+  align-items: flex-end;
+
+  &:first-child {
+    .sCardImg {
+      height: 122%;
+    }
+  }
+
+  &:nth-child(2) {
+    .sCardImg {
+      order: 2;
+    }
+    .sCardImg {
+      span {
+        border: 3px solid #9e9e9e !important;
+        box-sizing: border-box !important;
+        border-radius: 10px 10px 0px 0px !important;
+        width: fit-content !important;
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  &:last-child {
+    align-items: center;
+  }
+}
+
+.sCardImg,
+.sCardText {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sCardText {
+  flex-direction: column;
+  height: 100%;
+  gap: 19px;
+}
+
+.sCardHeading {
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.sCardSummary {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.sCardSummary,
+.sCardHeading {
+  width: 558px;
+}
+// case study section
+.cs {
+  padding: 100px 50px;
+}
+.csItem {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 64px;
+}
+.csText,
+.csImg {
+  flex: 1;
+}
+
+.csHeading {
+  font-family: "Outfit";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  color: $white;
+}
+
+.csSummary {
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: justified;
+  color: $white;
+}
+
+.order1 {
+  order: 1;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}
