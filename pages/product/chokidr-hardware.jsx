@@ -4,6 +4,8 @@ import Image from "next/image";
 import styles from "../../styles/ChokidrHardware.module.scss";
 import arrowFowwardImg from "../../public/icons/Arrow_Forward.svg";
 import stayImg from "../../public/icons/stay.svg"
+import cloudServer from "../../public/icons/cloud-server.svg";
+import ggComImg from "../../public/icons/gg-comunication.svg"
 
 const ChokidrHardware = () => {
     return (
@@ -35,6 +37,55 @@ const ChokidrHardware = () => {
                 </div>
 
             </div>
+
+            {/* device list */}
+            <ul className={styles.deviceList}>
+                <li className={styles.item}>
+                    <div className={styles.img}>
+                        <Image
+                            src={cloudServer}
+                            alt='icon'
+                        />
+                    </div>
+                    <div className={styles.text}>AI on Edge</div>
+                </li>
+                <li className={styles.item}>
+                    <div className={styles.img}>
+                        <Image
+                            src={ggComImg}
+                            alt='icon'
+                        />
+                    </div>
+                    <div className={styles.text}>G-G Communcation</div>
+                </li>
+                <li className={styles.item}>
+                    <div className={styles.img}>
+                        <Image
+                            src={cloudServer}
+                            alt='icon'
+                        />
+                    </div>
+                    <div className={styles.text}>IOT</div>
+                </li>
+                <li className={styles.item}>
+                    <div className={styles.img}>
+                        <Image
+                            src={cloudServer}
+                            alt='icon'
+                        />
+                    </div>
+                    <div className={styles.text}>Horizontally Scalable</div>
+                </li>
+                <li className={styles.item}>
+                    <div className={styles.img}>
+                        <Image
+                            src={cloudServer}
+                            alt='icon'
+                        />
+                    </div>
+                    <div className={styles.text}>Sensor Fusion</div>
+                </li>
+            </ul>
 
             {/* case studies section */}
             <div className={styles.cs}>

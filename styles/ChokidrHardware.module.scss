@@ -2,11 +2,11 @@
 @import "./colors";
 
 .landing {
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   color: $white;
 
   .quotes {
@@ -25,6 +25,7 @@
 
   .mainText {
     padding-left: 60px;
+    z-index: 20;
   }
 
   .para {
@@ -51,9 +52,9 @@
   .devicesImg {
     position: absolute;
     width: 577px;
-    height: 260px;
+    height: 280px;
     right: 0;
-    top: 30%;
+    top: 19%;
     z-index: 10;
     background-image: url("../public/chokidrHW.png");
     transform: rotate(-0.13deg);
@@ -66,14 +67,37 @@
     width: 128px;
     height: 248px;
     right: 540px;
-    top: 37%;
+    top: 29%;
     z-index: 10;
     background-image: url("../public/iphoneFull2.png");
   }
 }
 
-// case studies
+// device list
+.deviceList {
+  background-color: rgba(7, 7, 7, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 50px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $white;
+    }
+  }
+}
 
+// case studies
 .subHeading {
   font-family: Outfit;
   font-size: 40px;
