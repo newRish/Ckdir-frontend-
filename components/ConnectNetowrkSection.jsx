@@ -1,7 +1,7 @@
-import styles from "../styles/componentsStyle/ConnectNetowrkSection.module.scss"
+import styles from "../styles/componentsStyle/ConnectNetworkSection.module.scss"
 import Button from "./Button";
 
-const ConnectNetowrkSection = ({ heading, text, url }) => {
+const ConnectNetworkSection = ({ heading, text, url }) => {
     return (
         <div className={styles.testNW}>
             <div className={styles.testNWheading}>
@@ -19,4 +19,4 @@ const ConnectNetowrkSection = ({ heading, text, url }) => {
     )
 }
 
-export default ConnectNetowrkSection;
+export default ConnectNetworkSection;

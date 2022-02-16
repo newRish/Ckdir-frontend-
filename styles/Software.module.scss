@@ -1,0 +1,180 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.heading {
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  color: $white;
+}
+
+.landing {
+  @include bg-norepeat-cover;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: $white;
+
+  .glowCircle {
+    position: absolute;
+    @include glowCircle;
+    z-index: 5;
+    width: 700px;
+    height: 500px;
+    left: 621px;
+    top: 83px;
+    filter: blur(600px);
+  }
+
+  .container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 59px;
+    padding-right: 59px;
+    z-index: 5;
+    gap: 80px;
+  }
+
+  .img {
+    flex: 0.4;
+  }
+  .textContainer {
+    flex: 0.6;
+  }
+
+  .landingText {
+    font-family: Outfit;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 22px;
+  }
+
+  .para {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+  }
+}
+
+// device list
+.deviceList {
+  background-color: rgba(7, 7, 7, 1);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 70px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 50px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $white;
+    }
+  }
+}
+
+.aditionalProtoKollo {
+  margin: 80px 0;
+  .aditionalProtoKolloBgImg {
+    background-image: url("../public/road-with-trafic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .aditionalProtoKolloLeftImg {
+    width: 100%;
+  }
+
+  .aditionalProtoKolloLeft,
+  .aditionalProtoKolloRight {
+    flex: 0.35;
+    min-height: 100%;
+    background: rgba(7, 7, 7, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .textContainer {
+    padding-left: 60px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .heading {
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px;
+      color: $white;
+    }
+
+    .para {
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      color: $white;
+    }
+    .readMoreText {
+      margin-top: 19px;
+    }
+  }
+}
+
+.sf {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  padding: 100px 0 100px 59px;
+}
+.label {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justified;
+  margin-bottom: 22px;
+}
+.sfList {
+  margin-bottom: 18px;
+}
+
+.readMoreText {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $white;
+}
+
+.alterList {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}

@@ -1,0 +1,62 @@
+@import "../colors";
+@import "../mixins.scss";
+
+.heading2 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  font-family: Outfit;
+  font-style: normal;
+  color: $white;
+}
+
+.caseStudies {
+  min-height: 100vh;
+
+  text-align: center;
+  padding-top: 100px;
+
+  .heading2 {
+    line-height: 50px;
+  }
+  .cardList {
+    display: flex;
+    justify-content: space-between;
+    padding: 39px 54px;
+
+    .cardItem {
+      width: 427px;
+      height: 427px;
+
+      // background: rgba(15, 15, 15, 0.5);
+      // border-radius: 10px;
+
+      .caseStudiesCard {
+        position: relative;
+        background-color: gray;
+        // font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $white;
+        padding: 50px;
+        @include centralized;
+      }
+
+      .cardImg3 {
+        background-image: url("../../public/soldier-using-virtual-tablet-hologram-army-technology_1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .cardImg1 {
+        background-image: url("../../public/coast.png");
+      }
+      .cardImg2 {
+        background-image: url("../../public/interior-view-steel-factory_1.png");
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import ConnectNetowrkSection from "../../components/ConnectNetowrkSection";
+import ConnectNetworkSection from "../../components/ConnectNetworkSection";
 import Header from "../../components/Header"
 import Image from "next/image";
 import styles from "../../styles/ChokidrHardware.module.scss";
@@ -6,8 +6,18 @@ import arrowFowwardImg from "../../public/icons/Arrow_Forward.svg";
 import stayImg from "../../public/icons/stay.svg"
 import cloudServer from "../../public/icons/cloud-server.svg";
 import ggComImg from "../../public/icons/gg-comunication.svg"
+import iotImg from "../../public/icons/iot.svg";
+import horioztalScaleImg from "../../public/icons/horizontally-scrollable.svg"
+import sensorFusionImg from "../../public/icons/sensor-fusion.svg";
+import chokidrBackImg from "../../public/chokidr-back.png";
+import scaleImg from "../../public/undraw_setup.png";
+import offlineImg from "../../public/man-with-network-b.png";
+import connectedWorldImg from "../../public/undraw_connected_world_wuay.png";
+import iotManImg from "../../public/undraw_circuit_board.png";
+import undrawValut from "../../public/undraw_vault.png";
 
-const ChokidrHardware = () => {
+
+const ChokidrHardware = ({ dharList, feature }) => {
     return (
         <div>
             <div className={styles.landing}>
@@ -61,7 +71,7 @@ const ChokidrHardware = () => {
                 <li className={styles.item}>
                     <div className={styles.img}>
                         <Image
-                            src={cloudServer}
+                            src={iotImg}
                             alt='icon'
                         />
                     </div>
@@ -70,7 +80,7 @@ const ChokidrHardware = () => {
                 <li className={styles.item}>
                     <div className={styles.img}>
                         <Image
-                            src={cloudServer}
+                            src={horioztalScaleImg}
                             alt='icon'
                         />
                     </div>
@@ -79,13 +89,79 @@ const ChokidrHardware = () => {
                 <li className={styles.item}>
                     <div className={styles.img}>
                         <Image
-                            src={cloudServer}
+                            src={sensorFusionImg}
                             alt='icon'
                         />
                     </div>
                     <div className={styles.text}>Sensor Fusion</div>
                 </li>
             </ul>
+
+            {/* dhar section */}
+            <div className={styles.dhar}>
+                <div>
+                    <div className={styles.heading}>
+                        Dhar
+                    </div>
+                    <div className={styles.dharText}>
+                        An autonomous, edge device that is Lorawan compatible,
+                        which can be retro-fitted into your network. Powered
+                        by 52 RFIDs and sixteen cameras, that work with your
+                        existing legacy infrastructure, that can auto-connect
+                        to other Dhar in nearby vicinity.
+                    </div>
+                    <div className={styles.dharPoints}>
+                        <ul className={styles.dharList}>
+                            {
+                                dharList?.map((e, i) => (
+                                    <li key={i} className={styles.dharItem}>
+                                        <div className={styles.dharItemStyle}></div>
+                                        <div className={styles.dharText}>
+                                            {e}
+                                        </div>
+                                    </li>
+                                ))
+                            }
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div>
+                    <Image
+                        src={chokidrBackImg}
+                        alt={'dhar'}
+                    />
+                </div>
+
+
+            </div>
+
+            {/* feature section */}
+            <div className={styles.features}>
+                {
+                    feature.map((e, i) => (
+                        <div className={styles.feature} key={i}>
+                            <div className={`${styles.text} ${i !== 0 && i % 2 !== 0 && styles.order2}`}>
+                                <div className={styles.subHeading}>{e.heading}</div>
+                                <div className={styles.para}>{e.text}</div>
+
+                            </div>
+                            <div className={styles.img}>
+                                <Image
+                                    src={e.img}
+                                    alt="ai on edge"
+                                />
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+
+
+
+
 
             {/* case studies section */}
             <div className={styles.cs}>
@@ -150,7 +226,7 @@ const ChokidrHardware = () => {
 
 
             {/* join the network section */}
-            <ConnectNetowrkSection
+            <ConnectNetworkSection
                 heading={"Join the Network"}
                 text={"Dhar. Launching this June! Deploy into your existing network, soon!"}
                 url={"/contact"}
@@ -160,3 +236,44 @@ const ChokidrHardware = () => {
 }
 
 export default ChokidrHardware;
+
+export const getStaticProps = () => {
+    return {
+        props: {
+            dharList: [
+                "Legacy Retrofitting - Connect Dhar into your existing IoT network, with no need for replacements!",
+                "Private network over LoraWAN - With a private network at your hand, your data is secure. The days of relying on telco providers are over.",
+                "Integrated IoT - Compatible with devices working on industry common protocols.",
+                "Scalable and Affordable - Easily scalable by connecting multiple devices over long-range distances based on your organization's needs.",
+            ],
+
+            feature: [
+                {
+                    heading: "AI on edge",
+                    text: "Intrusion Detection, Analytics, Event Detection. ",
+                    img: undrawValut,
+                },
+                {
+                    heading: "IOT",
+                    text: "Connecting to different devices, IP Cameras, BLE Sensors Enabled Devices, LoRaWAN enabled Sensors",
+                    img: iotManImg,
+                },
+                {
+                    heading: "Ground to Ground Communication",
+                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt. ",
+                    img: connectedWorldImg,
+                },
+                {
+                    heading: "Offline",
+                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt.",
+                    img: offlineImg,
+                },
+                {
+                    heading: "Scalable",
+                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt.",
+                    img: scaleImg,
+                }
+            ]
+        }
+    }
+}

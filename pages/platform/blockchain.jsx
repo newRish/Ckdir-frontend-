@@ -145,6 +145,7 @@ const Blockchain = ({
           <div className={styles.kpImg}>
             <Image
               src={kpImg}
+              alt="knowledge proof"
             />
           </div>
         </div>

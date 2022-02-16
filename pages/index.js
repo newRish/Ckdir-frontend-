@@ -22,6 +22,7 @@ import smartAIImg from "../public/smartAI.png";
 import Card from "../components/Card";
 import iphone11Img from "../public/iphone11.png";
 import Footer from "../components/Footer";
+import CaseStudySection from "../components/CaseStudySection";
 
 const Home = () => {
   return (
@@ -260,30 +261,7 @@ const Home = () => {
       </div>
 
       {/* Case Studies section */}
-
-      <div className={styles.caseStudies}>
-        <div className={styles.heading2}>Case Studies</div>
-        <ul className={styles.cardList}>
-          <li className={styles.cardItem}>
-            <Card
-              text={"Supply Chain and Transportation"}
-              customClass={`${styles.caseStudiesCard} ${styles.cardImg1}`}
-            />
-          </li>
-          <li className={styles.cardItem}>
-            <Card
-              text={"Industries and Organisation"}
-              customClass={`${styles.caseStudiesCard} ${styles.cardImg2}`}
-            />
-          </li>
-          <li className={styles.cardItem}>
-            <Card
-              text={"Defense"}
-              customClass={`${styles.caseStudiesCard} ${styles.cardImg3}`}
-            />
-          </li>
-        </ul>
-      </div>
+      <CaseStudySection />
 
       {/* Networking section */}
       <div className={styles.networkingContainer}>

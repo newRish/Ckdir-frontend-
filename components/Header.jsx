@@ -57,7 +57,7 @@ const Header = () => {
                             options: []
                         },
                         {
-                            heading: 'Chokidr Software',
+                            heading: <Link href={'/product/chokidr-software'}><a>Chokidr Software </a></Link>,
                             options: [
                                 'Identities',
                                 'Autonomous Identities',
