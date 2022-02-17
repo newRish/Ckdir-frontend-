@@ -14,7 +14,7 @@ import coordinatingDevicesImg from "../../public/icons/coordinating-devices.svg"
 import governanceImg from "../../public/icons/central-governance.svg";
 import privecyImg from "../../public/icons/lock-privecy.svg";
 import React from "react";
-import ConnectNetworkSection from "../../components/ConnectNetworkSection";
+import ConnectNetworkSection from "../../components/ConnectNetowrkSection";
 
 const Platform = ({ platFormCardData }) => {
   return (

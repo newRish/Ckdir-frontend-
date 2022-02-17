@@ -59,7 +59,7 @@ const Header = () => {
                         {
                             heading: <Link href={'/product/chokidr-software'}><a>Chokidr Software </a></Link>,
                             options: [
-                                'Identities',
+                                <Link href={'/product/chokidr-software/identities'} key={1}><a>Identities</a></Link>,
                                 'Autonomous Identities',
                                 'Connecting People and Things',
                                 'Command And Control',

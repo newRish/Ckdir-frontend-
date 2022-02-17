@@ -1,4 +1,4 @@
-import ConnectNetworkSection from "../../components/ConnectNetworkSection";
+import ConnectNetworkSection from "../../components/ConnectNetowrkSection";
 import Header from "../../components/Header"
 import Image from "next/image";
 import styles from "../../styles/ChokidrHardware.module.scss";

@@ -1,0 +1,60 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.landing {
+  @include bg-norepeat-cover;
+  //   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: $white;
+
+  .glowCircle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 128px;
+    top: 128px;
+
+    background: rgba(35, 156, 124, 0.9);
+    border: 3px solid rgba(251, 251, 251, 0.05);
+    box-sizing: border-box;
+    filter: blur(600px);
+  }
+
+  .container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 59px;
+    // padding-right: 59px;
+    z-index: 5;
+    gap: 80px;
+  }
+
+  .img {
+    flex: 0.4;
+  }
+  .textContainer {
+    flex: 0.6;
+  }
+
+  .landingText {
+    font-family: Outfit;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 22px;
+  }
+
+  .para {
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 55px;
+
+    width: 638px;
+  }
+}

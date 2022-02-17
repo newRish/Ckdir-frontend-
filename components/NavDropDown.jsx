@@ -26,7 +26,7 @@ const NavDropDown = ({ ddList, children, right }) => {
                                         <div className={styles.itemHeading}>{e?.heading}</div>
                                         {
                                             e.options.map((option, optionIndex) => (
-                                                <div className={styles.itemOption} key={optionIndex}>{option}</div>
+                                                <div className={styles.itemOption} key={`${i}-${optionIndex}`}>{option}</div>
                                             ))
                                         }
                                     </li>

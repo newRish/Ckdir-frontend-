@@ -33,7 +33,7 @@ const ChokidrSoftware = () => {
                             features that helps you navigate
                             through and access the range of
                             your network through a laptop or
-                            phone. What's in the box of these
+                            phone. What&apos;s in the box of these
                             fantastic features, you ask?
                         </div>
                     </div>
