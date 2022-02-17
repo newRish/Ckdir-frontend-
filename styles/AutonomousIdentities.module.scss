@@ -58,3 +58,61 @@
     width: 638px;
   }
 }
+
+.alterList {
+  margin-top: 132px;
+  margin-bottom: 132px;
+  padding-left: 57px;
+  padding-right: 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 124px;
+
+  .list1,
+  .list2,
+  .list3 {
+    z-index: 5;
+    position: relative;
+  }
+
+  .glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+
+    background: rgba(35, 156, 124, 0.5);
+    border: 3px solid rgba(251, 251, 251, 0.05);
+    box-sizing: border-box;
+    filter: blur(500px);
+    z-index: 1;
+  }
+  .list1 {
+    .glow {
+      left: 50%;
+      top: 0;
+    }
+  }
+  .list2 {
+    .glow {
+      left: 30%;
+      top: 0;
+    }
+  }
+
+  .list3 {
+    .glow {
+      left: 50%;
+      top: 0;
+    }
+  }
+
+  .label {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justified;
+  }
+}

@@ -1,0 +1,89 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.heading1 {
+  font-family: Outfit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.boldText {
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.grayText {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(228, 228, 231, 0.6);
+}
+
+.landingContainer {
+  background-image: url("../public/abstract-dark-blue-futuristic-digital-grid-background.png");
+  @include bg-norepeat-cover;
+}
+
+.landingPage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 6rem;
+  padding-bottom: 8.8rem;
+  .heading1 {
+    width: 537px;
+  }
+  .landingText {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 636px;
+  }
+}
+
+.roles {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .heading1 {
+    padding-bottom: 18px;
+  }
+}
+
+.roleList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .boldText {
+    align-self: center;
+    width: 40%;
+  }
+}
+
+.roleItem {
+  align-self: center;
+  width: 40%;
+  .boldText {
+    align-self: center;
+    width: 100%;
+  }
+}

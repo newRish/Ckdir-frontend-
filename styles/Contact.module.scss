@@ -1,0 +1,230 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.landingContainer {
+  background-image: url("../public/polygonal-blue-abstract-background-shapes-network-neural-connections-big-data-neural-concept.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+.heading1 {
+  font-family: Outfit;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.heading {
+  font-family: Outfit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.para {
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.readMoreText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: $white;
+  margin-bottom: 20px;
+}
+
+.darkLayer {
+  background-color: rgba(0, 0, 0, 0.767);
+  height: 100%;
+}
+
+.landingPage {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 6rem;
+
+  .landingText {
+    font-family: Inter;
+    font-style: normal;
+    margin: auto;
+    max-width: 60%;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    color: #fff;
+  }
+}
+
+.readMore {
+  width: 159px;
+  height: 47px;
+  margin: auto;
+}
+
+.support,
+.demo {
+  display: flex;
+  padding: 100px 60px;
+  align-items: center;
+  .text,
+  .img {
+    flex: 1;
+  }
+  .readMore {
+    margin: unset;
+    margin-top: 40px;
+  }
+}
+
+.demo {
+  .img,
+  .text {
+    flex: unset;
+  }
+  justify-content: space-between;
+}
+
+.help {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  .img {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+
+  .label {
+    margin: 30px 0;
+    background: #0f0f0f;
+    border-radius: 10px;
+    padding: 18px 64px;
+
+    // font-family: Source Sans Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+.colorOrange {
+  color: $orange;
+}
+
+.inspired {
+  background-image: url("../public/silhouette-people-happy-time.png");
+  @include bg-norepeat-cover;
+  height: 478px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.boldText {
+  font-family: Outfit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.boldPara {
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.partner {
+  display: flex;
+  padding: 90px 60px;
+  gap: 44px;
+  align-items: center;
+
+  .readMore {
+    margin: unset;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .percent {
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.trust,
+.contact {
+  background: #0f0f0f;
+  border-radius: 10px;
+  padding: 20px 60px;
+
+  .boldText {
+    margin-bottom: 27px;
+  }
+
+  .boldText {
+    text-align: center;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    li {
+      text-align: center;
+
+      font-family: Inter;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 75px;
+      color: rgba(243, 243, 243, 0.6);
+    }
+  }
+}
+
+.contact {
+  .list {
+    justify-content: space-around;
+  }
+
+  li {
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: $white;
+  }
+}

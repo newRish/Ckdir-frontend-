@@ -9,7 +9,7 @@ import AlternateSection from "../../../components/AlternateSection";
 import envImg from "../../../public/morning-road-people.png";
 import reliableDataImg from "../../../public/night-street-trafic.png";
 
-const AutonomousIdentities = () => {
+const ConnectingPeopleAndThings = () => {
     return (
         <div>
             <div className={styles.landing}>
@@ -18,10 +18,10 @@ const AutonomousIdentities = () => {
                 <div className={styles.container}>
                     <div className={styles.textContainer}>
                         <div className={styles.landingText}>
-                            Autonomous Identities
+                            Connecting people and things
                         </div>
                         <div className={styles.para}>
-                            Group Making Decisions for Devices and Activities on the edge.
+                            Connect Sensors, Information Boards.
                         </div>
                     </div>
                     <div className={styles.img}>
@@ -41,14 +41,13 @@ const AutonomousIdentities = () => {
                     <AlternateSection
                         // isImageLast={true}
                         heading={
-                            "Compliance"
+                            "Real time tracking"
                         }
                         text={
                             <div className={styles.container}>
 
                                 <div className={styles.label}>
-                                    Compliant with regulatory standards like GDPR.
-
+                                    Enables you to track your fleet real time. Know where they go, on the go.
                                 </div>
 
                             </div>
@@ -66,13 +65,13 @@ const AutonomousIdentities = () => {
                     <AlternateSection
                         isImageLast={true}
                         heading={
-                            "Controlled Environment"
+                            "Connect to legacy system"
                         }
                         text={
                             <div className={styles.container}>
 
                                 <div className={styles.label}>
-                                    Smart real time monitoring within the network of your IoT.
+                                    Enables you to track your fleet real time, giving you complete access to all data that might be.
                                 </div>
 
                             </div>
@@ -90,13 +89,13 @@ const AutonomousIdentities = () => {
                     <AlternateSection
                         // isImageLast={true}
                         heading={
-                            "Reliable Data"
+                            "Transparency of operations"
                         }
                         text={
                             <div className={styles.container}>
 
                                 <div className={styles.label}>
-                                    Of all incidents/activities being monitored on the network.
+                                    Realtime tracking, fencing, heavily needed for the World where multiple touchpoints is everyday business.
                                 </div>
 
                             </div>
@@ -123,4 +122,4 @@ const AutonomousIdentities = () => {
     )
 }
 
-export default AutonomousIdentities;
+export default ConnectingPeopleAndThings;

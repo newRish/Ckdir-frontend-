@@ -1,15 +1,17 @@
+
 import Header from "../../../components/Header";
 import styles from "../../../styles/AutonomousIdentities.module.scss";
 import landingImg from "../../../public/vichels-on-path.png";
 import Image from "next/image";
 import CaseStudySection from "../../../components/CaseStudySection";
 import ConnectNetworkSection from "../../../components/ConnectNetowrkSection";
-import complianceImg from "../../../public/factory-with-smoke-stack-against-sky-night.png";
 import AlternateSection from "../../../components/AlternateSection";
-import envImg from "../../../public/morning-road-people.png";
-import reliableDataImg from "../../../public/night-street-trafic.png";
+import fieldImg from "../../../public/countryside-field-sunny-day-countryside.png";
+import derekImg from "../../../public/derek-lee.png";
+import digitalIdentityImg from "../../../public/senior-woman-using-her-phone-park.png";
+import greenEarthImg from "../../../public/freen-earth.png";
 
-const AutonomousIdentities = () => {
+const GreenAndEconomy = () => {
     return (
         <div>
             <div className={styles.landing}>
@@ -18,10 +20,10 @@ const AutonomousIdentities = () => {
                 <div className={styles.container}>
                     <div className={styles.textContainer}>
                         <div className={styles.landingText}>
-                            Autonomous Identities
+                            Social Footprint
                         </div>
                         <div className={styles.para}>
-                            Group Making Decisions for Devices and Activities on the edge.
+                            Reduce carbon footprint of your organisation.
                         </div>
                     </div>
                     <div className={styles.img}>
@@ -37,73 +39,96 @@ const AutonomousIdentities = () => {
             <div className={styles.alterList}>
 
                 <div className={styles.list1}>
-                    <div className={styles.glow}></div>
+                    {/* <div className={styles.glow}></div> */}
                     <AlternateSection
                         // isImageLast={true}
                         heading={
-                            "Compliance"
+                            "ZKPs to recognize /identify, location hidden, Assured quality of produce"
                         }
                         text={
                             <div className={styles.container}>
 
                                 <div className={styles.label}>
-                                    Compliant with regulatory standards like GDPR.
-
+                                    Identification of incidents/ discovery of problem points in the whole cycle.
                                 </div>
 
                             </div>
                         }
                         image={
                             <Image
-                                src={complianceImg}
+                                src={derekImg}
                                 alt={'image'}
                             />
                         }
                     />
                 </div>
                 <div className={styles.list2}>
-                    <div className={styles.glow}></div>
+                    {/* <div className={styles.glow}></div> */}
                     <AlternateSection
                         isImageLast={true}
                         heading={
-                            "Controlled Environment"
+                            "Produce Quality & Authenticity"
                         }
                         text={
                             <div className={styles.container}>
 
                                 <div className={styles.label}>
-                                    Smart real time monitoring within the network of your IoT.
+                                    Guaranteed assurance of authenticity of fresh produce that reaches the consumer from the farm.
                                 </div>
 
                             </div>
                         }
                         image={
                             <Image
-                                src={envImg}
+                                src={fieldImg}
                                 alt={'image'}
                             />
                         }
                     />
                 </div>
                 <div className={styles.list3}>
-                    <div className={styles.glow}></div>
+                    {/* <div className={styles.glow}></div> */}
                     <AlternateSection
                         // isImageLast={true}
                         heading={
-                            "Reliable Data"
+                            "Digital Identity"
                         }
                         text={
                             <div className={styles.container}>
 
                                 <div className={styles.label}>
-                                    Of all incidents/activities being monitored on the network.
+                                    The ability to authenticate the identity of people and things, making it a safe viable option.
                                 </div>
 
                             </div>
                         }
                         image={
                             <Image
-                                src={reliableDataImg}
+                                src={digitalIdentityImg}
+                                alt={'image'}
+                            />
+                        }
+                    />
+                </div>
+                <div className={styles.list3}>
+                    {/* <div className={styles.glow}></div> */}
+                    <AlternateSection
+                        isImageLast={true}
+                        heading={
+                            "Ecological Safety"
+                        }
+                        text={
+                            <div className={styles.container}>
+
+                                <div className={styles.label}>
+                                    Harnessing the power of IoT for hazard detection such as fires, to prevent damage to both man-made property and the environment.
+                                </div>
+
+                            </div>
+                        }
+                        image={
+                            <Image
+                                src={greenEarthImg}
                                 alt={'image'}
                             />
                         }
@@ -123,4 +148,4 @@ const AutonomousIdentities = () => {
     )
 }
 
-export default AutonomousIdentities;
+export default GreenAndEconomy

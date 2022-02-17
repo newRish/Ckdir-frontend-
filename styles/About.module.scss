@@ -1,0 +1,176 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.heading1 {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.heading2 {
+  font-family: Gelasio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.boldText {
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.grayText {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(228, 228, 231, 0.6);
+}
+
+.landingContainer {
+  background-image: url("../public/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration.png");
+  @include bg-norepeat-cover;
+}
+
+.landingPage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 6rem;
+  padding-bottom: 8.8rem;
+  .heading1 {
+    width: 1136px;
+  }
+  .landingText {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 636px;
+  }
+}
+
+.mission {
+  padding: 69px 20px 69px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  .heading2 {
+    margin-bottom: 58px;
+  }
+
+  .text {
+    flex: 0.4;
+    width: 461px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .img {
+    flex: 0.6;
+  }
+}
+
+.values,
+.founders {
+  margin: 100px 60px 60px 60px;
+  .heading2 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .valueList {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .cards {
+    text-align: center;
+    padding: 18px;
+    flex: 1;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #0f0f0f;
+    border-radius: 10px;
+
+    .subHeading {
+      font-family: Inter;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px;
+    }
+    .summary {
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+}
+
+.founders {
+  .cards {
+    height: 674px;
+    padding-bottom: 64px;
+
+    .summary {
+      &:last-child {
+        color: rgba(228, 228, 231, 0.6);
+      }
+    }
+  }
+}
+
+.misc {
+  margin: 120px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    margin-top: 20px;
+  }
+  .para {
+    width: 461px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.investors {
+  align-self: center;
+  text-align: center;
+  .heading2 {
+    text-align: center;
+  }
+}
