@@ -3,6 +3,7 @@ import happyMonkLogo from '../public/happymonkLogo.png'
 import { Icons } from '../utils/icons';
 import Image from 'next/image';
 import NavDropDown from './NavDropDown';
+import navImg from "../public/icons/nav-icon.png";
 import Link from 'next/link';
 
 
@@ -10,6 +11,8 @@ import Link from 'next/link';
 const Header = () => {
     return (
         <div className={styles.header}>
+            {/* <div className={styles.loginContainer}>
+                <div> */}
             <Link href={"/"}>
                 <a>
                     <div className={styles.logo}>
@@ -25,6 +28,14 @@ const Header = () => {
                     </div>
                 </a>
             </Link>
+            {/* </div>
+                <div className={styles.navImg}>
+                    <Image
+                        src={navImg}
+                        alt="navigation"
+                    />
+                </div>
+            </div> */}
             <ul className={styles.navList}>
                 <NavDropDown
                     ddList={[

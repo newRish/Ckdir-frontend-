@@ -3,6 +3,7 @@
 
 .home {
   background-color: $black;
+  overflow-x: hidden;
 }
 .landingContainer {
   background-image: url("../public/landingBg.png");
@@ -70,6 +71,10 @@
   flex-direction: column;
   gap: 40px;
   margin-top: 6rem;
+  .heading1 {
+    width: 822px;
+    margin: auto;
+  }
 
   .landingText {
     font-family: Inter;

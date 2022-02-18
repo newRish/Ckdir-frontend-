@@ -26,3 +26,15 @@ ul {
 p {
   margin: 0;
 }
+
+/* @media screen and (max-width: 1140px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+} */

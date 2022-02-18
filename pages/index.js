@@ -32,9 +32,7 @@ const Home = () => {
           <Header />
           <div className={styles.landingPage}>
             <div className={styles.heading1}>
-              Starting at the Edge
-              <br />
-              of the present.
+              Starting at the Edge of the present.
             </div>
             <p className={styles.landingText}>
               We innovate futuristic tech that promises a safer, better and

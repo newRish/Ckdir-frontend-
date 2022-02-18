@@ -84,7 +84,7 @@ const contact = () => {
                 <div className={styles.text}>
                     <div className={styles.heading}>Support</div>
                     <div className={styles.para}>
-                        We're here to help and answer any questions you might have. We look forward from hearing you.
+                        We&aposre here to help and answer any questions you might have. We look forward from hearing you.
                     </div>
                     <div className={styles.readMore}>
                         <Button

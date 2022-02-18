@@ -6,13 +6,16 @@ const Button = ({
     url
 }) => {
     return (
-        <Link href={url}>
-            <a>
-                <div className={styles.button}>
-                    {title}
-                </div>
-            </a>
-        </Link>
+        <div className={styles.container}>
+            <Link href={url}>
+                <a>
+                    <div className={styles.button}>
+                        {title}
+                    </div>
+                </a>
+            </Link>
+            <div className={styles.border}></div>
+        </div>
     );
 }
 
