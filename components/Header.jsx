@@ -71,12 +71,12 @@ const Header = () => {
                             heading: <Link href={'/product/chokidr-software'}><a>Chokidr Software </a></Link>,
                             options: [
                                 <Link href={'/product/chokidr-software/identities'} key={1}><a>Identities</a></Link>,
-                                'Autonomous Identities',
-                                'Connecting People and Things',
-                                'Command And Control',
-                                'Edge IOT',
-                                'Edge IOT',
-                                'Social Footprint'
+                                <Link href={'/product/chokidr-software/autonomousIdentities'} key={1}><a>Autonomous Identities</a></Link>,
+                                <Link href={'/product/chokidr-software/connecting-people-and-things'} key={1}><a>Connecting People and Things</a></Link>,
+                                <Link href={'/product/chokidr-software/command-and-control'} key={1}><a>Command And Control</a></Link>,
+                                <Link href={'/product/chokidr-software/edge-iot'} key={1}><a>Edge IOT</a></Link>,
+                                <Link href={'/product/chokidr-software/green-and-economy'} key={1}><a>Social Footprint</a></Link>,
+
                             ]
                         },
                     ]}
@@ -90,7 +90,7 @@ const Header = () => {
                 <NavDropDown
                     ddList={[
                         {
-                            heading: 'Contact',
+                            heading: <Link href={'/contact'}><a>Contact</a></Link>,
                             options: []
                         },
                         {
@@ -112,15 +112,15 @@ const Header = () => {
                 <NavDropDown
                     ddList={[
                         {
-                            heading: 'Blog',
+                            heading: <Link href={'/blog'}><a>Blog</a></Link>,
                             options: []
                         },
                         {
-                            heading: 'About Happymonk',
+                            heading: <Link href={'/about'}><a>About Happymonk</a></Link>,
                             options: []
                         },
                         {
-                            heading: 'Career',
+                            heading: <Link href={'/career'}><a>Career</a></Link>,
                             options: []
                         }
                     ]}

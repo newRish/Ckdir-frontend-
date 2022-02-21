@@ -3,7 +3,7 @@
 
 .home {
   background-color: $black;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 .landingContainer {
   background-image: url("../public/landingBg.png");
@@ -14,26 +14,26 @@
 
 .heading1 {
   font-weight: 700;
-  font-size: 80px;
-  line-height: 85px;
+  font-size: 8rem;
+  line-height: 8.5rem;
   letter-spacing: 5%;
   font-family: "Outfit", sans-serif;
 }
 
 .heading2 {
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 4rem;
+  line-height: 6rem;
   font-weight: 600;
   font-family: Outfit;
   font-style: normal;
 }
 
 .heading3 {
-  // font-family: Outfit;
-  font-size: 30px;
+  font-family: Outfit;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 5rem;
 }
 
 .heading1,
@@ -45,15 +45,15 @@
 .readMoreText {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 2rem;
+  line-height: 3.5rem;
   color: $white;
   margin-bottom: 20px;
 }
 
 .para {
   // font-family: Inter;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 35px;
@@ -69,10 +69,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 4rem;
   margin-top: 6rem;
   .heading1 {
-    width: 822px;
+    width: 82.2rem;
     margin: auto;
   }
 
@@ -82,13 +82,13 @@
     margin: auto;
     max-width: 60%;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 2.5rem;
+    line-height: 4rem;
     color: #fff;
   }
   .readMore {
-    width: 159px;
-    height: 47px;
+    width: 15.9rem;
+    height: 4.7rem;
     margin: auto;
   }
 }
@@ -111,9 +111,9 @@
 
   .chokidarImg {
     position: absolute;
-    width: 629px;
-    height: 464px;
-    right: -260px;
+    width: 62.9rem;
+    height: 46.4rem;
+    right: -26rem;
     user-select: none;
   }
 
@@ -126,20 +126,20 @@
   .backBoxListText {
     font-family: Inter;
     font-style: normal;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 4rem;
   }
   .blackBoxIcon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1.6rem;
   }
 
   .balckBoxIconImg {
-    width: 61px;
-    height: 64px;
+    width: 6.1rem;
+    height: 6.4rem;
   }
 }
 
@@ -153,7 +153,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 153px;
+    padding: 10rem 15.3rem;
     display: flex;
     align-items: baseline;
   }
@@ -161,14 +161,14 @@
   .revolutionItemText {
     color: $white;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 50px;
+    font-size: 2.4rem;
+    line-height: 5rem;
     text-align: center;
   }
 
   .revolutionCardSubHeading {
-    font-size: 20px;
-    line-height: 50px;
+    font-size: 2rem;
+    line-height: 5rem;
     font-weight: 600;
   }
 
@@ -178,15 +178,15 @@
     position: relative;
     overflow: hidden;
 
-    border-radius: 10px;
+    border-radius: 1rem;
     @include glassCard;
 
     .circle1,
     .circle2,
     .circle3 {
       position: absolute;
-      width: 180px;
-      height: 380px;
+      width: 18rem;
+      height: 38rem;
       @include glowCircle;
       z-index: 5;
     }
@@ -197,23 +197,23 @@
     }
 
     .circle2 {
-      left: -76px;
-      top: 188px;
+      left: -7.6rem;
+      top: 18.8rem;
       // background: rgba(35, 156, 124, 0.6);
       // bottom: 0;
     }
     .circle3 {
-      width: 149px;
-      height: 149px;
-      right: -80px;
-      top: 90px;
+      width: 14.9rem;
+      height: 14.9rem;
+      right: -8rem;
+      top: 9rem;
       filter: blur(50px);
     }
 
     .revolutionCardList {
       display: flex;
       justify-content: space-between;
-      padding: 40px 30px 10px 30px;
+      padding: 4rem 3rem 1rem 3rem;
       z-index: 9;
     }
   }
@@ -246,15 +246,15 @@
   position: relative;
   // background-color: $black;
   text-align: center;
-  padding-top: 175px;
-  padding-bottom: 100px;
+  padding-top: 17.5rem;
+  padding-bottom: 10rem;
 
   .protokolloBg1 {
     position: absolute;
-    width: 759px;
-    height: 363px;
-    left: 749px;
-    top: 80px;
+    width: 75.9rem;
+    height: 36.3rem;
+    left: 74.9rem;
+    top: 8rem;
     background-image: url("../public/toppng_1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -262,10 +262,10 @@
 
   .protokolloBg2 {
     position: absolute;
-    width: 759px;
-    height: 363px;
-    left: -272px;
-    bottom: 205px;
+    width: 75.9rem;
+    height: 36.3rem;
+    left: -27.2rem;
+    bottom: 20.5rem;
     background: url("../public/toppng_2.png");
     background-image: url("../public/toppng_1.png");
     background-size: cover;
@@ -274,14 +274,14 @@
   }
 
   .protokolloSummary {
-    padding-top: 30px;
-    padding-bottom: 39px;
+    padding-top: 3rem;
+    padding-bottom: 3.9rem;
     width: 48.5%;
     margin: auto;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 3.5rem;
     letter-spacing: 0em;
     text-align: center;
     color: $white;
@@ -293,19 +293,19 @@
     justify-content: space-evenly;
     align-items: baseline;
     margin: auto;
-    padding-top: 60px;
+    padding-top: 6rem;
   }
 
   .protocolItemText {
-    // font-family: Inter;
-    font-size: 20px;
+    font-family: Inter;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 3rem;
     letter-spacing: 0em;
     text-align: justified;
     color: $white;
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 }
 
@@ -325,7 +325,7 @@
     width: 36%;
     min-height: 100%;
     background: rgba(7, 7, 7, 0.8);
-    padding: 34px 36px;
+    padding: 3.4rem 3.6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -342,19 +342,19 @@
   min-height: 100vh;
   // background-color: $black;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 10rem;
 
   .heading2 {
-    line-height: 50px;
+    line-height: 5rem;
   }
   .cardList {
     display: flex;
     justify-content: space-between;
-    padding: 39px 54px;
+    padding: 3.9rem 5.4rem;
 
     .cardItem {
-      width: 427px;
-      height: 427px;
+      width: 42.7rem;
+      height: 42.7rem;
 
       // background: rgba(15, 15, 15, 0.5);
       // border-radius: 10px;
@@ -362,15 +362,15 @@
       .caseStudiesCard {
         position: relative;
         background-color: gray;
-        // font-family: Inter;
-        font-size: 30px;
+        font-family: Inter;
+        font-size: 3rem;
         font-style: normal;
         font-weight: 600;
-        line-height: 50px;
+        line-height: 5rem;
         letter-spacing: 0em;
         text-align: center;
         color: $white;
-        padding: 50px;
+        padding: 5rem;
         @include centralized;
       }
 
@@ -390,7 +390,7 @@
 }
 
 .networkingContainer {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 
   .networking {
     position: relative;
@@ -399,19 +399,19 @@
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
-    padding-top: 60px;
+    padding-top: 6rem;
     z-index: 10;
 
     .readMore {
-      width: 176px;
-      height: 47px;
+      width: 17.6rem;
+      height: 4.7rem;
     }
 
     .globeBg {
       z-index: -9;
       position: absolute;
-      width: 582px;
-      height: 582px;
+      width: 58.2rem;
+      height: 58.2rem;
       top: 0;
       background-image: url("../public/icons/globe.svg");
     }
@@ -420,8 +420,8 @@
       position: absolute;
       height: 100%;
       width: 70%;
-      left: -252px;
-      top: 88px;
+      left: -25.2rem;
+      top: 8.8rem;
       z-index: -10;
       background: rgba(35, 156, 124, 0.9);
       border: 3px solid rgba(251, 251, 251, 0.05);
@@ -431,4 +431,95 @@
   }
 }
 
-// footer section
+@media screen and (max-width: 450px) {
+  .protokolloBg1,
+  .protokolloBg2 {
+    display: none;
+  }
+
+  .landingContainer {
+    .heading1,
+    .landingText,
+    .readMore {
+      // display: none;
+      width: unset;
+      margin: unset;
+    }
+
+    .landingText {
+      max-width: unset;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .landingPage {
+      height: 100%;
+      justify-content: center;
+      gap: 9rem;
+    }
+  }
+
+  .balckBoxContainer {
+    background-repeat: no-repeat;
+    justify-content: space-around;
+
+    .balckBoxIconList {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+
+  .revolutionaCotainer {
+    .revolutionList,
+    .revolutionCardList {
+      flex-direction: column;
+      gap: 5rem;
+      align-items: center;
+    }
+  }
+
+  .networkingContainer {
+    .networking {
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .networkingText {
+      flex: 0.2;
+      height: fit-content;
+
+      .globeBg {
+        background-size: contain;
+      }
+    }
+    .networkingImg {
+      width: unset;
+      height: 75.5rem;
+      overflow: hidden;
+    }
+  }
+
+  .protokolloContiner {
+    .protokolloSummary {
+      width: unset;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .protocolList {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3rem;
+      gap: 4rem;
+    }
+  }
+  .aditionalProtoKollo {
+    .aditionalProtoKolloRight {
+      display: none;
+    }
+
+    .aditionalProtoKolloLeft {
+      width: unset;
+      justify-content: center;
+    }
+  }
+}
