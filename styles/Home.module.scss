@@ -432,9 +432,8 @@
 }
 
 @media screen and (max-width: 450px) {
-  .protokolloBg1,
   .protokolloBg2 {
-    display: none;
+    // left: unset;
   }
 
   .landingContainer {
@@ -482,6 +481,12 @@
     .networking {
       flex-direction: column;
       min-height: 100vh;
+
+      .readMore {
+        width: unset;
+        height: unset;
+        float: left;
+      }
     }
     .networkingText {
       flex: 0.2;
@@ -499,6 +504,11 @@
   }
 
   .protokolloContiner {
+    .protokolloBg1 {
+      // display: none;
+      left: unset;
+      right: 0;
+    }
     .protokolloSummary {
       width: unset;
       padding-left: 4rem;
@@ -521,5 +531,11 @@
       width: unset;
       justify-content: center;
     }
+  }
+
+  .landingContainer,
+  .balckBoxContainer,
+  .revolutionaCotainer {
+    // display: none;
   }
 }

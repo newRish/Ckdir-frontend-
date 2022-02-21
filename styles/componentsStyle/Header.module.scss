@@ -53,3 +53,25 @@
     }
   }
 }
+
+@media screen and (max-width: 853px) {
+  .header {
+    // background-color: red;
+    padding: 5rem 0;
+  }
+  .navList {
+    display: none !important;
+  }
+
+  .loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
+    width: 100%;
+
+    .logoImg {
+      width: 15rem !important;
+    }
+  }
+}

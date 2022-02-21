@@ -21,7 +21,6 @@ import homeAnalytics from "../public/homeAnalytics.png";
 import smartAIImg from "../public/smartAI.png";
 import Card from "../components/Card";
 import iphone11Img from "../public/iphone11.png";
-import Footer from "../components/Footer";
 import CaseStudySection from "../components/CaseStudySection";
 
 const Home = () => {

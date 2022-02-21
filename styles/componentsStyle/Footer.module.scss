@@ -1,38 +1,45 @@
 @import "../colors";
 
-.footer {
+.container {
+  display: flex;
+
   border-top: 1px solid rgba(228, 228, 231, 0.05);
   border-bottom: 1px solid rgba(228, 228, 231, 0.2);
-  padding-top: 45px;
-  padding-bottom: 69px;
+}
+
+.footer {
+  flex: 1;
+
+  padding-top: 4.5rem;
+  padding-bottom: 6.9rem;
   color: $white;
   display: flex;
   justify-content: space-around;
 
   .header {
     font-family: Inter;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 7rem;
   }
 
   .listItem {
     font-family: Inter;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 4rem;
     color: #e4e4e799;
   }
   .connect {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 1.2rem;
   }
 
   .topSpacing {
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 }
 
@@ -51,25 +58,38 @@
 
 .tradeMarkText {
   font-family: "Source Sans Pro";
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 7rem;
   color: $white;
 }
 
-// @media screen and (max-width: 853px) {
-//   .connect span {
-//     display: none;
-//   }
+@media screen and (max-width: 853px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    align-items: flex-start;
+    .footer {
+      flex-direction: column;
+      gap: unset;
+    }
+  }
+  .listItem {
+    line-height: 0;
+  }
+  .connect {
+    .contactIcon {
+      height: 4rem;
+      width: 2rem;
+    }
 
-//   .footerBottom {
-//     flex-direction: column;
-//     justify-content: center;
-//     padding-bottom: 20px;
-//     padding-top: 20px;
-//   }
-//   .tradeMarkText {
-//     line-height: 30px;
-//   }
-// }
+    flex-wrap: wrap;
+    gap: unset;
+    grid-gap: unset;
+
+    span {
+      word-break: break-all;
+    }
+  }
+}

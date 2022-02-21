@@ -11,23 +11,30 @@ import Link from 'next/link';
 const Header = () => {
     return (
         <div className={styles.header}>
-            {/* <div className={styles.loginContainer}>
-                <div> */}
-            <Link href={"/"}>
-                <a>
-                    <div className={styles.logo}>
-                        <span className={styles.logoImg}>
-                            <Image
-                                src={happyMonkLogo}
-                                alt="logo"
-                            />
-                        </span>
-                        <span>
-                            HAPPYMONK
-                        </span>
-                    </div>
-                </a>
-            </Link>
+            <div className={styles.loginContainer}>
+
+                <Link href={"/"}>
+                    <a>
+                        <div className={styles.logo}>
+                            <span className={styles.logoImg}>
+                                <Image
+                                    src={happyMonkLogo}
+                                    alt="logo"
+                                />
+                            </span>
+                            <span>
+                                HAPPYMONK
+                            </span>
+                        </div>
+                    </a>
+                </Link>
+                <div className={styles.navImg}>
+                    <Image
+                        src={navImg}
+                        alt="navigation"
+                    />
+                </div>
+            </div>
             {/* </div>
                 <div className={styles.navImg}>
                     <Image
@@ -36,6 +43,7 @@ const Header = () => {
                     />
                 </div>
             </div> */}
+            {/* </div> */}
             <ul className={styles.navList}>
                 <NavDropDown
                     ddList={[
