@@ -7,6 +7,7 @@
   padding: 0 3.5rem;
   height: 8rem;
   z-index: 10;
+  position: relative;
 
   .logo {
     color: #fff;
@@ -54,13 +55,25 @@
   }
 }
 
+.activeList {
+  display: none !important;
+}
+
 @media screen and (max-width: 853px) {
   .header {
-    // background-color: red;
     padding: 5rem 0;
   }
   .navList {
-    display: none !important;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    right: 2rem;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 3rem;
+    max-height: 50rem;
+    overflow-y: scroll;
   }
 
   .loginContainer {

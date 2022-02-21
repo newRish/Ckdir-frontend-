@@ -102,10 +102,13 @@ const Platform = ({ platFormCardData }) => {
       </div>
 
       {/* test network section */}
-      <ConnectNetworkSection
-        heading={"Test Public Network to be Launched this June!"}
-        url={"/contact"}
-      />
+      <div className={styles.connectNetwork}>
+
+        <ConnectNetworkSection
+          heading={"Test Public Network to be Launched this June!"}
+          url={"/contact"}
+        />
+      </div>
 
       {/* use case section */}
       <div className={styles.useCase}>

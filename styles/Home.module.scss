@@ -432,15 +432,10 @@
 }
 
 @media screen and (max-width: 450px) {
-  .protokolloBg2 {
-    // left: unset;
-  }
-
   .landingContainer {
     .heading1,
     .landingText,
     .readMore {
-      // display: none;
       width: unset;
       margin: unset;
     }
@@ -461,9 +456,10 @@
   .balckBoxContainer {
     background-repeat: no-repeat;
     justify-content: space-around;
-
+    min-height: 80vh;
     .balckBoxIconList {
       flex-direction: column;
+      // width: unset;
       gap: 5rem;
     }
   }
@@ -505,7 +501,6 @@
 
   .protokolloContiner {
     .protokolloBg1 {
-      // display: none;
       left: unset;
       right: 0;
     }
@@ -531,11 +526,5 @@
       width: unset;
       justify-content: center;
     }
-  }
-
-  .landingContainer,
-  .balckBoxContainer,
-  .revolutionaCotainer {
-    // display: none;
   }
 }
