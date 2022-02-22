@@ -21,8 +21,6 @@ const career = ({ openRoles }) => {
             </div>
 
             {/* Roles */}
-
-
             <div className={styles.roles}>
                 <div className={styles.heading1}>Open Roles</div>
                 {

@@ -14,12 +14,16 @@ import AlternateSection from "../../../components/AlternateSection";
 import connectingSenforImg from "../../../public/connecting-sensors.png";
 import specialArms from "../../../public/specna-arms.png";
 import iot5gImg from "../../../public/5g-iot.png";
+import { Icons } from "../../../utils/icons";
+import { useState } from "react";
 
 const ChokidrSoftware = () => {
+    const [carouselSwitch, setCarouselSwitch] = useState(false);
+
     return (
         <div>
+            <Header />
             <div className={styles.landing}>
-                <Header />
                 <div className={styles.glowCircle}></div>
                 <div className={styles.container}>
                     <div className={styles.textContainer}>
@@ -99,39 +103,50 @@ const ChokidrSoftware = () => {
             {/* big image section */}
             <div className={styles.aditionalProtoKollo}>
                 <div className={styles.aditionalProtoKolloBgImg}>
-                    <div className={styles.aditionalProtoKolloLeft}>
-                        <div className={styles.aditionalProtoKolloLeftImg}>
-                            <Image src={faceRecogImg} alt="face recog" />
-                        </div>
-                        <div className={styles.textContainer}>
-                            <div className={styles.heading}>Identities</div>
-                            <div className={styles.para}>
-                                Decentralized Identities for Humans, Devices and Things.
+                    {!carouselSwitch ? (
+                        <div className={styles.aditionalProtoKolloLeft}>
+                            <div className={styles.aditionalProtoKolloLeftImg}>
+                                <Image src={faceRecogImg} alt="face recog" />
                             </div>
-                            <div className={styles.readMoreText}>
-                                <Link href="/">
-                                    <a>Read more</a>
-                                </Link>
+                            <div className={styles.textContainer}>
+                                <div className={styles.heading}>Identities</div>
+                                <div className={styles.para}>
+                                    Decentralized Identities for Humans, Devices and Things.
+                                </div>
+                                <div className={styles.readMoreText}>
+                                    <Link href="/">
+                                        <a>Read more</a>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className={styles.carouselBtn}>
+                                <Icons.filledDot />
+                                <Icons.outlinedDot onClick={() => setCarouselSwitch(true)} />
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.aditionalProtoKolloRight}>
-                        <div className={styles.aditionalProtoKolloLeftImg}>
+                    ) : (
+                        <div className={styles.aditionalProtoKolloRight}>
+                            <div className={styles.aditionalProtoKolloLeftImg}>
 
-                            <Image src={firefiterImg} alt="fire fighters" />
-                        </div>
-                        <div className={styles.textContainer}>
-                            <div className={styles.heading}>Autonomous Identities</div>
-                            <div className={styles.para}>
-                                Decentralized Identities for Humans, Devices and Things.
+                                <Image src={firefiterImg} alt="fire fighters" />
                             </div>
-                            <div className={styles.readMoreText}>
-                                <Link href="/">
-                                    <a>Read more</a>
-                                </Link>
+                            <div className={styles.textContainer}>
+                                <div className={styles.heading}>Autonomous Identities</div>
+                                <div className={styles.para}>
+                                    Decentralized Identities for Humans, Devices and Things.
+                                </div>
+                                <div className={styles.readMoreText}>
+                                    <Link href="/">
+                                        <a>Read more</a>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className={styles.carouselBtn}>
+                                <Icons.outlinedDot onClick={() => setCarouselSwitch(false)} />
+                                <Icons.filledDot />
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
 

@@ -16,7 +16,32 @@ import privecyImg from "../../public/icons/lock-privecy.svg";
 import React from "react";
 import ConnectNetworkSection from "../../components/ConnectNetowrkSection";
 
-const Platform = ({ platFormCardData }) => {
+
+
+const Network = () => {
+
+  const platFormCardData = [
+    {
+      imageUrl: platformCard1Img,
+      heading: "Hardware",
+      text: "Access the advantage of a private network that gives you the flexibility of staying connected through the cloud and also through the device - yes, offline too! Ensure no data loss due to internet connectivity fluctuations with the offline connectivity.",
+    },
+    {
+      imageUrl: platformCard2Img,
+      heading: "Cloud",
+      text: "A private network across your organisation at various locations is just the thing to give you complete control over the tracking and maintenance of all data, across the network.",
+    },
+    {
+      imageUrl: platformCard3Img,
+      heading: "Public Network",
+      text: "The benefits of Monk Network/Dhar doesn’t end there. Enjoy the privilege of having a public network, where all data is verifiable with zero knowledge proofs.",
+    },
+    {
+      imageUrl: platformCard4Img,
+      heading: "Zero Fee",
+      text: "The best part? Monk Network is a Zero Fee network!",
+    },
+  ];
   return (
     <div className={styles.platform}>
       <div className={styles.landing}>
@@ -167,35 +192,5 @@ const Platform = ({ platFormCardData }) => {
   );
 };
 
-export default Platform;
+export default Network;
 
-export const getStaticProps = () => {
-  const platFormCardData = [
-    {
-      imageUrl: platformCard1Img,
-      heading: "Hardware",
-      text: "Access the advantage of a private network that gives you the flexibility of staying connected through the cloud and also through the device - yes, offline too! Ensure no data loss due to internet connectivity fluctuations with the offline connectivity.",
-    },
-    {
-      imageUrl: platformCard2Img,
-      heading: "Cloud",
-      text: "A private network across your organisation at various locations is just the thing to give you complete control over the tracking and maintenance of all data, across the network.",
-    },
-    {
-      imageUrl: platformCard3Img,
-      heading: "Public Network",
-      text: "The benefits of Monk Network/Dhar doesn’t end there. Enjoy the privilege of having a public network, where all data is verifiable with zero knowledge proofs.",
-    },
-    {
-      imageUrl: platformCard4Img,
-      heading: "Zero Fee",
-      text: "The best part? Monk Network is a Zero Fee network!",
-    },
-  ];
-
-  return {
-    props: {
-      platFormCardData,
-    },
-  };
-};

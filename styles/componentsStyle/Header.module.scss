@@ -40,7 +40,7 @@
       }
 
       svg {
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: unset;
         color: rgba(251, 251, 251, 0.8);
       }
@@ -56,10 +56,21 @@
 }
 
 .activeList {
-  display: none !important;
+  display: flex;
+}
+
+.navImg {
+  display: none;
 }
 
 @media screen and (max-width: 853px) {
+  .activeList {
+    display: none !important;
+  }
+
+  .navImg {
+    display: block;
+  }
   .header {
     padding: 5rem 0;
   }
@@ -74,6 +85,14 @@
     gap: 3rem;
     max-height: 50rem;
     overflow-y: scroll;
+  }
+
+  .navItem {
+    align-items: center !important;
+
+    svg {
+      font-size: 14px !important;
+    }
   }
 
   .loginContainer {

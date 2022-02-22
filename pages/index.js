@@ -22,8 +22,11 @@ import smartAIImg from "../public/smartAI.png";
 import Card from "../components/Card";
 import iphone11Img from "../public/iphone11.png";
 import CaseStudySection from "../components/CaseStudySection";
+import { Icons } from "../utils/icons";
+import { useState } from "react";
 
 const Home = () => {
+  const [carouselSwitch, setCarouselSwitch] = useState(false);
   return (
     <div className={styles.home}>
       <div className={styles.landingContainer}>
@@ -221,39 +224,53 @@ const Home = () => {
       {/* More on ProtoKollo section */}
       <div className={styles.aditionalProtoKollo}>
         <div className={styles.aditionalProtoKolloBgImg}>
-          <div className={styles.aditionalProtoKolloLeft}>
-            <div className={styles.heading2}>Sensor fusion and Analytics</div>
-            <div className="aditionalProtoKolloLeftImg">
-              <Image src={homeAnalytics} alt="home analytics" />
+          {!carouselSwitch ? (
+            <div className={styles.aditionalProtoKolloLeft}>
+              <div className={styles.heading2}>Sensor fusion and Analytics</div>
+              <div className={styles.aditionalProtoKolloLeftImg}>
+                <Image src={homeAnalytics} alt="home analytics" />
+              </div>
+              <p className={styles.para}>
+                Travel agencies have an increase of 20% in customer satisfaction
+                with Chokidr. SRS travels - Cameras and Sensors - Human
+                intervention.
+              </p>
+              <div className={styles.readMoreText}>
+                <Link href="/">
+                  <a>Read more</a>
+                </Link>
+              </div>
+              <div className={styles.carouselBtn}>
+                <Icons.filledDot />
+                <Icons.outlinedDot onClick={() => setCarouselSwitch(true)} />
+              </div>
             </div>
-            <p className={styles.para}>
-              Travel agencies have an increase of 20% in customer satisfaction
-              with Chokidr. SRS travels - Cameras and Sensors - Human
-              intervention.
-            </p>
-            <div className={styles.readMoreText}>
-              <Link href="/">
-                <a>Read more</a>
-              </Link>
-            </div>
-          </div>
-          <div className={styles.aditionalProtoKolloRight}>
-            <div className={styles.heading2}>Smart Artificial Intelligence</div>
-            <div className="aditionalProtoKolloLeftImg">
-              <Image src={smartAIImg} alt="Smart AI" />
-            </div>
-            <p className={styles.para}>
-              State of the Art AI that is capable of object identification,
-              facial identification with enhanced deep learning and machine
-              learning algorithms at the back - Bringing more power to you!
-            </p>
+          ) : (
+            <div className={styles.aditionalProtoKolloRight}>
+              <div className={styles.heading2}>
+                Smart Artificial Intelligence
+              </div>
+              <div className={styles.aditionalProtoKolloLeftImg}>
+                <Image src={smartAIImg} alt="Smart AI" />
+              </div>
+              <p className={styles.para}>
+                State of the Art AI that is capable of object identification,
+                facial identification with enhanced deep learning and machine
+                learning algorithms at the back - Bringing more power to you!
+              </p>
 
-            <div className={styles.readMoreText}>
-              <Link href="/">
-                <a>Read more</a>
-              </Link>
+              <div className={styles.readMoreText}>
+                <Link href="/">
+                  <a>Read more</a>
+                </Link>
+              </div>
+
+              <div className={styles.carouselBtn}>
+                <Icons.outlinedDot onClick={() => setCarouselSwitch(false)} />
+                <Icons.filledDot />
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
 

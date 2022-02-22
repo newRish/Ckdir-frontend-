@@ -3,10 +3,10 @@
 
 .heading {
   font-family: Inter;
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 5rem;
   color: $white;
 }
 
@@ -22,21 +22,21 @@
     position: absolute;
     @include glowCircle;
     z-index: 5;
-    width: 700px;
-    height: 500px;
-    left: 621px;
-    top: 83px;
-    filter: blur(600px);
+    width: 70rem;
+    height: 50rem;
+    left: 62.1rem;
+    top: 8.3rem;
+    filter: blur(60rem);
   }
 
   .container {
     flex: 1;
     display: flex;
     align-items: center;
-    padding-left: 59px;
-    padding-right: 59px;
+    padding-left: 5.9rem;
+    padding-right: 5.9rem;
     z-index: 5;
-    gap: 80px;
+    gap: 8rem;
   }
 
   .img {
@@ -48,19 +48,19 @@
 
   .landingText {
     font-family: Outfit;
-    font-size: 60px;
+    font-size: 6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
-    margin-bottom: 22px;
+    line-height: 4rem;
+    margin-bottom: 2.2rem;
   }
 
   .para {
     font-family: Inter;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 35px;
+    line-height: 3.5rem;
   }
 }
 
@@ -71,17 +71,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 70px;
+  padding: 4rem 7rem;
   .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     .text {
       font-family: Inter;
-      font-size: 20px;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 600;
-      line-height: 50px;
+      line-height: 5rem;
       letter-spacing: 0em;
       text-align: left;
       color: $white;
@@ -90,7 +90,7 @@
 }
 
 .aditionalProtoKollo {
-  margin: 80px 0;
+  margin: 8rem 0;
   .aditionalProtoKolloBgImg {
     background-image: url("../public/road-with-trafic.png");
     background-repeat: no-repeat;
@@ -115,30 +115,30 @@
   }
 
   .textContainer {
-    padding-left: 60px;
+    padding-left: 6rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     .heading {
       font-family: Inter;
-      font-size: 40px;
+      font-size: 4rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 50px;
+      line-height: 5rem;
       color: $white;
     }
 
     .para {
       font-family: Inter;
-      font-size: 20px;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 30px;
+      line-height: 3rem;
       color: $white;
     }
     .readMoreText {
-      margin-top: 19px;
+      margin-top: 1.9rem;
     }
   }
 }
@@ -147,27 +147,27 @@
   display: flex;
   justify-content: space-between;
   color: $white;
-  padding: 100px 0 100px 59px;
+  padding: 10rem 0 10rem 5.9rem;
 }
 .label {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 3rem;
   text-align: justified;
-  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
 }
 .sfList {
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 
 .readMoreText {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 3.5rem;
   letter-spacing: 0em;
   text-align: left;
   color: $white;
@@ -176,5 +176,83 @@
 .alterList {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 12rem;
+}
+
+@media screen and (max-width: 450px) {
+  .landing {
+    .glowCircle {
+      width: 35rem;
+      left: -20rem;
+    }
+
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      .img {
+        order: -1;
+        flex: unset;
+      }
+    }
+
+    .textContainer {
+      flex: unset;
+    }
+    .landingText {
+      line-height: unset;
+    }
+  }
+  .sf {
+    margin-bottom: 5rem;
+    padding: 4rem;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .deviceList {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .aditionalProtoKollo {
+    margin-bottom: 5rem;
+    .carouselBtn {
+      display: flex;
+      justify-content: center;
+      svg {
+        font-size: 25px;
+      }
+    }
+    .aditionalProtoKolloBgImg {
+      min-height: 70vh;
+      background-position: center;
+    }
+
+    .aditionalProtoKolloRight {
+      display: none;
+    }
+
+    .aditionalProtoKolloLeftImg {
+      padding-bottom: 4rem;
+      order: -1;
+    }
+
+    .aditionalProtoKolloLeft,
+    .aditionalProtoKolloRight {
+      width: unset;
+      justify-content: center;
+      flex: unset;
+      min-height: 100%;
+      background: unset;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.692) 0%
+      );
+      background-position: bottom;
+      padding: 3.4rem 3.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
 }

@@ -17,14 +17,41 @@ import iotManImg from "../../public/undraw_circuit_board.png";
 import undrawValut from "../../public/undraw_vault.png";
 
 
-const ChokidrHardware = ({ dharList, feature }) => {
+const ChokidrHardware = ({ dharList }) => {
+    const feature = [
+        {
+            heading: "AI on edge",
+            text: "Intrusion Detection, Analytics, Event Detection. ",
+            img: undrawValut,
+        },
+        {
+            heading: "IOT",
+            text: "Connecting to different devices, IP Cameras, BLE Sensors Enabled Devices, LoRaWAN enabled Sensors",
+            img: iotManImg,
+        },
+        {
+            heading: "Ground to Ground Communication",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt. ",
+            img: connectedWorldImg,
+        },
+        {
+            heading: "Offline",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt.",
+            img: offlineImg,
+        },
+        {
+            heading: "Scalable",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt.",
+            img: scaleImg,
+        }
+    ]
     return (
         <div>
             <div className={styles.landing}>
+                <Header />
                 <div className={styles.glowCircle}></div>
                 <div className={styles.devicesImg}></div>
                 <div className={styles.phoneImg}></div>
-                <Header />
 
                 <div className={styles.mainText}>
                     <div className={styles.quotes}>
@@ -128,7 +155,7 @@ const ChokidrHardware = ({ dharList, feature }) => {
                     </div>
                 </div>
 
-                <div>
+                <div className={styles.chokidrBackImg}>
                     <Image
                         src={chokidrBackImg}
                         alt={'dhar'}
@@ -151,7 +178,7 @@ const ChokidrHardware = ({ dharList, feature }) => {
                             <div className={styles.img}>
                                 <Image
                                     src={e.img}
-                                    alt="ai on edge"
+                                    alt="feature image"
                                 />
                             </div>
                         </div>
@@ -247,33 +274,7 @@ export const getStaticProps = () => {
                 "Scalable and Affordable - Easily scalable by connecting multiple devices over long-range distances based on your organization's needs.",
             ],
 
-            feature: [
-                {
-                    heading: "AI on edge",
-                    text: "Intrusion Detection, Analytics, Event Detection. ",
-                    img: undrawValut,
-                },
-                {
-                    heading: "IOT",
-                    text: "Connecting to different devices, IP Cameras, BLE Sensors Enabled Devices, LoRaWAN enabled Sensors",
-                    img: iotManImg,
-                },
-                {
-                    heading: "Ground to Ground Communication",
-                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt. ",
-                    img: connectedWorldImg,
-                },
-                {
-                    heading: "Offline",
-                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt.",
-                    img: offlineImg,
-                },
-                {
-                    heading: "Scalable",
-                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt.",
-                    img: scaleImg,
-                }
-            ]
+
         }
     }
 }

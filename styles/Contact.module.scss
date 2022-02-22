@@ -9,36 +9,36 @@
 }
 .heading1 {
   font-family: Outfit;
-  font-size: 80px;
+  font-size: 8rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 6rem;
   letter-spacing: 0em;
   text-align: center;
 }
 .heading {
   font-family: Outfit;
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 6rem;
 }
 
 .para {
   font-family: Inter;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 3.5rem;
 }
 
 .readMoreText {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 2rem;
+  line-height: 3.5rem;
   color: $white;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .darkLayer {
@@ -50,7 +50,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 4rem;
   margin-top: 6rem;
 
   .landingText {
@@ -59,22 +59,22 @@
     margin: auto;
     max-width: 60%;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 2.5rem;
+    line-height: 4rem;
     color: #fff;
   }
 }
 
 .readMore {
-  width: 159px;
-  height: 47px;
+  width: 15.9rem;
+  height: 4.7rem;
   margin: auto;
 }
 
 .support,
 .demo {
   display: flex;
-  padding: 100px 60px;
+  padding: 10rem 6rem;
   align-items: center;
   .text,
   .img {
@@ -82,7 +82,7 @@
   }
   .readMore {
     margin: unset;
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 }
 
@@ -101,20 +101,20 @@
   .img {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 5rem 0;
   }
 
   .label {
-    margin: 30px 0;
+    margin: 3rem 0;
     background: #0f0f0f;
-    border-radius: 10px;
-    padding: 18px 64px;
+    border-radius: 1rem;
+    padding: 1.8rem 6.4rem;
 
     // font-family: Source Sans Pro;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 3rem;
     text-align: left;
   }
 }
@@ -126,34 +126,34 @@
 .inspired {
   background-image: url("../public/silhouette-people-happy-time.png");
   @include bg-norepeat-cover;
-  height: 478px;
+  height: 47.8rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 60px;
+  padding: 6rem;
 }
 
 .boldText {
   font-family: Outfit;
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 6rem;
 }
 
 .boldPara {
   font-family: Inter;
-  font-size: 30px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 4rem;
 }
 
 .partner {
   display: flex;
-  padding: 90px 60px;
-  gap: 44px;
+  padding: 9rem 6rem;
+  gap: 4.4rem;
   align-items: center;
 
   .readMore {
@@ -167,27 +167,27 @@
 
   .percent {
     font-family: Inter;
-    font-size: 100px;
+    font-size: 10rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 4rem;
   }
 
   .text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
   }
 }
 
 .trust,
 .contact {
   background: #0f0f0f;
-  border-radius: 10px;
-  padding: 20px 60px;
+  border-radius: 1rem;
+  padding: 2rem 6rem;
 
   .boldText {
-    margin-bottom: 27px;
+    margin-bottom: 2.7rem;
   }
 
   .boldText {
@@ -203,10 +203,10 @@
       text-align: center;
 
       font-family: Inter;
-      font-size: 30px;
+      font-size: 3rem;
       font-style: italic;
       font-weight: 600;
-      line-height: 75px;
+      line-height: 7.5rem;
       color: rgba(243, 243, 243, 0.6);
     }
   }
@@ -219,12 +219,118 @@
 
   li {
     font-family: Inter;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 3rem;
     letter-spacing: 0em;
     text-align: justified;
     color: $white;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .landingContainer {
+    height: 70vh;
+    background-position: center;
+    align-items: center;
+    .landingPage {
+      padding: 5rem;
+      margin: unset;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .landingText {
+      margin: unset;
+      max-width: unset;
+    }
+    .readMore {
+      width: fit-content;
+      align-self: center;
+      height: unset;
+      margin: unset;
+    }
+  }
+
+  .trust,
+  .contact {
+    .list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .contact {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .list {
+      gap: 5rem;
+    }
+  }
+
+  .demo {
+    flex-direction: column;
+
+    .readMore {
+      margin: unset;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      width: unset;
+      display: flex;
+      align-self: flex-start;
+    }
+  }
+
+  .inspired {
+    background-position: center;
+    .para {
+      text-align: center;
+    }
+  }
+
+  .partner {
+    flex-direction: column;
+
+    .container {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    .readMore {
+      width: unset;
+      height: unset;
+      display: flex;
+      align-self: flex-start;
+    }
+  }
+
+  .support {
+    flex-direction: column;
+    gap: 3rem;
+    .text {
+      text-align: center;
+    }
+
+    .readMore {
+      width: unset;
+      height: unset;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .help {
+    width: unset;
+    padding: 5rem;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      flex-direction: column;
+      gap: 5rem;
+      font-size: 2.5rem;
+    }
   }
 }

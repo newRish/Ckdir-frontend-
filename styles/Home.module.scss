@@ -310,6 +310,9 @@
 }
 
 .aditionalProtoKollo {
+  .carouselBtn {
+    display: none;
+  }
   .aditionalProtoKolloBgImg {
     background-image: url("../public/train.png");
     background-repeat: no-repeat;
@@ -518,13 +521,48 @@
     }
   }
   .aditionalProtoKollo {
+    margin-bottom: 5rem;
+    .carouselBtn {
+      display: flex;
+      justify-content: center;
+      svg {
+        font-size: 25px;
+      }
+    }
+    .aditionalProtoKolloBgImg {
+      min-height: 70vh;
+      background-position: center;
+    }
+
     .aditionalProtoKolloRight {
       display: none;
     }
 
-    .aditionalProtoKolloLeft {
+    .aditionalProtoKolloLeftImg {
+      padding-bottom: 4rem;
+      order: -1;
+    }
+
+    .aditionalProtoKolloLeft,
+    .aditionalProtoKolloRight {
+      // display: none;
       width: unset;
       justify-content: center;
+
+      // width: 36%;
+      min-height: 100%;
+      background: unset;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.692) 0%
+      );
+      // background-size: 200px 200px;
+      background-position: bottom;
+      padding: 3.4rem 3.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 }

@@ -12,8 +12,8 @@ import reliableDataImg from "../../../public/night-street-trafic.png";
 const AutonomousIdentities = () => {
     return (
         <div>
+            <Header />
             <div className={styles.landing}>
-                <Header />
                 <div className={styles.glowCircle}></div>
                 <div className={styles.container}>
                     <div className={styles.textContainer}>
