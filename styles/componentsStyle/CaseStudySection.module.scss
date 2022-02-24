@@ -22,6 +22,7 @@
   .cardList {
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
     padding: 3.9rem 5.4rem;
 
     .cardItem {
@@ -47,21 +48,28 @@
       }
 
       .cardImg3 {
-        background-image: url("../../public/soldier-using-virtual-tablet-hologram-army-technology_1.png");
-        background-repeat: no-repeat;
-        background-size: contain;
+        background-image: url("../../public/compressed/Defense-mask.png");
+        // @include bg-norepeat-cover;
       }
       .cardImg1 {
-        background-image: url("../../public/coast.png");
+        background-image: url("../../public/compressed/supplu-chain-mask-min.png");
       }
       .cardImg2 {
-        background-image: url("../../public/interior-view-steel-factory_1.png");
+        background-image: url("../../public/compressed/industry-&-organisaion-mask.png");
+      }
+
+      .cardImg3,
+      .cardImg1,
+      .cardImg2 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
       }
     }
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1153px) {
   .caseStudies {
     padding-top: unset;
   }
@@ -75,9 +83,24 @@
     gap: 4rem;
     width: 100%;
     padding: 0;
-    .cardItem {
-      height: 60rem !important;
-      width: 60rem !important;
-    }
+  }
+}
+
+@media screen and (max-width: 1153px) and (min-width: 654px) {
+  .cardItem {
+    height: 60rem !important;
+    width: 60rem !important;
+  }
+}
+
+@media screen and (max-width: 654px) {
+  .cardList {
+    padding: 5rem;
+  }
+  .cardItem {
+    // display: none;
+    // height: 90% !important;
+    width: 90% !important;
+    // margin: 5rem;
   }
 }

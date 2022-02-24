@@ -3,10 +3,13 @@
 
 .home {
   background-color: $black;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 .landingContainer {
-  background-image: url("../public/landingBg.png");
+  background-image: url("../public/compressed/landing-page-banner.png");
+
+  // background-image: url("../public/landingBg.png");
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
@@ -61,25 +64,37 @@
 }
 
 .darkLayer {
-  background-color: rgba(0, 0, 0, 0.767);
+  // background-color: rgba(0, 0, 0, 0.767);
+  background-color: rgba(0, 0, 0, 0);
   height: 100%;
 }
 
 .landingPage {
   text-align: center;
   display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
   flex-direction: column;
-  gap: 4rem;
-  margin-top: 6rem;
+
+  // margin-bottom: 6rem;
+  padding-bottom: 6rem;
   .heading1 {
     width: 82.2rem;
-    margin: auto;
+    // margin: auto;
+  }
+
+  .mainText {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .landingText {
     font-family: Inter;
     font-style: normal;
-    margin: auto;
+    // margin: auto;
     max-width: 60%;
     font-weight: 600;
     font-size: 2.5rem;
@@ -89,7 +104,7 @@
   .readMore {
     width: 15.9rem;
     height: 4.7rem;
-    margin: auto;
+    // margin: auto;
   }
 }
 
@@ -109,18 +124,24 @@
   position: relative;
   overflow-x: hidden;
 
+  .heading1 {
+    z-index: 5;
+  }
+
   .chokidarImg {
     position: absolute;
     width: 62.9rem;
     height: 46.4rem;
     right: -26rem;
     user-select: none;
+    z-index: 2;
   }
 
   .balckBoxIconList {
     display: flex;
     justify-content: space-between;
     width: 60%;
+    z-index: 5;
   }
 
   .backBoxListText {
@@ -314,7 +335,7 @@
     display: none;
   }
   .aditionalProtoKolloBgImg {
-    background-image: url("../public/train.png");
+    background-image: url("../public/compressed/banner-home-AI-and-fusion-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -438,7 +459,7 @@
   display: flex;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1032px) {
   .dNone {
     display: none !important;
   }
@@ -468,26 +489,61 @@
     background-repeat: no-repeat;
     justify-content: space-around;
     min-height: 80vh;
+
+    .chokidarImg {
+      opacity: 0.65;
+    }
     .balckBoxIconList {
-      flex-direction: column;
-      // width: unset;
+      // flex-direction: column;
+      width: unset;
+      align-items: flex-end;
+      padding-left: 4rem;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
       gap: 5rem;
     }
   }
 
-  .revolutionaCotainer {
-    .revolutionList,
-    .revolutionCardList {
-      flex-direction: column;
-      gap: 5rem;
-      align-items: center;
+  .revolutionCard {
+    padding: 1rem 2rem;
+    width: 100% !important;
+    margin: unset !important;
+  }
+
+  .revolutionList,
+  .revolutionCardList {
+    width: unset;
+    padding: 10rem 6rem !important;
+    gap: 5rem;
+    justify-content: flex-start;
+    // flex-wrap: wrap;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      width: 2px;
     }
+  }
+
+  .revolutionCardList {
+    padding: 0 !important;
+  }
+
+  .revolutionItem {
+    width: fit-content;
   }
 
   .networkingContainer {
     .networking {
       flex-direction: column;
       min-height: 100vh;
+
+      .heading2,
+      .heading3,
+      .readMore {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
 
       .readMore {
         width: unset;
@@ -498,6 +554,7 @@
     .networkingText {
       flex: 0.2;
       height: fit-content;
+      padding-bottom: 4rem;
 
       .globeBg {
         background-size: contain;
@@ -505,7 +562,7 @@
     }
     .networkingImg {
       width: unset;
-      height: 75.5rem;
+      // height: 75.5rem;
       overflow: hidden;
     }
   }
@@ -522,9 +579,9 @@
     }
 
     .protocolList {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 3rem;
+      width: 100%;
+      justify-content: space-between;
+      padding: 3rem;
       gap: 4rem;
     }
   }
@@ -547,6 +604,7 @@
     }
 
     .aditionalProtoKolloLeftImg {
+      margin: auto;
       padding-bottom: 4rem;
       order: -1;
     }
@@ -574,3 +632,27 @@
     }
   }
 }
+
+// @media screen and (max-width: 550px) {
+//   .networkingContainer {
+//     .networking {
+//       flex-direction: column;
+//       min-height: 100vh;
+
+//       .readMore {
+//         width: unset;
+//         height: unset;
+//         float: left;
+//       }
+//     }
+//     .networkingText {
+//       flex: 0.2;
+//       height: fit-content;
+
+//       .globeBg {
+//         background-size: contain;
+//       }
+//     }
+
+//   }
+// }

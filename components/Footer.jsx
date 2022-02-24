@@ -5,6 +5,7 @@ import textLogoImg from "../public/icons/smallTextLogo.svg"
 // import copyrightImg from "../public/icons/copyright.svg"
 import envelopImg from "../public/icons/envelop.svg"
 import phoneImg from "../public/icons/phone.svg"
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -14,76 +15,202 @@ const Footer = () => {
 
                     <ul>
                         <div className={styles.header}>Platform</div>
-                        <li className={styles.listItem}>Network</li>
-                        <li className={styles.listItem}>Blockchain Protocol</li>
-                        <li className={styles.listItem}>AI</li>
+                        <li className={styles.listItem}>
+                            <Link href={'/platform/network'}>
+                                <a>
+                                    Network
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={styles.listItem}>
+                            <Link href={'/platform/blockchain'}>
+                                <a>
+                                    Blockchain Protocol
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={styles.listItem}>
+                            <Link href={'/platform/ai'}>
+                                <a>
+                                    AI
+                                </a>
+                            </Link>
+                        </li>
                     </ul>
                     <div>
                         <ul>
                             <div className={styles.header}>Product</div>
-                            <li className={styles.listItem}>Hardware</li>
-                            <li className={styles.listItem}>Software</li>
+                            <li className={styles.listItem}>
+                                <Link href={'/product/chokidr-hardware'}>
+                                    <a>
+                                        Hardware
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className={styles.listItem}>
+                                <Link href={'/product/chokidr-software'}>
+                                    <a>
+                                        Software
+                                    </a>
+                                </Link>
+                            </li>
                         </ul>
                         <ul className={styles.topSpacing}>
                             <div className={styles.header}>Explore</div>
-                            <li className={styles.listItem}>Blog</li>
-                            <li className={styles.listItem}>Careers</li>
+                            <li className={styles.listItem}>
+                                <Link href={'/blog'}>
+                                    <a>
+                                        Blog
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className={styles.listItem}>
+                                <Link href={'/careers'}>
+                                    <a>
+                                        Careers
+                                    </a>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
                     <ul>
                         <div className={styles.header}>About Us</div>
-                        <li className={styles.listItem}>Investors</li>
-                        <li className={styles.listItem}>Company</li>
-                        <li className={styles.listItem}>Location</li>
-                        <li className={styles.listItem}>News</li>
-                        <li className={styles.listItem}>Announcement</li>
-                        <li className={styles.listItem}>Partners</li>
+                        <li className={styles.listItem}>
+                            {/* <Link href={'/product/chokidr-software/connecting-people-and-things'}>
+                                <a> */}
+                            Investors
+                            {/* </a>
+                            </Link> */}
+                        </li>
+                        <li className={styles.listItem}>
+                            {/* <Link href={'/product/chokidr-software/identities'}>
+                                <a> */}
+                            Company
+                            {/* </a>
+                            </Link> */}
+                        </li>
+                        <li className={styles.listItem}>
+                            {/* <Link href={'/product/chokidr-software/identities'}>
+                                <a> */}
+                            Location
+                            {/* </a>
+                            </Link> */}
+                        </li>
+                        <li className={styles.listItem}>
+                            {/* <Link href={'/product/chokidr-software/identities'}>
+                                <a> */}
+                            News
+                            {/* </a>
+                            </Link> */}
+                        </li>
+                        <li className={styles.listItem}>
+                            {/* <Link href={'/product/chokidr-software/identities'}>
+                                <a> */}
+                            Announcement
+                            {/* </a>
+                            </Link> */}
+                        </li>
+                        <li className={styles.listItem}>
+                            {/* <Link href={'/product/chokidr-software/identities'}>
+                                <a> */}
+                            Partners
+                            {/* </a>
+                            </Link> */}
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.footer}>
                     <div>
                         <ul>
                             <div className={styles.header}>Social Media</div>
-                            <li className={styles.listItem}>Linkedin</li>
-                            <li className={styles.listItem}>Discord</li>
+                            <li className={styles.listItem}>
+                                {/* <Link href={'/product/chokidr-software/identities'}>
+                                    <a> */}
+                                Linkedin
+                                {/* </a>
+                                </Link> */}
+                            </li>
+                            <li className={styles.listItem}>
+                                {/* <Link href={'/product/chokidr-software/identities'}>
+                                    <a> */}
+                                Discord
+                                {/* </a>
+                                </Link> */}
+                            </li>
                         </ul>
                         <ul className={styles.topSpacing}>
                             <div className={styles.header}>Support</div>
-                            <li className={styles.listItem}>Hardware Service</li>
-                            <li className={styles.listItem}>Software Service</li>
+                            <li className={styles.listItem}>
+                                <Link href={'/contact'}>
+                                    <a>
+                                        Hardware Service
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className={styles.listItem}>
+                                <Link href={'/contact'}>
+                                    <a>
+                                        Software Service
+                                    </a>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div>
                         <ul>
                             <div className={styles.header}>Connect</div>
-                            <li className={`${styles.listItem} ${styles.connect}`}>
-                                <span className={styles.contactIcon}>
-                                    <Image
-                                        src={envelopImg}
-                                        alt="email"
-                                    />
-                                </span>
-                                <span>
-                                    sales@happymonk.co
-                                </span>
-                            </li>
-                            <li className={`${styles.listItem} ${styles.connect}`}>
-                                <span className={styles.contactIcon}>
-                                    <Image
-                                        src={phoneImg}
-                                        alt="phone"
-                                    />
-                                </span>
-                                <span>
-                                    +91 82961 33177
-                                </span>
-                            </li>
+                            <Link href={'/product/chokidr-software/identities'}>
+                                <a>
+                                    <li className={`${styles.listItem} ${styles.connect}`}>
+
+                                        <span className={styles.contactIcon}>
+                                            <Image
+                                                src={envelopImg}
+                                                alt="email"
+                                            />
+                                        </span>
+                                        <span>
+                                            sales@happymonk.co
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+
+                            <Link href={'/product/chokidr-software/identities'}>
+                                <a>
+                                    <li className={`${styles.listItem} ${styles.connect}`}>
+                                        <span className={styles.contactIcon}>
+                                            <Image
+                                                src={phoneImg}
+                                                alt="phone"
+                                            />
+                                        </span>
+                                        <span>
+                                            +91 82961 33177
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+
+
                         </ul>
                         <ul className={styles.topSpacing}>
                             <div className={styles.header}>Legal</div>
-                            <li className={styles.listItem}>Terms</li>
-                            <li className={styles.listItem}>Policy</li>
+                            <li className={styles.listItem}>
+                                {/* <Link href={'/product/chokidr-software/identities'}>
+                                    <a> */}
+                                Terms
+                                {/* </a>
+                                </Link> */}
+                            </li>
+                            <li className={styles.listItem}>
+                                {/* <Link href={'/product/chokidr-software/identities'}>
+                                    <a> */}
+                                Policy
+                                {/* </a>
+                                </Link> */}
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -91,7 +218,7 @@ const Footer = () => {
 
 
             <div className={styles.footerBottom}>
-                <div></div>
+                <div className={styles.footerItem}></div>
                 <div className={styles.logoContainer}>
                     <div className="logoImg">
                         <Image
