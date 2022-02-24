@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   color: $white;
 
   .quotes {
@@ -18,41 +18,41 @@
       font-family: Outfit;
       font-style: normal;
       font-weight: bold;
-      font-size: 60px;
-      line-height: 60px;
+      font-size: 6rem;
+      line-height: 6rem;
     }
   }
 
   .mainText {
-    padding-left: 60px;
+    padding-left: 6rem;
     z-index: 20;
   }
 
   .para {
     font-family: Inter;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px;
-    margin-top: 30px;
-    width: 638px;
+    line-height: 3rem;
+    margin-top: 3rem;
+    width: 63.8rem;
   }
 
   .glowCircle {
     position: absolute;
     @include glowCircle;
     z-index: 5;
-    width: 700px;
-    height: 500px;
-    left: 621px;
-    top: 83px;
-    filter: blur(600px);
+    width: 70rem;
+    height: 50rem;
+    left: 62.1rem;
+    top: 8.3rem;
+    filter: blur(60rem);
   }
 
   .devicesImg {
     position: absolute;
-    width: 577px;
-    height: 280px;
+    width: 57.7rem;
+    height: 28rem;
     right: 0;
     top: 19%;
     z-index: 10;
@@ -64,9 +64,9 @@
 
   .phoneImg {
     position: absolute;
-    width: 128px;
-    height: 248px;
-    right: 540px;
+    width: 12.8rem;
+    height: 24.8rem;
+    right: 54rem;
     top: 29%;
     z-index: 10;
     background-image: url("../public/iphoneFull2.png");
@@ -79,17 +79,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 70px;
+  padding: 7rem;
   .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     .text {
       font-family: Inter;
-      font-size: 20px;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 600;
-      line-height: 50px;
+      line-height: 5rem;
       letter-spacing: 0em;
       text-align: left;
       color: $white;
@@ -97,26 +97,112 @@
   }
 }
 
+// dhar
+.heading {
+  font-family: "Outfit";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7rem;
+  letter-spacing: 0em;
+  color: $white;
+  margin-bottom: 2.2rem;
+  margin-top: 8rem;
+}
+.dhar {
+  color: $white;
+  padding-left: 6.2rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dharPoints {
+  display: flex;
+  margin-top: 2.8rem;
+}
+
+.dharItem {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 4.9rem;
+}
+
+.dharItemStyle {
+  width: 4px;
+  height: 7.7rem;
+
+  background: rgba(1, 143, 106, 0.85);
+  box-shadow: -6px 0px 30px 8px rgba(169, 255, 233, 0.15);
+  border-radius: 6px 0px 0px 6px;
+  transform: rotate(180deg);
+}
+.dharText {
+  font-family: "Inter";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 70.8rem;
+  display: flex;
+}
+
+// features
+.features {
+  .feature {
+    display: flex;
+    align-items: center;
+    color: $white;
+    padding: 6.4rem;
+
+    .text,
+    .img {
+      flex: 1;
+    }
+
+    .img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .para {
+      font-family: Inter;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 3rem;
+    }
+  }
+}
+
+.order2 {
+  order: 2;
+}
+
 // case studies
 .subHeading {
   font-family: Outfit;
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 5rem;
   letter-spacing: 0em;
   text-align: left;
 }
 .cs {
   display: flex;
   color: $white;
-  padding: 100px 60px;
+  padding: 10rem 6rem;
 
   .cards {
     flex: 0.7;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
   }
 
   .cardLeft {
@@ -126,44 +212,115 @@
   }
 
   .card {
-    padding: 36px;
+    padding: 3.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #0f0f0f;
-    border-radius: 10px;
+    border-radius: 1rem;
   }
 
   .cardSq {
-    width: 141px;
-    height: 144.38px;
+    width: 14.1rem;
+    height: 14.4rem;
 
     border: 1px solid rgba(251, 251, 251, 0.1);
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 1rem;
   }
 
   .cardHeading {
     font-family: Vollkorn;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 5rem;
     letter-spacing: 0em;
     text-align: left;
   }
   .cardSummary {
     font-family: Source Sans Pro;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 3rem;
     letter-spacing: 0em;
     text-align: justified;
-    max-width: 524px;
+    max-width: 52.4rem;
   }
 
   .subHeading {
     flex: 0.3;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .landing {
+    min-height: unset;
+
+    .para {
+      width: unset;
+    }
+    .devicesImg,
+    .phoneImg {
+      display: none;
+    }
+
+    .quotes {
+      flex-direction: column;
+    }
+  }
+  .deviceList {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .dhar {
+    flex-direction: column;
+    padding: 5.5rem;
+  }
+
+  .chokidrBackImg {
+    width: 20rem;
+    padding-bottom: 5rem;
+  }
+
+  .dharText {
+    width: fit-content;
+  }
+  // .dharPoints,
+  .features {
+    .feature {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4rem;
+    }
+    .img {
+      order: -1;
+      width: 80%;
+    }
+
+    .text {
+      text-align: left;
+    }
+  }
+  .cs {
+    flex-direction: column;
+    gap: 5rem;
+    .card {
+      gap: 0.9rem;
+    }
+    .cardLeft {
+      gap: 2rem;
+    }
+  }
+
+  .stayImg {
+    width: 60%;
+    // margin-top: 5rem;
+  }
+
+  .mainText {
+    padding: 5rem;
+    z-index: 0 !important;
   }
 }

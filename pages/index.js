@@ -21,9 +21,12 @@ import homeAnalytics from "../public/homeAnalytics.png";
 import smartAIImg from "../public/smartAI.png";
 import Card from "../components/Card";
 import iphone11Img from "../public/iphone11.png";
-import Footer from "../components/Footer";
+import CaseStudySection from "../components/CaseStudySection";
+import { Icons } from "../utils/icons";
+import { useState } from "react";
 
 const Home = () => {
+  const [carouselSwitch, setCarouselSwitch] = useState(false);
   return (
     <div className={styles.home}>
       <div className={styles.landingContainer}>
@@ -31,9 +34,7 @@ const Home = () => {
           <Header />
           <div className={styles.landingPage}>
             <div className={styles.heading1}>
-              Starting at the Edge
-              <br />
-              of the present.
+              Starting at the Edge of the present.
             </div>
             <p className={styles.landingText}>
               We innovate futuristic tech that promises a safer, better and
@@ -223,9 +224,14 @@ const Home = () => {
       {/* More on ProtoKollo section */}
       <div className={styles.aditionalProtoKollo}>
         <div className={styles.aditionalProtoKolloBgImg}>
-          <div className={styles.aditionalProtoKolloLeft}>
+          {/* {!carouselSwitch ? ( */}
+          <div
+            className={`${styles.aditionalProtoKolloLeft} ${
+              carouselSwitch ? styles.dNone : ""
+            }`}
+          >
             <div className={styles.heading2}>Sensor fusion and Analytics</div>
-            <div className="aditionalProtoKolloLeftImg">
+            <div className={styles.aditionalProtoKolloLeftImg}>
               <Image src={homeAnalytics} alt="home analytics" />
             </div>
             <p className={styles.para}>
@@ -238,10 +244,19 @@ const Home = () => {
                 <a>Read more</a>
               </Link>
             </div>
+            <div className={styles.carouselBtn}>
+              <Icons.filledDot />
+              <Icons.outlinedDot onClick={() => setCarouselSwitch(true)} />
+            </div>
           </div>
-          <div className={styles.aditionalProtoKolloRight}>
+          {/* ) : ( */}
+          <div
+            className={`${styles.aditionalProtoKolloRight} ${
+              carouselSwitch ? "" : styles.dNone
+            }`}
+          >
             <div className={styles.heading2}>Smart Artificial Intelligence</div>
-            <div className="aditionalProtoKolloLeftImg">
+            <div className={styles.aditionalProtoKolloLeftImg}>
               <Image src={smartAIImg} alt="Smart AI" />
             </div>
             <p className={styles.para}>
@@ -255,35 +270,18 @@ const Home = () => {
                 <a>Read more</a>
               </Link>
             </div>
+
+            <div className={styles.carouselBtn}>
+              <Icons.outlinedDot onClick={() => setCarouselSwitch(false)} />
+              <Icons.filledDot />
+            </div>
           </div>
+          {/* )} */}
         </div>
       </div>
 
       {/* Case Studies section */}
-
-      <div className={styles.caseStudies}>
-        <div className={styles.heading2}>Case Studies</div>
-        <ul className={styles.cardList}>
-          <li className={styles.cardItem}>
-            <Card
-              text={"Supply Chain and Transportation"}
-              customClass={`${styles.caseStudiesCard} ${styles.cardImg1}`}
-            />
-          </li>
-          <li className={styles.cardItem}>
-            <Card
-              text={"Industries and Organisation"}
-              customClass={`${styles.caseStudiesCard} ${styles.cardImg2}`}
-            />
-          </li>
-          <li className={styles.cardItem}>
-            <Card
-              text={"Defense"}
-              customClass={`${styles.caseStudiesCard} ${styles.cardImg3}`}
-            />
-          </li>
-        </ul>
-      </div>
+      <CaseStudySection />
 
       {/* Networking section */}
       <div className={styles.networkingContainer}>

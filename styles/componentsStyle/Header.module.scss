@@ -7,6 +7,7 @@
   padding: 0 3.5rem;
   height: 8rem;
   z-index: 10;
+  position: relative;
 
   .logo {
     color: #fff;
@@ -39,7 +40,7 @@
       }
 
       svg {
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: unset;
         color: rgba(251, 251, 251, 0.8);
       }
@@ -50,6 +51,59 @@
           color: $green;
         }
       }
+    }
+  }
+}
+
+.activeList {
+  display: flex;
+}
+
+.navImg {
+  display: none;
+}
+
+@media screen and (max-width: 853px) {
+  .activeList {
+    display: none !important;
+  }
+
+  .navImg {
+    display: block;
+  }
+  .header {
+    padding: 5rem 0;
+  }
+  .navList {
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    right: 2rem;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 3rem;
+    max-height: 50rem;
+    overflow-y: scroll;
+  }
+
+  .navItem {
+    align-items: center !important;
+
+    svg {
+      font-size: 14px !important;
+    }
+  }
+
+  .loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
+    width: 100%;
+
+    .logoImg {
+      width: 15rem !important;
     }
   }
 }

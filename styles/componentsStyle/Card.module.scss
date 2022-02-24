@@ -13,8 +13,12 @@
 
 .cardDarkLayer,
 .card {
-  background: rgba(15, 15, 15, 0.5);
+  background-color: rgba(15, 15, 15, 0.5);
   border-radius: 10px;
   height: 100%;
   width: 100%;
+
+  &:hover {
+    background-color: unset;
+  }
 }

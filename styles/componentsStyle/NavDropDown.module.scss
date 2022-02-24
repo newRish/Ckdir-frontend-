@@ -32,8 +32,8 @@
 .itemHeading {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
 }
 
 .itemHeading {
@@ -41,10 +41,25 @@
 }
 .itemOption {
   font-weight: normal;
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 1.4rem;
+  margin-top: 1rem;
 }
 .itemHeading,
 .itemOption {
   cursor: pointer;
+}
+
+@media screen and (max-width: 853px) {
+  .navDropDown {
+    background-color: unset;
+    box-shadow: none;
+    padding: unset;
+    padding: 2rem 0 2rem 2rem;
+    width: unset;
+    position: unset;
+  }
+
+  .ddList {
+    gap: 2rem;
+  }
 }

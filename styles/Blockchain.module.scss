@@ -19,21 +19,21 @@
 }
 
 .landingText {
-  font-size: 60px;
+  font-size: 6rem;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: $white;
-  width: 677px;
+  width: 67.7rem;
   font-family: "Outfit";
   font-style: normal;
-  line-height: 80px;
+  line-height: 8rem;
 }
 
 // blockchain section
 
 .blockchain {
-  margin-top: 85px;
+  margin-top: 8.5rem;
   .heading {
     text-align: center;
   }
@@ -41,15 +41,15 @@
 
 .heading {
   font-family: "Outfit";
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 70px;
-  letter-spacing: 0em;
+  line-height: 7rem;
+  letter-spacing: 0rem;
   color: $white;
   //   text-align: center;
-  margin-bottom: 22px;
-  margin-top: 80px;
+  margin-bottom: 2.2rem;
+  margin-top: 8rem;
 }
 
 .bList {
@@ -64,12 +64,12 @@
 
 .bText {
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 3rem;
   text-align: center;
-  width: 194px;
+  width: 19.4rem;
   margin-top: 1rem;
 }
 
@@ -77,8 +77,8 @@
   @include glassCard;
   background: #0f0f0f;
   overflow: hidden;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   position: relative;
 }
 
@@ -93,29 +93,29 @@
 
 .circle1 {
   position: absolute;
-  width: 149px;
-  height: 149px;
-  left: -76px;
-  top: 188px;
+  width: 14.9rem;
+  height: 14.9rem;
+  left: -7.6rem;
+  top: 18.8rem;
 }
 .circle2 {
-  width: 208px;
-  height: 208px;
-  left: 200px;
-  top: -154px;
+  width: 20.8rem;
+  height: 20.8rem;
+  left: 20rem;
+  top: -15.4rem;
 }
 .circle3 {
-  width: 115px;
-  height: 115px;
-  left: 662px;
-  top: 233px;
+  width: 11.5rem;
+  height: 11.5rem;
+  left: 66.2rem;
+  top: 23.3rem;
 }
 
 .circle4 {
-  width: 129px;
-  height: 129px;
-  right: 70px;
-  top: 150px;
+  width: 12.9rem;
+  height: 12.9rem;
+  right: 7rem;
+  top: 15rem;
 }
 
 // Protokollo section
@@ -136,8 +136,8 @@
   position: absolute;
   top: 20%;
   left: 35%;
-  width: 478px;
-  height: 478px;
+  width: 47.8rem;
+  height: 47.8rem;
   background: rgba(35, 156, 124, 0.6);
   border: 3px solid rgba(251, 251, 251, 0.05);
   box-sizing: border-box;
@@ -147,65 +147,65 @@
 .pCards {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  gap: 20px;
+  padding: 2rem 5rem;
+  gap: 2rem;
 }
 
 .pCard {
   z-index: 10;
   background: #0f0f0f;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
-  gap: 25px;
-  padding: 30px;
+  gap: 2.5rem;
+  padding: 3rem;
   flex: 1;
 }
 
 .pText {
   font-family: "Inter";
-  font-size: 30px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 3rem;
   color: $white;
 }
 
 .platformPic {
-  height: 665px;
-  margin: 70px 60px;
+  height: 66.5rem;
+  margin: 7rem 6rem;
 
   background: #0f0f0f;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 // 0 knowledge proof
 .kp {
   color: $white;
-  padding-left: 65px;
-  padding-right: 50px;
+  padding-left: 6.5rem;
+  padding-right: 5rem;
 }
 
 .kpImg {
-  width: 538px;
-  height: 435px;
+  width: 53.8rem;
+  height: 43.5rem;
 }
 
 .kpPoints {
   display: flex;
-  margin-top: 28px;
+  margin-top: 2.8rem;
 }
 
 .kpItem {
   display: flex;
   align-items: center;
-  gap: 25px;
-  margin-bottom: 49px;
+  gap: 2.5rem;
+  margin-bottom: 4.9rem;
 }
 
 .kpItemStyle {
-  width: 4px;
-  height: 77px;
+  width: 0.4rem;
+  height: 7.7rem;
 
   background: rgba(1, 143, 106, 0.85);
   box-shadow: -6px 0px 30px 8px rgba(169, 255, 233, 0.15);
@@ -214,53 +214,53 @@
 }
 .kpText {
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 3rem;
   letter-spacing: 0em;
   text-align: left;
-  width: 708px;
+  width: 70.8rem;
   display: flex;
 }
 
 .cards {
   display: flex;
   align-items: center;
-  gap: 21px;
+  gap: 2.1rem;
 }
 
 .card {
   flex: 1;
   // width: 426px;
-  height: 226px;
+  height: 22.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 11px;
+  gap: 1.1rem;
 
   background: #0f0f0f;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .cardHeading {
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 3rem;
   letter-spacing: 0em;
   text-align: justified;
 }
 
 .cardText {
-  width: 269px;
+  width: 26.9rem;
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 3rem;
   text-align: center;
 }
 
@@ -268,30 +268,30 @@
 .hardware {
   background-image: url("../public/global-connections-background-social-media-banner.png");
   @include bg-norepeat-cover;
-  min-height: 735px;
-  margin-top: 80px;
+  min-height: 73.5rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 0 109px;
+  padding: 0 10.9rem;
 }
 
 .hwSummary {
   font-family: "Inter";
-  font-size: 25px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 4.4rem;
 
   color: $white;
-  width: 729px;
+  width: 72.9rem;
 }
 
 // Software section
 .software {
-  height: 528px;
+  height: 52.8rem;
   background: #0f0f0f;
-  border-radius: 10px;
+  border-radius: 1rem;
 
   .heading {
     text-align: center;
@@ -300,12 +300,12 @@
 
 // case study section
 .cs {
-  padding: 100px 50px;
+  padding: 10rem 5rem;
 }
 .csItem {
   display: flex;
-  gap: 20px;
-  margin-bottom: 64px;
+  gap: 2rem;
+  margin-bottom: 6.4rem;
 }
 .csText,
 .csImg {
@@ -314,19 +314,19 @@
 
 .csHeading {
   font-family: "Outfit";
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 5rem;
   color: $white;
 }
 
 .csSummary {
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 3.5rem;
   letter-spacing: 0em;
   text-align: justified;
   color: $white;
@@ -334,4 +334,88 @@
 
 .order1 {
   order: 1;
+}
+
+@media screen and (max-width: 450px) {
+  .blockchain {
+    .bList {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .bItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .protokollo {
+    .glowCircle {
+      left: unset;
+    }
+    .pImg {
+      width: 10rem;
+    }
+
+    .pCards {
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  .kp {
+    .kpImg,
+    .kpText {
+      width: unset;
+    }
+    .kpImg {
+      order: 1;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 3rem;
+    }
+    .kpList {
+      order: 2;
+      flex-direction: column;
+    }
+
+    .kpPoints {
+      flex-direction: column;
+    }
+  }
+
+  .cards {
+    flex-direction: column;
+
+    .card {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      width: 80%;
+
+      .cardText {
+        width: 80%;
+      }
+    }
+  }
+
+  .hardware {
+    padding: 0 4rem;
+    text-align: center;
+
+    .hwSummary {
+      width: unset;
+    }
+  }
+
+  .cs {
+    .csItem {
+      flex-direction: column;
+    }
+    &:last-child {
+      .csImg {
+        order: 2;
+      }
+    }
+  }
 }

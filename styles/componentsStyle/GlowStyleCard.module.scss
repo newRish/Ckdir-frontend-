@@ -1,0 +1,37 @@
+.container {
+  background: #0f0f0f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+
+  .glow {
+    width: 50px;
+    height: 50px;
+
+    background: rgba(35, 156, 124, 0.6);
+    border: 3px solid rgba(251, 251, 251, 0.05);
+    box-sizing: border-box;
+    border-radius: 100%;
+    filter: blur(10px);
+  }
+
+  .heading {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: justified;
+  }
+
+  .text {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justified;
+  }
+}

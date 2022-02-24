@@ -1,0 +1,165 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.heading1 {
+  font-family: Outfit;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 700;
+  // line-height: 60px;
+}
+
+.landingContainer {
+  background-image: url("../public/medium-shot-man-wearing-vr-glasses.png");
+  @include bg-norepeat-cover;
+}
+
+.landingPage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  height: 53.3rem;
+  padding-top: 6rem;
+  padding-bottom: 8.8rem;
+  .heading1 {
+    width: 53.7rem;
+  }
+
+  .landingText {
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 63.6rem;
+  }
+}
+
+.blog {
+  padding: 4.2rem 5.4rem;
+
+  .para {
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 87.6rem;
+  }
+}
+
+.preview {
+  width: 74.8rem;
+  margin: auto;
+  padding-top: 7rem;
+  padding-bottom: 8rem;
+}
+
+.title {
+  font-family: Outfit;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.body {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(251, 251, 251, 0.8);
+
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
+}
+
+.img {
+  padding-top: 1.2rem;
+}
+
+.authorDetails {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #fbfbfb99;
+  padding: 1.2rem 0;
+  border-bottom: 0.1rem solid;
+}
+
+.readMore {
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.5rem;
+  text-align: center;
+}
+
+// .container {
+//   @media screen and (max-width: 1140px) {
+//     width: unset;
+
+//     .para {
+//       font-size: 24px;
+//     }
+
+//     * {
+//       width: 100%;
+//       // margin: auto;
+//     }
+
+//     .para {
+//       width: 100%;
+//     }
+
+//     .priviewContainer,
+//     .blog {
+//       padding-left: 19px;
+//       padding-right: 19px;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 450px) {
+  .landingContainer {
+    background-position: center;
+  }
+  .landingPage {
+    .heading1 {
+      width: unset;
+    }
+  }
+
+  .landingText {
+    width: unset;
+  }
+
+  .preview {
+    width: unset;
+  }
+
+  .blog {
+    .para {
+      width: unset;
+    }
+  }
+
+  .priviewContainer,
+  .blog {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}

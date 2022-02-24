@@ -1,0 +1,150 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.landing {
+  @include bg-norepeat-cover;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: $white;
+
+  .glowCircle {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    right: 12.8rem;
+    top: 12.8rem;
+
+    background: rgba(35, 156, 124, 0.9);
+    border: 3px solid rgba(251, 251, 251, 0.05);
+    box-sizing: border-box;
+    filter: blur(60rem);
+  }
+
+  .container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 5.9rem;
+    padding-right: 5.9rem;
+    z-index: 5;
+    gap: 8rem;
+  }
+
+  .img {
+    flex: 0.4;
+  }
+  .textContainer {
+    flex: 0.6;
+  }
+
+  .landingText {
+    font-family: Outfit;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .para {
+    font-family: Inter;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5.5rem;
+
+    width: 63.8rem;
+  }
+}
+
+.alterList {
+  margin-top: 13.2rem;
+  margin-bottom: 13.2rem;
+  padding-left: 5.7rem;
+  padding-right: 5.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 124px;
+
+  .list1,
+  .list2,
+  .list3 {
+    z-index: 5;
+    position: relative;
+  }
+
+  .glow {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+
+    background: rgba(35, 156, 124, 0.5);
+    border: 3px solid rgba(251, 251, 251, 0.05);
+    box-sizing: border-box;
+    filter: blur(50rem);
+    z-index: 1;
+  }
+  .list1 {
+    .glow {
+      left: 50%;
+      top: 0;
+    }
+  }
+  .list2 {
+    .glow {
+      left: 30%;
+      top: 0;
+    }
+  }
+
+  .list3 {
+    .glow {
+      left: 50%;
+      top: 0;
+    }
+  }
+
+  .label {
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0em;
+    text-align: justified;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .landing {
+    // display: none;
+    min-height: 50vh;
+  }
+
+  .list1 {
+    .glow {
+      left: -2rem !important;
+      top: 0;
+    }
+  }
+  .list2 {
+    .glow {
+      left: 30%;
+      top: 0;
+    }
+  }
+
+  .list3 {
+    .glow {
+      left: 10% !important;
+      top: 0;
+    }
+  }
+
+  .img,
+  .textContainer {
+    flex: unset !important;
+  }
+}

@@ -6,10 +6,10 @@
 @mixin readMoreText {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 2rem;
+  line-height: 3.5rem;
   color: $white;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 @mixin centralized {
@@ -19,13 +19,13 @@
 }
 
 @mixin heading2 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 @mixin glassCard {
   background: #0c0c0c;
-  box-shadow: 0 8px 32px 0 #0f0f0f;
+  box-shadow: 0 0.8rem 3.2rem 0 #0f0f0f;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -34,5 +34,5 @@
   background: rgb(35, 156, 124, 0.6);
   border: 3px solid rgba(251, 251, 251, 0.05);
   box-sizing: border-box;
-  filter: blur(70px);
+  filter: blur(7rem);
 }

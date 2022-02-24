@@ -1,0 +1,264 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.heading {
+  font-family: Inter;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  color: $white;
+}
+
+.landing {
+  @include bg-norepeat-cover;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: $white;
+
+  .glowCircle {
+    position: absolute;
+    @include glowCircle;
+    z-index: 5;
+    width: 70rem;
+    height: 50rem;
+    left: 62.1rem;
+    top: 8.3rem;
+    filter: blur(60rem);
+  }
+
+  .container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 5.9rem;
+    padding-right: 5.9rem;
+    z-index: 5;
+    gap: 8rem;
+  }
+
+  .img {
+    flex: 0.4;
+  }
+  .textContainer {
+    flex: 0.6;
+  }
+
+  .landingText {
+    font-family: Outfit;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .para {
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.5rem;
+  }
+}
+
+// device list
+.deviceList {
+  background-color: rgba(7, 7, 7, 1);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 7rem;
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      font-family: Inter;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 5rem;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $white;
+    }
+  }
+}
+
+.aditionalProtoKollo {
+  margin: 8rem 0;
+  .aditionalProtoKolloBgImg {
+    background-image: url("../public/road-with-trafic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .aditionalProtoKolloLeftImg {
+    width: 100%;
+  }
+
+  .aditionalProtoKolloLeft,
+  .aditionalProtoKolloRight {
+    flex: 0.35;
+    min-height: 100%;
+    background: rgba(7, 7, 7, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .textContainer {
+    padding-left: 6rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .heading {
+      font-family: Inter;
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 5rem;
+      color: $white;
+    }
+
+    .para {
+      font-family: Inter;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 3rem;
+      color: $white;
+    }
+    .readMoreText {
+      margin-top: 1.9rem;
+    }
+  }
+}
+
+.sf {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  padding: 10rem 0 10rem 5.9rem;
+}
+.label {
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  text-align: justified;
+  margin-bottom: 2.2rem;
+}
+.sfList {
+  margin-bottom: 1.8rem;
+}
+
+.readMoreText {
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $white;
+}
+
+.alterList {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+.dNone {
+  display: flex;
+}
+
+@media screen and (max-width: 450px) {
+  .dNone {
+    display: none !important;
+  }
+  .landing {
+    .glowCircle {
+      width: 35rem;
+      left: -20rem;
+    }
+
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      .img {
+        order: -1;
+        flex: unset;
+      }
+    }
+
+    .textContainer {
+      flex: unset;
+    }
+    .landingText {
+      line-height: unset;
+    }
+  }
+  .sf {
+    margin-bottom: 5rem;
+    padding: 4rem;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .deviceList {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .aditionalProtoKollo {
+    margin-bottom: 5rem;
+    .carouselBtn {
+      display: flex;
+      justify-content: center;
+      svg {
+        font-size: 25px;
+      }
+    }
+    .aditionalProtoKolloBgImg {
+      min-height: 70vh;
+      background-position: center;
+    }
+
+    .aditionalProtoKolloRight {
+      display: none;
+    }
+
+    .aditionalProtoKolloLeftImg {
+      padding-bottom: 4rem;
+      order: -1;
+    }
+
+    .aditionalProtoKolloLeft,
+    .aditionalProtoKolloRight {
+      width: unset;
+      justify-content: center;
+      flex: unset;
+      min-height: 100%;
+      background: unset;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.692) 0%
+      );
+      background-position: bottom;
+      padding: 3.4rem 3.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
