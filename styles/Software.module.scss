@@ -178,8 +178,14 @@
   flex-direction: column;
   gap: 12rem;
 }
+.dNone {
+  display: flex;
+}
 
 @media screen and (max-width: 450px) {
+  .dNone {
+    display: none !important;
+  }
   .landing {
     .glowCircle {
       width: 35rem;

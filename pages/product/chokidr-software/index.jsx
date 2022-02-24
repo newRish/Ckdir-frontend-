@@ -103,50 +103,56 @@ const ChokidrSoftware = () => {
             {/* big image section */}
             <div className={styles.aditionalProtoKollo}>
                 <div className={styles.aditionalProtoKolloBgImg}>
-                    {!carouselSwitch ? (
-                        <div className={styles.aditionalProtoKolloLeft}>
-                            <div className={styles.aditionalProtoKolloLeftImg}>
-                                <Image src={faceRecogImg} alt="face recog" />
+                    {/* {!carouselSwitch ? ( */}
+                    <div
+                        className={`${styles.aditionalProtoKolloLeft} ${carouselSwitch ? styles.dNone : ""
+                            }`}
+                    >
+                        <div className={styles.aditionalProtoKolloLeftImg}>
+                            <Image src={faceRecogImg} alt="face recog" />
+                        </div>
+                        <div className={styles.textContainer}>
+                            <div className={styles.heading}>Identities</div>
+                            <div className={styles.para}>
+                                Decentralized Identities for Humans, Devices and Things.
                             </div>
-                            <div className={styles.textContainer}>
-                                <div className={styles.heading}>Identities</div>
-                                <div className={styles.para}>
-                                    Decentralized Identities for Humans, Devices and Things.
-                                </div>
-                                <div className={styles.readMoreText}>
-                                    <Link href="/">
-                                        <a>Read more</a>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className={styles.carouselBtn}>
-                                <Icons.filledDot />
-                                <Icons.outlinedDot onClick={() => setCarouselSwitch(true)} />
+                            <div className={styles.readMoreText}>
+                                <Link href="/">
+                                    <a>Read more</a>
+                                </Link>
                             </div>
                         </div>
-                    ) : (
-                        <div className={styles.aditionalProtoKolloRight}>
-                            <div className={styles.aditionalProtoKolloLeftImg}>
+                        <div className={styles.carouselBtn}>
+                            <Icons.filledDot />
+                            <Icons.outlinedDot onClick={() => setCarouselSwitch(true)} />
+                        </div>
+                    </div>
+                    {/* ) : ( */}
+                    <div
+                        className={`${styles.aditionalProtoKolloRight} ${carouselSwitch ? "" : styles.dNone
+                            }`}
+                    >
+                        <div className={styles.aditionalProtoKolloLeftImg}>
 
-                                <Image src={firefiterImg} alt="fire fighters" />
+                            <Image src={firefiterImg} alt="fire fighters" />
+                        </div>
+                        <div className={styles.textContainer}>
+                            <div className={styles.heading}>Autonomous Identities</div>
+                            <div className={styles.para}>
+                                Decentralized Identities for Humans, Devices and Things.
                             </div>
-                            <div className={styles.textContainer}>
-                                <div className={styles.heading}>Autonomous Identities</div>
-                                <div className={styles.para}>
-                                    Decentralized Identities for Humans, Devices and Things.
-                                </div>
-                                <div className={styles.readMoreText}>
-                                    <Link href="/">
-                                        <a>Read more</a>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className={styles.carouselBtn}>
-                                <Icons.outlinedDot onClick={() => setCarouselSwitch(false)} />
-                                <Icons.filledDot />
+                            <div className={styles.readMoreText}>
+                                <Link href="/">
+                                    <a>Read more</a>
+                                </Link>
                             </div>
                         </div>
-                    )}
+                        <div className={styles.carouselBtn}>
+                            <Icons.outlinedDot onClick={() => setCarouselSwitch(false)} />
+                            <Icons.filledDot />
+                        </div>
+                    </div>
+                    {/* )} */}
                 </div>
             </div>
 

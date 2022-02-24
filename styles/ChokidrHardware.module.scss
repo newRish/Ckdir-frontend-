@@ -276,6 +276,7 @@
   }
   .dhar {
     flex-direction: column;
+    padding: 5.5rem;
   }
 
   .chokidrBackImg {
@@ -284,7 +285,7 @@
   }
 
   .dharText {
-    width: unset;
+    width: fit-content;
   }
   // .dharPoints,
   .features {
@@ -318,8 +319,8 @@
     // margin-top: 5rem;
   }
 
-  .mainText,
-  .para {
+  .mainText {
     padding: 5rem;
+    z-index: 0 !important;
   }
 }
