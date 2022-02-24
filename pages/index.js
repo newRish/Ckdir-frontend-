@@ -3,27 +3,43 @@ import Header from "../components/Header";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import autonomousImg from "../public/icons/decentralized-network.svg";
-import decentralisedImg from "../public/icons/blockchain.svg";
-import edgeComputed from "../public/icons/business-network.svg";
+// import autonomousImg from "../public/icons/decentralized-network.svg";
+// import decentralisedImg from "../public/icons/blockchain.svg";
+// import edgeComputed from "../public/icons/business-network.svg";
 import chokidarDeviceImg from "../public/chokidar-device.png";
 import revolutionAtomImg from "../public/revolution-atom.png";
-import connectingPeopleImg from "../public/connectingPeople.png";
+// import connectingPeopleImg from "../public/connectingPeople.png";
 import securityAuditImg from "../public/securityAudit.png";
-import socialFootprintImg from "../public/socialFootprint.png";
-import complianceImg from "../public/icons/compliance.png";
-import controlledEnvImg from "../public/icons/controlledEnv.png";
-import reliableDataImg from "../public/icons/reliableData.svg";
+// import socialFootprintImg from "../public/socialFootprint.png";
+// import complianceImg from "../public/icons/compliance.png";
+// import controlledEnvImg from "../public/icons/controlledEnv.png";
+// import reliableDataImg from "../public/icons/reliableData.svg";
 import locationImg from "../public/icons/location.svg";
-import proofDocImg from "../public/icons/proofDoc.svg";
-import authorityProofImg from "../public/icons/authorityProof.svg";
-import homeAnalytics from "../public/homeAnalytics.png";
-import smartAIImg from "../public/smartAI.png";
+// import proofDocImg from "../public/icons/proofDoc.svg";
+// import authorityProofImg from "../public/icons/authorityProof.svg";
+// import homeAnalytics from "../public/homeAnalytics.png";
+// import smartAIImg from "../public/smartAI.png";
 import Card from "../components/Card";
-import iphone11Img from "../public/iphone11.png";
+// import iphone11Img from "../public/iphone11.png";
 import CaseStudySection from "../components/CaseStudySection";
 import { Icons } from "../utils/icons";
 import { useState } from "react";
+
+// compressed images
+import autonomusI from "../public/compressed/decentralized.svg";
+import decentI from "../public/compressed/autonomous.svg";
+import edgecI from "../public/compressed/decentralized.svg";
+import socialFootprintImg from "../public/compressed/social-footprint.svg";
+import connectingPeopleImg from "../public/compressed/connecting-people.svg";
+import complianceImg from "../public/compressed/Compliance.svg";
+import controlledEnvImg from "../public/compressed/controll-environment.svg";
+import reliableDataImg from "../public/compressed/tamperproof-data.svg";
+// import locationImg from "../public/compressed/tamperproof-data.svg";
+import proofDocImg from "../public/compressed/proof-of-activity.svg";
+import authorityProofImg from "../public/compressed/proof-of-authority.svg";
+import homeAnalytics from "../public/compressed/sensor-fusion-min.png";
+import smartAIImg from "../public/compressed/smart-artificail-intelligence-min.png";
+import iphone11Img from "../public/compressed/register-now-banner-min.png";
 
 const Home = () => {
   const [carouselSwitch, setCarouselSwitch] = useState(false);
@@ -33,14 +49,16 @@ const Home = () => {
         <div className={styles.darkLayer}>
           <Header />
           <div className={styles.landingPage}>
-            <div className={styles.heading1}>
-              Starting at the Edge of the present.
+            <div className={styles.mainText}>
+              <div className={styles.heading1}>
+                Starting at the Edge of the present.
+              </div>
+              <p className={styles.landingText}>
+                We innovate futuristic tech that promises a safer, better and
+                beautiful future. One that lets you unlock a World from more
+                possibilities.
+              </p>
             </div>
-            <p className={styles.landingText}>
-              We innovate futuristic tech that promises a safer, better and
-              beautiful future. One that lets you unlock a World from more
-              possibilities.
-            </p>
             <div className={styles.readMore}>
               <Button
                 title={"Read More"}
@@ -64,19 +82,19 @@ const Home = () => {
         <ul className={styles.balckBoxIconList}>
           <li className={styles.blackBoxIcon}>
             <div className={styles.balckBoxIconImg}>
-              <Image src={autonomousImg} alt="autonomous" />
+              <Image src={autonomusI} alt="autonomous" />
             </div>
             <div className={styles.backBoxListText}>Autonomous</div>
           </li>
           <li className={styles.blackBoxIcon}>
             <div className={styles.balckBoxIconImg}>
-              <Image src={decentralisedImg} alt="Decentralised" />
+              <Image src={decentI} alt="Decentralised" />
             </div>
             <div className={styles.backBoxListText}>Decentralised</div>
           </li>
           <li className={styles.blackBoxIcon}>
             <div className={styles.balckBoxIconImg}>
-              <Image src={edgeComputed} alt="edge computed" />
+              <Image src={edgecI} alt="edge computed" />
             </div>
             <div className={styles.backBoxListText}>Edge Computed</div>
           </li>
@@ -93,7 +111,7 @@ const Home = () => {
         <ul className={styles.revolutionList}>
           <li className={styles.revolutionItem}>
             <div className={""}>
-              <Image src={decentralisedImg} alt="autonomous Industries" />
+              <Image src={decentI} alt="autonomous Industries" />
             </div>
             <div className={styles.revolutionItemText}>
               Autonomous Indrustires
@@ -287,6 +305,9 @@ const Home = () => {
       <div className={styles.networkingContainer}>
         <div className={styles.networking}>
           <div className={styles.colorFade}></div>
+          <div className={styles.networkingImg}>
+            <Image src={iphone11Img} alt="phone" />
+          </div>
           <div className={styles.networkingText}>
             <div className={styles.globeBg}></div>
             <div className={styles.heading2}>
@@ -308,9 +329,6 @@ const Home = () => {
                 url={"/register"} // need to update register route
               />
             </div>
-          </div>
-          <div className={styles.networkingImg}>
-            <Image src={iphone11Img} alt="phone" />
           </div>
         </div>
       </div>

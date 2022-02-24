@@ -54,6 +54,13 @@
   display: flex;
   align-items: center;
   user-select: none;
+  justify-content: center;
+}
+
+.tradeMark,
+.logoContainer,
+.footerItem {
+  flex: 1;
 }
 
 .tradeMarkText {
@@ -63,9 +70,11 @@
   font-weight: 400;
   line-height: 7rem;
   color: $white;
+  display: flex;
+  justify-content: flex-end;
 }
 
-@media screen and (max-width: 853px) {
+@media screen and (max-width: 1161px) {
   .container {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -90,6 +99,17 @@
 
     span {
       word-break: break-all;
+    }
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+    gap: 1rem;
+
+    .tradeMarkText {
+      line-height: 1rem;
     }
   }
 }
