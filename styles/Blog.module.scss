@@ -134,6 +134,9 @@
 // }
 
 @media screen and (max-width: 450px) {
+  .landingContainer {
+    background-position: center;
+  }
   .landingPage {
     .heading1 {
       width: unset;
@@ -146,5 +149,17 @@
 
   .preview {
     width: unset;
+  }
+
+  .blog {
+    .para {
+      width: unset;
+    }
+  }
+
+  .priviewContainer,
+  .blog {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }

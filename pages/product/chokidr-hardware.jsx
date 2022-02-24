@@ -55,7 +55,7 @@ const ChokidrHardware = ({ dharList }) => {
 
                 <div className={styles.mainText}>
                     <div className={styles.quotes}>
-                        <div>
+                        <div className={styles.stayImg}>
                             <Image
                                 src={stayImg}
                                 alt={"stay"}

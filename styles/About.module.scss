@@ -5,35 +5,35 @@
   font-family: Outfit;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 6rem;
+  line-height: 8rem;
   text-align: center;
 }
 
 .heading2 {
   font-family: Gelasio;
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 5rem;
   letter-spacing: 0em;
   text-align: left;
 }
 
 .boldText {
   font-family: Inter;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 5rem;
 }
 
 .grayText {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 3rem;
   color: rgba(228, 228, 231, 0.6);
 }
 
@@ -47,43 +47,43 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 4rem;
   padding-top: 6rem;
   padding-bottom: 8.8rem;
   .heading1 {
-    width: 1136px;
+    width: 113.6rem;
   }
   .landingText {
     font-family: Inter;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 3rem;
     letter-spacing: 0em;
     text-align: center;
-    width: 636px;
+    width: 63.6rem;
   }
 }
 
 .mission {
-  padding: 69px 20px 69px 60px;
+  padding: 6.9rem 2rem 6.9rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 5rem;
 
   .heading2 {
-    margin-bottom: 58px;
+    margin-bottom: 5.8rem;
   }
 
   .text {
     flex: 0.4;
-    width: 461px;
+    width: 46.1rem;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 3rem;
   }
   .img {
     flex: 0.6;
@@ -92,50 +92,50 @@
 
 .values,
 .founders {
-  margin: 100px 60px 60px 60px;
+  margin: 10rem 6rem 6rem 6rem;
   .heading2 {
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
     text-align: center;
   }
   .valueList {
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 2rem;
   }
   .cards {
     text-align: center;
-    padding: 18px;
+    padding: 1.8rem;
     flex: 1;
-    height: 354px;
+    height: 35.4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     background: #0f0f0f;
-    border-radius: 10px;
+    border-radius: 1rem;
 
     .subHeading {
       font-family: Inter;
-      font-size: 30px;
+      font-size: 3rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 50px;
+      line-height: 5rem;
     }
     .summary {
       font-family: Inter;
-      font-size: 20px;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 30px;
+      line-height: 3rem;
     }
   }
 }
 
 .founders {
   .cards {
-    height: 674px;
-    padding-bottom: 64px;
+    height: 67.4rem;
+    padding-bottom: 6.4rem;
 
     .summary {
       &:last-child {
@@ -146,24 +146,24 @@
 }
 
 .misc {
-  margin: 120px 60px;
+  margin: 12rem 6rem;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 4rem;
 
   .container {
     display: flex;
     flex-direction: column;
-    gap: 58px;
-    margin-top: 20px;
+    gap: 5.8rem;
+    margin-top: 2rem;
   }
   .para {
-    width: 461px;
+    width: 46.1rem;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 3rem;
   }
 }
 
@@ -172,5 +172,38 @@
   text-align: center;
   .heading2 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .landingPage {
+    .heading1 {
+      width: unset;
+      font-size: 4.5rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  .mission {
+    flex-direction: column;
+    padding: 5rem;
+    .text {
+      width: unset;
+    }
+  }
+
+  .valueList {
+    flex-direction: column;
+  }
+
+  .misc {
+    .heading2 {
+      text-align: center;
+    }
+    text-align: center;
+    .para {
+      width: unset;
+    }
   }
 }

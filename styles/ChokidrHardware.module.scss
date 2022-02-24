@@ -256,6 +256,11 @@
 
 @media screen and (max-width: 450px) {
   .landing {
+    min-height: unset;
+
+    .para {
+      width: unset;
+    }
     .devicesImg,
     .phoneImg {
       display: none;
@@ -306,5 +311,15 @@
     .cardLeft {
       gap: 2rem;
     }
+  }
+
+  .stayImg {
+    width: 60%;
+    // margin-top: 5rem;
+  }
+
+  .mainText,
+  .para {
+    padding: 5rem;
   }
 }

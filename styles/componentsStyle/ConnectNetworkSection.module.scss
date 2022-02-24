@@ -32,10 +32,12 @@
 
   color: $white;
   max-width: 78rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .contactBtn {
-  width: 17.5rem;
+  width: fit-content;
   height: 6rem;
   z-index: 10;
 
