@@ -1,7 +1,7 @@
 
 import Header from "../../../components/Header";
 import styles from "../../../styles/AutonomousIdentities.module.scss";
-import landingImg from "../../../public/vichels-on-path.png";
+import landingImg from "../../../public/social-footprint-main-banner-min.png";
 import Image from "next/image";
 import CaseStudySection from "../../../components/CaseStudySection";
 import ConnectNetworkSection from "../../../components/ConnectNetowrkSection";

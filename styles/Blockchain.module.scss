@@ -2,7 +2,7 @@
 @import "./colors";
 
 .landing {
-  background-image: url("../public/cryptocurrency-concept-with-bitcoin.svg");
+  background-image: url("../public/cryptocurrency-concept-with-bitcoin.png");
   @include bg-norepeat-cover;
   min-height: 95vh;
   display: flex;
@@ -222,6 +222,7 @@
   text-align: left;
   width: 70.8rem;
   display: flex;
+  flex: 1;
 }
 
 .cards {
@@ -336,7 +337,7 @@
   order: 1;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
   .blockchain {
     .bList {
       flex-direction: column;
@@ -354,7 +355,7 @@
       left: unset;
     }
     .pImg {
-      width: 10rem;
+      width: 60%;
     }
 
     .pCards {

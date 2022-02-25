@@ -34,7 +34,7 @@ const AI = () => {
         <div>
             {/* landing section */}
             <div className={`${styles.landing} ${styles.blur}`}>
-                <div className={styles.darkLayer}></div>
+                {/* <div className={styles.darkLayer}></div> */}
                 <Header />
                 <div className={styles.textContainer}>
                     <span className={styles.landingText}>
