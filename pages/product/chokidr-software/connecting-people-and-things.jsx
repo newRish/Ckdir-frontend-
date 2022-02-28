@@ -1,6 +1,6 @@
 import Header from "../../../components/Header";
 import styles from "../../../styles/AutonomousIdentities.module.scss";
-import landingImg from "../../../public/vichels-on-path.png";
+import landingImg from "../../../public/connect-peopl _ things-main-banner-min.png";
 import Image from "next/image";
 import CaseStudySection from "../../../components/CaseStudySection";
 import ConnectNetworkSection from "../../../components/ConnectNetowrkSection";
@@ -8,6 +8,9 @@ import complianceImg from "../../../public/factory-with-smoke-stack-against-sky-
 import AlternateSection from "../../../components/AlternateSection";
 import envImg from "../../../public/morning-road-people.png";
 import reliableDataImg from "../../../public/night-street-trafic.png";
+import realTimeTrackingImg from "../../../public/real-time-tracking-min.png";
+import transparencyImg from "../../../public/transparency-of-operations-min.png";
+import connectLegecyImg from "../../../public/connect-to-legacy-system-min.png";
 
 const ConnectingPeopleAndThings = () => {
     return (
@@ -54,7 +57,7 @@ const ConnectingPeopleAndThings = () => {
                         }
                         image={
                             <Image
-                                src={complianceImg}
+                                src={realTimeTrackingImg}
                                 alt={'image'}
                             />
                         }
@@ -78,7 +81,7 @@ const ConnectingPeopleAndThings = () => {
                         }
                         image={
                             <Image
-                                src={envImg}
+                                src={connectLegecyImg}
                                 alt={'image'}
                             />
                         }
@@ -102,7 +105,7 @@ const ConnectingPeopleAndThings = () => {
                         }
                         image={
                             <Image
-                                src={reliableDataImg}
+                                src={transparencyImg}
                                 alt={'image'}
                             />
                         }

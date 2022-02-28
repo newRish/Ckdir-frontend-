@@ -6,6 +6,10 @@ import CaseStudySection from "../../../components/CaseStudySection";
 import ConnectNetworkSection from "../../../components/ConnectNetowrkSection";
 import complianceImg from "../../../public/factory-with-smoke-stack-against-sky-night.png";
 import AlternateSection from "../../../components/AlternateSection";
+import compliantIdImg from "../../../public/complient-identities-min.png";
+import verifyableIdImg from "../../../public/verifiable-identities-min.png";
+import confidentialIdImg from "../../../public/confidential-identities-min.png";
+import facialIdImg from "../../../public/faical-identities-min.png";
 
 const Identities = () => {
     return (
@@ -52,7 +56,7 @@ const Identities = () => {
                         }
                         image={
                             <Image
-                                src={complianceImg}
+                                src={confidentialIdImg}
                                 alt={'image'}
                             />
                         }
@@ -76,7 +80,7 @@ const Identities = () => {
                         }
                         image={
                             <Image
-                                src={complianceImg}
+                                src={verifyableIdImg}
                                 alt={'image'}
                             />
                         }
@@ -100,7 +104,7 @@ const Identities = () => {
                         }
                         image={
                             <Image
-                                src={complianceImg}
+                                src={facialIdImg}
                                 alt={'image'}
                             />
                         }

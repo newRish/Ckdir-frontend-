@@ -8,9 +8,9 @@ import hwImg from "../public/icons/hw.svg"
 import demoImg from "../public/women-with-canvas.png";
 import partnerImg from "../public/business-partners-handshake-global-corporate-with-technology-concept.png";
 import ellipseImg from "../public/icons/ellipse-placeholder.png"
-import phoneImg from "../public/Call.png"
-import locationImg from "../public/locationIcon.png";
-import envelopImg from "../public/outline-envelop.png";
+import phoneImg from "../public/Call.svg"
+import locationImg from "../public/locationIcon.svg";
+import envelopImg from "../public/outline-envelop.svg";
 import Link from "next/link";
 
 const contact = () => {

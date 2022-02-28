@@ -91,6 +91,9 @@
 
 .aditionalProtoKollo {
   margin: 8rem 0;
+  .carouselBtn {
+    display: none;
+  }
   .aditionalProtoKolloBgImg {
     background-image: url("../public/road-with-trafic.png");
     background-repeat: no-repeat;
@@ -182,7 +185,7 @@
   display: flex;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .dNone {
     display: none !important;
   }

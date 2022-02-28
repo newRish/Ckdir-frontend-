@@ -3,18 +3,17 @@ import Header from "../../components/Header"
 import Image from "next/image";
 import styles from "../../styles/ChokidrHardware.module.scss";
 import arrowFowwardImg from "../../public/icons/Arrow_Forward.svg";
-import stayImg from "../../public/icons/stay.svg"
 import cloudServer from "../../public/icons/cloud-server.svg";
 import ggComImg from "../../public/icons/gg-comunication.svg"
 import iotImg from "../../public/icons/iot.svg";
 import horioztalScaleImg from "../../public/icons/horizontally-scrollable.svg"
 import sensorFusionImg from "../../public/icons/sensor-fusion.svg";
 import chokidrBackImg from "../../public/chokidr-back.png";
-import scaleImg from "../../public/undraw_setup.png";
-import offlineImg from "../../public/man-with-network-b.png";
-import connectedWorldImg from "../../public/undraw_connected_world_wuay.png";
-import iotManImg from "../../public/undraw_circuit_board.png";
-import undrawValut from "../../public/undraw_vault.png";
+import scaleImg from "../../public/undraw_setup.svg";
+import offlineImg from "../../public/man-with-network-b.svg";
+import connectedWorldImg from "../../public/undraw_connected_world_wuay.svg";
+import iotManImg from "../../public/undraw_circuit_board.svg";
+import undrawValut from "../../public/undraw_vault.svg";
 
 
 const ChokidrHardware = ({ dharList }) => {
@@ -51,15 +50,11 @@ const ChokidrHardware = ({ dharList }) => {
                 <Header />
                 <div className={styles.glowCircle}></div>
                 <div className={styles.devicesImg}></div>
-                <div className={styles.phoneImg}></div>
 
                 <div className={styles.mainText}>
                     <div className={styles.quotes}>
                         <div className={styles.stayImg}>
-                            <Image
-                                src={stayImg}
-                                alt={"stay"}
-                            />
+                            STAY
                         </div>
                         <div>
                             <div className={styles.quoteText}>Connected.</div>

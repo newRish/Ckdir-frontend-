@@ -66,7 +66,7 @@ const career = ({ openRoles }) => {
 
             {/* founders */}
             <div className={styles.founders}>
-                <div className={styles.heading2}>Our Values</div>
+                <div className={styles.heading2}>Founders</div>
                 <ul className={styles.valueList}>
                     {
                         [1, 2].map((e, i) => (
