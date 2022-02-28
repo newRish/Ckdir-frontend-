@@ -54,9 +54,9 @@ const Home = () => {
                 Starting at the Edge of the present.
               </div>
               <p className={styles.landingText}>
-                We innovate futuristic tech that promises a safer, better and
-                beautiful future. One that lets you unlock a World from more
-                possibilities.
+                Unlock a World with more possibilities. Disrupting emerging
+                techologies that promises a safer, better, and inclusive future
+                for human beings.
               </p>
             </div>
             <div className={styles.readMore}>
@@ -201,7 +201,7 @@ const Home = () => {
       <div className={styles.protokolloContiner}>
         <div className={styles.protokolloBg1}></div>
         <div className={styles.protokolloBg2}></div>
-        <div className={styles.heading2}>ProtoKollo</div>
+        <div className={styles.heading2}>Protokollo</div>
         <p className={styles.protokolloSummary}>
           Imagine a world where you could provide your location proof, without
           giving away the actual location of the person/object/entity. Imagine a

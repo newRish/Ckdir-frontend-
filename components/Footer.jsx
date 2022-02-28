@@ -65,7 +65,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className={styles.listItem}>
-                                <Link href={'/careers'}>
+                                <Link href={'/career'}>
                                     <a>
                                         Careers
                                     </a>
@@ -77,46 +77,46 @@ const Footer = () => {
                     <ul>
                         <div className={styles.header}>About Us</div>
                         <li className={styles.listItem}>
-                            {/* <Link href={'/product/chokidr-software/connecting-people-and-things'}>
-                                <a> */}
-                            Investors
-                            {/* </a>
-                            </Link> */}
+                            <Link href={'/about'}>
+                                <a>
+                                    Investors
+                                </a>
+                            </Link>
                         </li>
                         <li className={styles.listItem}>
-                            {/* <Link href={'/product/chokidr-software/identities'}>
-                                <a> */}
-                            Company
-                            {/* </a>
-                            </Link> */}
+                            <Link href={'/about'}>
+                                <a>
+                                    Company
+                                </a>
+                            </Link>
                         </li>
                         <li className={styles.listItem}>
-                            {/* <Link href={'/product/chokidr-software/identities'}>
-                                <a> */}
-                            Location
-                            {/* </a>
-                            </Link> */}
+                            <Link href={'/about'}>
+                                <a>
+                                    Location
+                                </a>
+                            </Link>
                         </li>
                         <li className={styles.listItem}>
-                            {/* <Link href={'/product/chokidr-software/identities'}>
-                                <a> */}
-                            News
-                            {/* </a>
-                            </Link> */}
+                            <Link href={'/about'}>
+                                <a>
+                                    News
+                                </a>
+                            </Link>
                         </li>
                         <li className={styles.listItem}>
-                            {/* <Link href={'/product/chokidr-software/identities'}>
-                                <a> */}
-                            Announcement
-                            {/* </a>
-                            </Link> */}
+                            <Link href={'/about'}>
+                                <a>
+                                    Announcement
+                                </a>
+                            </Link>
                         </li>
                         <li className={styles.listItem}>
-                            {/* <Link href={'/product/chokidr-software/identities'}>
-                                <a> */}
-                            Partners
-                            {/* </a>
-                            </Link> */}
+                            <Link href={'/about'}>
+                                <a>
+                                    Partners
+                                </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
