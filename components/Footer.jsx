@@ -125,11 +125,11 @@ const Footer = () => {
                         <ul>
                             <div className={styles.header}>Social Media</div>
                             <li className={styles.listItem}>
-                                {/* <Link href={'/product/chokidr-software/identities'}>
-                                    <a> */}
-                                Linkedin
-                                {/* </a>
-                                </Link> */}
+                                <Link href={'https://www.linkedin.com/company/10816363/'}>
+                                    <a>
+                                        Linkedin
+                                    </a>
+                                </Link>
                             </li>
                             <li className={styles.listItem}>
                                 {/* <Link href={'/product/chokidr-software/identities'}>
