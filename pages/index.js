@@ -51,7 +51,11 @@ const Home = () => {
           <div className={styles.landingPage}>
             <div className={styles.mainText}>
               <div className={styles.heading1}>
-                Starting at the Edge of the present.
+                Starting
+                <br className={styles.landingBreak} />
+                at the Edge
+                <br className={styles.landingBreak} />
+                of the present.
               </div>
               <p className={styles.landingText}>
                 Unlock a World with more possibilities. Disrupting emerging
@@ -153,7 +157,7 @@ const Home = () => {
               <div className={styles.revolutionCardSubHeading}>Compliance</div>
               <p className={styles.revolutionCardText}>
                 Compliant with regulatory
-                <br />
+                <br className={styles.dNone} />
                 standards like GDPR.
               </p>
             </li>
@@ -167,7 +171,7 @@ const Home = () => {
               </div>
               <p className={styles.revolutionCardText}>
                 Smart real time monitoring
-                <br />
+                <br className={styles.dNone} />
                 within the network of your IoT.
               </p>
             </li>
@@ -181,7 +185,7 @@ const Home = () => {
               </div>
               <p className={styles.revolutionCardText}>
                 Of all incidents/activities being
-                <br />
+                <br className={styles.dNone} />
                 monitored on the network.
               </p>
             </li>

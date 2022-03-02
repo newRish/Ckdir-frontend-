@@ -194,8 +194,8 @@
   }
 
   .revolutionCard {
-    width: 70%;
-    margin: auto;
+    // width: 70%;
+    margin: 3rem;
     position: relative;
     overflow: hidden;
 
@@ -327,6 +327,7 @@
     text-align: justified;
     color: $white;
     margin-top: 2rem;
+    opacity: 0.5;
   }
 }
 
@@ -414,8 +415,6 @@
 }
 
 .networkingContainer {
-  padding-bottom: 10rem;
-
   .networking {
     position: relative;
     // background-color: $black;
@@ -459,7 +458,14 @@
   display: flex;
 }
 
+.landingBreak {
+  display: none;
+}
+
 @media screen and (max-width: 1032px) {
+  .landingBreak {
+    display: block;
+  }
   .dNone {
     display: none !important;
   }
@@ -476,6 +482,8 @@
       max-width: unset;
       padding-left: 4rem;
       padding-right: 4rem;
+      font-size: 4rem;
+      line-height: unset;
     }
 
     .landingPage {
@@ -486,6 +494,7 @@
   }
 
   .balckBoxContainer {
+    background-position: center;
     background-repeat: no-repeat;
     justify-content: space-around;
     min-height: 80vh;
@@ -507,9 +516,16 @@
   }
 
   .revolutionCard {
-    padding: 1rem 2rem;
-    width: 100% !important;
-    margin: unset !important;
+    padding: 1rem 1rem;
+    // width: 100% !important;
+    // margin: unset !important;
+    margin: 0 1rem;
+
+    .readMoreText {
+      span {
+        font-size: 3rem !important;
+      }
+    }
   }
 
   .revolutionList,
@@ -525,8 +541,17 @@
     }
   }
 
+  .revolutionCardText {
+    font-size: 2.5rem !important;
+  }
+  .revolutionCardSubHeading {
+    font-size: 3rem !important;
+  }
+
   .revolutionCardList {
-    padding: 0 !important;
+    padding: 0 3rem !important;
+    flex-direction: column;
+    margin-bottom: 8rem;
   }
 
   .revolutionItem {
@@ -536,19 +561,25 @@
   .networkingContainer {
     .networking {
       flex-direction: column;
-      min-height: 100vh;
+      min-height: unset;
 
       .heading2,
       .heading3,
       .readMore {
         padding-left: 2rem;
         padding-right: 2rem;
+        text-align: center;
+      }
+
+      .heading3 {
+        opacity: 0.8;
       }
 
       .readMore {
         width: unset;
         height: unset;
-        float: left;
+        font-weight: 500;
+        // float: left;
       }
     }
     .networkingText {
@@ -558,10 +589,11 @@
 
       .globeBg {
         background-size: contain;
+        background-position: center;
       }
     }
     .networkingImg {
-      width: unset;
+      width: 25rem;
       // height: 75.5rem;
       overflow: hidden;
     }
@@ -571,6 +603,10 @@
     .protokolloBg1 {
       left: unset;
       right: 0;
+    }
+    .protokolloBg1,
+    .protokolloBg2 {
+      opacity: 0.5;
     }
     .protokolloSummary {
       width: unset;
@@ -629,6 +665,26 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      .heading2,
+      .para.readMore {
+        text-align: center;
+      }
+
+      .para {
+        font-size: 3rem;
+        text-align: center;
+        color: #f3f3f3;
+        line-height: unset;
+        margin: 3rem 0;
+      }
+
+      .readMoreText {
+        text-align: center;
+        font-size: 3.5rem;
+        font-family: Inter;
+        font-weight: bold;
+      }
     }
   }
 }

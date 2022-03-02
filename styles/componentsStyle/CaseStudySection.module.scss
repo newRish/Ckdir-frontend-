@@ -11,7 +11,7 @@
 }
 
 .caseStudies {
-  min-height: 100vh;
+  // min-height: 100vh;
 
   text-align: center;
   padding-top: 100px;
@@ -24,6 +24,12 @@
     justify-content: space-between;
     gap: 5rem;
     padding: 3.9rem 5.4rem;
+
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
 
     .cardItem {
       width: 42.7rem;
@@ -69,38 +75,25 @@
   }
 }
 
-@media screen and (max-width: 1153px) {
+@media screen and (max-width: 552px) {
+  .caseStudiesCard {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1153px) {
   .caseStudies {
-    padding-top: unset;
+    padding-top: unset !important;
   }
-  .protokolloBg1 {
-    display: none;
-  }
-
   .cardList {
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-    width: 100%;
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 1153px) and (min-width: 654px) {
-  .cardItem {
-    height: 60rem !important;
-    width: 60rem !important;
-  }
-}
-
-@media screen and (max-width: 654px) {
-  .cardList {
-    padding: 5rem;
+    gap: 1rem !important;
+    height: fit-content;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
   .cardItem {
-    // display: none;
-    // height: 90% !important;
-    width: 90% !important;
-    // margin: 5rem;
+    width: 250px !important;
+    height: 250px !important;
   }
 }
