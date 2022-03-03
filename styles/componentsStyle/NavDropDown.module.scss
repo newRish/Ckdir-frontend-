@@ -60,6 +60,19 @@
     position: unset;
   }
 
+  .itemOption {
+    // font-size: 10px;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  .itemHeading {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
   .ddList {
     gap: 2rem;
   }

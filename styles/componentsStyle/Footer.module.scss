@@ -85,8 +85,14 @@
       gap: unset;
     }
   }
+
+  .header {
+    font-size: 16px !important;
+  }
   .listItem {
     line-height: 0;
+    font-size: 14px !important;
+    line-height: 25px !important;
   }
   .connect {
     .contactIcon {
@@ -110,7 +116,8 @@
     gap: 1rem;
 
     .tradeMarkText {
-      line-height: 1rem;
+      line-height: 1.5rem;
+      font-size: 14px;
     }
   }
 }

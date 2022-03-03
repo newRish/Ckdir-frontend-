@@ -16,6 +16,7 @@ import specialArms from "../../../public/specna-arms.png";
 import iot5gImg from "../../../public/5g-iot.png";
 import { Icons } from "../../../utils/icons";
 import { useState } from "react";
+import Button from "../../../components/Button";
 
 const ChokidrSoftware = () => {
     const [carouselSwitch, setCarouselSwitch] = useState(false);
@@ -251,7 +252,12 @@ const ChokidrSoftware = () => {
                             <GlowStyleCard />
                         </div>
                     ))}
-                    <div className={styles.readMoreText}>Read more</div>
+                    <div className={styles.readMoreText}>
+                        <Button
+                            title="Read more"
+                            url=""
+                        />
+                    </div>
                 </div>
                 <div className={styles.img}>
                     <Image

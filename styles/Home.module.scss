@@ -102,7 +102,7 @@
     color: #fff;
   }
   .readMore {
-    width: 15.9rem;
+    width: fit-content;
     height: 4.7rem;
     // margin: auto;
   }
@@ -186,6 +186,19 @@
     line-height: 5rem;
     text-align: center;
   }
+  .revolutionItemImg {
+    position: relative;
+
+    .imgGlow {
+      position: absolute;
+      left: 30%;
+      width: 110px;
+      height: 110px;
+      background-color: rgba(35, 156, 124, 0.6);
+      border: 3px solid rgba(251, 251, 251, 0.05);
+      filter: blur(60px);
+    }
+  }
 
   .revolutionCardSubHeading {
     font-size: 2rem;
@@ -194,8 +207,8 @@
   }
 
   .revolutionCard {
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 3rem auto;
     position: relative;
     overflow: hidden;
 
@@ -242,6 +255,17 @@
   .revolutionCardSubHeading,
   .revolutionCardText {
     color: $white;
+    font-size: 20px;
+    font-family: Inter;
+    line-height: 30px;
+  }
+
+  .revolutionCardSubHeading {
+    padding-top: 30px;
+  }
+
+  .revolutionCardText {
+    padding-top: 10px;
   }
 }
 
@@ -305,7 +329,7 @@
     line-height: 3.5rem;
     letter-spacing: 0em;
     text-align: center;
-    color: $white;
+    color: rgba(251, 251, 251, 0.8);
   }
 
   .protocolList {
@@ -327,6 +351,7 @@
     text-align: justified;
     color: $white;
     margin-top: 2rem;
+    opacity: 0.5;
   }
 }
 
@@ -414,8 +439,6 @@
 }
 
 .networkingContainer {
-  padding-bottom: 10rem;
-
   .networking {
     position: relative;
     // background-color: $black;
@@ -427,7 +450,7 @@
     z-index: 10;
 
     .readMore {
-      width: 17.6rem;
+      width: fit-content;
       height: 4.7rem;
     }
 
@@ -459,7 +482,14 @@
   display: flex;
 }
 
+.landingBreak {
+  display: none;
+}
+
 @media screen and (max-width: 1032px) {
+  .landingBreak {
+    display: block;
+  }
   .dNone {
     display: none !important;
   }
@@ -476,6 +506,8 @@
       max-width: unset;
       padding-left: 4rem;
       padding-right: 4rem;
+      font-size: 4rem;
+      line-height: unset;
     }
 
     .landingPage {
@@ -486,6 +518,7 @@
   }
 
   .balckBoxContainer {
+    background-position: center;
     background-repeat: no-repeat;
     justify-content: space-around;
     min-height: 80vh;
@@ -507,9 +540,16 @@
   }
 
   .revolutionCard {
-    padding: 1rem 2rem;
-    width: 100% !important;
-    margin: unset !important;
+    padding: 1rem 1rem;
+    // width: 100% !important;
+    // margin: unset !important;
+    margin: 0 1rem;
+
+    .readMoreText {
+      span {
+        font-size: 3rem !important;
+      }
+    }
   }
 
   .revolutionList,
@@ -525,8 +565,17 @@
     }
   }
 
+  .revolutionCardText {
+    font-size: 2.5rem !important;
+  }
+  .revolutionCardSubHeading {
+    font-size: 3rem !important;
+  }
+
   .revolutionCardList {
-    padding: 0 !important;
+    padding: 0 3rem !important;
+    flex-direction: column;
+    margin-bottom: 8rem;
   }
 
   .revolutionItem {
@@ -536,19 +585,25 @@
   .networkingContainer {
     .networking {
       flex-direction: column;
-      min-height: 100vh;
+      min-height: unset;
 
       .heading2,
       .heading3,
       .readMore {
         padding-left: 2rem;
         padding-right: 2rem;
+        text-align: center;
+      }
+
+      .heading3 {
+        opacity: 0.8;
       }
 
       .readMore {
         width: unset;
         height: unset;
-        float: left;
+        font-weight: 500;
+        // float: left;
       }
     }
     .networkingText {
@@ -558,10 +613,11 @@
 
       .globeBg {
         background-size: contain;
+        background-position: center;
       }
     }
     .networkingImg {
-      width: unset;
+      width: 25rem;
       // height: 75.5rem;
       overflow: hidden;
     }
@@ -571,6 +627,10 @@
     .protokolloBg1 {
       left: unset;
       right: 0;
+    }
+    .protokolloBg1,
+    .protokolloBg2 {
+      opacity: 0.5;
     }
     .protokolloSummary {
       width: unset;
@@ -629,6 +689,44 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      .heading2,
+      .para.readMore {
+        text-align: center;
+      }
+
+      .para {
+        font-size: 3rem;
+        text-align: center;
+        color: #f3f3f3;
+        line-height: unset;
+        margin: 3rem 0;
+      }
+
+      .readMoreText {
+        text-align: center;
+        font-size: 3.5rem;
+        font-family: Inter;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .revolutionList {
+    gap: 80px;
+  }
+
+  .revolutionItemImg {
+    position: relative;
+
+    .imgGlow {
+      position: absolute;
+      left: -30% !important;
+      width: 60px;
+      height: 60px;
+      background-color: rgba(35, 156, 124, 0.6);
+      border: 3px solid rgba(251, 251, 251, 0.05);
+      filter: blur(60px);
     }
   }
 }

@@ -54,30 +54,6 @@ const Network = () => {
         </div>
       </div>
 
-      {/* cards section */}
-      <div className={styles.cardList}>
-        {platFormCardData.map((card, i) => (
-
-
-          <div className={styles.platformCard} key={i}>
-            <div className={styles.platformCardImage}>
-              <Image
-                src={card.imageUrl}
-                alt="card image"
-              />
-            </div>
-            <div className={styles.platformTextContainer}>
-              <div className={styles.platformCardHading}>
-                {card.heading}
-              </div>
-              <div className={styles.platformCardText}>
-                {card.text}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
       {/* Salient features section */}
       <div className={styles.salientFeature}>
         <div className={styles.slientHeading}>Salient features</div>
@@ -125,6 +101,32 @@ const Network = () => {
           </ul>
         </div>
       </div>
+
+
+      {/* cards section */}
+      <div className={styles.cardList}>
+        {platFormCardData.map((card, i) => (
+
+
+          <div className={styles.platformCard} key={i}>
+            <div className={styles.platformCardImage}>
+              <Image
+                src={card.imageUrl}
+                alt="card image"
+              />
+            </div>
+            <div className={styles.platformTextContainer}>
+              <div className={styles.platformCardHading}>
+                {card.heading}
+              </div>
+              <div className={styles.platformCardText}>
+                {card.text}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
 
       {/* test network section */}
       <div className={styles.connectNetwork}>
