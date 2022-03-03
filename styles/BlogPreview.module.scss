@@ -1,0 +1,96 @@
+@import "./colors";
+@import "./mixins.scss";
+
+.landingContainer {
+  background-image: url("../public/man-wearing-smart-glasses-virtual-scanning-technology-glitch-effect.png");
+  //   @include bg-norepeat-cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  //   min-height: 504px;
+  height: 772px;
+  //   padding-top: 5rem;
+}
+
+.landingPage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+
+  padding-top: 6rem;
+  padding-bottom: 8.8rem;
+  .heading1 {
+    width: 53.7rem;
+  }
+  .landingText {
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 63.6rem;
+  }
+}
+.body {
+  padding: 20px 22px;
+}
+.title {
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+}
+
+.blogDetail {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Inter;
+  line-height: 20px;
+  color: rgba($color: #fbfbfb, $alpha: 0.6);
+  border-bottom: 1px solid rgba($color: #fbfbfb, $alpha: 0.3);
+  .writenTxt {
+    font-weight: 400;
+  }
+}
+
+.para {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Inter;
+  line-height: 20px;
+}
+
+.titleContainer {
+  position: relative;
+
+  .back {
+    position: absolute;
+    padding-top: 14px;
+    left: 10%;
+  }
+}
+
+.para,
+.blogDetail,
+.title {
+  max-width: 1004px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1388px) {
+  .back {
+    left: unset !important;
+    right: 0%;
+    position: unset !important;
+    float: right;
+  }
+}
