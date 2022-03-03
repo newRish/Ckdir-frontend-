@@ -3,27 +3,17 @@ import Header from "../components/Header";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-// import autonomousImg from "../public/icons/decentralized-network.svg";
-// import decentralisedImg from "../public/icons/blockchain.svg";
-// import edgeComputed from "../public/icons/business-network.svg";
+
 import chokidarDeviceImg from "../public/chokidar-device.png";
 import revolutionAtomImg from "../public/revolution-atom.png";
-// import connectingPeopleImg from "../public/connectingPeople.png";
 import securityAuditImg from "../public/securityAudit.png";
-// import socialFootprintImg from "../public/socialFootprint.png";
-// import complianceImg from "../public/icons/compliance.png";
-// import controlledEnvImg from "../public/icons/controlledEnv.png";
-// import reliableDataImg from "../public/icons/reliableData.svg";
+
 import locationImg from "../public/icons/location.svg";
-// import proofDocImg from "../public/icons/proofDoc.svg";
-// import authorityProofImg from "../public/icons/authorityProof.svg";
-// import homeAnalytics from "../public/homeAnalytics.png";
-// import smartAIImg from "../public/smartAI.png";
+
 import Card from "../components/Card";
-// import iphone11Img from "../public/iphone11.png";
 import CaseStudySection from "../components/CaseStudySection";
 import { Icons } from "../utils/icons";
-import { useState } from "react";
+import React, { useState } from "react";
 
 // compressed images
 import autonomusI from "../public/compressed/decentralized.svg";
@@ -34,15 +24,164 @@ import connectingPeopleImg from "../public/compressed/connecting-people.svg";
 import complianceImg from "../public/compressed/Compliance.svg";
 import controlledEnvImg from "../public/compressed/controll-environment.svg";
 import reliableDataImg from "../public/compressed/tamperproof-data.svg";
-// import locationImg from "../public/compressed/tamperproof-data.svg";
 import proofDocImg from "../public/compressed/proof-of-activity.svg";
 import authorityProofImg from "../public/compressed/proof-of-authority.svg";
 import homeAnalytics from "../public/compressed/sensor-fusion-min.png";
 import smartAIImg from "../public/compressed/smart-artificail-intelligence-min.png";
 import iphone11Img from "../public/compressed/register-now-banner-min.png";
 
+const revCardData = {
+  1: [
+    {
+      img: complianceImg,
+      title: "Compliance",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Compliant with regulatory
+          <br className={styles.dNone} />
+          standards like GDPR.
+        </p>
+      ),
+    },
+    {
+      img: controlledEnvImg,
+      title: "Controlled Environment",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Smart real time monitoring
+          <br className={styles.dNone} />
+          within the network of your IoT.
+        </p>
+      ),
+    },
+    {
+      img: reliableDataImg,
+      title: "Reliable Data",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Of all incidents/activities being
+          <br className={styles.dNone} />
+          monitored on the network.
+        </p>
+      ),
+    },
+  ],
+  2: [
+    {
+      img: complianceImg,
+      title: "Real time tracking",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Enables you to track your fleet
+          <br className={styles.dNone} />
+          real time. Know where the go,
+          <br className={styles.dNone} />
+          on the go.
+        </p>
+      ),
+    },
+    {
+      img: controlledEnvImg,
+      title: "Connect to legacy system",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Enable you to track your fleet
+          <br className={styles.dNone} />
+          real time, giving you complete
+          <br className={styles.dNone} />
+          access to all data that might be.
+        </p>
+      ),
+    },
+    {
+      img: reliableDataImg,
+      title: "Transparency of Operations",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Real Tracking, Fencing, heavily
+          <br className={styles.dNone} />
+          needed for the world where multiple
+          <br className={styles.dNone} />
+          touchpoints is everyday business.
+        </p>
+      ),
+    },
+  ],
+  3: [
+    {
+      img: complianceImg,
+      title: "Tamperproof data",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Decentralized verifiable data,
+          <br className={styles.dNone} />
+          which cannot be tempered with.
+        </p>
+      ),
+    },
+    {
+      img: controlledEnvImg,
+      title: "Seamless Insurance",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Smart real time monitoring
+          <br className={styles.dNone} />
+          within the network of your IoT.
+        </p>
+      ),
+    },
+    {
+      img: reliableDataImg,
+      title: "Data Privacy",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Data as authentic as it might be is
+          <br className={styles.dNone} />
+          also private
+        </p>
+      ),
+    },
+  ],
+  4: [
+    {
+      img: complianceImg,
+      title: "Assured quality",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Compliant with regulatory
+          <br className={styles.dNone} />
+          standards like GDPR.
+        </p>
+      ),
+    },
+    {
+      img: controlledEnvImg,
+      title: "Quality & Authenticity",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Smart real time monitoring
+          <br className={styles.dNone} />
+          within the network of your IoT.
+        </p>
+      ),
+    },
+    {
+      img: reliableDataImg,
+      title: "Ecological Safety",
+      text: (
+        <p className={styles.revolutionCardText}>
+          Harnessing the power of IoT for
+          <br className={styles.dNone} />
+          hazard detection to prevent damage.
+        </p>
+      ),
+    },
+  ],
+};
+
 const Home = () => {
   const [carouselSwitch, setCarouselSwitch] = useState(false);
+  const [activeRev, setActiveRev] = useState(1);
   return (
     <div className={styles.home}>
       <div className={styles.landingContainer}>
@@ -51,9 +190,9 @@ const Home = () => {
           <div className={styles.landingPage}>
             <div className={styles.mainText}>
               <div className={styles.heading1}>
-                Starting
+                Starting <span> </span>
                 <br className={styles.landingBreak} />
-                at the Edge
+                at the Edge <span> </span>
                 <br className={styles.landingBreak} />
                 of the present.
               </div>
@@ -113,8 +252,9 @@ const Home = () => {
         <div className={styles.heading2}>Revolution through Change</div>
 
         <ul className={styles.revolutionList}>
-          <li className={styles.revolutionItem}>
-            <div className={""}>
+          <li className={styles.revolutionItem} onClick={() => setActiveRev(1)}>
+            <div className={styles.revolutionItemImg}>
+              {activeRev === 1 && <div className={styles.imgGlow}></div>}
               <Image src={decentI} alt="autonomous Industries" />
             </div>
             <div className={styles.revolutionItemText}>
@@ -122,22 +262,25 @@ const Home = () => {
             </div>
           </li>
 
-          <li className={styles.revolutionItem}>
-            <div className={""}>
+          <li className={styles.revolutionItem} onClick={() => setActiveRev(2)}>
+            <div className={styles.revolutionItemImg}>
+              {activeRev === 2 && <div className={styles.imgGlow}></div>}
               <Image src={connectingPeopleImg} alt="connecting people" />
             </div>
             <div className={styles.revolutionItemText}>Connecting people</div>
           </li>
 
-          <li className={styles.revolutionItem}>
-            <div className={""}>
+          <li className={styles.revolutionItem} onClick={() => setActiveRev(3)}>
+            <div className={styles.revolutionItemImg}>
+              {activeRev === 3 && <div className={styles.imgGlow}></div>}
               <Image src={securityAuditImg} alt="Seaurity and audit" />
             </div>
             <div className={styles.revolutionItemText}>Security and Audit</div>
           </li>
 
-          <li className={styles.revolutionItem}>
-            <div className={""}>
+          <li className={styles.revolutionItem} onClick={() => setActiveRev(4)}>
+            <div className={styles.revolutionItemImg}>
+              {activeRev === 4 && <div className={styles.imgGlow}></div>}
               <Image src={socialFootprintImg} alt="Social Footprint" />
             </div>
             <div className={styles.revolutionItemText}>Social Footprint</div>
@@ -150,45 +293,15 @@ const Home = () => {
           <div className={styles.circle3}></div>
 
           <ul className={styles.revolutionCardList}>
-            <li className={styles.revolutionCardItem}>
-              <div className={styles.revolutionCardImage}>
-                <Image src={complianceImg} alt="compliance" />
-              </div>
-              <div className={styles.revolutionCardSubHeading}>Compliance</div>
-              <p className={styles.revolutionCardText}>
-                Compliant with regulatory
-                <br className={styles.dNone} />
-                standards like GDPR.
-              </p>
-            </li>
-
-            <li className="revolutionCardItem">
-              <div className="revolutionCardImage">
-                <Image src={controlledEnvImg} alt="controlled devices" />
-              </div>
-              <div className={styles.revolutionCardSubHeading}>
-                Controlled Environment
-              </div>
-              <p className={styles.revolutionCardText}>
-                Smart real time monitoring
-                <br className={styles.dNone} />
-                within the network of your IoT.
-              </p>
-            </li>
-
-            <li className="revolutionCardItem">
-              <div className="revolutionCardImage">
-                <Image src={reliableDataImg} alt="reliable data" />
-              </div>
-              <div className={styles.revolutionCardSubHeading}>
-                Reliable Data
-              </div>
-              <p className={styles.revolutionCardText}>
-                Of all incidents/activities being
-                <br className={styles.dNone} />
-                monitored on the network.
-              </p>
-            </li>
+            {revCardData[activeRev].map((e, i) => (
+              <li key={i} className={styles.revolutionCardItem}>
+                <div className={styles.revolutionCardImage}>
+                  <Image src={e.img} alt={e.title} />
+                </div>
+                <div className={styles.revolutionCardSubHeading}>{e.title}</div>
+                {e.text}
+              </li>
+            ))}
           </ul>
 
           <div className={styles.readMoreText}>

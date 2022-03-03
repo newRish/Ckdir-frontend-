@@ -1,5 +1,7 @@
 import styles from "../../styles/BlogPreview.module.scss";
 import Header from "../../components/Header";
+import arrowForward from "../../public/Arrow_Forward.png";
+import Image from "next/image";
 
 const Blog1 = () => {
     return (
@@ -11,7 +13,14 @@ const Blog1 = () => {
 
             <div className={styles.body}>
                 <div className={styles.titleContainer}>
-                    <div className={styles.back}>icon</div>
+                    <div className={styles.back}>
+                        <Image
+                            width={20}
+                            height={20}
+                            src={arrowForward}
+                            alt="back"
+                        />
+                    </div>
                     <div className={styles.title}>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </div>

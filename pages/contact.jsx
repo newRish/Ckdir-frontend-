@@ -29,7 +29,7 @@ const contact = () => {
                         </p>
                         <div className={styles.readMore}>
                             <Button
-                                title={"Ask queries"}
+                                title={"Ask Queries"}
                                 url={"/readMore"} // need to update readmore route
                             />
                         </div>
@@ -84,7 +84,7 @@ const contact = () => {
                 <div className={styles.text}>
                     <div className={styles.heading}>Support</div>
                     <div className={styles.para}>
-                        We&aposre here to help and answer any questions you might have. We look forward from hearing you.
+                        We&apos;re here to help and answer any questions you might have. We look forward from hearing you.
                     </div>
                     <div className={styles.readMore}>
                         <Button
@@ -103,7 +103,7 @@ const contact = () => {
                 </div>
                 <div className={styles.para}>
                     Please select a topic below related to your inquiry.
-                    If you don’t find what you need, fill out our <span className={styles.colorOrange}>
+                    If you don’t find what you need, fill out our <span className={styles.colorGreen}>
                         <Link href="/">
                             <a>contact form.</a>
                         </Link>

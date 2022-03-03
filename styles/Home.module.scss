@@ -102,7 +102,7 @@
     color: #fff;
   }
   .readMore {
-    width: 15.9rem;
+    width: fit-content;
     height: 4.7rem;
     // margin: auto;
   }
@@ -186,6 +186,19 @@
     line-height: 5rem;
     text-align: center;
   }
+  .revolutionItemImg {
+    position: relative;
+
+    .imgGlow {
+      position: absolute;
+      left: 30%;
+      width: 110px;
+      height: 110px;
+      background-color: rgba(35, 156, 124, 0.6);
+      border: 3px solid rgba(251, 251, 251, 0.05);
+      filter: blur(60px);
+    }
+  }
 
   .revolutionCardSubHeading {
     font-size: 2rem;
@@ -194,8 +207,8 @@
   }
 
   .revolutionCard {
-    // width: 70%;
-    margin: 3rem;
+    width: 80%;
+    margin: 3rem auto;
     position: relative;
     overflow: hidden;
 
@@ -242,6 +255,17 @@
   .revolutionCardSubHeading,
   .revolutionCardText {
     color: $white;
+    font-size: 20px;
+    font-family: Inter;
+    line-height: 30px;
+  }
+
+  .revolutionCardSubHeading {
+    padding-top: 30px;
+  }
+
+  .revolutionCardText {
+    padding-top: 10px;
   }
 }
 
@@ -305,7 +329,7 @@
     line-height: 3.5rem;
     letter-spacing: 0em;
     text-align: center;
-    color: $white;
+    color: rgba(251, 251, 251, 0.8);
   }
 
   .protocolList {
@@ -426,7 +450,7 @@
     z-index: 10;
 
     .readMore {
-      width: 17.6rem;
+      width: fit-content;
       height: 4.7rem;
     }
 
@@ -685,6 +709,24 @@
         font-family: Inter;
         font-weight: bold;
       }
+    }
+  }
+
+  .revolutionList {
+    gap: 80px;
+  }
+
+  .revolutionItemImg {
+    position: relative;
+
+    .imgGlow {
+      position: absolute;
+      left: -30% !important;
+      width: 60px;
+      height: 60px;
+      background-color: rgba(35, 156, 124, 0.6);
+      border: 3px solid rgba(251, 251, 251, 0.05);
+      filter: blur(60px);
     }
   }
 }

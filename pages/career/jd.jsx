@@ -3,7 +3,12 @@ import Header from "../../components/Header"
 import styles from "../../styles/Jd.module.scss";
 import jobHuntImg from "../../public/undraw_job_hunt.svg";
 import applyImg from "../../public/undraw_updated_resume.svg"
+import userImg from "../../public/user.png";
+import docsImg from "../../public/icons/docs.png";
+import callImg from "../../public/icons/call-outline.png";
+import envelopImg from "../../public/icons/outline-envelop2.png"
 import Image from "next/image";
+import Button from "../../components/Button";
 
 const JD = ({ responsibility }) => {
     return (
@@ -23,9 +28,9 @@ const JD = ({ responsibility }) => {
 
             <div className="desc">
                 <div className={styles.dhar}>
-                    <div>
+                    <div className={styles.content}>
                         <div className={styles.heading}>
-                            What you'll do?
+                            What you&apos;ll do?
                         </div>
                         <div className={styles.dharText}>
                             An autonomous, edge device that is Lorawan compatible,
@@ -56,6 +61,7 @@ const JD = ({ responsibility }) => {
                         <Image
                             src={jobHuntImg}
                             alt={'job hunt'}
+
                         />
                     </div>
 
@@ -65,39 +71,68 @@ const JD = ({ responsibility }) => {
 
             <div className={styles.apply}>
                 <div className={styles.heading}>Apply here</div>
-                <div className="img">
-                    <Image
-                        src={applyImg}
-                        alt="apply form"
+                <div className={styles.applyContainer}>
+                    <div className={styles.applyImg}>
+                        <Image
+                            src={applyImg}
+                            alt="apply form"
+                        />
+                    </div>
+                    <div className={styles.form}>
+                        <div className={styles.field}>
+                            <span className={styles.fieldIcon}>
+                                <Image
+                                    src={userImg}
+                                    alt="user"
+                                />
+                            </span>
+                            <span className={styles.fieldInput}>
+                                <input type="text" placeholder="Your Name" />
+                            </span>
+                        </div>
+                        <div className={styles.field}>
+                            <span className={styles.fieldIcon}>
+                                <Image
+                                    src={envelopImg}
+                                    alt="email"
+                                />
+                            </span>
+                            <span className={styles.fieldInput}>
+                                <input type="text" placeholder="Email id" />
+                            </span>
+                        </div>
+                        <div className={styles.field}>
+                            <span className={styles.fieldIcon}>
+                                <Image
+                                    src={callImg}
+                                    alt="phone"
+                                />
+                            </span>
+                            <span className={styles.fieldInput}>
+                                <input type="text" placeholder="Phone number" />
+                            </span>
+                        </div>
+                        <div className={styles.field}>
+                            <span className={styles.fieldIcon}>
+                                <Image
+                                    src={docsImg}
+                                    alt="user"
+                                />
+                            </span>
+                            <span className={`${styles.fieldInput} ${styles.uploadField}`}>
+                                <span>Upload resume</span>
+                                <input type="file" placeholder="Upload resume" />
+                            </span>
+                        </div>
+                        <div className={styles.submitBtn}>
+                            <Button
+                                url={"/career"}
+                                title={'Submit'}
+                            />
+                        </div>
+                    </div>
+                </div>
 
-                    />
-                </div>
-                <div className={styles.form}>
-                    <div className={styles.field}>
-                        <span>icon</span>
-                        <span>
-                            <input type="text" />
-                        </span>
-                    </div>
-                    <div className={styles.field}>
-                        <span>icon</span>
-                        <span>
-                            <input type="text" />
-                        </span>
-                    </div>
-                    <div className={styles.field}>
-                        <span>icon</span>
-                        <span>
-                            <input type="text" />
-                        </span>
-                    </div>
-                    <div className={styles.field}>
-                        <span>icon</span>
-                        <span>
-                            <input type="text" />
-                        </span>
-                    </div>
-                </div>
             </div>
 
         </div>
@@ -106,14 +141,14 @@ const JD = ({ responsibility }) => {
 
 export default JD;
 
-
 export const getStaticProps = () => {
     return {
         props: {
             responsibility: [
-                "Legacy Retrofitting - Connect Dhar into your existing IoT network, with no need for replacements!",
-                "Private network over LoraWAN - With a private network at your hand, your data is secure. The days of relying on telco providers are over.",
-                "Integrated IoT - Compatible with devices working on industry common protocols.",
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae explicabo dolorem voluptates sapiente.",
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae explicabo dolorem voluptates sapiente.",
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae explicabo dolorem voluptates sapiente.",
+
             ],
 
 

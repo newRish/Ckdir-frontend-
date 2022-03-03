@@ -30,6 +30,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.5rem;
+  color: rgba(251, 251, 251, 0.8);
 }
 
 .readMoreText {
@@ -37,12 +38,12 @@
   font-weight: 500;
   font-size: 2rem;
   line-height: 3.5rem;
-  color: $white;
+  color: rgba(251, 251, 251, 0.8);
   margin-bottom: 2rem;
 }
 
 .darkLayer {
-  background-color: rgba(0, 0, 0, 0.767);
+  // background-color: rgba(0, 0, 0, 0.767);
   height: 100%;
 }
 
@@ -50,15 +51,19 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25rem;
   gap: 4rem;
   margin-top: 6rem;
+  flex: 1;
+  height: 100%;
 
   .landingText {
     font-family: Inter;
     font-style: normal;
-    margin: auto;
+    margin: 0 auto;
     max-width: 60%;
-    font-weight: 600;
     font-size: 2.5rem;
     line-height: 4rem;
     color: #fff;
@@ -66,9 +71,9 @@
 }
 
 .readMore {
-  width: 15.9rem;
+  width: fit-content;
   height: 4.7rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .support,
@@ -100,9 +105,12 @@
   margin: auto;
   .img {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
+    justify-content: space-around;
     margin: 5rem 0;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
   }
 
   .label {
@@ -120,8 +128,8 @@
   }
 }
 
-.colorOrange {
-  color: $orange;
+.colorGreen {
+  color: $green;
 }
 
 .inspired {
@@ -145,10 +153,11 @@
 
 .boldPara {
   font-family: Inter;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 4rem;
+  color: rgba(251, 251, 251, 0.8);
 }
 
 .partner {
@@ -202,13 +211,11 @@
 
     li {
       text-align: center;
-
       font-family: Inter;
-      font-size: 3rem;
-      font-style: italic;
+      font-size: 2.5rem;
       font-weight: 600;
       line-height: 7.5rem;
-      color: rgba(243, 243, 243, 0.6);
+      color: rgba(251, 251, 251, 0.6);
     }
   }
 }
@@ -226,7 +233,7 @@
     line-height: 3rem;
     letter-spacing: 0em;
     text-align: justified;
-    color: $white;
+    color: rgba(251, 251, 251, 0.8);
   }
 }
 
@@ -329,7 +336,7 @@
     align-items: center;
 
     .img {
-      flex-direction: column;
+      // flex-direction: column;
       gap: 5rem;
       font-size: 2.5rem;
     }

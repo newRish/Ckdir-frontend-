@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import styles from "../../styles/Blog.module.scss";
 import blog1Img from "../../public/man-wearing-smart-glasses-virtual-scanning-technology-glitch-effect.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -46,7 +47,11 @@ const Blog = () => {
             praesent justo, vel semper molestie. Est erat nulla adipiscing dui
             eu.
           </div>
-          <div className={styles.readMore}>Read more</div>
+          <div className={styles.readMore}>
+            <Link href="/blog/1">
+              <a>Read more</a>
+            </Link>
+          </div>
         </div>
 
         <div className={styles.preview}>
@@ -74,7 +79,11 @@ const Blog = () => {
             praesent justo, vel semper molestie. Est erat nulla adipiscing dui
             eu.
           </div>
-          <div className={styles.readMore}>Read more</div>
+          <div className={styles.readMore}>
+            <Link href="/blog/1">
+              <a>Read more</a>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

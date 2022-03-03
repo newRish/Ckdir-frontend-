@@ -208,6 +208,7 @@
   height: 100%;
 }
 .networkHeading {
+  width: 45%;
   font-family: Outfit;
   font-size: 5rem;
   font-style: normal;
@@ -218,7 +219,7 @@
 }
 
 .networkText {
-  font-family: Outfit;
+  font-family: Inter;
   padding-top: 1.5rem;
   font-size: 3rem;
   font-style: normal;
@@ -231,12 +232,12 @@
 .contactBtn {
   //   margin-top: 39px;
   text-align: center;
-  width: 17.5rem;
+  width: fit-content;
   height: 6rem;
   z-index: 10;
 
   font-family: Poppins;
-  font-size: 2rem;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 500;
   //   line-height: 30px;
@@ -348,6 +349,7 @@
       width: unset;
       .networkHeading,
       .networkText {
+        width: unset;
         text-align: center;
       }
 

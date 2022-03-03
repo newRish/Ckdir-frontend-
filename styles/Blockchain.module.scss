@@ -63,14 +63,15 @@
 }
 
 .bText {
-  font-family: "Inter";
+  font-family: Inter;
   font-size: 2rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 3rem;
   text-align: center;
   width: 19.4rem;
   margin-top: 1rem;
+  color: rgba(251, 251, 251, 0.8);
 }
 
 .glassCard {
@@ -168,7 +169,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 3rem;
-  color: $white;
+  color: $text_light;
 }
 
 .platformPic {
@@ -223,6 +224,7 @@
   width: 70.8rem;
   display: flex;
   flex: 1;
+  color: $text_light;
 }
 
 .cards {
@@ -263,6 +265,7 @@
   font-weight: 400;
   line-height: 3rem;
   text-align: center;
+  color: $text_light;
 }
 
 // H/W section
@@ -330,7 +333,7 @@
   line-height: 3.5rem;
   letter-spacing: 0em;
   text-align: justified;
-  color: $white;
+  color: $text_light;
 }
 
 .order1 {
@@ -362,6 +365,10 @@
       flex-direction: column;
       width: 90%;
       margin: auto;
+      gap: 15px;
+      .pImg {
+        width: unset;
+      }
     }
   }
 

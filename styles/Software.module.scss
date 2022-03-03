@@ -61,6 +61,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 3.5rem;
+    color: $text_light;
   }
 }
 
@@ -134,14 +135,15 @@
 
     .para {
       font-family: Inter;
-      font-size: 2rem;
+      font-size: 20px;
       font-style: normal;
       font-weight: 400;
-      line-height: 3rem;
-      color: $white;
+      line-height: 30px;
+      color: $text_light;
     }
     .readMoreText {
       margin-top: 1.9rem;
+      width: fit-content;
     }
   }
 }
@@ -160,6 +162,7 @@
   line-height: 3rem;
   text-align: justified;
   margin-bottom: 2.2rem;
+  color: $text_light;
 }
 .sfList {
   margin-bottom: 1.8rem;
@@ -174,6 +177,7 @@
   letter-spacing: 0em;
   text-align: left;
   color: $white;
+  width: fit-content;
 }
 
 .alterList {
@@ -186,6 +190,9 @@
 }
 
 @media screen and (max-width: 550px) {
+  .readMoreText {
+    font-size: 2.5rem;
+  }
   .dNone {
     display: none !important;
   }

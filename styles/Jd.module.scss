@@ -72,6 +72,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .content,
+  .chokidrBackImg {
+    flex: 1;
+  }
 }
 
 .dharPoints {
@@ -103,32 +108,92 @@
   line-height: 3rem;
   letter-spacing: 0em;
   text-align: left;
-  width: 70.8rem;
+  // width: 70.8rem;
   display: flex;
 }
 
 .apply {
-  padding: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  .heading {
+    text-align: center;
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 25px;
+  max-width: 598px;
+  background-color: #0f0f0f;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 40px;
 }
 .field {
   height: 59px;
   background-color: #232323;
   display: flex;
   align-items: center;
+  padding: 0 10px;
+  border-radius: 10px;
+  .fieldIcon {
+    flex: 0.1;
+  }
+  .fieldInput,
   input {
+    font-size: 12px;
+    line-height: 30px;
+    font-family: Inter;
+    border: none;
+    outline: none;
+    background-color: #232323;
+    color: rgba(255, 255, 255, 0.6);
     flex: 1;
     height: 100%;
     width: 100%;
   }
+
+  .uploadField {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .uploadField span {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  input[type="file"] {
+    position: absolute;
+
+    flex: unset;
+    background-color: red;
+    left: 0;
+    opacity: 0;
+  }
 }
 
-@media screen and (max-width: 450px) {
+.submitBtn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 62px;
+  padding-bottom: 20px;
+}
+
+.applyContainer {
+  display: flex;
+  gap: 20px;
+  .applyImg,
+  .form {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1020px) {
   .landingContainer {
     background-position: center;
   }
@@ -139,11 +204,16 @@
   }
 
   .chokidrBackImg {
-    width: 20rem;
+    width: unset;
     padding-bottom: 5rem;
   }
 
   .dharText {
     width: fit-content;
+  }
+
+  .applyContainer {
+    flex-direction: column;
+    margin: auto;
   }
 }

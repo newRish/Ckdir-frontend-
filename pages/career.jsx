@@ -34,7 +34,7 @@ const career = ({ openRoles }) => {
                                     <React.Fragment key={`${i}-${ri}`}>
 
                                         <li className={styles.roleItem}>
-                                            <LongCard>
+                                            <LongCard url="career/jd">
                                                 <div className={styles.boldText}>
                                                     {role.name}
                                                 </div>

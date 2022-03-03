@@ -32,7 +32,7 @@ const Blockchain = ({
       {/* Blockchain section */}
 
       <div className={styles.blockchain}>
-        <div className={styles.heading}>BlockChain</div>
+        <div className={styles.heading}>Blockchain</div>
 
         <div className={styles.glassCard}>
           {/* glowing cards */}

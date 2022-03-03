@@ -1,4 +1,5 @@
 import styles from "../styles/componentsStyle/AlternateSection.module.scss";
+import Button from "./Button";
 
 
 const AlternateSection = ({ image, text, heading, isImageLast }) => {
@@ -15,7 +16,12 @@ const AlternateSection = ({ image, text, heading, isImageLast }) => {
                 <div className={styles.para}>
                     {text}
                 </div>
-                <div className={styles.readMoreText}>Read more</div>
+                <div className={styles.readMoreText}>
+                    <Button
+                        title="Read more"
+                        url=""
+                    />
+                </div>
             </div>
         </div>
     )

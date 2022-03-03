@@ -90,6 +90,7 @@
   text-align: center;
   width: 19.4rem;
   margin-top: 1rem;
+  color: $text_light;
 }
 
 .glassCard {
@@ -160,6 +161,7 @@
 .platformTextContainer {
   padding: 2.2rem 5.3rem;
   text-align: center;
+  color: rgba(228, 228, 231, 0.8);
 }
 
 .platformCardHading {
@@ -169,7 +171,6 @@
   font-weight: 700;
   line-height: 5rem;
   padding-bottom: 3.9rem;
-  color: $white;
 }
 
 .platformCardText {
@@ -179,7 +180,6 @@
   font-weight: 400;
   line-height: 3rem;
   text-align: center;
-  color: $white;
 }
 
 // software section
@@ -202,7 +202,7 @@
   // width: 1440px;
   height: 37.4rem;
   background: #0f0f0f;
-  color: $white;
+  color: rgba(228, 228, 231, 0.8);
   align-items: flex-end;
 
   &:first-child {
@@ -294,7 +294,7 @@
   line-height: 3.5rem;
   letter-spacing: 0em;
   text-align: justified;
-  color: $white;
+  color: rgba(228, 228, 231, 0.6);
 }
 
 .order1 {
