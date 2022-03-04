@@ -63,12 +63,19 @@
   display: none;
 }
 
+@media screen and (max-width: 460px) {
+  .navList {
+    width: 219px !important;
+  }
+}
+
 @media screen and (max-width: 1019px) {
   .activeList {
     display: none !important;
   }
 
   .navImg {
+    width: 28px;
     display: block;
   }
   .header {
@@ -77,8 +84,8 @@
   .navList {
     position: absolute;
     flex-direction: column;
-    top: 100%;
-    right: 2rem;
+    top: 7.5rem;
+    right: 5rem;
     background-color: black;
     padding: 1rem;
     border-radius: 5px;
@@ -101,6 +108,10 @@
     justify-content: space-between;
     padding-right: 5rem;
     width: 100%;
+
+    .logo {
+      font-size: 16px;
+    }
 
     .logoImg {
       width: 15rem !important;

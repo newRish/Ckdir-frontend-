@@ -268,7 +268,9 @@ const ChokidrSoftware = () => {
             </div>
 
             {/* Case Studies section */}
-            <CaseStudySection />
+            <div className={styles.csSection}>
+                <CaseStudySection />
+            </div>
 
 
         </div>

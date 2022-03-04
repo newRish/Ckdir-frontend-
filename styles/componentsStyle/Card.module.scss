@@ -11,12 +11,17 @@
   }
 }
 
+.cardText:hover + .cardDarkLayer {
+  background-color: unset;
+}
+
 .cardDarkLayer,
 .card {
   background-color: rgba(15, 15, 15, 0.5);
   border-radius: 10px;
   height: 100%;
   width: 100%;
+  transition: 0.5s background-color;
 
   &:hover {
     background-color: unset;

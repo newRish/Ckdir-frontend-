@@ -190,6 +190,19 @@
 }
 
 @media screen and (max-width: 550px) {
+  .landingText {
+    text-align: center;
+    font-size: 40px;
+    line-height: 18px;
+  }
+  .textContainer {
+    .para {
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+  }
   .readMoreText {
     font-size: 2.5rem;
   }
@@ -199,7 +212,8 @@
   .landing {
     .glowCircle {
       width: 35rem;
-      left: -20rem;
+      left: 30%;
+      filter: blur(100px);
     }
 
     .container {
@@ -220,13 +234,30 @@
   }
   .sf {
     margin-bottom: 5rem;
-    padding: 4rem;
+    padding: 8rem;
     flex-direction: column;
     gap: 5rem;
   }
   .deviceList {
-    flex-direction: column;
-    gap: 4rem;
+    // flex-direction: column;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+    gap: 6.8rem;
+    align-items: flex-start;
+
+    .img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px !important;
+    }
+
+    .text {
+      text-align: center !important;
+      font-size: 14px !important;
+      line-height: 20px !important;
+    }
   }
 
   .aditionalProtoKollo {
@@ -241,6 +272,20 @@
     .aditionalProtoKolloBgImg {
       min-height: 70vh;
       background-position: center;
+
+      .text,
+      .heading,
+      .readMoreText {
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .readMoreText {
+        margin-top: 13px;
+        margin-bottom: 13px;
+        font-size: 16px;
+        font-weight: 600;
+      }
     }
 
     .aditionalProtoKolloRight {
@@ -270,5 +315,9 @@
       flex-direction: column;
       justify-content: space-between;
     }
+  }
+  .label {
+    font-size: 14px;
+    line-height: 20px;
   }
 }

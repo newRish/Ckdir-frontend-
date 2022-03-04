@@ -1,7 +1,7 @@
 import styles from "../styles/componentsStyle/ConnectNetworkSection.module.scss"
 import Button from "./Button";
 
-const ConnectNetworkSection = ({ heading, text, url, btnText }) => {
+const ConnectNetworkSection = ({ heading, text, url, btnText, isActive }) => {
     return (
         <div className={styles.testNW}>
             <div className={styles.testNWheading}>
@@ -13,7 +13,7 @@ const ConnectNetworkSection = ({ heading, text, url, btnText }) => {
                 </div>
             )}
             <div className={styles.contactBtn}>
-                <Button title={btnText ? btnText : "Contact"} url={url} />
+                <Button title={btnText ? btnText : "Contact"} url={url} isActive={isActive} />
             </div>
         </div>
     )

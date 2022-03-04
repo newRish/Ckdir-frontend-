@@ -610,6 +610,10 @@
       flex: 0.2;
       height: fit-content;
       padding-bottom: 4rem;
+      .readMore {
+        width: fit-content;
+        margin: 0 auto;
+      }
 
       .globeBg {
         background-size: contain;

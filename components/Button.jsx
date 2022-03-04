@@ -3,7 +3,8 @@ import styles from '../styles/componentsStyle/Button.module.scss'
 
 const Button = ({
     title,
-    url
+    url,
+    isActive
 }) => {
     return (
         <div className={styles.container}>
@@ -14,7 +15,7 @@ const Button = ({
                     </div>
                 </a>
             </Link>
-            <div className={styles.border}></div>
+            <div className={isActive ? styles.active : styles.border}></div>
         </div>
     );
 }

@@ -37,6 +37,11 @@
   .heading {
     text-align: center;
   }
+
+  .featureIcon {
+    width: 54px;
+    margin: 0 auto;
+  }
 }
 
 .heading {
@@ -130,7 +135,14 @@
   }
 }
 .pImg {
+  // width: 54px;
   align-self: center;
+}
+
+.pCards {
+  .pImg {
+    width: 54px;
+  }
 }
 
 .glowCircle {
@@ -340,16 +352,46 @@
   order: 1;
 }
 
+.displeNone {
+  display: none;
+}
+
 @media screen and (max-width: 650px) {
+  .displeNone {
+    display: block;
+  }
+
+  .textContainer {
+    justify-content: center;
+    text-align: center;
+    padding: 0 6rem;
+  }
+
+  .landingText {
+    font-size: 40px;
+    line-height: 62px;
+    width: unset;
+    // padding: 0 7rem;
+  }
+
   .blockchain {
     .bList {
-      flex-direction: column;
+      // flex-direction: column;
       gap: 5rem;
     }
     .bItem {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .featureIcon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .bText {
+      font-size: 14px;
     }
   }
 
@@ -367,7 +409,7 @@
       margin: auto;
       gap: 15px;
       .pImg {
-        width: unset;
+        width: 44px;
       }
     }
   }
@@ -394,15 +436,27 @@
   }
 
   .cards {
-    flex-direction: column;
-
+    // flex-direction: column;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
     .card {
       padding-top: 2rem;
       padding-bottom: 2rem;
-      width: 80%;
+      min-width: 219px;
+      min-height: 190px;
 
       .cardText {
-        width: 80%;
+        text-align: center;
+        width: 90%;
+        font-size: 14px !important;
+        line-height: 20px;
+      }
+      .cardHeading {
+        font-size: 16px;
+        line-height: 30px;
       }
     }
   }
@@ -413,6 +467,7 @@
 
     .hwSummary {
       width: unset;
+      font-size: 14px;
     }
   }
 

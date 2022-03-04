@@ -307,8 +307,14 @@
 
 @media screen and (max-width: 450px) {
   .landing {
-    background-position: center;
+    background-size: 100% 100%;
   }
+
+  .landingText {
+    font-size: 40px;
+    line-height: 43px;
+  }
+
   .chart {
     margin: 5rem 2rem;
   }
@@ -326,8 +332,9 @@
     }
 
     .sfList {
-      flex-direction: column;
+      // flex-direction: column;
       gap: 5rem;
+      align-items: flex-end;
 
       .sfItem {
         display: flex;
@@ -381,5 +388,36 @@
         order: 2;
       }
     }
+  }
+
+  .platformCard {
+    width: unset !important;
+  }
+}
+
+@media screen and (max-width: 1463px) {
+  .platformCard {
+    height: unset;
+    min-height: 55rem;
+    width: 45rem;
+  }
+
+  .platformCardHading {
+    line-height: 50px;
+  }
+
+  .platformCardText {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+
+  .sfText {
+    font-size: 14px;
+    width: unset;
+    line-height: 24px;
+  }
+  .featureIcon {
+    width: 45px;
   }
 }
