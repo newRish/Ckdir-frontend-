@@ -6,6 +6,7 @@ import mailIcon from "../public/icons/mail2.png"
 import phoneIcon from "../public/icons/phone2.png"
 import userIcon from "../public/icons/user2.png";
 import FilledBtn from "../components/FilledBtn";
+import SelectBox from "../components/SelectBox";
 
 const Register = () => {
     return (
@@ -23,7 +24,9 @@ const Register = () => {
                         <div className={styles.title}>
                             Registration Form
                         </div>
-                        <div className={styles.selectBox}>Organisation</div>
+                        <div className={styles.selectBox}>
+                            <SelectBox />
+                        </div>
                     </div>
                     <div className={styles.label}>
                         Personal information
