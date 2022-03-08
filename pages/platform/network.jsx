@@ -134,6 +134,7 @@ const Network = () => {
         <ConnectNetworkSection
           heading={"Test Public Network to be Launched this June!"}
           url={"/contact"}
+          isActive={true}
         />
       </div>
 
@@ -160,7 +161,7 @@ const Network = () => {
           </div>
 
           <div className={styles.useCaseReadMore}>
-            <Link href="/readmore">
+            <Link href="/platform/network">
               <a>Read more</a>
             </Link>
           </div>
@@ -186,7 +187,7 @@ const Network = () => {
           </div>
           <br />
           <div className={styles.contactBtn}>
-            <Button title={"Contact"} url={"/contact"} />
+            <Button title={"Contact"} url={"/contact"} isActive={true} />
           </div>
         </div>
       </div>

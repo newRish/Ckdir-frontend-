@@ -123,10 +123,12 @@
 
     .landingText {
       line-height: unset;
+      text-align: center;
     }
 
     .para {
       width: unset;
+      text-align: center;
     }
 
     .container {
@@ -154,5 +156,10 @@
   .img,
   .textContainer {
     flex: unset !important;
+  }
+
+  .label {
+    line-height: 20px !important;
+    font-size: 14px !important;
   }
 }

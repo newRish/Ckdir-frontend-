@@ -36,14 +36,11 @@
   line-height: 1.9rem;
 }
 
-.itemHeading {
-  font-weight: 600;
-}
 .itemOption {
   font-weight: normal;
   font-size: 1.4rem;
   margin-top: 1rem;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 .itemHeading,
 .itemOption {
@@ -62,15 +59,15 @@
 
   .itemOption {
     // font-size: 10px;
-    font-size: 2.2rem;
-    line-height: 2.5rem;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   .itemHeading {
     font-family: "Inter", sans-serif;
     font-style: normal;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   .ddList {

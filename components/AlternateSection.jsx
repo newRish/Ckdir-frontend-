@@ -16,12 +16,12 @@ const AlternateSection = ({ image, text, heading, isImageLast }) => {
                 <div className={styles.para}>
                     {text}
                 </div>
-                <div className={styles.readMoreText}>
+                {/* <div className={styles.readMoreText}>
                     <Button
                         title="Read more"
                         url=""
                     />
-                </div>
+                </div> */}
             </div>
         </div>
     )

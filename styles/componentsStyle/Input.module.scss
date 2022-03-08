@@ -1,0 +1,21 @@
+.input {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Source Sans Pro";
+  }
+}
+
+.icon {
+  cursor: pointer;
+}

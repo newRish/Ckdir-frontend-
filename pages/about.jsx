@@ -118,7 +118,7 @@ const career = ({ openRoles }) => {
             {/* open roles */}
             <ConnectNetworkSection
                 heading={"Open Roles"}
-                url={"/contact"}
+                url={"/career"}
                 btnText={"See Open Roles"}
                 text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
             />

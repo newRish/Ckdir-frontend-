@@ -117,7 +117,9 @@ const AutonomousIdentities = () => {
             <ConnectNetworkSection
                 heading={"Loreum ipsum"}
                 text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nibh et ut feugiat duis scelerisque urna, blandit."}
-                url={"/"}
+                url={"/register"}
+                btnText={'Get Invited'}
+                isActive={true}
             />
         </div>
     )

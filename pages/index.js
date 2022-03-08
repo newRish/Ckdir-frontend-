@@ -205,7 +205,8 @@ const Home = () => {
             <div className={styles.readMore}>
               <Button
                 title={"Read More"}
-                url={"/readMore"} // need to update readmore route
+                url={"/product/chokidr-software"}
+                isActive={true}
               />
             </div>
           </div>
@@ -443,7 +444,8 @@ const Home = () => {
             <div className={styles.readMore}>
               <Button
                 title={"Register Now"}
-                url={"/register"} // need to update register route
+                url={"/register"}
+                isActive={true}
               />
             </div>
           </div>

@@ -24,7 +24,11 @@ const Blockchain = ({
         <Header />
         <div className={styles.textContainer}>
           <span className={styles.landingText}>
-            Revolutionize the way vital information is managed!
+            Revolutionize
+            <br className={styles.displeNone} />
+            the way
+            <br className={styles.displeNone} />
+            vital information is managed!
           </span>
         </div>
       </div>

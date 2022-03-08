@@ -252,6 +252,7 @@ const ChokidrHardware = ({ dharList }) => {
                 heading={"Join the Network"}
                 text={"Dhar. Launching this June! Deploy into your existing network, soon!"}
                 url={"/contact"}
+                isActive={true}
             />
         </div>
     )

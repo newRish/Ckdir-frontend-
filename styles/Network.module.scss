@@ -285,9 +285,18 @@
     width: unset;
   }
 
+  .landing {
+    background-position: top;
+    background-size: 677px 665px;
+    display: flex;
+    min-height: 655px;
+    flex-direction: column;
+  }
+
   .platformCard {
     height: unset;
     min-height: 60rem;
+    width: 55rem;
     // height: 45rem;
   }
 
@@ -336,7 +345,7 @@
   .network {
     height: unset;
     flex-direction: column;
-    padding: 0 4rem 2rem 4rem;
+    padding: 0 1rem 2rem 1rem;
     background-position: center;
 
     .netowrkImg {
@@ -361,5 +370,13 @@
         justify-content: center;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1463px) {
+  .platformCard {
+    height: unset;
+    min-height: 55rem;
+    width: 45rem;
   }
 }

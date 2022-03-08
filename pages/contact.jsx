@@ -30,7 +30,7 @@ const contact = () => {
                         <div className={styles.readMore}>
                             <Button
                                 title={"Ask Queries"}
-                                url={"/readMore"} // need to update readmore route
+                                url={"/contact"} // need to update readmore route
                             />
                         </div>
                     </div>
@@ -58,7 +58,7 @@ const contact = () => {
 
                         ].map((e, i) => (
                             <li key={i}>
-                                <div>
+                                <div className={styles.contactIcon}>
                                     <Image
                                         src={e.icon}
                                         alt="trusted by"
@@ -89,7 +89,7 @@ const contact = () => {
                     <div className={styles.readMore}>
                         <Button
                             title={"Ask queries"}
-                            url={"/readMore"} // need to update readmore route
+                            url={"/contact"} // need to update readmore route
                         />
                     </div>
                 </div>
@@ -148,7 +148,7 @@ const contact = () => {
                     <div className={styles.readMore}>
                         <Button
                             title={"Book a demo"}
-                            url={"/readMore"} // need to update readmore route
+                            url={"/contact"}
                         />
                     </div>
                 </div>
@@ -188,7 +188,7 @@ const contact = () => {
                         <div className={styles.readMore}>
                             <Button
                                 title={"Join Now"}
-                                url={"/join"} // need to update readmore route
+                                url={"/register"} // need to update readmore route
                             />
                         </div>
                     </div>
@@ -202,7 +202,7 @@ const contact = () => {
 
             {/* Trusted by */}
             <div className={styles.trust}>
-                <div className={styles.boldText}>Trusted by</div>
+                <div className={styles.boldText}>Trusted By</div>
                 <ul className={styles.list}>
                     {
                         [1, 1, 1, 1, 1].map((e, i) => (
@@ -213,7 +213,7 @@ const contact = () => {
                                         alt="trusted by"
                                     />
                                 </div>
-                                <div>Lorem ipsum</div>
+                                <div className={styles.trustText}>Lorem ipsum</div>
                             </li>
                         ))
                     }

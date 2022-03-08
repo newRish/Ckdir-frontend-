@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  color: black;
+  min-height: 100vh;
+}
+
+.formHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+}
+
+.label {
+  margin-top: 18px;
+  margin-bottom: 52px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+}
+
+.form {
+  background-color: #fff;
+}
+
+.formContainer {
+  max-width: 450px;
+  margin: auto;
+  padding: 10rem 0;
+}
+
+.form,
+.info {
+  flex: 1;
+}
+
+.header {
+  padding: 50px 60px;
+  .logo {
+    cursor: pointer;
+  }
+  width: fit-content;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.btn {
+  margin: 0 auto;
+}
