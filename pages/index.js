@@ -335,21 +335,21 @@ const Home = () => {
 
         <ul className={styles.protocolList}>
           <li className="protocolItem">
-            <div className="protocolImg">
+            <div className={styles.protocolImg}>
               <Image src={locationImg} alt="location" />
             </div>
             <div className={styles.protocolItemText}>Proof of Location</div>
           </li>
 
           <li className="protocolItem">
-            <div className="protocolImg">
+            <div className={styles.protocolImg}>
               <Image src={proofDocImg} alt="Proof Doc" />
             </div>
             <div className={styles.protocolItemText}>Proof of Activity</div>
           </li>
 
           <li className="protocolItem">
-            <div className="protocolImg">
+            <div className={styles.protocolImg}>
               <Image src={authorityProofImg} alt="Authority" />
             </div>
             <div className={styles.protocolItemText}>Proof of Authority</div>

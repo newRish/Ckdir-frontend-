@@ -316,7 +316,7 @@
   }
 
   .chart {
-    margin: 5rem 2rem;
+    margin: 5rem 0rem;
   }
   .sf {
     .circle3 {
@@ -344,8 +344,14 @@
     }
   }
 
+
+
   .software {
+    .heading{
+      margin-top: 0;
+    }
     .sCards {
+      margin-top: 0;
       .sCardImg {
         width: 50%;
         height: unset;
@@ -360,6 +366,17 @@
         height: unset;
 
         align-items: center;
+        .sCardHeading{
+          text-align: center;
+          font-size: 16px;
+          line-height: 30px;
+        }
+
+        .sCardSummary{
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+        }
 
         &:first-child {
           .sCardImg {
@@ -380,8 +397,15 @@
     }
   }
   .cs {
+    padding-top: 0;
     .csItem {
       flex-direction: column;
+      text-align: center;
+    }
+    .csSummary{
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
     }
     &:last-child {
       .csImg {

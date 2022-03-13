@@ -35,7 +35,6 @@
   max-width: 450px;
   margin: auto;
   padding: 5rem 0;
-
 }
 
 .form,
@@ -54,49 +53,74 @@
   display: flex;
   flex-direction: column;
   gap: 38px;
+
+ 
+}
+
+.radioField{
+  display: flex;
+  justify-content: space-between;
+  .radioOptions{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .fieldLabelText {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    // line-height: 30px;
+    color: rgba(46, 48, 52, 0.4);
+  }
+  .radioIcon{
+    color: rgba(46, 48, 52, 0.4);
+  }
 }
 
 .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   margin: 0 auto;
 }
 
-
-.info{
+.info {
   color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #018F6AD9;
-;
+  background-color: #018f6ad9;
 }
 
-.img{
+.img {
   width: 626px;
   height: 526px;
 }
 
-.para{
-  font-family: 'Source Sans Pro';
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: -0.015em;
-text-align: center;
-width: 499px;
-padding-top: 30px;
-padding-bottom: 30px;
-
+.para {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  text-align: center;
+  width: 499px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.heading{
+.heading {
   font-family: Source Sans Pro;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 30px;
-letter-spacing: 0px;
-text-align: center;
-
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: center;
 }

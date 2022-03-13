@@ -487,6 +487,8 @@
 }
 
 @media screen and (max-width: 1032px) {
+
+  
   .landingBreak {
     display: block;
   }
@@ -640,7 +642,10 @@
       width: unset;
       padding-left: 4rem;
       padding-right: 4rem;
+      font-size: 14px;
     }
+
+  
 
     .protocolList {
       width: 100%;
@@ -732,6 +737,16 @@
       border: 3px solid rgba(251, 251, 251, 0.05);
       filter: blur(60px);
     }
+  }
+
+  .protocolImg{
+    width: 46px;
+    margin: auto;
+    height: 43px;
+  }
+
+  .protocolItemText{
+    font-size: 14px !important;
   }
 }
 

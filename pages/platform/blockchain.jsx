@@ -118,9 +118,9 @@ const Blockchain = ({
       </div>
 
       {/* platform picture */}
-      <div className={styles.platformPic}>
+      {/* <div className={styles.platformPic}>
 
-      </div>
+      </div> */}
 
 
 
@@ -218,7 +218,7 @@ const Blockchain = ({
 
       {/* Software section */}
       <div className={styles.software}>
-        <div className={styles.heading}>Software</div>
+        {/* <div className={styles.heading}>Software</div> */}
       </div>
 
       {/* case study section */}

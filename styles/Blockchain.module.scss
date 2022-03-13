@@ -397,7 +397,15 @@
 
   .protokollo {
     .glowCircle {
-      left: unset;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 70%;
+      height: 40%;
+      background: rgba(35, 156, 124, 0.6);
+      border: 3px solid rgba(251, 251, 251, 0.05);
+      box-sizing: border-box;
+      filter: blur(137px);
     }
     .pImg {
       width: 60%;
@@ -418,6 +426,8 @@
     .kpImg,
     .kpText {
       width: unset;
+      font-size: 14px;
+      line-height: 20px;
     }
     .kpImg {
       order: 1;
@@ -432,6 +442,7 @@
 
     .kpPoints {
       flex-direction: column;
+      margin-bottom: 20px;
     }
   }
 
@@ -472,6 +483,13 @@
   }
 
   .cs {
+    text-align: center;
+    .csSummary{
+      font-size: 14px;
+      line-height: 20px;
+      padding-top: 10px;
+      
+    }
     .csItem {
       flex-direction: column;
     }

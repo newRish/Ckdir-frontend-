@@ -171,6 +171,10 @@
       display: flex;
       justify-content: center;
     }
+    .flexStart{
+      display: flex;
+      justify-content: flex-start;
+    }
 
     .para {
       font-family: Inter;
@@ -264,6 +268,10 @@
 
     .para {
       width: unset;
+      text-align: center;
+
+      font-size: 14px;
+      line-height: 20px;
     }
     .devicesImg {
       // display: none;
@@ -328,6 +336,8 @@
   // .dharPoints,
   .features {
     display: flex;
+    flex-direction: column;
+    gap: 35px;
     overflow-x: scroll;
     &::-webkit-scrollbar {
       width: 2px;
@@ -339,10 +349,19 @@
       align-items: center;
       gap: 4rem;
       padding: 0;
+
+      .para{
+        line-height: 20px;
+      }
     }
     .img {
       // order: -1;
-      width: 250px;
+      width: 100%;
+    }
+
+    .flexStart{
+      // display: unset !important;
+      justify-content: center !important;
     }
 
     .text,

@@ -43,6 +43,8 @@
   max-width: 144px;
   text-overflow: ellipsis;
   padding: 3px 16px;
+  display: flex;
+  gap: 15px;
   &:hover {
     background-color: rgba(1, 143, 106, 0.85);
     border-radius: 4px;
@@ -52,4 +54,14 @@
 
 .hideDrop {
   display: none;
+}
+
+.optionIcon{
+  width: 22px !important;
+    height: 22px !important;
+  img{
+    width: 22px !important;
+    height: 22px !important;
+  }
+
 }

@@ -309,6 +309,15 @@
       }
       // flex-direction: column;
       // gap: 5rem;
+
+      .featureIcon{
+        width: 43px;
+        height: 48px;
+      }
+
+      .featureText{
+        font-size: 14px;
+      }
     }
 
     .featureItem {
@@ -332,13 +341,24 @@
 
   .useCase {
     flex-direction: column;
+    text-align: center;
+    .useCaseHeading{
+      text-align: center;
+    }
 
     .useCaseReadMore {
-      font-size: 2.5rem;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 35px;
     }
 
     .useCaseSummary {
-      margin-top: 1rem;
+      margin-top: 19px;
+      margin-bottom: 19px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: rgba(251, 251, 251, 0.8);
     }
   }
 
