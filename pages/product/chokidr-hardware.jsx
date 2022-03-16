@@ -32,19 +32,19 @@ const ChokidrHardware = ({ dharList }) => {
     {
       heading: "Ground to Ground Communication",
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt. ",
+        "Connected through the LoRaWan network and you can communicate between end-devices and multiple ground stations to assist in coordination between agencies to ensure a safe and efficient execution of operations.",
       img: connectedWorldImg,
     },
     {
       heading: "Offline",
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt.",
+        "Detect and identify any incident even when you are offline.",
       img: offlineImg,
     },
     {
       heading: "Scalable",
       text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare dolor pellentesque elementum ultrices sem tincidunt.",
+        "Military-Grade autonomy and data protection device that is Adaptable, Scalable and Affordable.",
       img: scaleImg,
     },
   ];
