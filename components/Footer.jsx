@@ -102,13 +102,13 @@ const Footer = () => {
                   <a>Linkedin</a>
                 </Link>
               </li>
-              <li className={styles.listItem}>
+              {/* <li className={styles.listItem}> */}
                 {/* <Link href={'/product/chokidr-software/identities'}>
                                     <a> */}
-                Discord
+                {/* Discord */}
                 {/* </a>
                                 </Link> */}
-              </li>
+              {/* </li> */}
             </ul>
             <ul className={styles.topSpacing}>
               <div className={styles.header}>Support</div>
@@ -141,23 +141,23 @@ const Footer = () => {
                 <span>+91 82961 33177</span>
               </li>
             </ul>
-            <ul className={styles.topSpacing}>
+            {/* <ul className={styles.topSpacing}>
               <div className={styles.header}>Legal</div>
               <li className={styles.listItem}>
-                {/* <Link href={'/product/chokidr-software/identities'}>
-                                    <a> */}
+                <Link href={'/product/chokidr-software/identities'}>
+                                    <a>
                 Terms
-                {/* </a>
-                                </Link> */}
+                </a>
+                                </Link>
               </li>
               <li className={styles.listItem}>
-                {/* <Link href={'/product/chokidr-software/identities'}>
-                                    <a> */}
+                <Link href={'/product/chokidr-software/identities'}>
+                                    <a>
                 Policy
-                {/* </a>
-                                </Link> */}
+                </a>
+                                </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
