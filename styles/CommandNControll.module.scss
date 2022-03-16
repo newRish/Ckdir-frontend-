@@ -1,0 +1,23 @@
+.landing {
+  background-image: url("../public/radar-tracking.png");
+  background-position: center;
+  min-height: 591px !important;
+  background-size: 1440px 591px;
+
+  .textContainer {
+    text-align: left;
+    justify-content: center;
+    display: flex;
+  }
+
+  .landingText{
+      font-weight: 600;
+  }
+
+  .para {
+    width: unset;
+    color: rgba(251, 251, 251, 0.8) !important;
+    font-size: 25px !important;
+    line-height: 35px !important;
+  }
+}

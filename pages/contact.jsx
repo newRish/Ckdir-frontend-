@@ -192,9 +192,9 @@ const contact = () => {
                             />
                         </div>
                     </div>
-                    <div className={styles.percent}>
+                    {/* <div className={styles.percent}>
                         25%
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

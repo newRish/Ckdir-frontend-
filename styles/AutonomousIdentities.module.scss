@@ -26,18 +26,18 @@
     flex: 1;
     display: flex;
     align-items: center;
-    padding-left: 5.9rem;
-    padding-right: 5.9rem;
+    padding-left: 3.9rem;
+    padding-right: 3.9rem;
     z-index: 5;
     gap: 8rem;
   }
 
-  .img {
-    flex: 0.4;
-  }
-  .textContainer {
-    flex: 0.6;
-  }
+  // .img {
+  //   flex: 0.4;
+  // }
+  // .textContainer {
+  //   flex: 0.6;
+  // }
 
   .landingText {
     font-family: Outfit;
@@ -50,18 +50,17 @@
 
   .para {
     font-family: Inter;
-    font-size: 4rem;
+    font-size: 25px;
     font-style: normal;
     font-weight: 600;
-    line-height: 5.5rem;
-
+    line-height: 38px;
     width: 63.8rem;
   }
 }
 
 .alterList {
-  margin-top: 13.2rem;
-  margin-bottom: 13.2rem;
+  margin-top: 49px;
+  // margin-bottom:128px;
   padding-left: 5.7rem;
   padding-right: 5.7rem;
   display: flex;
@@ -129,6 +128,8 @@
     .para {
       width: unset;
       text-align: center;
+      font-size: 18px;
+line-height: 23px;
     }
 
     .container {
@@ -153,13 +154,19 @@
     }
   }
 
-  .img,
-  .textContainer {
-    flex: unset !important;
-  }
+  // .img,
+  // .textContainer {
+  //   flex: unset !important;
+  // }
 
   .label {
     line-height: 20px !important;
     font-size: 14px !important;
+  }
+
+  .alterList{
+    margin-top: 35px;
+    gap: 35px !important;
+    margin-bottom: 0;
   }
 }

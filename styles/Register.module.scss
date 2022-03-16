@@ -53,17 +53,17 @@
   display: flex;
   flex-direction: column;
   gap: 38px;
-
- 
 }
 
-.radioField{
+.radioField {
   display: flex;
   justify-content: space-between;
-  .radioOptions{
+
+  .radioOptions {
     display: flex;
     gap: 5px;
     align-items: center;
+    cursor: pointer;
   }
 
   .fieldLabelText {
@@ -74,7 +74,7 @@
     // line-height: 30px;
     color: rgba(46, 48, 52, 0.4);
   }
-  .radioIcon{
+  .radioIcon {
     color: rgba(46, 48, 52, 0.4);
   }
 }
@@ -94,11 +94,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #018f6ad9;
+  // background-color: #018f6ad9;
+  background-image: url("../public/green-dotted-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img {
-  width: 626px;
+  width: 80%;
   height: 526px;
 }
 
@@ -123,4 +126,114 @@
   line-height: 30px;
   letter-spacing: 0px;
   text-align: center;
+}
+
+.countryDrop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(46, 48, 52, 0.4);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+  .cLeft {
+    display: flex;
+    gap: 17px;
+  }
+}
+
+.selfInvite {
+  display: flex;
+  flex-direction: row !important;
+
+  .img {
+    width: 299px;
+    height: 578px;
+    padding: 3rem;
+  }
+
+  .text {
+    flex: 0.5;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .header {
+    text-align: center;
+    margin: auto;
+    padding: 22px;
+  }
+
+  .info {
+    padding-top: 34px;
+    min-height: 450px;
+    justify-content: flex-start;
+    flex: unset;
+  }
+
+  .img {
+    width: 70%;
+    height: 158px;
+  }
+
+  .phoneImg {
+    img {
+      width: 123px !important;
+      height: 239px !important;
+    }
+    display: flex;
+    justify-content: center;
+  }
+
+  .selfInvite{
+    padding: 0 28px;
+    .phoneImg, .text{
+flex: 1;
+    }
+   
+    .text{
+.para{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+     
+    }
+  }
+
+  .para {
+    width: unset;
+    padding: 10px 17px;
+  }
+
+  .form {
+    order: 2;
+    flex: unset;
+  }
+  .formContainer {
+    padding: 27px;
+    .formHeader {
+      align-items: center;
+    }
+  }
+
+  .radioIcon {
+    svg {
+      font-size: 20px;
+    }
+  }
 }

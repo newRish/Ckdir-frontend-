@@ -1,6 +1,6 @@
 import styles from "../../styles/Network.module.scss";
 import Header from "../../components/Header";
-import mapDashboardImg from "../../public/mapDashboard.svg";
+import mapDashboardImg from "../../public/mapDashboard.png";
 import Image from "next/image";
 import Button from "../../components/Button";
 import rectangleImg from "../../public/Rectangle_630.png";
@@ -15,6 +15,7 @@ import governanceImg from "../../public/icons/central-governance.svg";
 import privecyImg from "../../public/icons/lock-privecy.svg";
 import React from "react";
 import ConnectNetworkSection from "../../components/ConnectNetowrkSection";
+import networkContactImg from "../../public/cloud-computing-banner-background-smart-city-1.png";
 
 
 
@@ -56,14 +57,14 @@ const Network = () => {
 
       {/* Salient features section */}
       <div className={styles.salientFeature}>
-        <div className={styles.slientHeading}>Salient features</div>
+        {/* <div className={styles.slientHeading}>Salient features</div> */}
 
         <div className={styles.featuresCard}>
           {/* glowing cards */}
-          <div className={styles.circle1}></div>
+          {/* <div className={styles.circle1}></div>
           <div className={styles.circle2}></div>
           <div className={styles.circle3}></div>
-          <div className={styles.circle4}></div>
+          <div className={styles.circle4}></div> */}
 
           <ul className={styles.featureList}>
             <li className={styles.featureItem}>
@@ -135,11 +136,13 @@ const Network = () => {
           heading={"Test Public Network to be Launched this June!"}
           url={"/contact"}
           isActive={true}
+          img={networkContactImg.src}
         />
       </div>
 
       {/* use case section */}
-      <div className={styles.useCase}>
+      {/* no content avilable */}
+      {/* <div className={styles.useCase}>
         <div className={styles.useCaseImg}>
           <Image src={rectangleImg} alt="use case" />
         </div>
@@ -166,7 +169,7 @@ const Network = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* using network section */}
 

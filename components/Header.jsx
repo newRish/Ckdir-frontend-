@@ -1,5 +1,5 @@
 import styles from '../styles/componentsStyle/Header.module.scss';
-import happyMonkLogo from '../public/happymonkLogo.png'
+import happyMonkLogo from '../public/new-logo.png'
 import { Icons } from '../utils/icons';
 import Image from 'next/image';
 import NavDropDown from './NavDropDown';
@@ -25,9 +25,7 @@ const Header = () => {
                                     alt="logo"
                                 />
                             </span>
-                            <span>
-                                HAPPYMONK
-                            </span>
+                            
                         </div>
                     </a>
                 </Link>

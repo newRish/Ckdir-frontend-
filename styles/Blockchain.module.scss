@@ -126,6 +126,7 @@
 
 // Protokollo section
 .protokollo {
+  overflow-y: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -357,6 +358,10 @@
 }
 
 @media screen and (max-width: 650px) {
+  .landing{
+    background-image: url("../public/cryptocurrency-concept-with-bitcoin-sm.png");
+   background-position: right;
+  }
   .displeNone {
     display: block;
   }
@@ -412,9 +417,14 @@
     }
 
     .pCards {
-      flex-direction: column;
-      width: 90%;
+      overflow-y: scroll;
+      // flex-direction: column;
+      &::-webkit-scrollbar{
+        width: 0;
+      }
+      width: 100%;
       margin: auto;
+      margin-top: 10px;
       gap: 15px;
       .pImg {
         width: 44px;
@@ -423,6 +433,9 @@
   }
 
   .kp {
+    .heading{
+      margin-top: 0;
+    }
     .kpImg,
     .kpText {
       width: unset;

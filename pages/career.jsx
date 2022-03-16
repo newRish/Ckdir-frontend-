@@ -13,8 +13,7 @@ const career = ({ openRoles }) => {
                         Start your dream job by joining our team
                     </div>
                     <p className={styles.landingText}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ac suspendisse etiam sit lacus.
+                    Like building revolutionary products? Do your fingers type faster than your brains? Then, This is the right place for you.
                     </p>
 
                 </div>

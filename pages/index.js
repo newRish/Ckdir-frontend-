@@ -22,6 +22,17 @@ import edgecI from "../public/compressed/decentralized.svg";
 import socialFootprintImg from "../public/compressed/social-footprint.svg";
 import connectingPeopleImg from "../public/compressed/connecting-people.svg";
 import complianceImg from "../public/compressed/Compliance.svg";
+import assuredQualityImg from "../public/icons/assured-quality.svg";
+import leafImg from "../public/icons/leaf.png";
+import lockImg from "../public/icons/lock-privecy.svg";
+import inscuranceImg from "../public/icons/insurance.svg";
+import connecct2sysImg from "../public/icons/conn2sys.png";
+import tempOptImg from "../public/icons/temp-opt.png";
+import rttImg from "../public/icons/delivery-track.png";
+
+
+import givingIdImg from "../public/icons/giving-id.png";
+
 import controlledEnvImg from "../public/compressed/controll-environment.svg";
 import reliableDataImg from "../public/compressed/tamperproof-data.svg";
 import proofDocImg from "../public/compressed/proof-of-activity.svg";
@@ -68,7 +79,7 @@ const revCardData = {
   ],
   2: [
     {
-      img: complianceImg,
+      img: rttImg,
       title: "Real time tracking",
       text: (
         <p className={styles.revolutionCardText}>
@@ -81,7 +92,7 @@ const revCardData = {
       ),
     },
     {
-      img: controlledEnvImg,
+      img: connecct2sysImg,
       title: "Connect to legacy system",
       text: (
         <p className={styles.revolutionCardText}>
@@ -94,7 +105,7 @@ const revCardData = {
       ),
     },
     {
-      img: reliableDataImg,
+      img: tempOptImg,
       title: "Transparency of Operations",
       text: (
         <p className={styles.revolutionCardText}>
@@ -109,7 +120,7 @@ const revCardData = {
   ],
   3: [
     {
-      img: complianceImg,
+      img: reliableDataImg,
       title: "Tamperproof data",
       text: (
         <p className={styles.revolutionCardText}>
@@ -120,7 +131,7 @@ const revCardData = {
       ),
     },
     {
-      img: controlledEnvImg,
+      img: inscuranceImg,
       title: "Seamless Insurance",
       text: (
         <p className={styles.revolutionCardText}>
@@ -131,7 +142,7 @@ const revCardData = {
       ),
     },
     {
-      img: reliableDataImg,
+      img: lockImg,
       title: "Data Privacy",
       text: (
         <p className={styles.revolutionCardText}>
@@ -144,7 +155,7 @@ const revCardData = {
   ],
   4: [
     {
-      img: complianceImg,
+      img: assuredQualityImg,
       title: "Assured quality",
       text: (
         <p className={styles.revolutionCardText}>
@@ -155,7 +166,7 @@ const revCardData = {
       ),
     },
     {
-      img: controlledEnvImg,
+      img: givingIdImg,
       title: "Quality & Authenticity",
       text: (
         <p className={styles.revolutionCardText}>
@@ -166,7 +177,7 @@ const revCardData = {
       ),
     },
     {
-      img: reliableDataImg,
+      img: leafImg,
       title: "Ecological Safety",
       text: (
         <p className={styles.revolutionCardText}>
@@ -417,7 +428,8 @@ const Home = () => {
       </div>
 
       {/* Case Studies section */}
-      <CaseStudySection />
+      {/* commented due to no content */}
+      {/* <CaseStudySection /> */}
 
       {/* Networking section */}
       <div className={styles.networkingContainer}>

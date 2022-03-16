@@ -284,9 +284,14 @@
     text-align: center;
     width: unset;
   }
+  .platformCardText {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
   .landing {
-    background-position: top;
+    background-image: url("../public/globe-tech-small.png");
+    // background-position: top;
     background-size: 677px 665px;
     display: flex;
     min-height: 655px;
@@ -296,7 +301,7 @@
   .platformCard {
     height: unset;
     min-height: 60rem;
-    width: 55rem;
+    // width: 55rem;
     // height: 45rem;
   }
 
@@ -363,6 +368,7 @@
   }
 
   .network {
+    margin-top: 30px;
     height: unset;
     flex-direction: column;
     padding: 0 1rem 2rem 1rem;
@@ -397,6 +403,6 @@
   .platformCard {
     height: unset;
     min-height: 55rem;
-    width: 45rem;
+    // width: 45rem;
   }
 }

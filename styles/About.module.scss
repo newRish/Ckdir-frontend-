@@ -40,12 +40,17 @@
 .landingContainer {
   background-image: url("../public/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration.png");
   @include bg-norepeat-cover;
+  min-height: 666px;
+  display: flex;
+  flex-direction: column;
 }
 
 .landingPage {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 1;
   flex-direction: column;
   gap: 4rem;
   padding-top: 6rem;
@@ -68,38 +73,133 @@
 .mission {
   padding: 6.9rem 2rem 6.9rem 6rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 5rem;
 
   .heading2 {
-    margin-bottom: 5.8rem;
+    margin-bottom: 20px;
     text-align: center;
   }
 
   .text {
     text-align: center;
-    flex: 0.4;
-    width: 46.1rem;
+    // flex: 0.4;
+    // width: 46.1rem;
     font-family: Inter;
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 3rem;
+    background-image: url("../public/Pngtree-technology-network data-globe.png");
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  .img {
-    flex: 0.6;
+
+  .para {
+    width: 762px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+
+    color: rgba(251, 251, 251, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.values {
+  background-image: url("../public/aerial-view-business-team.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  min-height: 916px;
+  margin-bottom: 69px;
+  .heading2 {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .valueList {
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .cards {
+    width: 427px;
+    height: 356px;
+    padding: 64px 18px;
+
+    background: rgba(15, 15, 15, 0.9);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    .glowVal2,
+    .glowVal1 {
+      position: absolute;
+      background: rgba(35, 156, 124, 0.3);
+      border: 3px solid rgba(251, 251, 251, 0.05);
+      box-sizing: border-box;
+      filter: blur(40px);
+      z-index: 1;
+    }
+
+    .glowVal2 {
+      width: 149px;
+      height: 149px;
+      bottom: 20px;
+      left: -30px;
+    }
+    .glowVal1 {
+      width: 208px;
+      height: 208px;
+      top: -70px;
+      right: 20px;
+    }
+    .text {
+      z-index: 10;
+    }
+    .valueImg {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .subHeading {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 50px;
+      text-align: center;
+      color: #fbfbfb;
+    }
+    .summary {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      z-index: 20;
+      /* or 140% */
+
+      text-align: center;
+
+      color: rgba(251, 251, 251, 0.8);
+    }
   }
 }
 
-.values,
+// .values,
 .founders {
-  margin: 10rem 6rem 6rem 6rem;
-  .heading2 {
-    margin-top: 10rem;
-    margin-bottom: 6rem;
-    text-align: center;
-  }
+  margin: 0 6rem 6rem 6rem;
+
   .valueList {
     display: flex;
     justify-content: space-evenly;
@@ -107,14 +207,12 @@
   }
   .cards {
     text-align: center;
-    padding: 1.8rem;
-    flex: 1;
-    height: 35.4rem;
+    // flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    background: #0f0f0f;
+    background: rgba(15, 15, 15, 0.9);
     border-radius: 1rem;
 
     .subHeading {
@@ -135,37 +233,92 @@
 }
 
 .founders {
-  .cards {
-    height: 67.4rem;
-    padding-bottom: 6.4rem;
+  .fdeseg {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(251, 251, 251, 0.8);
+  }
+  .founderImg {
+    z-index: 10;
+  }
+  .text {
+    overflow: hidden;
+    padding: 20px 18px;
+    position: relative;
 
+    .fglow1,
+    .fglow2 {
+      position: absolute;
+      background: rgba(35, 156, 124, 0.4);
+      border: 3px solid rgba(251, 251, 251, 0.05);
+      box-sizing: border-box;
+      filter: blur(50px);
+
+      z-index: 1;
+    }
+
+    .fglow1 {
+      bottom: 180px;
+      right: 5px;
+      width: 208px;
+      height: 208px;
+    }
+
+    .fglow2 {
+      bottom: -90px;
+      left: -50px;
+      width: 149px;
+      height: 149px;
+      // display: none;
+    }
+  }
+  .cards {
+    // height: 67.4rem;
+    // padding-bottom: 26px;
+
+    overflow: hidden;
     .summary {
-      &:last-child {
-        color: rgba(228, 228, 231, 0.6);
-      }
+      padding-bottom: 20px;
+      padding-top: 21px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: rgba(251, 251, 251, 0.8);
+      z-index: 10;
     }
   }
 }
 
 .misc {
-  margin: 12rem 6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  margin: 5rem 6rem;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 4rem;
 
   .container {
     display: flex;
-    flex-direction: column;
-    gap: 5.8rem;
-    margin-top: 2rem;
+    // flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    // margin-top: 2rem;
   }
   .para {
-    width: 46.1rem;
-    font-family: Inter;
-    font-size: 2rem;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    line-height: 3rem;
+    font-size: 25px;
+    line-height: 38px;
+    color: rgba(251, 251, 251, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -178,10 +331,16 @@
 }
 
 @media screen and (max-width: 450px) {
+  .landingContainer {
+    background-image: url("../public/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration-sm.png");
+    background-size: 414px 533px;
+    min-height: 533px;
+  }
   .landingPage {
     .heading1 {
       width: unset;
-      font-size: 4.5rem;
+      font-size: 40px;
+      line-height: 45px;
       padding-left: 3rem;
       padding-right: 3rem;
     }
@@ -193,19 +352,73 @@
     .text {
       width: unset;
     }
+    .para {
+      font-size: 14px;
+      line-height: 20px;
+      width: unset;
+    }
+  }
+
+  .values {
+    min-height: 619px;
+    .valueList {
+      padding: unset;
+      flex-wrap: wrap-reverse;
+    }
+    .cards {
+      padding: unset;
+      padding-top: 30px;
+      overflow: visible;
+      // margin: auto;
+      width: 179px;
+      height: 248px;
+      .valueImg{
+        margin-bottom: 0;
+      }
+      .glowVal1,
+      .glowVal2 {
+        display: none;
+      }
+      .subHeading {
+        font-size: 16px;
+        line-height: 50px;
+      }
+      .summary {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
   }
 
   .valueList {
-    flex-direction: column;
+    // flex-direction: column;
+    // .summary {
+    //   font-size: 14px !important;
+    //   line-height: 20px !important;
+    // }
   }
 
   .misc {
+    margin-bottom: 30px;
     .heading2 {
       text-align: center;
+      line-height: 20px;
     }
     text-align: center;
     .para {
       width: unset;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
     }
+
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  .summary {
+    font-size: 14px !important;
+    line-height: 20px !important;
   }
 }

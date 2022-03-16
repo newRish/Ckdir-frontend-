@@ -4,7 +4,7 @@
   display: flex;
   align-items: flex-start;
   // justify-content: space-between;
-  gap: 2.2rem;
+  gap: 48px;
 
   .img,
   .text {
@@ -13,7 +13,10 @@
 }
 
 .text {
-  padding: 0 6rem;
+  // padding: 0 6rem;
+  .para{
+    color: rgba(251, 251, 251, 0.8);
+  }
 }
 
 .heading {
@@ -40,9 +43,16 @@
 }
 
 @media screen and (max-width: 450px) {
+  .heading{
+    font-size: 16px;
+line-height: 30px;
+  }
+
+
   .container {
     flex-direction: column;
     align-items: center;
+    gap: 18px;
     .img,
     .text {
       flex: unset;
@@ -53,8 +63,8 @@
     }
 
     .img {
-      width: 80%;
-      order: -1 !important;
+      width: 100%;
+      order: 1 !important;
     }
 
     .readMoreText {

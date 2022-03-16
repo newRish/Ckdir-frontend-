@@ -2,6 +2,7 @@
 @import "./mixins.scss";
 
 .landing {
+  background-image: url("../public/identities-bg.png");
   @include bg-norepeat-cover;
   min-height: 80vh;
   display: flex;
@@ -32,12 +33,12 @@
     gap: 8rem;
   }
 
-  .img {
-    flex: 0.4;
-  }
-  .textContainer {
-    flex: 0.6;
-  }
+  // .img {
+  //   flex: 0.4;
+  // }
+  // .textContainer {
+  //   flex: 0.6;
+  // }
 
   .landingText {
     font-family: Outfit;
@@ -50,12 +51,10 @@
 
   .para {
     font-family: Inter;
-    font-size: 4rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 5.5rem;
-
-    width: 63.8rem;
+    font-size: 25px;
+    // line-height: 55px;
   }
 }
 
@@ -66,7 +65,7 @@
   padding-right: 5.7rem;
   display: flex;
   flex-direction: column;
-  gap: 124px;
+  gap: 76px;
 
   .list1,
   .list2,
@@ -76,6 +75,7 @@
   }
 
   .glow {
+    display: none;
     position: absolute;
     width: 40rem;
     height: 40rem;
@@ -119,8 +119,19 @@
 
 @media screen and (max-width: 450px) {
   .landing {
-    // display: none;
-    min-height: 50vh;
+    background-image: url("../public/machine-learning-hand-robot-touching-computer-chip-binary-data-small.png");
+    min-height: 665px;
+
+    .para{
+      font-size: 18px;
+      line-height: 23px;
+      padding-bottom: 43px;
+    }
+  }
+
+  .label{
+    font-size: 14px !important;
+    line-height: 20px !important;
   }
 
   .list1 {
@@ -143,8 +154,22 @@
     }
   }
 
-  .img,
-  .textContainer {
+  .img {
     flex: unset !important;
+  }
+
+  .container{
+align-items: flex-end !important;
+text-align: center;
+// padding-bottom: 40px;
+  }
+
+  .textContainer{
+    flex: 1;
+  }
+
+  .alterList {
+    gap: 40px !important;
+    margin-bottom: 0;
   }
 }

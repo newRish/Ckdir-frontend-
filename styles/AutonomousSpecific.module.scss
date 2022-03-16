@@ -1,0 +1,49 @@
+.landing {
+  background-image: url("../public/hand-shake-robot.png");
+  background-position: center;
+  min-height: 680px !important;
+  background-size: 100% 100%;
+
+  .textContainer {
+    text-align: center;
+    justify-content: flex-start;
+    display: flex;
+    margin: auto;
+  }
+
+  .landingText {
+    font-weight: 600;
+    margin-bottom: unset !important;
+  }
+
+  .textwrapper {
+    flex: unset;
+    max-width: 832px;
+    color: rgba(251, 251, 251, 0.8);
+  }
+
+  .para {
+    width: unset;
+    color: rgba(251, 251, 251, 0.8) !important;
+    width: 752px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .landing{
+    background-image: url('../public/ai-handshake-sm.png');
+    min-height: 665px !important;
+  }
+  .para {
+    width: unset !important;
+  }
+
+  .textwrapper {
+    flex: 1 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+  }
+}

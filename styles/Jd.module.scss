@@ -113,6 +113,8 @@
 }
 
 .apply {
+  // background-image: url("../public/top-view-person-writing-laptop-with-copy-space.png");
+  // background-repeat: no-repeat;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -185,6 +187,7 @@
 }
 
 .applyContainer {
+  
   display: flex;
   gap: 20px;
   .applyImg,

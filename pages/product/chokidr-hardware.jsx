@@ -14,6 +14,7 @@ import offlineImg from "../../public/css.png";
 import connectedWorldImg from "../../public/g2g-com.png";
 import iotManImg from "../../public/iot-hw.png";
 import undrawValut from "../../public/ai-edge.png";
+import networkContactImg from "../../public/cloud-computing-banner-background-smart-city-1.png";
 
 const ChokidrHardware = ({ dharList }) => {
   const feature = [
@@ -108,14 +109,23 @@ const ChokidrHardware = ({ dharList }) => {
       <div className={styles.dhar}>
         <div>
           <div className={styles.heading}>Dhar</div>
-          <div className={styles.dharText}>
-            An autonomous, edge device that is Lorawan compatible, which can be
-            retro-fitted into your network. Powered by 52 RFIDs and sixteen
-            cameras, that work with your existing legacy infrastructure, that
-            can auto-connect to other Dhar in nearby vicinity.
+          <div className={styles.dharQuote}>
+            <div>
+              You’re backhauling data to a cloud that’s far away, miles away...
+            </div>
+            <div className={styles.dharSaid}>Said - ‘cloud’</div>
           </div>
+          <div></div>
+
           <div className={styles.dharPoints}>
             <ul className={styles.dharList}>
+              <div className={styles.dharText}>
+                Next-generation applications and services require a new
+                computing infrastructure that delivers low latency networks and
+                high-performance computing at the extreme edge of the network.
+                Industry sensors and cameras are sensing things in the real
+                world and taking action on the information.
+              </div>
               {dharList?.map((e, i) => (
                 <li key={i} className={styles.dharItem}>
                   <div className={styles.dharItemStyle}></div>
@@ -123,11 +133,9 @@ const ChokidrHardware = ({ dharList }) => {
                 </li>
               ))}
             </ul>
+            <div className={styles.chokidrBackImg}></div>
+            <Image src={chokidrBackImg} alt={"dhar"} />
           </div>
-        </div>
-
-        <div className={styles.chokidrBackImg}>
-          <Image src={chokidrBackImg} alt={"dhar"} />
         </div>
       </div>
 
@@ -136,12 +144,18 @@ const ChokidrHardware = ({ dharList }) => {
         {feature.map((e, i) => (
           <div className={styles.feature} key={i}>
             <div
-              className={`${styles.text} ${i !== 0 && i % 2 !== 0 && styles.order2}`}
+              className={`${styles.text} ${
+                i !== 0 && i % 2 !== 0 && styles.order2
+              }`}
             >
               <div className={styles.subHeading}>{e.heading}</div>
               <div className={styles.para}>{e.text}</div>
             </div>
-            <div className={`${styles.img} ${i !== 0 && i % 2 !== 0 && styles.flexStart}`}>
+            <div
+              className={`${styles.img} ${
+                i !== 0 && i % 2 !== 0 && styles.flexStart
+              }`}
+            >
               <Image src={e.img} alt="feature image" />
             </div>
           </div>
@@ -211,6 +225,7 @@ const ChokidrHardware = ({ dharList }) => {
 
       {/* join the network section */}
       <ConnectNetworkSection
+        img={networkContactImg.src}
         heading={"Join the Network"}
         text={
           "Dhar. Launching this June! Deploy into your existing network, soon!"
@@ -228,10 +243,11 @@ export const getStaticProps = () => {
   return {
     props: {
       dharList: [
-        "Legacy Retrofitting - Connect Dhar into your existing IoT network, with no need for replacements!",
-        "Private network over LoraWAN - With a private network at your hand, your data is secure. The days of relying on telco providers are over.",
-        "Integrated IoT - Compatible with devices working on industry common protocols.",
-        "Scalable and Affordable - Easily scalable by connecting multiple devices over long-range distances based on your organization's needs.",
+        "Connect up 8 Cameras, BLE Enabled Sensor integration like thermal, LiDAR, ML/DL algorithms development and integration, Remote firmware upgrade, Audio and video, Cloud and mobile apps, PoE with IP67 enclosure",
+        "MultiProcesser System with integrated FPGA module customized for Hashes & Hash graphs.",
+        "Integrated Battery Backup for upto 12 hours.",
+        "Connect via 5G, LorwaWAN",
+        "Theft Prevention Module.",
       ],
     },
   };

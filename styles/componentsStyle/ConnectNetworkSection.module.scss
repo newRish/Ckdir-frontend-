@@ -2,7 +2,7 @@
 @import "../mixins.scss";
 
 .testNW {
-  background-image: url("../../public/cloud-computing-banner-background-smart-city-1.png");
+  // background-image: url("../../public/cloud-computing-banner-background-smart-city-1.png");
   @include bg-norepeat-cover;
   height: 41.8rem;
 

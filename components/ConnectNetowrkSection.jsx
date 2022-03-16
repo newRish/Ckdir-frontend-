@@ -1,9 +1,15 @@
 import styles from "../styles/componentsStyle/ConnectNetworkSection.module.scss"
 import Button from "./Button";
+// import img from "../public/bg-colorfull-rays.png"
 
-const ConnectNetworkSection = ({ heading, text, url, btnText, isActive }) => {
+const ConnectNetworkSection = ({ heading, text, url, btnText, isActive, img }) => {
     return (
-        <div className={styles.testNW}>
+        <div 
+        className={styles.testNW}
+        style={{
+            backgroundImage: `url(${img})`
+        }}
+        >
             <div className={styles.testNWheading}>
                 {heading}
             </div>

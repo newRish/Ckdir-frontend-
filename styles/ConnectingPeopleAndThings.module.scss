@@ -1,0 +1,53 @@
+.landing {
+    background-image: url("../public/driverless-car-interior-with-futuristic-dashboard-autonomous-control-system.png");
+    background-position: center;
+    min-height: 680px !important;
+    background-size: 100% 100%;
+   
+  
+    .textContainer {
+      text-align: left;
+      justify-content: flex-start;
+      display: flex;
+    }
+  
+    .landingText{
+        font-weight: 600;
+        margin-bottom: unset !important;
+    }
+  
+    .para {
+      width: unset;
+      color: rgba(251, 251, 251, 0.8) !important;
+      font-size: 25px ;
+      line-height: 35px ;
+    }
+  }
+  
+
+  @media screen and (max-width: 450px) {
+
+    .landing{
+      background-image: url("../public/driverless-car-interior-with-futuristic-dashboard-small.png");
+      // min-height: 770px;
+      // background-size: 800px 770px;
+      background-position: left;
+      // width: 1332px;
+      // height: 770px;
+    }
+    .mainText {
+      flex: 1 !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 40px;
+    }
+    .para {
+      width: unset;
+      color: rgba(251, 251, 251, 0.8) !important;
+      font-size: 18px !important;
+      line-height: 23px !important;
+    }
+  }
+  
+

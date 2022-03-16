@@ -39,8 +39,7 @@ const AI = () => {
         <Header />
         <div className={styles.textContainer}>
           <span className={styles.landingText}>
-            Bringing a fresh perspective to _____ with groundbreaking
-            technology!
+            Building Ethical, Responsible & Dependable AI for everyone.
           </span>
         </div>
       </div>
@@ -55,14 +54,14 @@ const AI = () => {
       {/* Salient features section */}
 
       <div className={styles.sf}>
-        <div className={styles.heading}>Salient features</div>
+        {/* <div className={styles.heading}>Salient features</div> */}
 
         <div className={styles.glassCard}>
           {/* glowing cards */}
-          <div className={styles.circle1}></div>
+          {/* <div className={styles.circle1}></div>
           <div className={styles.circle2}></div>
           <div className={styles.circle3}></div>
-          <div className={styles.circle4}></div>
+          <div className={styles.circle4}></div> */}
 
           <ul className={styles.sfList}>
             <li className={styles.sfItem}>
@@ -154,7 +153,8 @@ const AI = () => {
       </div>
 
       {/* case study section */}
-      <div className={styles.cs}>
+      {/* no content */}
+      {/* <div className={styles.cs}>
         <div className={styles.csItem}>
           <div className={styles.csText}>
             <div className={styles.csHeading}>Case study 1</div>
@@ -195,8 +195,7 @@ const AI = () => {
             <Image src={cs1Img} alt="case study" />
           </div>
         </div>
-      </div>
-    
+      </div> */}
     </div>
   );
 };

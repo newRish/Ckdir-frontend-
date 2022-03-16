@@ -307,7 +307,9 @@
 
 @media screen and (max-width: 450px) {
   .landing {
-    background-size: 100% 100%;
+    min-height: 665px;
+    background-size: 100% 665px;
+    background-image: url('../public/ai-bg-small.png');
   }
 
   .landingText {
@@ -319,6 +321,7 @@
     margin: 5rem 0rem;
   }
   .sf {
+   
     .circle3 {
       top: 70%;
       left: 40%;
@@ -342,6 +345,7 @@
         align-items: center;
       }
     }
+   
   }
 
 
@@ -349,6 +353,9 @@
   .software {
     .heading{
       margin-top: 0;
+    }
+    .sCardText{
+      gap: unset ;
     }
     .sCards {
       margin-top: 0;
