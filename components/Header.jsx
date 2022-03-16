@@ -101,11 +101,11 @@ const Header = () => {
                                 options: []
                             },
                             {
-                                heading: 'Hardware Support',
+                                heading: <Link href={'/contact'}><a>Hardware Support</a></Link>,
                                 options: []
                             },
                             {
-                                heading: 'Software Support',
+                                heading: <Link href={'/contact'}><a>Software Support</a></Link>,
                                 options: []
                             }
                         ]}
