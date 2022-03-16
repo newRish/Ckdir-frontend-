@@ -36,7 +36,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     z-index: 3;
   }
 
@@ -113,36 +113,57 @@
   margin-top: 8rem;
 }
 .dhar {
+  position: relative;
   color: $white;
   padding-left: 6.2rem;
   padding-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .chokidrBackImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    // width: 235px;
+    // height: 392px;
+  }
 }
 
 .dharPoints {
   display: flex;
   margin-top: 2.8rem;
+  z-index: 10;
 }
 
 .dharItem {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
-  margin-bottom: 4.9rem;
+  // gap: 2.5rem;
+  // margin-bottom: 3.9rem;
 }
 
-.dharItemStyle {
-  width: 4px;
-  height: 7.7rem;
+// .dharItemStyle {
+//   width: 4px;
+//   height: 7.7rem;
 
-  background: rgba(1, 143, 106, 0.85);
-  box-shadow: -6px 0px 30px 8px rgba(169, 255, 233, 0.15);
-  border-radius: 6px 0px 0px 6px;
-  transform: rotate(180deg);
-}
+//   background: rgba(1, 143, 106, 0.85);
+//   box-shadow: -6px 0px 30px 8px rgba(169, 255, 233, 0.15);
+//   border-radius: 6px 0px 0px 6px;
+//   transform: rotate(180deg);
+// }
 .dharText {
+  display: flex;
+  .dharItemStyle {
+
+    background: rgba(1, 143, 106, 0.85);
+    box-shadow: -6px 0px 30px 8px rgba(169, 255, 233, 0.15);
+    border-radius: 6px 0px 0px 6px;
+    padding-right: 4px;
+    margin-right: 25px;
+    min-height: 46px;
+  }
   font-family: "Inter";
   font-size: 2rem;
   font-style: normal;
@@ -154,6 +175,15 @@
   display: flex;
   color: rgba(251, 251, 251, 0.8);
   margin-bottom: 20px;
+  div{
+    &:last-child{
+      align-self: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  
 }
 
 .dharQuote {
@@ -323,6 +353,10 @@
         line-height: 6rem;
       }
     }
+
+    .mainText{
+      justify-content: flex-end;
+    }
   }
 
 
@@ -348,6 +382,23 @@
   }
   .dhar {
     // flex-direction: column;
+    .dharList{
+      width: 251px;
+      .dharText{
+        font-size: 14px !important;
+        line-height: 20px;
+
+      }
+    }
+    .chokidrBackImg{
+      position: absolute;
+      top: 0;
+      right: -135px;
+      z-index: 1;
+      width: 235px;
+      height: 573px;
+    }
+
     padding: 0 2rem;
     padding-right: 0;
     position: relative;
@@ -380,6 +431,7 @@
   .dharPoints{
     position: relative;
     overflow-x: hidden;
+
 
  
   }

@@ -29,6 +29,7 @@ import inscuranceImg from "../public/icons/insurance.svg";
 import connecct2sysImg from "../public/icons/conn2sys.png";
 import tempOptImg from "../public/icons/temp-opt.png";
 import rttImg from "../public/icons/delivery-track.png";
+import edgeCompImg from "../public/icons/man-in-pantagon.png";
 
 
 import givingIdImg from "../public/icons/giving-id.png";
@@ -209,7 +210,7 @@ const Home = () => {
               </div>
               <p className={styles.landingText}>
                 Unlock a World with more possibilities. Disrupting emerging
-                techologies that promises a safer, better, and inclusive future
+                technologies that promise a safer, better and inclusive future
                 for human beings.
               </p>
             </div>
@@ -249,7 +250,7 @@ const Home = () => {
           </li>
           <li className={styles.blackBoxIcon}>
             <div className={styles.balckBoxIconImg}>
-              <Image src={edgecI} alt="edge computed" />
+              <Image src={edgeCompImg} alt="edge computed" />
             </div>
             <div className={styles.backBoxListText}>Edge Computed</div>
           </li>

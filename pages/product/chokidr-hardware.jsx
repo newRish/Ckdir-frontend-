@@ -37,8 +37,7 @@ const ChokidrHardware = ({ dharList }) => {
     },
     {
       heading: "Offline",
-      text:
-        "Detect and identify any incident even when you are offline.",
+      text: "Detect and identify any incident even when you are offline.",
       img: offlineImg,
     },
     {
@@ -128,13 +127,17 @@ const ChokidrHardware = ({ dharList }) => {
               </div>
               {dharList?.map((e, i) => (
                 <li key={i} className={styles.dharItem}>
-                  <div className={styles.dharItemStyle}></div>
-                  <div className={styles.dharText}>{e}</div>
+                  {/* <div ></div> */}
+                  <div className={styles.dharText}>
+                    <div className={styles.dharItemStyle}></div>
+                    <div>{e}</div>
+                  </div>
                 </li>
               ))}
             </ul>
-            <div className={styles.chokidrBackImg}></div>
-            <Image src={chokidrBackImg} alt={"dhar"} />
+            <div className={styles.chokidrBackImg}>
+              <Image src={chokidrBackImg} alt={"dhar"} />
+            </div>
           </div>
         </div>
       </div>

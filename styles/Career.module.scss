@@ -31,14 +31,20 @@
 .landingContainer {
   background-image: url("../public/abstract-dark-blue-futuristic-digital-grid-background.png");
   @include bg-norepeat-cover;
+  min-height: 533px;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
 }
 
 .landingPage {
+  flex: 1;
+  justify-content: center;
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 4rem;
+  gap: 10px;
   padding-top: 6rem;
   padding-bottom: 8.8rem;
   .heading1 {
@@ -53,6 +59,8 @@
     letter-spacing: 0em;
     text-align: center;
     width: 63.6rem;
+    color: rgba(251, 251, 251, 0.8);
+
   }
 }
 
@@ -89,15 +97,28 @@
 }
 
 @media screen and (max-width: 450px) {
+  .heading1 {
+    font-size: 40px;
+    line-height: 50px;
+    width: unset !important;
+    padding: 0 20px;
+  }
   .landingContainer {
     background-position: center;
+    min-height: 497px;
+   
+    background-image: url("../public/abstract-dark-blue-futuristic-digital-grid-background-sm.png");
+
   }
 
-  .landingText{
+  
+
+  .landingText {
     width: 90% !important;
     font-weight: 600 !important;
     font-size: 18px !important;
     line-height: 23px !important;
+   
   }
 
   .roles {

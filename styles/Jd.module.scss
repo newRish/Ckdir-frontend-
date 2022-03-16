@@ -31,6 +31,8 @@
 .landingContainer {
   background-image: url("../public/professional-programmer-working-late-dark-office.png");
   @include bg-norepeat-cover;
+  min-height: 533px;
+  background-position: center;
 }
 
 .landingPage {
@@ -40,7 +42,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 4rem;
-  height: 533px;
 
   .landingText {
     font-family: Inter;
@@ -62,16 +63,20 @@
   line-height: 7rem;
   letter-spacing: 0em;
   color: $white;
-  margin-bottom: 2.2rem;
-  margin-top: 8rem;
+  margin-bottom: 20px;
 }
 .dhar {
+  margin-top: 60px;
   color: $white;
   padding-left: 6.2rem;
-  padding-right: 1rem;
+  // padding-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  .heading {
+    margin-top: 10px;
+  }
 
   .content,
   .chokidrBackImg {
@@ -81,7 +86,7 @@
 
 .dharPoints {
   display: flex;
-  margin-top: 2.8rem;
+  margin-top: 60px;
 }
 
 .dharItem {
@@ -89,18 +94,19 @@
   align-items: center;
   gap: 2.5rem;
   margin-bottom: 4.9rem;
+  // background-color: red;
+  height: fit-content;
 }
 
-.dharItemStyle {
-  width: 4px;
-  height: 7.7rem;
-
-  background: rgba(1, 143, 106, 0.85);
-  box-shadow: -6px 0px 30px 8px rgba(169, 255, 233, 0.15);
-  border-radius: 6px 0px 0px 6px;
-  transform: rotate(180deg);
-}
 .dharText {
+  // display: flex;
+  div {
+    background: rgba(1, 143, 106, 0.85);
+    box-shadow: -6px 0px 30px 8px rgba(169, 255, 233, 0.15);
+    border-radius: 6px 0px 0px 6px;
+    padding-right: 4px;
+    margin-right: 25px;
+  }
   font-family: "Inter";
   font-size: 2rem;
   font-style: normal;
@@ -187,18 +193,29 @@
 }
 
 .applyContainer {
-  
   display: flex;
   gap: 20px;
   .applyImg,
   .form {
     flex: 1;
   }
+  // background-image: url("../public//");
 }
 
 @media screen and (max-width: 1020px) {
   .landingContainer {
     background-position: center;
+    background-image: url("../public/professional-programmer-working-late-dark-office-sm.png");
+  }
+  .landingPage {
+    .heading1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .landingText {
+      font-size: 24px;
+      line-height: 27px;
+    }
   }
 
   .dhar {
@@ -213,6 +230,8 @@
 
   .dharText {
     width: fit-content;
+    font-size: 14.5px;
+    line-height: 20px;
   }
 
   .applyContainer {

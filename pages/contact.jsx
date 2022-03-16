@@ -17,24 +17,25 @@ const contact = () => {
     return (
         <div>
             <div className={styles.landingContainer}>
-                <div className={styles.darkLayer}>
+                {/* <div className={styles.darkLayer}> */}
                     <Header />
                     <div className={styles.landingPage}>
                         <div className={styles.heading1}>
                             Got a question?
                         </div>
                         <p className={styles.landingText}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mi, neque, ipsum accumsan in fermentum, et cursus.
+                        We’d love to hear from you!
+
                         </p>
                         <div className={styles.readMore}>
                             <Button
                                 title={"Ask Queries"}
                                 url={"/contact"} // need to update readmore route
+                                isActive={true}
                             />
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
             </div>
 
             {/* contact */}
@@ -74,11 +75,15 @@ const contact = () => {
 
             {/* support */}
             <div className={styles.support}>
+            <div className={`${styles.heading} ${styles.supportHead}`}>Support</div>
                 <div className={styles.img}>
                     <Image
                         src={supportImg}
                         alt={"support"}
                     />
+                    <div className={styles.para}>
+                        We&apos;re here to help and answer any questions you might have. We look forward from hearing you.
+                    </div>
                 </div>
 
                 <div className={styles.text}>
@@ -86,12 +91,7 @@ const contact = () => {
                     <div className={styles.para}>
                         We&apos;re here to help and answer any questions you might have. We look forward from hearing you.
                     </div>
-                    <div className={styles.readMore}>
-                        <Button
-                            title={"Ask queries"}
-                            url={"/contact"} // need to update readmore route
-                        />
-                    </div>
+     
                 </div>
             </div>
 
@@ -99,11 +99,10 @@ const contact = () => {
             {/* how can we help */}
             <div className={styles.help}>
                 <div className={styles.heading}>
-                    How can we help?
+                Monks at your service
                 </div>
                 <div className={styles.para}>
-                    Please select a topic below related to your inquiry.
-                    If you don’t find what you need, fill out our <span className={styles.colorGreen}>
+                Please select a topic below related to your query or fill out our <span className={styles.colorGreen}>
                         <Link href="/contact">
                             <a>contact form.</a>
                         </Link>
@@ -138,7 +137,7 @@ const contact = () => {
 
             {/* demo */}
             <div className={styles.demo}>
-
+            <div className={`${styles.heading} ${styles.demohead}`}>Demo</div>
 
                 <div className={styles.text}>
                     <div className={styles.heading}>Demo</div>
@@ -153,11 +152,22 @@ const contact = () => {
                     </div>
                 </div>
                 <div className={styles.img}>
+                <div className={styles.para}>
+                        Request a demo from one of our conversion specialists.
+                    </div>
                     <Image
                         src={demoImg}
                         alt={"demo"}
+                        
                     />
                 </div>
+                <div className={`${styles.readMore} ${styles.demoBtn}`}>
+                        <Button
+                            title={"Book a demo"}
+                            url={"/contact"}
+                            isActive={true}
+                        />
+                    </div>
             </div>
 
             {/* inspired */}
@@ -170,6 +180,7 @@ const contact = () => {
 
             {/* become partner */}
             <div className={styles.partner}>
+                <div className={styles.partnerHead}> Are you a Security Consultant? </div>
                 <div>
                     <Image
                         src={partnerImg}
@@ -179,16 +190,17 @@ const contact = () => {
                 <div className={styles.container}>
                     <div className={styles.text}>
                         <div className={styles.boldText}>
-                            Become a Partner
+                        Are you a Security Consultant? 
                         </div>
                         <div className={styles.boldPara}>
-                            Join our Partner Program and earn
-                            recurring commissions.
+                        Join our affiliate program  and earn recurring fees.
+
                         </div>
                         <div className={styles.readMore}>
                             <Button
                                 title={"Join Now"}
                                 url={"/register"} // need to update readmore route
+                                isActive={true}
                             />
                         </div>
                     </div>

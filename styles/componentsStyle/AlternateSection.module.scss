@@ -11,11 +11,22 @@
     flex: 1;
   }
 }
+.img{
+  .readMoreText{
+    display: none;
+  }
+}
 
 .text {
   // padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
   .para{
     color: rgba(251, 251, 251, 0.8);
+  }
+
+  .readMoreText{
+    margin-top: 120px;
   }
 }
 
@@ -60,11 +71,22 @@ line-height: 30px;
 
     .text {
       text-align: center;
+      .readMoreText{
+        display: none;
+      }
     }
 
     .img {
       width: 100%;
       order: 1 !important;
+      .readMoreText{
+        display: flex;
+        margin-top: 16px;
+        div{
+
+          font-size: 16px !important;
+        }
+      }
     }
 
     .readMoreText {

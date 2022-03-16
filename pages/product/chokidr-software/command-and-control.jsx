@@ -22,12 +22,13 @@ const CommandAndControl = () => {
     <div>
       <div className={`${styles.landing} ${commandStyles.landing}`}>
         <Header />
-        <div className={styles.glowCircle}></div>
+        {/* <div className={styles.glowCircle}></div> */}
+        <div className={commandStyles.darkLayer}></div>
         <div className={`${styles.container} ${commandStyles.textContainer}`}>
           <div className={styles.textContainer}>
             <div className={`${styles.landingText} ${commandStyles.landingText}`}>Command and Control</div>
             <div className={`${styles.para} ${commandStyles.para}`}>
-              Get real time information under one single unified dashboard
+            Get real time information across your organisation, members and devices under one single unified dashboard. 
             </div>
           </div>
           <div className={styles.img}>

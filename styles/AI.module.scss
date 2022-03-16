@@ -5,7 +5,8 @@
   background-image: url("../public/ai-bg.png");
 
   @include bg-norepeat-cover;
-  min-height: 95vh;
+  min-height: 665px;
+  background-position: center;
   display: flex;
   flex-direction: column;
   position: relative;
