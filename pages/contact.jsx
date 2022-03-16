@@ -104,7 +104,7 @@ const contact = () => {
                 <div className={styles.para}>
                     Please select a topic below related to your inquiry.
                     If you don’t find what you need, fill out our <span className={styles.colorGreen}>
-                        <Link href="/">
+                        <Link href="/contact">
                             <a>contact form.</a>
                         </Link>
                     </span>
@@ -126,12 +126,12 @@ const contact = () => {
                     </div>
                 </div>
 
-                <div className={styles.label}>
+                {/* <div className={styles.label}>
                     Guide_login
                 </div>
                 <div className={styles.label}>
                     Guide_forgot password
-                </div>
+                </div> */}
             </div>
 
 
@@ -201,7 +201,8 @@ const contact = () => {
 
 
             {/* Trusted by */}
-            <div className={styles.trust}>
+            {/* no content */}
+            {/* <div className={styles.trust}>
                 <div className={styles.boldText}>Trusted By</div>
                 <ul className={styles.list}>
                     {
@@ -218,7 +219,7 @@ const contact = () => {
                         ))
                     }
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

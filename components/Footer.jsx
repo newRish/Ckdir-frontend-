@@ -46,11 +46,11 @@ const Footer = () => {
             </ul>
             <ul className={styles.topSpacing}>
               <div className={styles.header}>Explore</div>
-              <li className={styles.listItem}>
+              {/* <li className={styles.listItem}>
                 <Link href={"/blog"}>
                   <a>Blog</a>
                 </Link>
-              </li>
+              </li> */}
               <li className={styles.listItem}>
                 <Link href={"/career"}>
                   <a>Careers</a>
