@@ -4,6 +4,7 @@
 .landing {
   background-image: url("../public/identities-bg.png");
   @include bg-norepeat-cover;
+  background-position: center;
   min-height: 80vh;
   display: flex;
   flex-direction: column;

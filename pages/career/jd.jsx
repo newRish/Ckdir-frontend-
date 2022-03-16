@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import styles from "../../styles/Jd.module.scss";
-import jobHuntImg from "../../public/undraw_job_hunt.svg";
+import jobHuntImg from "../../public/businesswoman-networking-using-digital-devices.png";
 import applyImg from "../../public/undraw_updated_resume.svg";
 import userImg from "../../public/user.png";
 import docsImg from "../../public/icons/docs.png";
@@ -17,7 +17,7 @@ const JD = ({ responsibility }) => {
         <Header />
         <div className={styles.landingPage}>
           <div className={styles.heading1}>Openings for Data Scientist</div>
-          <p className={styles.landingText}>Number of vacancy - 01</p>
+          <p className={styles.landingText}>Number of vacancy - 03</p>
         </div>
       </div>
 
@@ -34,8 +34,8 @@ const JD = ({ responsibility }) => {
               <ul className={styles.dharList}>
                 {responsibility?.map((e, i) => (
                   <li key={i} className={styles.dharItem}>
-                    <div className={styles.dharItemStyle}></div>
-                    <div className={styles.dharText}>{e}</div>
+                    {/* <div className={styles.dharItemStyle}>a</div> */}
+                    <div className={styles.dharText}><div></div>{e}</div>
                   </li>
                 ))}
               </ul>
@@ -105,7 +105,6 @@ export const getStaticProps = () => {
     props: {
       responsibility: [
         "Experience in dimensional data modeling, ETL development, and Data Warehousing, Data Lakes",
-        "Prototyping new ideas or technologies to prove efficacy and usefulness in production",
         "Develop Data streams,and REST API's to integrate with partners and customers in real-time",
         "Design and develop large scale, high-volume, and high-performance data pipelines with large sets of data from different sources",
       ],

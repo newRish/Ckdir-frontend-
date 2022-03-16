@@ -22,6 +22,7 @@ import iot5gImg from "../../../public/5giot-withhw.png";
 import { Icons } from "../../../utils/icons";
 import { useState } from "react";
 import Button from "../../../components/Button";
+import identityImg from "../../../public/identities-min.png";
 
 const ChokidrSoftware = () => {
   const [carouselSwitch, setCarouselSwitch] = useState(false);
@@ -38,7 +39,8 @@ const ChokidrSoftware = () => {
               Chokidr software is an executable Web and mobile application, that
               provides a variety of fantastic features that helps you navigate
               through and access the range of your network through a laptop or
-              phone. What&apos;s in the box of these fantastic features, you ask?
+              phone. What&apos;s in the box of these fantastic features, you
+              ask?
             </div>
           </div>
           <div className={styles.img}>
@@ -100,7 +102,7 @@ const ChokidrSoftware = () => {
                 devices under one single unified dashboardF
               </div>
               <div className={styles.readMoreText}>
-                <Link href="/">
+                <Link href="/product/chokidr-software/command-and-control">
                   <a>Read more</a>
                 </Link>
               </div>
@@ -127,7 +129,7 @@ const ChokidrSoftware = () => {
                 manufacturing, and many other sectors.
               </div>
               <div className={styles.readMoreText}>
-                <Link href="/">
+                <Link href="/product/chokidr-software/autonomousIdentities">
                   <a>Read more</a>
                 </Link>
               </div>
@@ -151,11 +153,11 @@ const ChokidrSoftware = () => {
               <div className={styles.label}>
                 Connect Sensors, Information Boards
               </div>
-
-              
             </div>
           }
-          image={<Image src={connectingSenforImg} alt={"image"} />}
+          image={<div className={`${styles.csaImg} ${styles.smr}`}><Image src={connectingSenforImg} alt={"image"} /></div>}
+          btnText={"Read more"}
+          url={"/product/chokidr-software/connecting-people-and-things"}
         />
 
         <div className={styles.ml}>
@@ -165,11 +167,13 @@ const ChokidrSoftware = () => {
             text={
               <div className={styles.container}>
                 <div className={styles.label}>
-                Decentralized Identities for Humans, Devices and Things. 
+                  Decentralized Identities for Humans, Devices and Things.
                 </div>
               </div>
             }
-            image={<Image src={faceRecogImg} alt={"image"} />}
+            image={<div className={`${styles.csaImg} ${styles.sml}`}><Image src={identityImg} alt={"image"} /></div>}
+            btnText={"Read more"}
+            url={"/product/chokidr-software/identities"}
           />
         </div>
 
@@ -184,27 +188,50 @@ const ChokidrSoftware = () => {
               </div>
             </div>
           }
-          image={<Image src={iot5gImg} alt={"image"} />}
+          image={<div className={`${styles.csaImg}`}><Image src={iot5gImg} alt={"image"} /></div>}
+          btnText={"Read more"}
+          url={"/product/chokidr-software/edge-iot"}
         />
+
+<div className={styles.sfLabel}>
+
+
+        <AlternateSection
+          isImageLast={true}
+          heading={"Social Footprint"}
+          text={
+            <div className={`${styles.container}`}>
+              <div className={styles.label}>
+              Reduce Carbon foot print of your organisation.
+              </div>
+            </div>
+          }
+          image={<div className={`${styles.csaImg} ${styles.sml}`}><Image src={sfImg} alt={"image"} /></div>}
+          btnText={"Read more"}
+          url={"/product/chokidr-software/green-and-economy"}
+        />
+      </div>
       </div>
 
       {/* Social Footprint Section */}
-      <div className={styles.sf}>
+      {/* <div className={styles.sf}>
         <div className={styles.container}>
-          <div className={styles.heading}>Social Footprint</div>
+          <div className={styles.heading}></div>
           <div className={styles.label}>
-            Reduce Carbon foot print of your organisation.
+           
           </div>
 
-         
           <div className={styles.readMoreText}>
-            <Button title="Read more" url="/product/chokidr-software/green-and-economy" />
+            <Button
+              title="Read more"
+              url="/product/chokidr-software/green-and-economy"
+            />
           </div>
         </div>
         <div className={styles.img}>
           <Image src={sfImg} alt={"employe with laotop"} />
         </div>
-      </div>
+      </div> */}
 
       {/* Case Studies section */}
       {/* no content */}
