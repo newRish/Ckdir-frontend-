@@ -105,14 +105,14 @@ const SelfRegistrationForm = () => {
         </div>
       </div>
       <div className={styles.info}>
-        <div className={styles.text}>
+        {/* <div className={styles.text}>
           <div className={styles.heading}>Flagship Features</div>
           <div className={styles.para}>
             Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
             nostrud exercitation ullamco laboris nisi.
           </div>
-        </div>
+        </div> */}
         <div className={styles.img}>
           <Image src={iMacImg} alt={"desktop"} />
         </div>
@@ -203,7 +203,7 @@ const SelfRegistrationForm = () => {
         <div className={styles.phoneImg}>
           <Image src={iphoneFullImg} alt={"desktop"} />
         </div>
-        <div className={styles.text}>
+        {/* <div className={styles.text}>
           <div className={styles.heading}>Flagship Features</div>
           <div className={styles.para}>
            <li>
@@ -216,7 +216,7 @@ const SelfRegistrationForm = () => {
            Amet, consectetur adipiscing elit, sed do eiusmod tempor.
            </li>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
