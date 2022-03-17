@@ -118,10 +118,10 @@ const Header = () => {
 
                     <NavDropDown
                         ddList={[
-                            // {
-                            //     heading: <Link href={'/blog'}><a>Blog</a></Link>,
-                            //     options: []
-                            // },
+                            {
+                                heading: <Link href={'/blog'}><a>Blog</a></Link>,
+                                options: []
+                            },
                             {
                                 heading: <Link href={'/about'}><a>About Happymonk</a></Link>,
                                 options: []
