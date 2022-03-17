@@ -33,6 +33,8 @@
   @include bg-norepeat-cover;
   min-height: 533px;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .landingPage {
@@ -42,6 +44,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 4rem;
+  flex: 1;
 
   .landingText {
     font-family: Inter;
@@ -67,7 +70,7 @@
 }
 .dhar {
   margin-top: 60px;
-  color: $white;
+  color: rgba(251, 251, 251, 0.8);
   padding-left: 6.2rem;
   // padding-right: 1rem;
   display: flex;
@@ -78,9 +81,18 @@
     margin-top: 10px;
   }
 
+  .topImg{
+    display: none;
+  }
+
   .content,
   .chokidrBackImg {
     flex: 1;
+  }
+
+  .chokidrBackImg{
+    height: 603px;
+    overflow: hidden;
   }
 }
 
@@ -118,16 +130,30 @@
   display: flex;
 }
 
+.applyHeader{
+  display: none;
+}
+
 .apply {
-  // background-image: url("../public/top-view-person-writing-laptop-with-copy-space.png");
-  // background-repeat: no-repeat;
-  padding: 40px;
+  background-image: url("../public/top-view-person-writing-laptop-with-copy-space.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 695px;
+  min-height: 695px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 35px;
 
   .heading {
     text-align: center;
+  }
+
+  .applyImg{
+    span{
+
+      display: none !important;
+    }
   }
 }
 
@@ -139,7 +165,7 @@
   background-color: #0f0f0f;
   padding: 40px;
   border-radius: 10px;
-  margin-top: 40px;
+  // margin-top: 40px;
 }
 .field {
   height: 59px;
@@ -193,13 +219,26 @@
 }
 
 .applyContainer {
+  .heading{
+    color: #0F0F0F;
+    margin-top: 10px;
+  }
   display: flex;
   gap: 20px;
   .applyImg,
-  .form {
+  .formContainer {
     flex: 1;
   }
-  // background-image: url("../public//");
+ 
+
+  .form{
+    margin: auto;
+
+  }
+
+  .formContainer{
+
+  }
 }
 
 @media screen and (max-width: 1020px) {
@@ -220,12 +259,36 @@
 
   .dhar {
     flex-direction: column;
-    padding: 5.5rem;
+    padding: unset;
+    margin-top: 35px;
+
+    .heading{
+      display: none;
+    }
+    .topImg{
+      display: block;
+      .heading{
+        display: block;
+        text-align: center;
+        margin: unset;
+        margin-bottom: 10px;
+      }
+    }
+
+    .dharPoints{
+      margin-top: 20px;
+    }
+
+  }
+
+  .content{
+        padding: 5rem 3rem;
   }
 
   .chokidrBackImg {
     width: unset;
     padding-bottom: 5rem;
+    display: none;
   }
 
   .dharText {
@@ -234,8 +297,27 @@
     line-height: 20px;
   }
 
+  .apply{
+    margin-top: 0;
+    .heading{
+      display: none;
+    }
+    background-image: unset;
+
+    .applyImg{
+      span{
+  
+        display: block !important;
+      }
+    }
+  }
+  .applyHeader{
+    display: flex;
+    justify-content: center;
+  }
+
   .applyContainer {
     flex-direction: column;
-    margin: auto;
+    // margin: auto;
   }
 }

@@ -2,13 +2,15 @@ import React from "react";
 import Header from "../../components/Header";
 import styles from "../../styles/Jd.module.scss";
 import jobHuntImg from "../../public/businesswoman-networking-using-digital-devices.png";
-import applyImg from "../../public/undraw_updated_resume.svg";
+// import applyImg from "../../public/undraw_updated_resume.svg";
 import userImg from "../../public/user.png";
 import docsImg from "../../public/icons/docs.png";
 import callImg from "../../public/icons/call-outline.png";
 import envelopImg from "../../public/icons/outline-envelop2.png";
 import Image from "next/image";
 import Button from "../../components/Button";
+import jbtopImg from "../../public/businesswoman-networking-using-digital-devices-sm.png"
+import applyImg from "../../public/top-view-person-writing-laptop-with-copy-space.png"
 
 const JD = ({ responsibility }) => {
   return (
@@ -23,6 +25,10 @@ const JD = ({ responsibility }) => {
 
       <div className="desc">
         <div className={styles.dhar}>
+          <div className={styles.topImg}>
+          <div className={styles.heading}>What you&apos;ll do?</div>
+            <Image src={jbtopImg} alt={"jb image"} />
+          </div>
           <div className={styles.content}>
             <div className={styles.heading}>What you&apos;ll do?</div>
             <div className={styles.dharText}>
@@ -35,7 +41,10 @@ const JD = ({ responsibility }) => {
                 {responsibility?.map((e, i) => (
                   <li key={i} className={styles.dharItem}>
                     {/* <div className={styles.dharItemStyle}>a</div> */}
-                    <div className={styles.dharText}><div></div>{e}</div>
+                    <div className={styles.dharText}>
+                      <div></div>
+                      {e}
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -48,48 +57,52 @@ const JD = ({ responsibility }) => {
         </div>
       </div>
 
+      <div className={`${styles.heading} ${styles.applyHeader}`}>Apply here</div>
       <div className={styles.apply}>
-        <div className={styles.heading}>Apply here</div>
+        
         <div className={styles.applyContainer}>
           <div className={styles.applyImg}>
             <Image src={applyImg} alt="apply form" />
           </div>
-          <div className={styles.form}>
-            <div className={styles.field}>
-              <span className={styles.fieldIcon}>
-                <Image src={userImg} alt="user" />
-              </span>
-              <span className={styles.fieldInput}>
-                <input type="text" placeholder="Your Name" />
-              </span>
-            </div>
-            <div className={styles.field}>
-              <span className={styles.fieldIcon}>
-                <Image src={envelopImg} alt="email" />
-              </span>
-              <span className={styles.fieldInput}>
-                <input type="text" placeholder="Email id" />
-              </span>
-            </div>
-            <div className={styles.field}>
-              <span className={styles.fieldIcon}>
-                <Image src={callImg} alt="phone" />
-              </span>
-              <span className={styles.fieldInput}>
-                <input type="text" placeholder="Phone number" />
-              </span>
-            </div>
-            <div className={styles.field}>
-              <span className={styles.fieldIcon}>
-                <Image src={docsImg} alt="user" />
-              </span>
-              <span className={`${styles.fieldInput} ${styles.uploadField}`}>
-                <span>Upload resume</span>
-                <input type="file" placeholder="Upload resume" />
-              </span>
-            </div>
-            <div className={styles.submitBtn}>
-              <Button url={"/career"} title={"Submit"} />
+          <div className={styles.formContainer}>
+            <div className={styles.heading}>Apply here</div>
+            <div className={styles.form}>
+              <div className={styles.field}>
+                <span className={styles.fieldIcon}>
+                  <Image src={userImg} alt="user" />
+                </span>
+                <span className={styles.fieldInput}>
+                  <input type="text" placeholder="Your Name" />
+                </span>
+              </div>
+              <div className={styles.field}>
+                <span className={styles.fieldIcon}>
+                  <Image src={envelopImg} alt="email" />
+                </span>
+                <span className={styles.fieldInput}>
+                  <input type="text" placeholder="Email id" />
+                </span>
+              </div>
+              <div className={styles.field}>
+                <span className={styles.fieldIcon}>
+                  <Image src={callImg} alt="phone" />
+                </span>
+                <span className={styles.fieldInput}>
+                  <input type="text" placeholder="Phone number" />
+                </span>
+              </div>
+              <div className={styles.field}>
+                <span className={styles.fieldIcon}>
+                  <Image src={docsImg} alt="user" />
+                </span>
+                <span className={`${styles.fieldInput} ${styles.uploadField}`}>
+                  <span>Upload resume</span>
+                  <input type="file" placeholder="Upload resume" />
+                </span>
+              </div>
+              <div className={styles.submitBtn}>
+                <Button url={"/career"} title={"Submit"} isActive={true} />
+              </div>
             </div>
           </div>
         </div>
@@ -105,6 +118,7 @@ export const getStaticProps = () => {
     props: {
       responsibility: [
         "Experience in dimensional data modeling, ETL development, and Data Warehousing, Data Lakes",
+        "Prototyping new ideas or technologies to prove efficacy and usefulness in production.",
         "Develop Data streams,and REST API's to integrate with partners and customers in real-time",
         "Design and develop large scale, high-volume, and high-performance data pipelines with large sets of data from different sources",
       ],

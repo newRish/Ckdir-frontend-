@@ -34,13 +34,7 @@ const career = ({ openRoles }) => {
               We specialize in enabling People & Things to connect into one
               common universe which aids humans to take better, smarter and
               faster decisions, maintain government compliance and create
-              financial efficiency in the ecosystem. Our focus is in the fields
-              of Autonomous machines, Cyber Physical Systems &, Command &
-              Control through the use of state of the art AI & Privacy
-              Preserving techniques. We specialize in enabling People & Things
-              to connect into one common universe which aids humans to take
-              better, smarter and faster decisions, maintain government
-              compliance and create financial efficiency in the ecosystem.
+              financial efficiency in the ecosystem.
             </div>
 
             <div>
