@@ -11,7 +11,8 @@ const blogQuery = `
 query ($id: ID!){
     blog(id: $id){
       Title,
-      Description
+      Description,
+      createdAt,
     }
   }
 `;
@@ -53,7 +54,14 @@ const Blog1 = () => {
             <span className={styles.writenTxt}>Written by </span>
             <span>Bhavish Agarwal</span>
           </div>
-          <div className={styles.date}>feb12 2022</div>
+          <div className={styles.date}>{ 
+          `
+          ${new Date(data?.blog?.createdAt).toDateString().split(" ")[1]}
+          ${new Date(data?.blog?.createdAt).toDateString().split(" ")[2]}, 
+          ${new Date(data?.blog?.createdAt).toDateString().split(" ")[3]} 
+          `
+          
+          }</div>
         </div>
 
         <div className={styles.para}>{data?.blog?.Description}</div>
