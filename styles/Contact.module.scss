@@ -89,10 +89,9 @@
   .text,
   .img {
     flex: 1;
-    
   }
-  .img{
-    .para{
+  .img {
+    .para {
       display: none;
     }
   }
@@ -257,11 +256,11 @@
   }
 }
 
-
-  .demohead, .demoBtn, .supportHead{
-    display: none;
-  }
-
+.demohead,
+.demoBtn,
+.supportHead {
+  display: none;
+}
 
 .partnerHead {
   display: none;
@@ -350,24 +349,27 @@
   .demo {
     flex-direction: column;
     padding: 20px;
-    .demohead{
+    .demohead {
       display: flex;
     }
-    .text{
+    .text {
       display: none;
     }
 
-    .img{
-display: flex;
-align-items: center;
-flex: 1;
-div{
-  flex: 0.5;
-}
-span{
-  width: 208px !important;
-  flex: 0.7;
-}
+    .img {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      div {
+        flex: 0.5;
+      }
+      .para{
+        display: flex;
+      }
+      span {
+        width: 208px !important;
+        flex: 0.7;
+      }
     }
 
     .readMore {
@@ -402,7 +404,7 @@ span{
       gap: 5rem;
     }
 
-    .boldText{
+    .boldText {
       display: none;
     }
     .readMore {
@@ -416,20 +418,20 @@ span{
   .support {
     flex-direction: column;
     gap: 3rem;
-    .supportHead{
+    .supportHead {
       display: flex;
     }
     .text {
       display: none;
     }
-    .img{
+    .img {
       display: flex;
       gap: 10px;
-      .para{
+      .para {
         display: block;
         flex: 0.4;
       }
-      span{
+      span {
         flex: 0.6;
       }
     }
