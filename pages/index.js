@@ -31,7 +31,6 @@ import tempOptImg from "../public/icons/temp-opt.png";
 import rttImg from "../public/icons/delivery-track.png";
 import edgeCompImg from "../public/icons/man-in-pantagon.png";
 
-
 import givingIdImg from "../public/icons/giving-id.png";
 
 import controlledEnvImg from "../public/compressed/controll-environment.svg";
@@ -191,6 +190,12 @@ const revCardData = {
   ],
 };
 
+const revCardUrl = [
+  "/product/chokidr-software/autonomousIdentities",
+  "/product/chokidr-software/connecting-people-and-things",
+  "",
+  "/product/chokidr-software/green-and-economy",
+];
 const Home = () => {
   const [carouselSwitch, setCarouselSwitch] = useState(false);
   const [activeRev, setActiveRev] = useState(1);
@@ -318,11 +323,13 @@ const Home = () => {
           </ul>
 
           <div className={styles.readMoreText}>
-            <Link href="/">
-              <a>
-                <span>Read More</span>
-              </a>
-            </Link>
+            {revCardUrl[activeRev - 1] !== "" && (
+              <Link href={revCardUrl[activeRev - 1]}>
+                <a>
+                  <span>Read More</span>
+                </a>
+              </Link>
+            )}
           </div>
         </div>
       </div>
@@ -414,7 +421,7 @@ const Home = () => {
             </p>
 
             <div className={styles.readMoreText}>
-              <Link href="/">
+              <Link href="/product/chokidr-hardware">
                 <a>Read more</a>
               </Link>
             </div>
