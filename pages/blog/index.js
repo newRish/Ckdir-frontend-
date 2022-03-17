@@ -14,6 +14,7 @@ const blogQuery = `
       Title,
       Description,
       id,
+      createdAt
     }
   }
 `;
@@ -27,11 +28,7 @@ const Blog = ({ blog }) => {
 
   const { data, fetching, error } = result;
 
-
-
-
   return (
-    
     <div className={styles.container}>
       <div className={styles.landingContainer}>
         <Header />
@@ -48,21 +45,25 @@ const Blog = ({ blog }) => {
 
       <div className={styles.priviewContainer}>
         {data?.blogs?.map((e, i) => (
-          <div className={styles.preview}>
+          <div className={styles.preview} key={i}>
             <div className={styles.title}>{e.Title}</div>
             <div className={styles.authorDetails}>
               <div className={styles.authorName}>
                 Written by Bhavish Agarwal
               </div>
-              <div className={styles.blogDate}>Feb 12, 2022</div>
+              <div className={styles.blogDate}>
+                {`
+          ${new Date(e?.createdAt).toDateString().split(" ")[1]}
+          ${new Date(e?.createdAt).toDateString().split(" ")[2]}, 
+          ${new Date(e?.createdAt).toDateString().split(" ")[3]} 
+          `}
+              </div>
             </div>
             <div className={styles.img}>
               <Image src={blog1Img} alt={"blog image"} />
             </div>
             <div className={styles.body}>
-              {
-                e.Description.split(" ").slice(0,190).join(" ")
-              } ...
+              {e.Description.split(" ").slice(0, 190).join(" ")} ...
             </div>
             <div className={styles.readMore}>
               <Link href={`/blog/${e.id}`}>
