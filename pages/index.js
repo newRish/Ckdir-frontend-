@@ -395,7 +395,7 @@ const Home = () => {
               intervention.
             </p>
             <div className={styles.readMoreText}>
-              <Link href="/">
+              <Link href="/platform/ai">
                 <a>Read more</a>
               </Link>
             </div>
