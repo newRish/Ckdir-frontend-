@@ -266,7 +266,129 @@
   display: none;
 }
 
+.apply {
+  min-height: 695px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  .heading {
+    text-align: left;
+  }
+  .formHead{
+    display: flex;
+    justify-content: space-between;
+    svg{
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .applyImg {
+    span {
+      display: none !important;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 762px;
+  background-color: #0f0f0f;
+  padding: 40px;
+  border-radius: 10px;
+  // margin-top: 40px;
+}
+.field {
+  height: 59px;
+  background-color: #232323;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 10px;
+  .fieldIcon {
+    flex: 0.1;
+  }
+  .fieldInput,
+  input,
+  textarea {
+    font-size: 12px;
+    line-height: 30px;
+    font-family: Inter;
+    border: none;
+    outline: none;
+    background-color: #232323;
+    color: rgba(255, 255, 255, 0.6);
+    flex: 1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .uploadField {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .uploadField span {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+ 
+  textarea {
+    position: absolute;
+    width: 100%;
+    flex: unset;
+    height: 165px !important;
+    resize: none;
+  }
+}
+
+.queryText {
+  height: 195px !important;
+  align-items: flex-start;
+  overflow-x: hidden;
+  padding-top: 10px;
+  .fieldIcon{
+    padding-top: 10px;
+  }
+}
+
+.submitBtn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
 @media screen and (max-width: 450px) {
+
+  .apply{
+    min-height: 200px !important;
+    margin: 0;
+
+    textarea{
+      height: 100px;
+    }
+  }
+  .form{
+    padding: 20px 40px;
+    width: 100%;
+    margin: 20px;
+
+    .field{
+      gap: 5px;
+    }
+  }
+
+  .submitBtn{
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+
+
   .partnerHead {
     display: flex;
     font-family: "Outfit";
@@ -363,7 +485,7 @@
       div {
         flex: 0.5;
       }
-      .para{
+      .para {
         display: flex;
       }
       span {

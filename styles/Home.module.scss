@@ -569,7 +569,7 @@
         margin-bottom: 10px;
       }
       width: unset;
-      align-items: flex-end;
+      // align-items: flex-end;
       // padding-left: 4rem;
       overflow-x: scroll;
       &::-webkit-scrollbar {
@@ -610,7 +610,8 @@
   }
 
   .revolutionCardText {
-    font-size: 2.5rem !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
   }
   .revolutionCardSubHeading {
     font-size: 3rem !important;
@@ -777,6 +778,7 @@
   .revolutionItemImg {
     position: relative;
     width: 49px;
+    margin: auto;
     img {
       height: 49px !important;
     }
