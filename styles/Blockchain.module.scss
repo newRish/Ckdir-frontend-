@@ -207,6 +207,7 @@
 
 .kpPoints {
   display: flex;
+  justify-content: space-between;
   margin-top: 2.8rem;
 }
 
@@ -511,5 +512,21 @@
         order: 2;
       }
     }
+  }
+}
+
+
+@media screen and (min-width: 650px) and (max-width:  1263px) {
+  .kpPoints{
+    flex-direction: column;
+  }
+  .kpImg{
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .kpList{
+    order: 2;
+ 
   }
 }
