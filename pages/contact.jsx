@@ -21,7 +21,7 @@ import callImg from "../public/icons/call-outline.png";
 import aenvelopImg from "../public/icons/outline-envelop2.png";
 import CloseIcon from "@mui/icons-material/Close";
 
-const contact = () => {
+const Contact = () => {
   const [isFormActive, setIsFormActive] = useState(false);
   const [isContactForm, setIsContactForm] = useState(false);
   return (
@@ -302,4 +302,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
