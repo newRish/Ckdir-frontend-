@@ -292,7 +292,7 @@
   .landing {
     background-image: url("../public/globe-tech-small.png");
     // background-position: top;
-    background-size: 677px 665px;
+    background-size: 100% 665px;
     display: flex;
     min-height: 655px;
     flex-direction: column;
@@ -406,3 +406,5 @@
     // width: 45rem;
   }
 }
+
+

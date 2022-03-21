@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .landing{
     background-image: url('../public/ai-handshake-sm.png');
     min-height: 665px !important;
@@ -46,4 +46,14 @@
     justify-content: flex-end;
     padding-bottom: 40px;
   }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 834px) {
+  .para{
+    width: unset !important;
+    line-height: 25px !important;
+    margin-top: 20px;
+  }
+  
 }
