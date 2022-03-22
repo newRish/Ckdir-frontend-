@@ -57,7 +57,7 @@ const Contact = () => {
             {[
               {
                 icon: phoneImg,
-                text: "+91 82961 33177",
+                text: "+91 991 617 7221",
               },
               {
                 icon: envelopImg,
@@ -291,7 +291,7 @@ const Contact = () => {
                   </span>
                 </div>
                 <div className={styles.submitBtn}>
-                  <Button url={"/career"} title={"Send"} isActive={true} />
+                  <Button url={""} title={"Send"} isActive={true} />
                 </div>
               </div>
             </div>

@@ -45,34 +45,34 @@ const revCardData = {
   1: [
     {
       img: complianceImg,
-      title: "Compliance",
+      title: "On-Machine Compute Systems",
       text: (
         <p className={styles.revolutionCardText}>
-          Compliant with regulatory
-          <br className={styles.dNone} />
-          standards like GDPR.
+          Enabling machines to precieve, identify, 
+          {/* <br className={styles.dNone} /> */}
+          manuplate & aid, the world around them.
         </p>
       ),
     },
     {
       img: controlledEnvImg,
-      title: "Controlled Environment",
+      title: "Decentralized, Offline & Localized",
       text: (
         <p className={styles.revolutionCardText}>
-          Smart real time monitoring
-          <br className={styles.dNone} />
-          within the network of your IoT.
+          Take information management & keep data in your 
+          {/* <br className={styles.dNone} /> */}
+          premisis and enable local processing of sensors and data.
         </p>
       ),
     },
     {
       img: reliableDataImg,
-      title: "Reliable Data",
+      title: "Intelligent Video & Sensor Analytics",
       text: (
         <p className={styles.revolutionCardText}>
-          Of all incidents/activities being
-          <br className={styles.dNone} />
-          monitored on the network.
+          Get Realtime actionable insights, 
+          {/* <br className={styles.dNone} /> */}
+          from wide variety of IoT gateways and Edge Devices.
         </p>
       ),
     },
@@ -80,39 +80,37 @@ const revCardData = {
   2: [
     {
       img: rttImg,
-      title: "Real time tracking",
+      title: "Industry 4.0",
       text: (
         <p className={styles.revolutionCardText}>
-          Enables you to track your fleet
-          <br className={styles.dNone} />
-          real time. Know where the go,
-          <br className={styles.dNone} />
-          on the go.
+          Quickly track, identify and aid incidents, pinpoint accurately
+          {/* <br className={styles.dNone} /> */}
+          and ensure compliance and safety of the user.
         </p>
       ),
     },
     {
       img: connecct2sysImg,
-      title: "Connect to legacy system",
+      title: "Connecting People & Things",
       text: (
         <p className={styles.revolutionCardText}>
           Enable you to track your fleet
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           real time, giving you complete
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           access to all data that might be.
         </p>
       ),
     },
     {
       img: tempOptImg,
-      title: "Transparency of Operations",
+      title: "Decentralized Infrastruture",
       text: (
         <p className={styles.revolutionCardText}>
           Real Tracking, Fencing, heavily
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           needed for the world where multiple
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           touchpoints is everyday business.
         </p>
       ),
@@ -121,34 +119,34 @@ const revCardData = {
   3: [
     {
       img: reliableDataImg,
-      title: "Tamperproof data",
+      title: "Zero Knowledge Collbration",
       text: (
         <p className={styles.revolutionCardText}>
           Decentralized verifiable data,
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           which cannot be tempered with.
         </p>
       ),
     },
     {
       img: inscuranceImg,
-      title: "Seamless Insurance",
+      title: "Real-time Communication",
       text: (
         <p className={styles.revolutionCardText}>
-          Smart real time monitoring
-          <br className={styles.dNone} />
-          within the network of your IoT.
+          Collect, report and share real-time information 
+          {/* <br className={styles.dNone} /> */}
+          for enhanced decision-making and effective response.
         </p>
       ),
     },
     {
       img: lockImg,
-      title: "Data Privacy",
+      title: "Art of War",
       text: (
         <p className={styles.revolutionCardText}>
-          Data as authentic as it might be is
-          <br className={styles.dNone} />
-          also private
+          Rapid and intelligent control of the Organisations for 
+          {/* <br className={styles.dNone} /> */}
+          members and lower level members.
         </p>
       ),
     },
@@ -160,7 +158,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Compliant with regulatory
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           standards like GDPR.
         </p>
       ),
@@ -171,7 +169,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Smart real time monitoring
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           within the network of your IoT.
         </p>
       ),
@@ -182,7 +180,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Harnessing the power of IoT for
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           hazard detection to prevent damage.
         </p>
       ),
@@ -214,9 +212,7 @@ const Home = () => {
                 of the present.
               </div>
               <p className={styles.landingText}>
-                Unlock a World with more possibilities. Disrupting emerging
-                technologies that promise a safer, better and inclusive future
-                for human beings.
+                We develop technologies that create a safer tomorrow that promise a safer, better and inclusive future.
               </p>
             </div>
             <div className={styles.readMore}>
@@ -233,12 +229,11 @@ const Home = () => {
       {/* Black Box section */}
       <div className={styles.balckBoxContainer}>
         <div className={styles.chokidarImg}>
-          <Image src={chokidarDeviceImg} alt="Chokidar" />
+          <Image src={chokidarDeviceImg} alt="Chokidr" />
         </div>
         <div className={styles.heading1}>
-          Black Box
-          <br />
-          of the Future
+          Worried about critical systems going offline?
+          {/* <br /> */}
         </div>
         <ul className={styles.balckBoxIconList}>
           <li className={styles.blackBoxIcon}>
@@ -267,7 +262,7 @@ const Home = () => {
         <div className={styles.revolutionAtomImg}>
           <Image src={revolutionAtomImg} alt="Revolution Atom" />
         </div>
-        <div className={styles.heading2}>Revolution through Change</div>
+        <div className={styles.heading2}>Creating Revolution through Change</div>
 
         <ul className={styles.revolutionList}>
           <li className={styles.revolutionItem} onClick={() => setActiveRev(1)}>
@@ -276,16 +271,16 @@ const Home = () => {
               <Image src={decentI} alt="autonomous Industries" />
             </div>
             <div className={styles.revolutionItemText}>
-              Autonomous Indrustires
+              Autonomous Machines
             </div>
           </li>
 
           <li className={styles.revolutionItem} onClick={() => setActiveRev(2)}>
             <div className={styles.revolutionItemImg}>
               {activeRev === 2 && <div className={styles.imgGlow}></div>}
-              <Image src={connectingPeopleImg} alt="connecting people" />
+              <Image src={connectingPeopleImg} alt="Cyber Physical Systems" />
             </div>
-            <div className={styles.revolutionItemText}>Connecting people</div>
+            <div className={styles.revolutionItemText}>Decentralized Cyber Physical Systems</div>
           </li>
 
           <li className={styles.revolutionItem} onClick={() => setActiveRev(3)}>
@@ -293,16 +288,16 @@ const Home = () => {
               {activeRev === 3 && <div className={styles.imgGlow}></div>}
               <Image src={securityAuditImg} alt="Seaurity and audit" />
             </div>
-            <div className={styles.revolutionItemText}>Security and Audit</div>
+            <div className={styles.revolutionItemText}>C4I Systems</div>
           </li>
 
-          <li className={styles.revolutionItem} onClick={() => setActiveRev(4)}>
+          {/* <li className={styles.revolutionItem} onClick={() => setActiveRev(4)}>
             <div className={styles.revolutionItemImg}>
               {activeRev === 4 && <div className={styles.imgGlow}></div>}
               <Image src={socialFootprintImg} alt="Social Footprint" />
             </div>
             <div className={styles.revolutionItemText}>Social Footprint</div>
-          </li>
+          </li> */}
         </ul>
 
         <div className={styles.revolutionCard}>
@@ -341,16 +336,14 @@ const Home = () => {
         <div className={styles.heading2}>Protokollo</div>
         <p className={styles.protokolloSummary}>
           Imagine a world where you could provide your location proof, without
-          giving away the actual location of the person/object/entity. Imagine a
-          world where your Identity is verified without having to share your
-          personal details such as age, date of birth etc. A world where data
+          giving away the actual location of the entity.  
+          A world where your Identity is verified without having to share your
+          personal details such as age, date of birth. A world where data
           that is sent to authorities are reliable and not sent to wrong
-          personnel. A world where you could track entry and exit; and activity
-          of your organization with reliable data? The imagination just got
-          real.
+          personel. The imagination just got real.
         </p>
 
-        <div className={styles.heading3}>Monk protocol provides</div>
+        <div className={styles.heading3}>Protokollo provides</div>
 
         <ul className={styles.protocolList}>
           <li className="protocolItem">
@@ -385,14 +378,13 @@ const Home = () => {
               carouselSwitch ? styles.dNone : ""
             }`}
           >
-            <div className={styles.heading2}>Sensor fusion and Analytics</div>
+            <div className={styles.heading2}>Would you like to improve your workforce productivity?</div>
             <div className={styles.aditionalProtoKolloLeftImg}>
               <Image src={homeAnalytics} alt="home analytics" />
             </div>
             <p className={styles.para}>
-              Travel agencies have an increase of 20% in customer satisfaction
-              with Chokidr. SRS travels - Cameras and Sensors - Human
-              intervention.
+              <b>Track & Trace</b> critical events and movements of workforce, enabling easier compliance, aiding human decisions and removing human dependency.<br/>
+              Remove Friction, Enable greater workforce collabration and streamline productivity. 
             </p>
             <div className={styles.readMoreText}>
               <Link href="/platform/ai">
@@ -410,14 +402,14 @@ const Home = () => {
               carouselSwitch ? "" : styles.dNone
             }`}
           >
-            <div className={styles.heading2}>Smart Artificial Intelligence</div>
+            <div className={styles.heading2}>Do you imaging a safer workplace environment?</div>
             <div className={styles.aditionalProtoKolloLeftImg}>
               <Image src={smartAIImg} alt="Smart AI" />
             </div>
             <p className={styles.para}>
-              State of the Art AI that is capable of object identification,
-              facial identification with enhanced deep learning and machine
-              learning algorithms at the back - Bringing more power to you!
+              <b>Detect, Identify and take action </b> on critical  action points across your organisations under one single dashboard.
+              <br/>
+              Save millions of dollars and improve workplace safety and enjoy better people satisfaction.
             </p>
 
             <div className={styles.readMoreText}>
@@ -449,15 +441,13 @@ const Home = () => {
           <div className={styles.networkingText}>
             <div className={styles.globeBg}></div>
             <div className={styles.heading2}>
-              Make your Network more reliable
-              <br />
-              by deploying Chokidr today!
+              Connect with an Expert.
             </div>
             <br />
             <div className={styles.heading3}>
-              If assured Safety is your question,
-              <br />
-              We are your answer.
+              Leverage industry leading expertise and find a shorter path to innovation
+              {/* <br /> */}
+              Contact our representatives and get started right away.
             </div>
             <br />
             <br />

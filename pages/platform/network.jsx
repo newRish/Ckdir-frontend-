@@ -1,6 +1,6 @@
 import styles from "../../styles/Network.module.scss";
 import Header from "../../components/Header";
-import mapDashboardImg from "../../public/mapDashboard.png";
+import mapDashboardImg from "../../public/mapdashboard.png";
 import Image from "next/image";
 import Button from "../../components/Button";
 import rectangleImg from "../../public/Rectangle_630.png";

@@ -210,7 +210,7 @@ const career = ({ openRoles }) => {
       {/* <ConnectNetworkSection
         img={openRolesBg.src}
         heading={"Open Roles"}
-        url={"/career"}
+        url={"/careers"}
         btnText={"See Open Roles"}
         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
         isActive={true}

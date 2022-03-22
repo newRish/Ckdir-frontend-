@@ -25,7 +25,7 @@
 
 .heading2 {
   font-size: 4rem;
-  line-height: 6rem;
+  line-height: 5rem;
   font-weight: 600;
   font-family: Outfit;
   font-style: normal;
@@ -33,10 +33,10 @@
 
 .heading3 {
   font-family: Outfit;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-style: normal;
-  font-weight: 600;
-  line-height: 5rem;
+  font-weight: 500;
+  line-height: 3rem;
 }
 
 .heading1,
@@ -120,12 +120,13 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: relative;
   overflow-x: hidden;
 
   .heading1 {
     z-index: 5;
+    width: 60%;
   }
 
   .chokidarImg {
@@ -181,6 +182,11 @@
   margin-top: 33px;
   text-align: center;
   min-height: 100vh;
+
+  .heading2 {
+    width: 40%;
+    margin: auto;
+  }
 
   .revolutionList {
     display: flex;
@@ -259,8 +265,10 @@
     .revolutionCardList {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
       padding: 4rem 3rem 1rem 3rem;
       z-index: 9;
+      gap: 30px;
     }
   }
 
@@ -451,6 +459,9 @@
 }
 
 .networkingContainer {
+  .networkingText {
+    width: 40%;
+  }
   .networking {
     position: relative;
     // background-color: $black;
@@ -537,11 +548,12 @@
   .balckBoxContainer {
     background-position: center;
     background-repeat: no-repeat;
-    justify-content: space-around;
+    justify-content: space-evenly;
     min-height: 295px;
     .heading1 {
       font-size: 30px;
       line-height: unset;
+      width: 73%;
     }
 
     .chokidarImg {
@@ -553,7 +565,7 @@
     .balckBoxIconList {
       // flex-direction: column;
 
-      .blackBoxIcon{
+      .blackBoxIcon {
         &:first-child {
           .balckBoxIconImg {
             // height: 80px;
@@ -630,6 +642,10 @@
 
   .revolutionaCotainer {
     margin: unset;
+    .heading2 {
+      width: 60%;
+      margin: auto;
+    }
   }
 
   .revolutionItem {
@@ -637,6 +653,10 @@
   }
 
   .networkingContainer {
+    .networkingText {
+      width: 75%;
+    
+    }
     .networking {
       flex-direction: column;
       min-height: unset;
@@ -647,6 +667,15 @@
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
+      }
+
+      .heading3 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        font-family: "Inter";
+        width: 80%;
+        margin: auto;
       }
 
       .heading3 {
@@ -682,6 +711,10 @@
   }
 
   .protokolloContiner {
+
+    .heading3{
+      font-size: 16px;
+    }
     .protokolloBg1 {
       left: unset;
       right: 0;

@@ -52,7 +52,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className={styles.listItem}>
-                <Link href={"/career"}>
+                <Link href={"/careers"}>
                   <a>Careers</a>
                 </Link>
               </li>
