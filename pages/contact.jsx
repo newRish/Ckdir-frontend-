@@ -57,7 +57,7 @@ const Contact = () => {
             {[
               {
                 icon: phoneImg,
-                text: "+91 82961 33177",
+                text: "+91 991 617 7221",
               },
               {
                 icon: envelopImg,
