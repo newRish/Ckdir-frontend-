@@ -127,7 +127,7 @@ const Header = () => {
                                 options: []
                             },
                             {
-                                heading: <Link href={'/career'}><a>Career</a></Link>,
+                                heading: <Link href={'/careers'}><a>Career</a></Link>,
                                 options: []
                             }
                         ]}

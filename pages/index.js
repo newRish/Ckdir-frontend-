@@ -49,7 +49,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Enabling machines to precieve, identify, 
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           manuplate & aid, the world around them.
         </p>
       ),
@@ -60,7 +60,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Take information management & keep data in your 
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           premisis and enable local processing of sensors and data.
         </p>
       ),
@@ -71,7 +71,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Get Realtime actionable insights, 
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           from wide variety of IoT gateways and Edge Devices.
         </p>
       ),
@@ -84,7 +84,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Quickly track, identify and aid incidents, pinpoint accurately
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           and ensure compliance and safety of the user.
         </p>
       ),
@@ -95,9 +95,9 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Enable you to track your fleet
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           real time, giving you complete
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           access to all data that might be.
         </p>
       ),
@@ -108,9 +108,9 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Real Tracking, Fencing, heavily
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           needed for the world where multiple
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           touchpoints is everyday business.
         </p>
       ),
@@ -123,7 +123,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Decentralized verifiable data,
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           which cannot be tempered with.
         </p>
       ),
@@ -134,7 +134,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Collect, report and share real-time information 
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           for enhanced decision-making and effective response.
         </p>
       ),
@@ -145,7 +145,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Rapid and intelligent control of the Organisations for 
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           members and lower level members.
         </p>
       ),
@@ -158,7 +158,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Compliant with regulatory
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           standards like GDPR.
         </p>
       ),
@@ -169,7 +169,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Smart real time monitoring
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           within the network of your IoT.
         </p>
       ),
@@ -180,7 +180,7 @@ const revCardData = {
       text: (
         <p className={styles.revolutionCardText}>
           Harnessing the power of IoT for
-          <br className={styles.dNone} />
+          {/* <br className={styles.dNone} /> */}
           hazard detection to prevent damage.
         </p>
       ),
@@ -446,7 +446,7 @@ const Home = () => {
             <br />
             <div className={styles.heading3}>
               Leverage industry leading expertise and find a shorter path to innovation
-              <br />
+              {/* <br /> */}
               Contact our representatives and get started right away.
             </div>
             <br />

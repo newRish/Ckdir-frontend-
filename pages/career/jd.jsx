@@ -101,7 +101,7 @@ const JD = ({ responsibility }) => {
                 </span>
               </div>
               <div className={styles.submitBtn}>
-                <Button url={"/career"} title={"Submit"} isActive={true} />
+                <Button url={""} title={"Submit"} isActive={true} />
               </div>
             </div>
           </div>

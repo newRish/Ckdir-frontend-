@@ -291,7 +291,7 @@ const Contact = () => {
                   </span>
                 </div>
                 <div className={styles.submitBtn}>
-                  <Button url={"/career"} title={"Send"} isActive={true} />
+                  <Button url={""} title={"Send"} isActive={true} />
                 </div>
               </div>
             </div>
