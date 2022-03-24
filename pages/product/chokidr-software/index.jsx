@@ -150,7 +150,7 @@ const ChokidrSoftware = () => {
         </div>
 
         {/* alternate section */}
-        <div className={styles.alterList}>
+        {/* <div className={styles.alterList}>
           <AlternateSection
             // isImageLast={true}
             heading={"Connecting people and things"}
@@ -231,7 +231,7 @@ const ChokidrSoftware = () => {
               url={"/product/chokidr-software/social-footprint"}
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Social Footprint Section */}
         {/* <div className={styles.sf}>
