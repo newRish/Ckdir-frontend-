@@ -1,7 +1,7 @@
 import Header from "../../../components/Header";
 import styles from "../../../styles/AutonomousIdentities.module.scss";
-import mainStyles from "../../../styles/ConnectingPeopleAndThings.module.scss";
-import landingImg from "../../../public/connect-peopl _ things-main-banner-min.png";
+import autonomSpecificStyles from "../../../styles/AutonomousSpecific.module.scss";
+import landingImg from "../../../public/vichels-on-path.png";
 import Image from "next/image";
 import CaseStudySection from "../../../components/CaseStudySection";
 import ConnectNetworkSection from "../../../components/ConnectNetowrkSection";
@@ -9,32 +9,35 @@ import complianceImg from "../../../public/factory-with-smoke-stack-against-sky-
 import AlternateSection from "../../../components/AlternateSection";
 import envImg from "../../../public/morning-road-people.png";
 import reliableDataImg from "../../../public/night-street-trafic.png";
-import realTimeTrackingImg from "../../../public/real-time-tracking-min.png";
-import transparencyImg from "../../../public/transparency-of-operations-min.png";
-import connectLegecyImg from "../../../public/connect-to-legacy-system-min.png";
-// import raysImg from "../../../public/bg-colorfull-rays.png";
+import raysImg from "../../../public/bg-colorfull-rays.png";
 import Head from 'next/head'
 
-const ConnectingPeopleAndThings = () => {
+const AutonomousIdentities = () => {
   return (
     <>
       <Head>
-        <title>Connecting people and things - Happymonk</title>
-        <meta property="og:title" content="Connecting people and things" key="title" />
+        <title>Autonomous Machines - Happymonk</title>
+        <meta property="og:title" content="Autonomous Machines" key="title" />
       </Head>
       <div>
-        <div className={`${styles.landing} ${mainStyles.landing}`}>
+        <div className={`${styles.landing} ${autonomSpecificStyles.landing}`}>
           <Header />
           {/* <div className={styles.glowCircle}></div> */}
-          <div className={`${styles.container} ${mainStyles.textContainer}`}>
-            <div className={`${styles.textContainer} ${mainStyles.mainText}`}>
+          <div
+            className={`${styles.container} ${autonomSpecificStyles.textContainer}`}
+          >
+            <div
+              className={`${styles.textContainer} ${autonomSpecificStyles.textwrapper}`}
+            >
               <div
-                className={`${styles.landingText} ${mainStyles.landingText}`}
+                className={`${styles.landingText} ${autonomSpecificStyles.landingText}`}
               >
-                Connecting people and things
+                Autonomous Machines
               </div>
-              <div className={`${styles.para} ${mainStyles.para}`}>
-                Connect Sensors, Information Boards.
+              <div className={`${styles.para} ${autonomSpecificStyles.para}`}>
+                Autonomous machines revolutionize our economy greatly by
+                improving the efficiency in delivery, transportation,
+                manufacturing, and many other sectors.
               </div>
             </div>
             {/* <div className={styles.img}>
@@ -48,51 +51,48 @@ const ConnectingPeopleAndThings = () => {
 
         <div className={styles.alterList}>
           <div className={styles.list1}>
-            <div className={styles.glow}></div>
+            {/* <div className={styles.glow}></div> */}
             <AlternateSection
               // isImageLast={true}
-              heading={"Real time tracking"}
+              heading={"Compliance"}
               text={
                 <div className={styles.container}>
                   <div className={styles.label}>
-                    Enables you to track your fleet real time. Know where they
-                    go, on the go.
+                    Compliant with regulatory standards like GDPR.
                   </div>
                 </div>
               }
-              image={<Image src={realTimeTrackingImg} alt={"image"} />}
+              image={<Image src={complianceImg} alt={"image"} />}
             />
           </div>
           <div className={styles.list2}>
             {/* <div className={styles.glow}></div> */}
             <AlternateSection
               isImageLast={true}
-              heading={"Connect to legacy system"}
+              heading={"Controlled Environment"}
               text={
                 <div className={styles.container}>
                   <div className={styles.label}>
-                    Enables you to track your fleet real time, giving you
-                    complete access to all data that might be.
+                    Smart real time monitoring within the network of your IoT.
                   </div>
                 </div>
               }
-              image={<Image src={connectLegecyImg} alt={"image"} />}
+              image={<Image src={envImg} alt={"image"} />}
             />
           </div>
           <div className={styles.list3}>
             {/* <div className={styles.glow}></div> */}
             <AlternateSection
               // isImageLast={true}
-              heading={"Transparency of operations"}
+              heading={"Reliable Data"}
               text={
                 <div className={styles.container}>
                   <div className={styles.label}>
-                    Realtime tracking, fencing, heavily needed for the World
-                    where multiple touchpoints is everyday business.
+                    Of all incidents/activities being monitored on the network.
                   </div>
                 </div>
               }
-              image={<Image src={transparencyImg} alt={"image"} />}
+              image={<Image src={reliableDataImg} alt={"image"} />}
             />
           </div>
         </div>
@@ -100,16 +100,18 @@ const ConnectingPeopleAndThings = () => {
         {/* commented due to no content */}
         {/* <CaseStudySection /> */}
         {/* <ConnectNetworkSection
-            img={raysImg?.src}
-                heading={"Loreum ipsum"}
-                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nibh et ut feugiat duis scelerisque urna, blandit."}
-                url={"/register"}
-                btnText={'Get Invited'}
-                isActive={true}
-            /> */}
+       img={raysImg.src}
+        heading={"Loreum ipsum"}
+        text={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nibh et ut feugiat duis scelerisque urna, blandit."
+        }
+        url={"/register"}
+        btnText={"Get Invited"}
+        isActive={true}
+      /> */}
       </div>
     </>
   );
 };
 
-export default ConnectingPeopleAndThings;
+export default AutonomousIdentities;

@@ -11,9 +11,15 @@ import derekImg from "../../../public/derek-lee.png";
 import digitalIdentityImg from "../../../public/senior-woman-using-her-phone-park.png";
 import greenEarthImg from "../../../public/freen-earth.png";
 import raysImg from "../../../public/bg-colorfull-rays.png";
+import Head from 'next/head'
 
 const GreenAndEconomy = () => {
   return (
+    <>
+     <Head>
+        <title>Social Footprint - Happymonk</title>
+        <meta property="og:title" content="Social Footprint" key="title" />
+      </Head>
     <div>
       <div className={`${styles.landing} ${gaeStyles.landing}`}>
         <Header />
@@ -119,6 +125,7 @@ const GreenAndEconomy = () => {
         isActive={true}
       /> */}
     </div>
+    </>
   );
 };
 

@@ -20,12 +20,21 @@ import docsImg from "../public/rect-comment.png";
 import callImg from "../public/icons/call-outline.png";
 import aenvelopImg from "../public/icons/outline-envelop2.png";
 import CloseIcon from "@mui/icons-material/Close";
+import Head from 'next/head'
 
 const Contact = () => {
   const [isFormActive, setIsFormActive] = useState(false);
   const [isContactForm, setIsContactForm] = useState(false);
   return (
     <>
+      <Head>
+        <title>Happymonk - Contact Us</title>
+        <meta
+          property="og:title"
+          content="Happymonk  Contact Us"
+          key="title"
+        />
+      </Head>
       <div>
         <div className={styles.landingContainer}>
           {/* <div className={styles.darkLayer}> */}

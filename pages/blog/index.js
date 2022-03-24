@@ -7,6 +7,7 @@ import Link from "next/link";
 import { createClient } from "urql";
 import { useQuery } from "urql";
 import { useEffect, useState } from "react";
+import Head from 'next/head'
 
 const blogQuery = `
   query GetBlogs{
@@ -29,51 +30,61 @@ const Blog = ({ blog }) => {
   const { data, fetching, error } = result;
 
   return (
-    <div className={styles.container}>
-      <div className={styles.landingContainer}>
-        <Header />
-        <div className={styles.landingPage}></div>
-      </div>
+    <>
+      <Head>
+        <title>Blog - Happymonk</title>
+        <meta
+          property="og:title"
+          content="Blog"
+          key="title"
+        />
+      </Head>
+      <div className={styles.container}>
+        <div className={styles.landingContainer}>
+          <Header />
+          <div className={styles.landingPage}></div>
+        </div>
 
-      <div className={styles.blog}>
-        <div className={styles.heading1}>Welcome to Happymonk Blog</div>
-        {/* <div className={styles.para}>
+        <div className={styles.blog}>
+          <div className={styles.heading1}>Welcome to Happymonk Blog</div>
+          {/* <div className={styles.para}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, neque,
           ipsum accumsan in fermentum, et cursus.
         </div> */}
-      </div>
+        </div>
 
-      <div className={styles.priviewContainer}>
-        {data?.blogs?.map((e, i) => (
-          <div className={styles.preview} key={i}>
-            <div className={styles.title}>{e.Title}</div>
-            <div className={styles.authorDetails}>
-              <div className={styles.authorName}>
-                Written by Bhavish Agarwal
-              </div>
-              <div className={styles.blogDate}>
-                {`
+        <div className={styles.priviewContainer}>
+          {data?.blogs?.map((e, i) => (
+            <div className={styles.preview} key={i}>
+              <div className={styles.title}>{e.Title}</div>
+              <div className={styles.authorDetails}>
+                <div className={styles.authorName}>
+                  Written by Bhavish Agarwal
+                </div>
+                <div className={styles.blogDate}>
+                  {`
           ${new Date(e?.createdAt).toDateString().split(" ")[1]}
           ${new Date(e?.createdAt).toDateString().split(" ")[2]}, 
           ${new Date(e?.createdAt).toDateString().split(" ")[3]} 
           `}
+                </div>
+              </div>
+              <div className={styles.img}>
+                <Image src={blog1Img} alt={"blog image"} />
+              </div>
+              <div className={styles.body}>
+                {e.Description.split(" ").slice(0, 190).join(" ")} ...
+              </div>
+              <div className={styles.readMore}>
+                <Link href={`/blog/${e.id}`}>
+                  <a>Read more</a>
+                </Link>
               </div>
             </div>
-            <div className={styles.img}>
-              <Image src={blog1Img} alt={"blog image"} />
-            </div>
-            <div className={styles.body}>
-              {e.Description.split(" ").slice(0, 190).join(" ")} ...
-            </div>
-            <div className={styles.readMore}>
-              <Link href={`/blog/${e.id}`}>
-                <a>Read more</a>
-              </Link>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

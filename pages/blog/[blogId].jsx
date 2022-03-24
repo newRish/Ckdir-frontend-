@@ -6,6 +6,7 @@ import { useQuery } from "urql";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 const blogQuery = `
 query ($id: ID!){
@@ -32,41 +33,44 @@ const Blog1 = () => {
   const { data, fetching, error } = result;
 
   return (
-    <div>
-      <div className={styles.landingContainer}>
-        <Header />
-        <div className={styles.landingPage}></div>
-      </div>
-
-      <div className={styles.body}>
-        <div className={styles.titleContainer}>
-          <div className={styles.back}>
-            <Link href={"/blog"}>
-              <a>
-                <Image width={20} height={20} src={arrowForward} alt="back" />
-              </a>
-            </Link>
-          </div>
-          <div className={styles.title}>{data?.blog?.Title}</div>
+    <>
+      <Head>
+        <title>Blog - Happymonk</title>
+        <meta property="og:title" content="Blog" key="title" />
+      </Head>
+      <div>
+        <div className={styles.landingContainer}>
+          <Header />
+          <div className={styles.landingPage}></div>
         </div>
-        <div className={styles.blogDetail}>
-          <div className={styles.author}>
-            <span className={styles.writenTxt}>Written by </span>
-            <span>Bhavish Agarwal</span>
+
+        <div className={styles.body}>
+          <div className={styles.titleContainer}>
+            <div className={styles.back}>
+              <Link href={"/blog"}>
+                <a>
+                  <Image width={20} height={20} src={arrowForward} alt="back" />
+                </a>
+              </Link>
+            </div>
+            <div className={styles.title}>{data?.blog?.Title}</div>
           </div>
-          <div className={styles.date}>{ 
-          `
+          <div className={styles.blogDetail}>
+            <div className={styles.author}>
+              <span className={styles.writenTxt}>Written by </span>
+              <span>Bhavish Agarwal</span>
+            </div>
+            <div className={styles.date}>{`
           ${new Date(data?.blog?.createdAt).toDateString().split(" ")[1]}
           ${new Date(data?.blog?.createdAt).toDateString().split(" ")[2]}, 
           ${new Date(data?.blog?.createdAt).toDateString().split(" ")[3]} 
-          `
-          
-          }</div>
-        </div>
+          `}</div>
+          </div>
 
-        <div className={styles.para}>{data?.blog?.Description}</div>
+          <div className={styles.para}>{data?.blog?.Description}</div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

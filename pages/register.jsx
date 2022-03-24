@@ -16,6 +16,7 @@ import { useState } from "react";
 import SelectField from "../components/SelectField";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import outlineFlag from "../public/icons/flag-outline.png";
+import Head from "next/head";
 
 const SelfRegistrationForm = () => {
   const [selfRegForm, setSelfRegForm] = useState(0);
@@ -226,76 +227,86 @@ const Register = () => {
   const [formCount, setFormCount] = useState(0);
   const [regType, setRegType] = useState("self");
 
-  return regType === "self" ? (
-    <SelfRegistrationForm />
-  ) : (
-    <div className={styles.container}>
-      <div className={styles.form}>
-        <div className={styles.header}>
-          <Image src={logo} alt="logo" className={styles.logo} />
-        </div>
-        <div className={styles.formContainer}>
-          <div className={styles.formHeader}>
-            <div className={styles.title}>Registration Form</div>
-            <div className={styles.selectBox}>
-              <SelectBox />
-            </div>
-          </div>
-          <div className={styles.label}>Personal information</div>
-          <div className={styles.fields}>
-            <div className={styles.field}>
-              <Input
-                type={"text"}
-                getValue={(value) => {}}
-                placeholder="Name"
-                icon={<Image src={userIcon} alt="user" />}
-              />
-            </div>
+  return (
+    <>
+      <Head>
+        <title>Happymonk - Register</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="Happymonk  Register" key="title" />
+      </Head>
 
-            <div className={styles.field}>
-              <Input
-                type={"text"}
-                getValue={(value) => {}}
-                placeholder="Phone number"
-                icon={<Image src={phoneIcon} alt="phone" />}
-              />
+      {regType === "self" ? (
+        <SelfRegistrationForm />
+      ) : (
+        <div className={styles.container}>
+          <div className={styles.form}>
+            <div className={styles.header}>
+              <Image src={logo} alt="logo" className={styles.logo} />
             </div>
-            <div className={styles.field}>
-              <Input
-                type={"text"}
-                getValue={(value) => {}}
-                placeholder="Email ID"
-                icon={<Image src={mailIcon} alt="mail" />}
-              />
-            </div>
-
-            <div className={styles.btn}>
-              <div>
-                <CarouselNavigation
-                  counts={3}
-                  defaultView={0}
-                  getValue={() => {}}
-                />
+            <div className={styles.formContainer}>
+              <div className={styles.formHeader}>
+                <div className={styles.title}>Registration Form</div>
+                <div className={styles.selectBox}>
+                  <SelectBox />
+                </div>
               </div>
-              <FilledBtn title="Next" url="/" />
+              <div className={styles.label}>Personal information</div>
+              <div className={styles.fields}>
+                <div className={styles.field}>
+                  <Input
+                    type={"text"}
+                    getValue={(value) => {}}
+                    placeholder="Name"
+                    icon={<Image src={userIcon} alt="user" />}
+                  />
+                </div>
+
+                <div className={styles.field}>
+                  <Input
+                    type={"text"}
+                    getValue={(value) => {}}
+                    placeholder="Phone number"
+                    icon={<Image src={phoneIcon} alt="phone" />}
+                  />
+                </div>
+                <div className={styles.field}>
+                  <Input
+                    type={"text"}
+                    getValue={(value) => {}}
+                    placeholder="Email ID"
+                    icon={<Image src={mailIcon} alt="mail" />}
+                  />
+                </div>
+
+                <div className={styles.btn}>
+                  <div>
+                    <CarouselNavigation
+                      counts={3}
+                      defaultView={0}
+                      getValue={() => {}}
+                    />
+                  </div>
+                  <FilledBtn title="Next" url="/" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.info}>
+            <div className={styles.text}>
+              <div className={styles.heading}>Flagship Features</div>
+              <div className={styles.para}>
+                Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi.
+              </div>
+            </div>
+            <div className={styles.img}>
+              <Image src={iMacImg} alt={"desktop"} />
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.info}>
-        <div className={styles.text}>
-          <div className={styles.heading}>Flagship Features</div>
-          <div className={styles.para}>
-            Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi.
-          </div>
-        </div>
-        <div className={styles.img}>
-          <Image src={iMacImg} alt={"desktop"} />
-        </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

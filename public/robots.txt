@@ -1,0 +1,24 @@
+# Allow all user agents.
+User-agent: *
+Allow: /
+Allow: /platform/network
+Allow: /platform/blockchain
+Allow: /platform/ai
+Allow: /product/chokidr-hardware
+Allow: /product/chokidr-software
+Allow: /product/chokidr-software/identities
+Allow: /product/chokidr-software/autonomousMachines
+Allow: /product/chokidr-software/connecting-people-and-things
+Allow: /product/chokidr-software/command-and-control
+Allow: /product/chokidr-software/edge-iot
+Allow: /product/chokidr-software/social-footprint
+Allow: /contact
+Allow: /about
+Allow: /blog
+Allow: /careers
+Allow: /careers/job-description
+Allow: /register
+
+# User agent "Googlebot" should not crawl the `http://example.com/nogooglebot/` folder or any of its subdirectories.
+User-agent: Googlebot
+Disallow: /nogooglebot/
