@@ -28,7 +28,7 @@ const platFormCardData = [
     imageUrl: cardImg2,
     heading: "Sensor Fusion",
     text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac suspendisse etiam sit lacus. Curabitur purus senectus sed nisl. Donec amet maecenas imperdiet id duis id mi etiam et.",
+      "Analyze, detect and take actions in real time. Save millions of dollars for organizations and improve human safety & organization efficiency.",
   },
 ];
 const AI = () => {
@@ -48,9 +48,9 @@ const AI = () => {
           {/* <div className={styles.darkLayer}></div> */}
           <Header />
           <div className={styles.textContainer}>
-            <span className={styles.landingText}>
+            <h2 className={styles.landingText}>
               Building Ethical, Responsible & Dependable AI for everyone.
-            </span>
+            </h2>
           </div>
         </div>
 
@@ -78,19 +78,19 @@ const AI = () => {
                 <div className={styles.featureIcon}>
                   <Image src={fogComputingImg} alt="icon" />
                 </div>
-                <div className={styles.sfText}>Fog computing</div>
+                <h5 className={styles.sfText}>Fog computing</h5>
               </li>
               <li className={styles.sfItem}>
                 <div className={styles.featureIcon}>
                   <Image src={deepLearningImg} alt="icon" />
                 </div>
-                <div className={styles.sfText}>Deep learning</div>
+                <h5 className={styles.sfText}>Deep learning</h5>
               </li>
               <li className={styles.sfItem}>
                 <div className={styles.featureIcon}>
                   <Image src={dataIntegrationImg} alt="icon" />
                 </div>
-                <div className={styles.sfText}>Data Integration</div>
+                <h5 className={styles.sfText}>Data Integration</h5>
               </li>
             </ul>
           </div>
@@ -104,8 +104,8 @@ const AI = () => {
                 <Image src={card.imageUrl} alt="card image" />
               </div>
               <div className={styles.platformTextContainer}>
-                <div className={styles.platformCardHading}>{card.heading}</div>
-                <div className={styles.platformCardText}>{card.text}</div>
+                <h2 className={styles.platformCardHading}>{card.heading}</h2>
+                <p className={styles.platformCardText}>{card.text}</p>
               </div>
             </div>
           ))}
@@ -113,22 +113,22 @@ const AI = () => {
 
         {/* software section */}
         <div className={styles.software}>
-          <div className={styles.heading}>Software</div>
+          <h2 className={styles.heading}>Software</h2>
           <div className={styles.sCards}>
             <div className={styles.sCard}>
               <div className={styles.sCardImg}>
                 <Image src={iphoneImg} alt="device" />
               </div>
               <div className={styles.sCardText}>
-                <div className={styles.sCardHeading}>
+                <h3 className={styles.sCardHeading}>
                   Detection & Identification
-                </div>
-                <div className={styles.sCardSummary}>
+                </h3>
+                <p className={styles.sCardSummary}>
                   Hyper Connected Systems : Proactively Detects Incidents across
                   factories, warehouse, fleet, ensuring improved employee
                   safety, lesser workplace accidents, easier compliance
                   management.
-                </div>
+                </p>
               </div>
             </div>
 
@@ -137,13 +137,13 @@ const AI = () => {
                 <Image src={mapImg} alt="device" />
               </div>
               <div className={`${styles.sCardText} ${styles.alignEnd}`}>
-                <div className={styles.sCardHeading}>
+                <h2 className={styles.sCardHeading}>
                   Decentralized Command and Control
-                </div>
-                <div className={styles.sCardSummary}>
+                </h2>
+                <p className={styles.sCardSummary}>
                   Centralized Command & Control over your entire decentralized
                   infrastructure.
-                </div>
+                </p>
               </div>
             </div>
 
@@ -152,14 +152,14 @@ const AI = () => {
                 <Image src={fullPhoneImg} alt="device" />
               </div>
               <div className={styles.sCardText}>
-                <div className={styles.sCardHeading}>
+                <h2 className={styles.sCardHeading}>
                   Visual Track and Trace
-                </div>
-                <div className={styles.sCardSummary}>
+                </h2>
+                <p className={styles.sCardSummary}>
                   Spot abnormal behavior or suspicious activity that could
                   indicate a problem without even identifying the individual or
                   inferring any unnecessary bias.
-                </div>
+                </p>
               </div>
             </div>
           </div>

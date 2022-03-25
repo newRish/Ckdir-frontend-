@@ -24,33 +24,33 @@ const JD = ({ responsibility }) => {
         <div className={styles.landingContainer}>
           <Header />
           <div className={styles.landingPage}>
-            <div className={styles.heading1}>Openings for Data Scientist</div>
-            <p className={styles.landingText}>Number of vacancy - 03</p>
+            <h2 className={styles.heading1}>Openings for Data Scientist</h2>
+            <h3 className={styles.landingText}>Number of vacancy - 03</h3>
           </div>
         </div>
 
         <div className="desc">
           <div className={styles.dhar}>
             <div className={styles.topImg}>
-              <div className={styles.heading}>What you&apos;ll do?</div>
+              <h2 className={styles.heading}>What you&apos;ll do?</h2>
               <Image src={jbtopImg} alt={"jb image"} />
             </div>
             <div className={styles.content}>
               <div className={styles.heading}>What you&apos;ll do?</div>
-              <div className={styles.dharText}>
+              <p className={styles.dharText}>
                 Design and develop secure cloud system architectures in
                 accordance with established standards. Design and implement a
                 highly scalable CI/CD pipeline.
-              </div>
+              </p>
               <div className={styles.dharPoints}>
                 <ul className={styles.dharList}>
                   {responsibility?.map((e, i) => (
                     <li key={i} className={styles.dharItem}>
                       {/* <div className={styles.dharItemStyle}>a</div> */}
-                      <div className={styles.dharText}>
+                      <p className={styles.dharText}>
                         <div></div>
                         {e}
-                      </div>
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -63,9 +63,9 @@ const JD = ({ responsibility }) => {
           </div>
         </div>
 
-        <div className={`${styles.heading} ${styles.applyHeader}`}>
+        <h2 className={`${styles.heading} ${styles.applyHeader}`}>
           Apply here
-        </div>
+        </h2>
         <div className={styles.apply}>
           <div className={styles.applyContainer}>
             <div className={styles.applyImg}>

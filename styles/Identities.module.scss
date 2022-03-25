@@ -118,19 +118,19 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .landing {
     background-image: url("../public/machine-learning-hand-robot-touching-computer-chip-binary-data-small.png");
     min-height: 665px;
 
-    .para{
+    .para {
       font-size: 18px;
       line-height: 23px;
       padding-bottom: 43px;
     }
   }
 
-  .label{
+  .label {
     font-size: 14px !important;
     line-height: 20px !important;
   }
@@ -159,18 +159,27 @@
     flex: unset !important;
   }
 
-  .container{
-align-items: flex-end !important;
-text-align: center;
-// padding-bottom: 40px;
+  .container {
+    align-items: flex-end !important;
+    text-align: center;
   }
 
-  .textContainer{
+  .textContainer {
     flex: 1;
   }
 
   .alterList {
     gap: 40px !important;
-    margin-bottom: 0;
+    margin: 50px 0;
+    padding: 0 20px !important;
   }
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 774px) {
+  .alterList{
+    padding:  20px !important;
+    margin: 50px 0;
+  }
+  
 }

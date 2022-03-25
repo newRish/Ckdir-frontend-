@@ -26,12 +26,12 @@ const GreenAndEconomy = () => {
         {/* <div className={styles.glowCircle}></div> */}
         <div className={`${styles.container} ${gaeStyles.textContainer}`}>
           <div className={`${styles.textContainer} ${gaeStyles.mainText}`}>
-            <div className={`${styles.landingText} ${gaeStyles.landingText}`}>
+            <h2 className={`${styles.landingText} ${gaeStyles.landingText}`}>
               Social Footprint
-            </div>
-            <div className={`${styles.para} ${gaeStyles.para}`}>
+            </h2>
+            <p className={`${styles.para} ${gaeStyles.para}`}>
               Reduce carbon footprint of your organisation.
-            </div>
+            </p>
           </div>
           {/* <div className={styles.img}> */}
           {/* <Image
@@ -52,10 +52,10 @@ const GreenAndEconomy = () => {
             }
             text={
               <div className={styles.container}>
-                <div className={styles.label}>
+                <p className={styles.label}>
                   Identification of incidents/ discovery of problem points in
                   the whole cycle.
-                </div>
+                </p>
               </div>
             }
             image={<Image src={derekImg} alt={"image"} />}
@@ -68,10 +68,10 @@ const GreenAndEconomy = () => {
             heading={"Produce Quality & Authenticity"}
             text={
               <div className={styles.container}>
-                <div className={styles.label}>
+                <p className={styles.label}>
                   Guaranteed assurance of authenticity of fresh produce that
                   reaches the consumer from the farm.
-                </div>
+                </p>
               </div>
             }
             image={<Image src={fieldImg} alt={"image"} />}
@@ -84,10 +84,10 @@ const GreenAndEconomy = () => {
             heading={"Digital Identity"}
             text={
               <div className={styles.container}>
-                <div className={styles.label}>
+                <p className={styles.label}>
                   The ability to authenticate the identity of people and things,
                   making it a safe viable option.
-                </div>
+                </p>
               </div>
             }
             image={<Image src={digitalIdentityImg} alt={"image"} />}
@@ -100,11 +100,11 @@ const GreenAndEconomy = () => {
             heading={"Ecological Safety"}
             text={
               <div className={styles.container}>
-                <div className={styles.label}>
+                <p className={styles.label}>
                   Harnessing the power of IoT for hazard detection such as
                   fires, to prevent damage to both man-made property and the
                   environment.
-                </div>
+                </p>
               </div>
             }
             image={<Image src={greenEarthImg} alt={"image"} />}

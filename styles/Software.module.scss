@@ -357,6 +357,9 @@
     .ml6 {
       margin: unset;
     }
+    .label{
+      padding: 0 10px;
+    }
   }
 
   .ml {
@@ -463,6 +466,11 @@
     }
   }
 
+  .csaImg {
+    width: unset;
+    height: unset;
+  }
+
   .deviceList {
     padding: 30px 30px;
     gap: 20px;
@@ -477,6 +485,13 @@
         min-width: 162px;
       }
     }
+  }
+
+  .ml{
+    margin-left: 20px !important;
+  }
+  .sfLabel{
+    margin-left: 20px;
   }
 
   .aditionalProtoKollo {

@@ -23,7 +23,7 @@ import { Icons } from "../../../utils/icons";
 import { useState } from "react";
 import Button from "../../../components/Button";
 import identityImg from "../../../public/identities-min.png";
-import Head from 'next/head'
+import Head from "next/head";
 
 const ChokidrSoftware = () => {
   const [carouselSwitch, setCarouselSwitch] = useState(false);
@@ -40,14 +40,14 @@ const ChokidrSoftware = () => {
           <div className={styles.glowCircle}></div>
           <div className={styles.container}>
             <div className={styles.textContainer}>
-              <div className={styles.landingText}>Accelerating Web 3.0</div>
-              <div className={styles.para}>
+              <h2 className={styles.landingText}>Accelerating Web 3.0</h2>
+              <p className={styles.para}>
                 Chokidr software is an executable Web and mobile application,
                 that provides a variety of fantastic features that helps you
                 navigate through and access the range of your network through a
                 laptop or phone. What&apos;s in the box of these fantastic
                 features, you ask?
-              </div>
+              </p>
             </div>
             <div className={styles.img}>
               <Image src={landingImg} alt={"software in devices"} />
@@ -61,31 +61,31 @@ const ChokidrSoftware = () => {
             <div className={styles.img}>
               <Image src={knpImg} alt="icon" />
             </div>
-            <div className={styles.text}>Zero knowledge Proof</div>
+            <h6 className={styles.text}>Zero knowledge Proof</h6>
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
               <Image src={cloudLockImg} alt="icon" />
             </div>
-            <div className={styles.text}>Tamperproof Data</div>
+            <h6 className={styles.text}>Tamperproof Data</h6>
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
               <Image src={privateNWImg} alt="icon" />
             </div>
-            <div className={styles.text}>Private Network</div>
+            <h6 className={styles.text}>Private Network</h6>
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
               <Image src={iotImg} alt="icon" />
             </div>
-            <div className={styles.text}>Intergrated IOT</div>
+            <h6 className={styles.text}>Intergrated IOT</h6>
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
               <Image src={horioztalScaleImg} alt="icon" />
             </div>
-            <div className={styles.text}>Scalable and Affordable</div>
+            <h6 className={styles.text}>Scalable and Affordable</h6>
           </li>
         </ul>
 
@@ -102,11 +102,11 @@ const ChokidrSoftware = () => {
                 <Image src={commandNControllImg} alt="face recog" />
               </div>
               <div className={styles.textContainer}>
-                <div className={styles.heading}>Command & Control</div>
-                <div className={styles.para}>
+                <h2 className={styles.heading}>Command & Control</h2>
+                <p className={styles.para}>
                   Get real time information across your organisation, members
                   and devices under one single unified dashboardF
-                </div>
+                </p>
                 <div className={styles.readMoreText}>
                   <Link href="/product/chokidr-software/command-and-control">
                     <a>Read more</a>
@@ -128,12 +128,12 @@ const ChokidrSoftware = () => {
                 <Image src={firefiterImg} alt="fire fighters" />
               </div>
               <div className={styles.textContainer}>
-                <div className={styles.heading}>Autonomous Machines</div>
-                <div className={styles.para}>
+                <h2 className={styles.heading}>Autonomous Machines</h2>
+                <p className={styles.para}>
                   Autonomous machines revolutionize our economy greatly by
                   improving the efficiency in delivery, transportation,
                   manufacturing, and many other sectors.
-                </div>
+                </p>
                 <div className={styles.readMoreText}>
                   <Link href="/product/chokidr-software/autonomousMachines">
                     <a>Read more</a>
@@ -150,7 +150,7 @@ const ChokidrSoftware = () => {
         </div>
 
         {/* alternate section */}
-        {/* <div className={styles.alterList}>
+        <div className={styles.alterList}>
           <AlternateSection
             // isImageLast={true}
             heading={"Connecting people and things"}
@@ -231,27 +231,25 @@ const ChokidrSoftware = () => {
               url={"/product/chokidr-software/social-footprint"}
             />
           </div>
-        </div> */}
+        </div>
 
         {/* Social Footprint Section */}
         {/* <div className={styles.sf}>
-        <div className={styles.container}>
-          <div className={styles.heading}></div>
-          <div className={styles.label}>
-           
-          </div>
+          <div className={styles.container}>
+            <div className={styles.heading}></div>
+            <div className={styles.label}></div>
 
-          <div className={styles.readMoreText}>
-            <Button
-              title="Read more"
-              url="/product/chokidr-software/social-footprint"
-            />
+            <div className={styles.readMoreText}>
+              <Button
+                title="Read more"
+                url="/product/chokidr-software/social-footprint"
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles.img}>
-          <Image src={sfImg} alt={"employe with laotop"} />
-        </div>
-      </div> */}
+          <div className={styles.img}>
+            <Image src={sfImg} alt={"employe with laotop"} />
+          </div>
+        </div> */}
 
         {/* Case Studies section */}
         {/* no content */}

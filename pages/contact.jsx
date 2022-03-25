@@ -40,8 +40,8 @@ const Contact = () => {
           {/* <div className={styles.darkLayer}> */}
           <Header />
           <div className={styles.landingPage}>
-            <div className={styles.heading1}>Got a question?</div>
-            <p className={styles.landingText}>We’d love to hear from you!</p>
+            <h2 className={styles.heading1}>Got a question?</h2>
+            <h4 className={styles.landingText}>We’d love to hear from you!</h4>
             <div
               className={styles.readMore}
               onClick={() => {
@@ -61,7 +61,7 @@ const Contact = () => {
 
         {/* contact */}
         <div className={styles.contact}>
-          <div className={styles.boldText}>Contact Happymonk</div>
+          <h3 className={styles.boldText}>Contact Happymonk</h3>
           <ul className={styles.list}>
             {[
               {
@@ -81,7 +81,7 @@ const Contact = () => {
                 <div className={styles.contactIcon}>
                   <Image src={e.icon} alt="trusted by" />
                 </div>
-                <div>{e.text}</div>
+                <h4>{e.text}</h4>
               </li>
             ))}
           </ul>
@@ -89,30 +89,30 @@ const Contact = () => {
 
         {/* support */}
         <div className={styles.support}>
-          <div className={`${styles.heading} ${styles.supportHead}`}>
+          <h3 className={`${styles.heading} ${styles.supportHead}`}>
             Support
-          </div>
+          </h3>
           <div className={styles.img}>
             <Image src={supportImg} alt={"support"} />
-            <div className={styles.para}>
+            <p className={styles.para}>
               We&apos;re here to help and answer any questions you might have.
               We look forward from hearing you.
-            </div>
+            </p>
           </div>
 
           <div className={styles.text}>
-            <div className={styles.heading}>Support</div>
-            <div className={styles.para}>
+            <h3 className={styles.heading}>Support</h3>
+            <p className={styles.para}>
               We&apos;re here to help and answer any questions you might have.
               We look forward from hearing you.
-            </div>
+            </p>
           </div>
         </div>
 
         {/* how can we help */}
         <div className={styles.help}>
-          <div className={styles.heading}>Monks at your service</div>
-          <div className={styles.para}>
+          <h3 className={styles.heading}>Monks at your service</h3>
+          <p className={styles.para}>
             Please select a topic below related to your query or fill out our{" "}
             <span
               className={styles.colorGreen}
@@ -125,7 +125,7 @@ const Contact = () => {
                 <a>contact form.</a>
               </Link>
             </span>
-          </div>
+          </p>
           <div className={styles.img}>
             <div>
               <Image src={monitorImg} alt="software" />
@@ -147,13 +147,13 @@ const Contact = () => {
 
         {/* demo */}
         <div className={styles.demo}>
-          <div className={`${styles.heading} ${styles.demohead}`}>Demo</div>
+          <h3 className={`${styles.heading} ${styles.demohead}`}>Demo</h3>
 
           <div className={styles.text}>
-            <div className={styles.heading}>Demo</div>
-            <div className={styles.para}>
+            <h3 className={styles.heading}>Demo</h3>
+            <p className={styles.para}>
               Request a demo from one of our conversion specialists.
-            </div>
+            </p>
             <div className={styles.readMore}>
               <Button
                 title={"Book a demo"}
@@ -166,9 +166,9 @@ const Contact = () => {
             </div>
           </div>
           <div className={styles.img}>
-            <div className={styles.para}>
+            <p className={styles.para}>
               Request a demo from one of our conversion specialists.
-            </div>
+            </p>
             <Image src={demoImg} alt={"demo"} />
           </div>
           <div className={`${styles.readMore} ${styles.demoBtn}`}>
@@ -186,29 +186,29 @@ const Contact = () => {
 
         {/* inspired */}
         <div className={styles.inspired}>
-          <div className={styles.heading}>Get Inspired</div>
-          <div className={styles.para}>
+          <h3 className={styles.heading}>Get Inspired</h3>
+          <p className={styles.para}>
             Discover the many ways in which our customers use Sleeknote.
-          </div>
+          </p>
         </div>
 
         {/* become partner */}
         <div className={styles.partner}>
-          <div className={styles.partnerHead}>
+          <h3 className={styles.partnerHead}>
             {" "}
             Are you a Security Consultant?{" "}
-          </div>
+          </h3>
           <div>
             <Image src={partnerImg} alt="partner" />
           </div>
           <div className={styles.container}>
             <div className={styles.text}>
-              <div className={styles.boldText}>
+              <h4 className={styles.boldText}>
                 Are you a Security Consultant?
-              </div>
-              <div className={styles.boldPara}>
+              </h4>
+              <h5 className={styles.boldPara}>
                 Join our affiliate program and earn recurring fees.
-              </div>
+              </h5>
               <div className={styles.readMore}>
                 <Button
                   title={"Join Now"}
@@ -217,9 +217,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            {/* <div className={styles.percent}>
-                        25%
-                    </div> */}
+          
           </div>
         </div>
 

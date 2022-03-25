@@ -26,13 +26,13 @@ const Blockchain = ({ kpList }) => {
         <div className={styles.landing}>
           <Header />
           <div className={styles.textContainer}>
-            <span className={styles.landingText}>
-              Revolutionize
+            <h2 className={styles.landingText}>
+              Revolutionize {" "}
               <br className={styles.displeNone} />
-              the way
+              the way {" "}
               <br className={styles.displeNone} />
-              vital information is managed!
-            </span>
+               vital information is managed!
+            </h2>
           </div>
         </div>
 
@@ -53,19 +53,19 @@ const Blockchain = ({ kpList }) => {
                 <div className={styles.featureIcon}>
                   <Image src={logsImg} alt="Immutable logs" />
                 </div>
-                <div className={styles.bText}>Immutable logs</div>
+                <h5 className={styles.bText}>Immutable logs</h5>
               </li>
               <li className={styles.bItem}>
                 <div className={styles.featureIcon}>
                   <Image src={decentralisedImg} alt="decentralised" />
                 </div>
-                <div className={styles.bText}>Decentralised</div>
+                <h5 className={styles.bText}>Decentralised</h5>
               </li>
               <li className={styles.bItem}>
                 <div className={styles.featureIcon}>
                   <Image src={securityShieldImg} alt="Enhanced Security" />
                 </div>
-                <div className={styles.bText}>Enhanced Security</div>
+                <h5 className={styles.bText}>Enhanced Security</h5>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ const Blockchain = ({ kpList }) => {
 
         {/* Protokollo section */}
         <div className={styles.protokollo}>
-          <div className={styles.heading}>Protokollo</div>
+          <h2 className={styles.heading}>Protokollo</h2>
           <div className={styles.glowCircle}></div>
           <div className={styles.pImg}>
             <Image src={phonesImg} alt={"phones"} />
@@ -84,19 +84,19 @@ const Blockchain = ({ kpList }) => {
               <div className={styles.pImg}>
                 <Image src={locationImg} alt="icon" />
               </div>
-              <div className={styles.pText}>Proof of location</div>
+              <h3 className={styles.pText}>Proof of location</h3>
             </div>
             <div className={styles.pCard}>
               <div className={styles.pImg}>
                 <Image src={proofDocIcon} alt="icon" />
               </div>
-              <div className={styles.pText}>Proof of activity</div>
+              <h3 className={styles.pText}>Proof of activity</h3>
             </div>
             <div className={styles.pCard}>
               <div className={styles.pImg}>
                 <Image src={authorityProof} alt="icon" />
               </div>
-              <div className={styles.pText}>Proof of authority</div>
+              <h3 className={styles.pText}>Proof of authority</h3>
             </div>
           </div>
         </div>
@@ -108,16 +108,16 @@ const Blockchain = ({ kpList }) => {
 
         {/* 0 knowledge proof section */}
         <div className={styles.kp}>
-          <div className={styles.heading}>Zero knowledge Proof</div>
-          <div className={styles.kpText}>
+          <h2 className={styles.heading}>Zero knowledge Proof</h2>
+          <h5 className={styles.kpText}>
             ZKP is essentially about proving that:
-          </div>
+          </h5>
           <div className={styles.kpPoints}>
             <ul className={styles.kpList}>
               {kpList?.map((e, i) => (
                 <li key={i} className={styles.kpItem}>
                   <div className={styles.kpItemStyle}></div>
-                  <div className={styles.kpText}>{e}</div>
+                  <p className={styles.kpText}>{e}</p>
                 </li>
               ))}
             </ul>
@@ -131,38 +131,38 @@ const Blockchain = ({ kpList }) => {
               <div className={styles.cardImg}>
                 <Image src={rightIcon} alt="right icon" />
               </div>
-              <div className={styles.cardHeading}>Complete</div>
-              <div className={styles.cardText}>
+              <h5 className={styles.cardHeading}>Complete</h5>
+              <p className={styles.cardText}>
                 Conclusive that the knowledge obtained is accurate.
-              </div>
+              </p>
             </div>
 
             <div className={styles.card}>
               <div className={styles.cardImg}>
                 <Image src={soundIcon} alt="icon" />
               </div>
-              <div className={styles.cardHeading}>Sound</div>
-              <div className={styles.cardText}>
+              <h5 className={styles.cardHeading}>Sound</h5>
+              <p className={styles.cardText}>
                 Prove that the proof is true.
-              </div>
+              </p>
             </div>
 
             <div className={styles.card}>
               <div className={styles.cardImg}>
                 <Image src={zeroKpIcon} alt="icon" />
               </div>
-              <div className={styles.cardHeading}>Zero knowledge proof</div>
-              <div className={styles.cardText}>
+              <h5 className={styles.cardHeading}>Zero knowledge proof</h5>
+              <p className={styles.cardText}>
                 Without divulging any additional information in the process.
-              </div>
+              </p>
             </div>
           </div>
         </div>
 
         {/* Hardware section */}
         <div className={styles.hardware}>
-          <div className={styles.heading}>Zero knowledge Proof - Hardware</div>
-          <div className={styles.hwSummary}>
+          <h2 className={styles.heading}>Zero knowledge Proof - Hardware</h2>
+          <p className={styles.hwSummary}>
             Having a private network across your organization in different
             locations, enables cross-communication between devices, allowing for
             identification of members, vehicles and objects across the
@@ -171,7 +171,7 @@ const Blockchain = ({ kpList }) => {
             only once. If they are registered at one location, seamless movement
             and identification across the organization, with any restrictions on
             access would be stored and enabled, across different locations.
-          </div>
+          </p>
         </div>
         {/* no content */}
         {/* Software section */}

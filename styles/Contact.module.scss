@@ -85,6 +85,7 @@
 .demo {
   display: flex;
   padding: 10rem 6rem;
+  gap: 30px;
   align-items: center;
   .text,
   .img {
@@ -275,10 +276,10 @@
   .heading {
     text-align: left;
   }
-  .formHead{
+  .formHead {
     display: flex;
     justify-content: space-between;
-    svg{
+    svg {
       font-size: 30px;
       cursor: pointer;
     }
@@ -336,7 +337,6 @@
     color: rgba(255, 255, 255, 0.4);
   }
 
- 
   textarea {
     position: absolute;
     width: 100%;
@@ -351,7 +351,7 @@
   align-items: flex-start;
   overflow-x: hidden;
   padding-top: 10px;
-  .fieldIcon{
+  .fieldIcon {
     padding-top: 10px;
   }
 }
@@ -363,31 +363,29 @@
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 450px) {
-
-  .apply{
+@media screen and (max-width: 550px) {
+  .apply {
     min-height: 200px !important;
     margin: 0;
 
-    textarea{
+    textarea {
       height: 100px;
     }
   }
-  .form{
+  .form {
     padding: 20px 40px;
     width: 100%;
     margin: 20px;
 
-    .field{
+    .field {
       gap: 5px;
     }
   }
 
-  .submitBtn{
+  .submitBtn {
     padding-top: unset;
     padding-bottom: unset;
   }
-
 
   .partnerHead {
     display: flex;
@@ -487,6 +485,8 @@
       }
       .para {
         display: flex;
+        padding-right: 20px;
+        flex: 1;
       }
       span {
         width: 208px !important;
@@ -496,10 +496,10 @@
 
     .readMore {
       // margin: unset;
-      margin-top: 49px;
-      margin-bottom: 40px;
+      margin-top: 29px;
+      margin-bottom: 20px;
       // width: unset;
-      // display: flex;
+      display: flex;
       // align-self: flex-start;
     }
   }
@@ -550,7 +550,8 @@
       display: flex;
       gap: 10px;
       .para {
-        display: block;
+        display: flex;
+        align-items: center;
         flex: 0.4;
       }
       span {
@@ -592,4 +593,122 @@
   .para {
     font-size: 14px !important;
   }
+}
+
+@media screen and (min-width: 550px) and (max-width: 852px) {
+  .landingPage {
+    .heading1 {
+      font-size: 70px;
+    }
+    .landingText{
+      font-size: 30px;
+    }
+  }
+
+  .boldText{
+    font-size: 35px;
+  }
+
+  .list{
+    h4{
+      font-size: 20px;
+    }
+    gap: 20px;
+  }
+
+
+
+
+  .partnerHead {
+    display: flex;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #fbfbfb;
+  }
+
+
+  .partner {
+    flex-direction: column;
+
+    .container {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    .boldText {
+      display: none;
+    }
+    .readMore {
+      width: unset;
+      height: unset;
+      display: flex;
+      align-self: center;
+    }
+  }
+
+  .contact {
+    padding: 2rem 1rem;
+    li{
+      &:last-child{
+        .contactIcon{
+          width: 30px;
+        }
+      
+      }
+    }
+  }
+
+  .support, .demo{
+    padding: 5rem 2rem;
+    .heading{
+      font-size: 35px;
+    }
+    .para{
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+  }
+
+  .demo {
+    flex-direction: column;
+    padding: 20px;
+    .demohead {
+      display: flex;
+    }
+    .text {
+      display: none;
+    }
+
+    .img {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      div {
+        flex: 0.5;
+      }
+      .para {
+        display: flex;
+        padding-right: 20px;
+        flex: 1;
+      }
+      span {
+        width: 208px !important;
+        flex: 0.7;
+      }
+    }
+
+    .readMore {
+      margin-top: 29px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  }
+  .contactIcon {
+    width: 40px;
+    margin: 0 auto;
+  }
+
 }

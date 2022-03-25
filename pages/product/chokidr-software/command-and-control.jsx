@@ -32,15 +32,15 @@ const CommandAndControl = () => {
           <div className={commandStyles.darkLayer}></div>
           <div className={`${styles.container} ${commandStyles.textContainer}`}>
             <div className={styles.textContainer}>
-              <div
+              <h2
                 className={`${styles.landingText} ${commandStyles.landingText}`}
               >
                 Command and Control
-              </div>
-              <div className={`${styles.para} ${commandStyles.para}`}>
+              </h2>
+              <p className={`${styles.para} ${commandStyles.para}`}>
                 Get real time information across your organisation, members and
                 devices under one single unified dashboard.
-              </div>
+              </p>
             </div>
             <div className={styles.img}>
               {/* <Image
@@ -59,10 +59,10 @@ const CommandAndControl = () => {
               heading={"Integrated Dashboard"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     A Single Integrated Dashboard across Web, Desktop & Mobile
                     for your Physical assets, Factories, Warehouse, & Fleet.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={integratedDashImg} alt={"image"} />}
@@ -75,12 +75,12 @@ const CommandAndControl = () => {
               heading={"Multi-tenancy User"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Allow authorized users to see data from different sources
                     with different permission levels through the use of state of
                     art and zero knowledge protocols without having to disclose
                     the data.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={multiTenencyImg} alt={"image"} />}
@@ -93,11 +93,11 @@ const CommandAndControl = () => {
               heading={"Decision Making"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Active aid in decision making and communication, helps to
                     manage and share real-time data across Organizations,
                     Agencies and stakeholders in the ecosystem.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={decisionMkingImg} alt={"image"} />}
@@ -110,12 +110,12 @@ const CommandAndControl = () => {
               heading={"Real-time information"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Proactive anomalies and incident detection in integrated
                     industry and supply chain, aiding organization members to
                     take decisions that can prevent unfortunate incidents & take
                     timely action.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={rInfoImg} alt={"image"} />}
@@ -128,12 +128,12 @@ const CommandAndControl = () => {
               heading={"Easing Compliance"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Build a unique public data pipeline for border agencies and
                     traders to share data and confidential information
                     securely,improve cross-border trade without compromising on
                     the data privacy.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={easyCompImg} alt={"image"} />}
@@ -146,11 +146,11 @@ const CommandAndControl = () => {
               heading={"RetroFit"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Upgrade to industry 4.0 has never been easier and safer.
                     Compute and take autonomous actions with integrated security
                     management.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={retroImg} alt={"image"} />}

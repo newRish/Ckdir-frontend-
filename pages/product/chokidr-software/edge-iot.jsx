@@ -37,10 +37,10 @@ const EdgeIot = () => {
           {/* <div className={styles.glowCircle}></div> */}
           <div className={`${styles.container} ${edgeStyle.textContainer}`}>
             <div className={`${styles.textContainer} ${edgeStyle.mainText}`}>
-              <div className={styles.landingText}>Edge IOT</div>
-              <div className={`${styles.para} ${edgeStyle.para}`}>
+              <h2 className={styles.landingText}>Edge IOT</h2>
+              <p className={`${styles.para} ${edgeStyle.para}`}>
                 Go Offline, Get reliable.
-              </div>
+              </p>
             </div>
           </div>
         </div>
@@ -53,11 +53,11 @@ const EdgeIot = () => {
               heading={"RetroFit"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Retrofit your existing infrastructure sensors, cctv cameras,
                     through dhar to enable Autonomous edge intelligence, private
                     ground to ground communication across fleet and warehouse
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={retriImg} alt={"image"} />}
@@ -70,14 +70,14 @@ const EdgeIot = () => {
               heading={"Infinite Opportunities from Infinite Data "}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Combining the real and digital worlds becomes possible with
                     our comprehensive Digital Twin approach. It enables
                     integration of the entire product lifecycle with the factory
                     and plant life cycle, along with performance data. The
                     result is a continuous loop of optimization, both for the
                     product and the production.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={futureInteImg} alt={"image"} />}
@@ -90,11 +90,11 @@ const EdgeIot = () => {
               heading={"Private Ground Network"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     LoRa Powered Systems allows sensors and devices to
                     communicate real-time data ground to ground over private
                     decentralized network.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={privateGroImg} alt={"image"} />}
@@ -107,11 +107,11 @@ const EdgeIot = () => {
               heading={"Scale Horizontally"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Real-Time Track & Trace through digital twins across all the
                     warehouse, devices and fleets in one command and control
                     center.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={workOfflineImg} alt={"image"} />}
@@ -124,10 +124,10 @@ const EdgeIot = () => {
               heading={"Works Offline"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Detects, identifies, stores and Sync Data with the network
                     in case the systems face any network issue. center.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={wfImg} alt={"image"} />}
@@ -140,11 +140,11 @@ const EdgeIot = () => {
               heading={"Prevent DDoS Attacks "}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Common Edge IoT systems are prone to DDos Attacks across the
                     systems. Our Consensus mechanism prevents any DDoS, allowing
                     you to keep your data on premise without compromising.F
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={ddsImg} alt={"image"} />}

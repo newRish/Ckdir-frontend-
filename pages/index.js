@@ -210,17 +210,17 @@ const Home = () => {
             <Header />
             <div className={styles.landingPage}>
               <div className={styles.mainText}>
-                <div className={styles.heading1}>
+                <h1 className={styles.heading1}>
                   Starting <span> </span>
                   <br className={styles.landingBreak} />
                   at the Edge <span> </span>
                   <br className={styles.landingBreak} />
                   of the present.
-                </div>
-                <p className={styles.landingText}>
+                </h1>
+                <h6 className={styles.landingText}>
                   We develop technologies that create a safer tomorrow that
                   promise a safer, better and inclusive future.
-                </p>
+                </h6>
               </div>
               <div className={styles.readMore}>
                 <Button
@@ -238,28 +238,28 @@ const Home = () => {
           <div className={styles.chokidarImg}>
             <Image src={chokidarDeviceImg} alt="Chokidr" />
           </div>
-          <div className={styles.heading1}>
+          <heading2 className={styles.heading1}>
             Worried about critical systems going offline?
             {/* <br /> */}
-          </div>
+          </heading2>
           <ul className={styles.balckBoxIconList}>
             <li className={styles.blackBoxIcon}>
               <div className={styles.balckBoxIconImg}>
                 <Image src={autonomusI} alt="autonomous" />
               </div>
-              <div className={styles.backBoxListText}>Autonomous</div>
+              <h5 className={styles.backBoxListText}>Autonomous</h5>
             </li>
             <li className={styles.blackBoxIcon}>
               <div className={styles.balckBoxIconImg}>
                 <Image src={decentI} alt="Decentralised" />
               </div>
-              <div className={styles.backBoxListText}>Decentralised</div>
+              <h5 className={styles.backBoxListText}>Decentralised</h5>
             </li>
             <li className={styles.blackBoxIcon}>
               <div className={styles.balckBoxIconImg}>
                 <Image src={edgeCompImg} alt="edge computed" />
               </div>
-              <div className={styles.backBoxListText}>Edge Computed</div>
+              <h5 className={styles.backBoxListText}>Edge Computed</h5>
             </li>
           </ul>
         </div>
@@ -269,9 +269,9 @@ const Home = () => {
           <div className={styles.revolutionAtomImg}>
             <Image src={revolutionAtomImg} alt="Revolution Atom" />
           </div>
-          <div className={styles.heading2}>
+          <h2 className={styles.heading2}>
             Creating Revolution through Change
-          </div>
+          </h2>
 
           <ul className={styles.revolutionList}>
             <li
@@ -282,9 +282,9 @@ const Home = () => {
                 {activeRev === 1 && <div className={styles.imgGlow}></div>}
                 <Image src={decentI} alt="autonomous Industries" />
               </div>
-              <div className={styles.revolutionItemText}>
+              <h5 className={styles.revolutionItemText}>
                 Autonomous Machines
-              </div>
+              </h5>
             </li>
 
             <li
@@ -295,9 +295,9 @@ const Home = () => {
                 {activeRev === 2 && <div className={styles.imgGlow}></div>}
                 <Image src={connectingPeopleImg} alt="Cyber Physical Systems" />
               </div>
-              <div className={styles.revolutionItemText}>
+              <h5 className={styles.revolutionItemText}>
                 Decentralized Cyber Physical Systems
-              </div>
+              </h5>
             </li>
 
             <li
@@ -308,7 +308,7 @@ const Home = () => {
                 {activeRev === 3 && <div className={styles.imgGlow}></div>}
                 <Image src={securityAuditImg} alt="Seaurity and audit" />
               </div>
-              <div className={styles.revolutionItemText}>C4I Systems</div>
+              <h5 className={styles.revolutionItemText}>C4I Systems</h5>
             </li>
 
             {/* <li className={styles.revolutionItem} onClick={() => setActiveRev(4)}>
@@ -331,9 +331,9 @@ const Home = () => {
                   <div className={styles.revolutionCardImage}>
                     <Image src={e.img} alt={e.title} />
                   </div>
-                  <div className={styles.revolutionCardSubHeading}>
+                  <h5 className={styles.revolutionCardSubHeading}>
                     {e.title}
-                  </div>
+                  </h5>
                   {e.text}
                 </li>
               ))}
@@ -355,7 +355,7 @@ const Home = () => {
         <div className={styles.protokolloContiner}>
           <div className={styles.protokolloBg1}></div>
           <div className={styles.protokolloBg2}></div>
-          <div className={styles.heading2}>Protokollo</div>
+          <h2 className={styles.heading2}>Protokollo</h2>
           <p className={styles.protokolloSummary}>
             Imagine a world where you could provide your location proof, without
             giving away the actual location of the entity. A world where your
@@ -365,28 +365,28 @@ const Home = () => {
             imagination just got real.
           </p>
 
-          <div className={styles.heading3}>Protokollo provides</div>
+          <h5 className={styles.heading3}>Protokollo provides</h5>
 
           <ul className={styles.protocolList}>
             <li className="protocolItem">
               <div className={styles.protocolImg}>
                 <Image src={locationImg} alt="location" />
               </div>
-              <div className={styles.protocolItemText}>Proof of Location</div>
+              <h6 className={styles.protocolItemText}>Proof of Location</h6>
             </li>
 
             <li className="protocolItem">
               <div className={styles.protocolImg}>
                 <Image src={proofDocImg} alt="Proof Doc" />
               </div>
-              <div className={styles.protocolItemText}>Proof of Activity</div>
+              <h6 className={styles.protocolItemText}>Proof of Activity</h6>
             </li>
 
             <li className="protocolItem">
               <div className={styles.protocolImg}>
                 <Image src={authorityProofImg} alt="Authority" />
               </div>
-              <div className={styles.protocolItemText}>Proof of Authority</div>
+              <h6 className={styles.protocolItemText}>Proof of Authority</h6>
             </li>
           </ul>
         </div>
@@ -400,9 +400,9 @@ const Home = () => {
                 carouselSwitch ? styles.dNone : ""
               }`}
             >
-              <div className={styles.heading2}>
+              <h2 className={styles.heading2}>
                 Would you like to improve your workforce productivity?
-              </div>
+              </h2>
               <div className={styles.aditionalProtoKolloLeftImg}>
                 <Image src={homeAnalytics} alt="home analytics" />
               </div>
@@ -430,9 +430,9 @@ const Home = () => {
                 carouselSwitch ? "" : styles.dNone
               }`}
             >
-              <div className={styles.heading2}>
+              <h2 className={styles.heading2}>
                 Do you imaging a safer workplace environment?
-              </div>
+              </h2>
               <div className={styles.aditionalProtoKolloLeftImg}>
                 <Image src={smartAIImg} alt="Smart AI" />
               </div>
@@ -472,14 +472,14 @@ const Home = () => {
             </div>
             <div className={styles.networkingText}>
               <div className={styles.globeBg}></div>
-              <div className={styles.heading2}>Connect with an Expert.</div>
+              <h2 className={styles.heading2}>Connect with an Expert.</h2>
               <br />
-              <div className={styles.heading3}>
+              <h3 className={styles.heading3}>
                 Leverage industry leading expertise and find a shorter path to
                 innovation
                 {/* <br /> */}
                 Contact our representatives and get started right away.
-              </div>
+              </h3>
               <br />
               <br />
               <div className={styles.readMore}>

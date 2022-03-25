@@ -25,29 +25,29 @@ const career = ({ openRoles }) => {
         <div className={styles.landingContainer}>
           <Header />
           <div className={styles.landingPage}>
-            <div className={styles.heading1}>
+            <h2 className={styles.heading1}>
               Innovating a safer, better and Inclusive future for human beings.
-            </div>
+            </h2>
           </div>
         </div>
 
         {/* mission */}
         <div className={styles.mission}>
           <div className={styles.text}>
-            <div className={styles.heading2}>Our Mission</div>
+            <h2 className={styles.heading2}>Our Mission</h2>
             <div className={styles.para}>
-              <div>
+              <p>
                 We specialize in enabling People & Things to connect into one
                 common universe which aids humans to take better, smarter and
                 faster decisions, maintain government compliance and create
                 financial efficiency in the ecosystem.
-              </div>
+              </p>
 
-              <div>
+              <p>
                 Our focus is in the fields of Autonomous machines, Cyber
                 Physical Systems &, Command & Control through the use of state
                 of the art AI & Privacy Preserving techniques.
-              </div>
+              </p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const career = ({ openRoles }) => {
 
         {/* our values */}
         <div className={styles.values}>
-          <div className={styles.heading2}>Our Values</div>
+          <h2 className={styles.heading2}>Our Values</h2>
           <ul className={styles.valueList}>
             {/* {[1, 2, 3].map((e, i) => ( */}
             {/* <li className={styles.cards}>
@@ -84,10 +84,10 @@ const career = ({ openRoles }) => {
                 <Image src={handshakeImg} alt={"value"} />
               </div>
               <div className={styles.text}>
-                <div className={styles.subHeading}>Compassione</div>
-                <div className={styles.summary}>
+                <h3 className={styles.subHeading}>Compassione</h3>
+                <p className={styles.summary}>
                   We are kind and caring to everyone we encounter.
-                </div>
+                </p>
               </div>
             </li>
             <li className={styles.cards}>
@@ -97,10 +97,10 @@ const career = ({ openRoles }) => {
                 <Image src={manCorrectImg} alt={"value"} />
               </div>
               <div className={styles.text}>
-                <div className={styles.subHeading}>User focused</div>
-                <div className={styles.summary}>
+                <h3 className={styles.subHeading}>User focused</h3>
+                <p className={styles.summary}>
                   Focus on the user and all else will follow.
-                </div>
+                </p>
               </div>
             </li>
             <li className={styles.cards}>
@@ -110,11 +110,11 @@ const career = ({ openRoles }) => {
                 <Image src={heartyHandImg} alt={"value"} />
               </div>
               <div className={styles.text}>
-                <div className={styles.subHeading}>Integrity</div>
-                <div className={styles.summary}>
+                <h3 className={styles.subHeading}>Integrity</h3>
+                <p className={styles.summary}>
                   Take actions on time with honesty and integrity in everything
                   we do.
-                </div>
+                </p>
               </div>
             </li>
             <li className={styles.cards}>
@@ -124,11 +124,11 @@ const career = ({ openRoles }) => {
                 <Image src={manHoldingFlagImg} alt={"value"} />
               </div>
               <div className={styles.text}>
-                <div className={styles.subHeading}>Accountability</div>
-                <div className={styles.summary}>
+                <h3 className={styles.subHeading}>Accountability</h3>
+                <p className={styles.summary}>
                   Each of us is responsible for our words, our actions, and our
                   results.
-                </div>
+                </p>
               </div>
             </li>
             {/* ))} */}
@@ -145,8 +145,8 @@ const career = ({ openRoles }) => {
               <div className={styles.text}>
                 <div className={styles.fglow1}></div>
                 <div className={styles.fglow2}></div>
-                <div className={styles.subHeading}>Bhavish Agarwal</div>
-                <div className={styles.fdeseg}>CEO and Managing Director </div>
+                <h2 className={styles.subHeading}>Bhavish Agarwal</h2>
+                <h5 className={styles.fdeseg}>CEO and Managing Director </h5>
                 {/* <div className={styles.summary}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
                 eu, elit bibendum quis facilisi.
@@ -160,8 +160,8 @@ const career = ({ openRoles }) => {
               <div className={styles.text}>
                 <div className={styles.fglow1}></div>
                 <div className={styles.fglow2}></div>
-                <div className={styles.subHeading}>Dr. Snehanshu Saha</div>
-                <div className={styles.fdeseg}>Director of Research </div>
+                <h2 className={styles.subHeading}>Dr. Snehanshu Saha</h2>
+                <h5 className={styles.fdeseg}>Director of Research </h5>
                 {/* <div className={styles.summary}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
                 eu, elit bibendum quis facilisi.
@@ -175,8 +175,8 @@ const career = ({ openRoles }) => {
               <div className={styles.text}>
                 <div className={styles.fglow1}></div>
                 <div className={styles.fglow2}></div>
-                <div className={styles.subHeading}>Sushil Agarwal</div>
-                <div className={styles.fdeseg}>VP of Marketing</div>
+                <h2 className={styles.subHeading}>Sushil Agarwal</h2>
+                <h5 className={styles.fdeseg}>VP of Marketing</h5>
                 {/* <div className={styles.summary}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
                 eu, elit bibendum quis facilisi.
@@ -189,16 +189,16 @@ const career = ({ openRoles }) => {
         {/* misc section */}
         <div className={styles.misc}>
           <div className={styles.container}>
-            <div className={styles.heading2}>Company</div>
+            <h2 className={styles.heading2}>Company</h2>
             <div className={styles.para}>
-              <div>
+              <p>
                 We develop state of the art products & solutions in the field of
                 Emerging Technologies.Our interest in understanding information
                 and ethical machines, allows us to create state of the art
                 Autonomous Machines, Cyber Physical Systems and Command &
                 Control Centers.
-              </div>
-              <div>
+              </p>
+              <p>
                 We have our own AI, Blockchain & IoT Research & Development
                 Center. We have a large team of data scientists and AI
                 engineers, who are led by leading Applied AI Master, Dr.
@@ -207,7 +207,7 @@ const career = ({ openRoles }) => {
                 Cryptography, assisting businesses and individuals in adopting
                 Blockchain driven technologies and transforming traditional
                 lifes.
-              </div>
+              </p>
             </div>
           </div>
         </div>

@@ -46,7 +46,7 @@ const Blog = ({ blog }) => {
         </div>
 
         <div className={styles.blog}>
-          <div className={styles.heading1}>Welcome to Happymonk Blog</div>
+          <h2 className={styles.heading1}>Welcome to Happymonk Blog</h2>
           {/* <div className={styles.para}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, neque,
           ipsum accumsan in fermentum, et cursus.
@@ -56,8 +56,8 @@ const Blog = ({ blog }) => {
         <div className={styles.priviewContainer}>
           {data?.blogs?.map((e, i) => (
             <div className={styles.preview} key={i}>
-              <div className={styles.title}>{e.Title}</div>
-              <div className={styles.authorDetails}>
+              <h3 className={styles.title}>{e.Title}</h3>
+              <h6 className={styles.authorDetails}>
                 <div className={styles.authorName}>
                   Written by Bhavish Agarwal
                 </div>
@@ -68,13 +68,13 @@ const Blog = ({ blog }) => {
           ${new Date(e?.createdAt).toDateString().split(" ")[3]} 
           `}
                 </div>
-              </div>
+              </h6>
               <div className={styles.img}>
                 <Image src={blog1Img} alt={"blog image"} />
               </div>
-              <div className={styles.body}>
+              <p className={styles.body}>
                 {e.Description.split(" ").slice(0, 190).join(" ")} ...
-              </div>
+              </p>
               <div className={styles.readMore}>
                 <Link href={`/blog/${e.id}`}>
                   <a>Read more</a>

@@ -63,9 +63,10 @@
   display: none;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 560px) {
   .navList {
     width: 219px !important;
+    top: 12rem !important;
   }
 
 }
@@ -87,7 +88,7 @@
   .navList {
     position: absolute;
     flex-direction: column;
-    top: 10.5rem;
+    top: 7.5rem;
     right: 5rem;
     background-color: black;
     padding: 1rem;

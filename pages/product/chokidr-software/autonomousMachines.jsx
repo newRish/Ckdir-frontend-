@@ -29,16 +29,16 @@ const AutonomousIdentities = () => {
             <div
               className={`${styles.textContainer} ${autonomSpecificStyles.textwrapper}`}
             >
-              <div
+              <h2
                 className={`${styles.landingText} ${autonomSpecificStyles.landingText}`}
               >
                 Autonomous Machines
-              </div>
-              <div className={`${styles.para} ${autonomSpecificStyles.para}`}>
+              </h2>
+              <p className={`${styles.para} ${autonomSpecificStyles.para}`}>
                 Autonomous machines revolutionize our economy greatly by
                 improving the efficiency in delivery, transportation,
                 manufacturing, and many other sectors.
-              </div>
+              </p>
             </div>
             {/* <div className={styles.img}>
                         <Image
@@ -57,9 +57,9 @@ const AutonomousIdentities = () => {
               heading={"Compliance"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Compliant with regulatory standards like GDPR.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={complianceImg} alt={"image"} />}
@@ -72,9 +72,9 @@ const AutonomousIdentities = () => {
               heading={"Controlled Environment"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Smart real time monitoring within the network of your IoT.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={envImg} alt={"image"} />}
@@ -87,9 +87,9 @@ const AutonomousIdentities = () => {
               heading={"Reliable Data"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Of all incidents/activities being monitored on the network.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={reliableDataImg} alt={"image"} />}

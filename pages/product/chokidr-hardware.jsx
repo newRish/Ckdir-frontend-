@@ -62,17 +62,17 @@ const ChokidrHardware = ({ dharList }) => {
 
           <div className={styles.mainText}>
             <div className={styles.quotes}>
-              <div className={styles.stayImg}>STAY</div>
+              <h2 className={styles.stayImg}>STAY</h2>
               <div>
-                <div className={styles.quoteText}>Connected.</div>
-                <div className={styles.quoteText}>Informed.</div>
-                <div className={styles.quoteText}>Safe.</div>
+                <h2 className={styles.quoteText}>Connected.</h2>
+                <h2 className={styles.quoteText}>Informed.</h2>
+                <h2 className={styles.quoteText}>Safe.</h2>
               </div>
             </div>
-            <div className={styles.para}>
+            <p className={styles.para}>
               Hardware Systems Designed for People, organizations & Things.
               Bridge the gap between IoT Devices and Blockchain Network
-            </div>
+            </p>
           </div>
         </div>
 
@@ -82,62 +82,62 @@ const ChokidrHardware = ({ dharList }) => {
             <div className={styles.img}>
               <Image src={cloudServer} alt="icon" />
             </div>
-            <div className={styles.text}>AI on Edge</div>
+            <h6 className={styles.text}>AI on Edge</h6>
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
               <Image src={ggComImg} alt="icon" />
             </div>
-            <div className={styles.text}>G-G Communcation</div>
+            <h6 className={styles.text}>G-G Communcation</h6>
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
               <Image src={iotImg} alt="icon" />
             </div>
-            <div className={styles.text}>IOT</div>
+            <h6 className={styles.text}>IOT</h6>
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
               <Image src={horioztalScaleImg} alt="icon" />
             </div>
-            <div className={styles.text}>Horizontally Scalable</div>
+            <h6 className={styles.text}>Horizontally Scalable</h6>
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
               <Image src={sensorFusionImg} alt="icon" />
             </div>
-            <div className={styles.text}>Sensor Fusion</div>
+            <h6 className={styles.text}>Sensor Fusion</h6>
           </li>
         </ul>
 
         {/* dhar section */}
         <div className={styles.dhar}>
           <div>
-            <div className={styles.heading}>Dhar</div>
-            <div className={styles.dharQuote}>
+            <h2 className={styles.heading}>Dhar</h2>
+            <h6 className={styles.dharQuote}>
               <div>
                 You’re backhauling data to a cloud that’s far away, miles
                 away...
               </div>
               <div className={styles.dharSaid}>Said - ‘cloud’</div>
-            </div>
+            </h6>
             <div></div>
 
             <div className={styles.dharPoints}>
               <ul className={styles.dharList}>
-                <div className={styles.dharText}>
+                <p className={styles.dharText}>
                   Next-generation applications and services require a new
                   computing infrastructure that delivers low latency networks
                   and high-performance computing at the extreme edge of the
                   network. Industry sensors and cameras are sensing things in
                   the real world and taking action on the information.
-                </div>
+                </p>
                 {dharList?.map((e, i) => (
                   <li key={i} className={styles.dharItem}>
                     {/* <div ></div> */}
                     <div className={styles.dharText}>
                       <div className={styles.dharItemStyle}></div>
-                      <div>{e}</div>
+                      <p>{e}</p>
                     </div>
                   </li>
                 ))}
@@ -158,8 +158,8 @@ const ChokidrHardware = ({ dharList }) => {
                   i !== 0 && i % 2 !== 0 && styles.order2
                 }`}
               >
-                <div className={styles.subHeading}>{e.heading}</div>
-                <div className={styles.para}>{e.text}</div>
+                <h2 className={styles.subHeading}>{e.heading}</h2>
+                <p className={styles.para}>{e.text}</p>
               </div>
               <div
                 className={`${styles.img} ${

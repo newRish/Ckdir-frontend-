@@ -28,14 +28,14 @@ const ConnectingPeopleAndThings = () => {
           {/* <div className={styles.glowCircle}></div> */}
           <div className={`${styles.container} ${mainStyles.textContainer}`}>
             <div className={`${styles.textContainer} ${mainStyles.mainText}`}>
-              <div
+              <h2
                 className={`${styles.landingText} ${mainStyles.landingText}`}
               >
                 Connecting people and things
-              </div>
-              <div className={`${styles.para} ${mainStyles.para}`}>
+              </h2>
+              <p className={`${styles.para} ${mainStyles.para}`}>
                 Connect Sensors, Information Boards.
-              </div>
+              </p>
             </div>
             {/* <div className={styles.img}>
                         <Image
@@ -48,16 +48,16 @@ const ConnectingPeopleAndThings = () => {
 
         <div className={styles.alterList}>
           <div className={styles.list1}>
-            <div className={styles.glow}></div>
+            {/* <div className={styles.glow}></div> */}
             <AlternateSection
               // isImageLast={true}
               heading={"Real time tracking"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Enables you to track your fleet real time. Know where they
                     go, on the go.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={realTimeTrackingImg} alt={"image"} />}
@@ -70,10 +70,10 @@ const ConnectingPeopleAndThings = () => {
               heading={"Connect to legacy system"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Enables you to track your fleet real time, giving you
                     complete access to all data that might be.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={connectLegecyImg} alt={"image"} />}
@@ -86,10 +86,10 @@ const ConnectingPeopleAndThings = () => {
               heading={"Transparency of operations"}
               text={
                 <div className={styles.container}>
-                  <div className={styles.label}>
+                  <p className={styles.label}>
                     Realtime tracking, fencing, heavily needed for the World
                     where multiple touchpoints is everyday business.
-                  </div>
+                  </p>
                 </div>
               }
               image={<Image src={transparencyImg} alt={"image"} />}

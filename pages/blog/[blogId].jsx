@@ -4,7 +4,6 @@ import arrowForward from "../../public/Arrow_Forward.png";
 import Image from "next/image";
 import { useQuery } from "urql";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -53,9 +52,9 @@ const Blog1 = () => {
                 </a>
               </Link>
             </div>
-            <div className={styles.title}>{data?.blog?.Title}</div>
+            <h3 className={styles.title}>{data?.blog?.Title}</h3>
           </div>
-          <div className={styles.blogDetail}>
+          <h6 className={styles.blogDetail}>
             <div className={styles.author}>
               <span className={styles.writenTxt}>Written by </span>
               <span>Bhavish Agarwal</span>
@@ -65,9 +64,9 @@ const Blog1 = () => {
           ${new Date(data?.blog?.createdAt).toDateString().split(" ")[2]}, 
           ${new Date(data?.blog?.createdAt).toDateString().split(" ")[3]} 
           `}</div>
-          </div>
+          </h6>
 
-          <div className={styles.para}>{data?.blog?.Description}</div>
+          <p className={styles.para}>{data?.blog?.Description}</p>
         </div>
       </div>
     </>

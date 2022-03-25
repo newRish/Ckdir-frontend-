@@ -187,6 +187,7 @@
 .software {
   .heading {
     text-align: center;
+    margin-top: 0;
   }
 }
 
@@ -199,12 +200,14 @@
 }
 
 .sCard {
+  gap: 30px;
   display: flex;
   // width: 1440px;
   height: 37.4rem;
   background: #0f0f0f;
   color: rgba(228, 228, 231, 0.8);
   align-items: flex-end;
+  padding: 0 30px;
 
   &:first-child {
     .sCardImg {
@@ -227,9 +230,7 @@
     }
   }
 
-  &:last-child {
-    align-items: center;
-  }
+
 }
 
 .sCardImg,
@@ -262,7 +263,8 @@
 }
 .sCardSummary,
 .sCardHeading {
-  width: 55.8rem;
+  width: 80%;
+  margin: 0 auto;
 }
 // case study section
 .cs {
@@ -306,11 +308,11 @@
   align-items: flex-end;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .landing {
     min-height: 665px;
     background-size: 100% 665px;
-    background-image: url('../public/ai-bg-small.png');
+    background-image: url("../public/ai-bg-small.png");
   }
 
   .landingText {
@@ -322,7 +324,6 @@
     margin: 5rem 0rem;
   }
   .sf {
-   
     .circle3 {
       top: 70%;
       left: 40%;
@@ -346,17 +347,15 @@
         align-items: center;
       }
     }
-   
   }
 
-
-
   .software {
-    .heading{
+    .heading {
       margin-top: 0;
     }
-    .sCardText{
-      gap: unset ;
+    .sCardText {
+      gap: unset;
+      order: -1;
     }
     .sCards {
       margin-top: 0;
@@ -368,19 +367,20 @@
       // gap: 50rem;
       .sCard {
         padding-top: 5rem;
-        padding-bottom: 5rem;
+        // padding-bottom: 5rem;
         flex-direction: column;
         gap: 5rem;
         height: unset;
 
         align-items: center;
-        .sCardHeading{
+        .sCardHeading {
           text-align: center;
           font-size: 16px;
           line-height: 30px;
+          font-weight: 600;
         }
 
-        .sCardSummary{
+        .sCardSummary {
           font-size: 14px;
           line-height: 20px;
           text-align: center;
@@ -408,22 +408,79 @@
     padding-top: 0;
     .csItem {
       flex-direction: column;
-      text-align: center;
+      // text-align: center;
     }
-    .csSummary{
+    .csSummary {
       font-size: 14px;
       line-height: 20px;
       margin-top: 10px;
     }
     &:last-child {
       .csImg {
-        order: 2;
+        // order: 2;
       }
     }
   }
 
   .platformCard {
     width: unset !important;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 917px) {
+  .software {
+    .heading {
+      margin-top: 0;
+    }
+    .sCardText {
+      gap: unset;
+      order: -1;
+    }
+    .sCards {
+      margin-top: 0;
+      .sCardImg {
+        width: 50%;
+        height: unset;
+        margin: auto;
+      }
+      // gap: 50rem;
+      .sCard {
+        padding-top: 5rem;
+        // padding-bottom: 5rem;
+        flex-direction: column;
+        height: unset;
+
+        align-items: center;
+        .sCardHeading {
+          text-align: center;
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 600;
+        }
+
+        .sCardSummary {
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+        }
+
+        &:first-child {
+          .sCardImg {
+            height: unset;
+            width: 40%;
+            margin: auto;
+          }
+        }
+
+        // &:nth-child(2) {
+        //   .sCardImg {
+        //     width: 50%;
+        //     height: unset;
+        //     margin: auto;
+        //   }
+        // }
+      }
+    }
   }
 }
 

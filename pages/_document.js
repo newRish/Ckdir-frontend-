@@ -3,8 +3,13 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
+          <meta
+            name="description"
+            content=" We develop technologies that create a safer tomorrow that promise a safer, better and inclusive future."
+            key="description"
+          />
           {/* fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link

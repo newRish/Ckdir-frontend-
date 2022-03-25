@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   color: $white;
 
   .stayImg {
@@ -310,7 +310,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .landing {
     min-height: 498px;
 
@@ -337,7 +337,7 @@
 
     .quotes {
       // flex-direction: column;
-justify-content: center;
+      justify-content: center;
       gap: 5px;
 
       .quoteText {
@@ -392,7 +392,7 @@ justify-content: center;
       height: 573px;
     }
 
-    padding: 0 2rem;
+    // padding: 0 2rem;
     padding-right: 0;
     position: relative;
 
@@ -433,7 +433,7 @@ justify-content: center;
   .features {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 10px 20px;
     gap: 35px;
     overflow-x: scroll;
     &::-webkit-scrollbar {
@@ -500,8 +500,7 @@ justify-content: center;
   }
 }
 
-@media only screen and (min-width: 451px) and (max-width: 1000px) {
-  
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
   .landing {
     min-height: 498px;
     overflow: hidden;
@@ -531,10 +530,7 @@ justify-content: center;
       font-size: 95px;
       line-height: 20px;
     }
-
-    
   }
-
 
   .dhar {
     // flex-direction: column;
@@ -629,8 +625,6 @@ justify-content: center;
     }
 
     .quotes {
-     
-
       .quoteText {
         font-family: Outfit;
         font-style: normal;
@@ -663,7 +657,15 @@ justify-content: center;
   }
 }
 
-@media screen and (min-width: 549px) and (max-width: 839px) {
+@media screen and (min-width: 500px) and (max-width: 839px) {
+  .deviceList{
+    .item{
+      .text{
+        font-size: 14px;
+line-height: 20px;
+      }
+    }
+  }
   .features {
     .feature {
       display: flex;
@@ -672,7 +674,7 @@ justify-content: center;
       padding: 2.4rem;
       gap: 30px;
 
-      .subHeading{
+      .subHeading {
         font-size: 35px;
         line-height: 35px;
         margin-bottom: 10px;
@@ -705,4 +707,114 @@ justify-content: center;
       }
     }
   }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .landing {
+    min-height: 419px;
+
+
+    .glowCircle {
+      filter: blur(26rem);
+      left: 0;
+    }
+
+    .para {
+      width: unset;
+      text-align: center;
+
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .devicesImg {
+      margin-left: auto;
+    }
+
+    .stayImg {
+      font-size: 80px;
+      line-height: 20px;
+    }
+
+    .quotes {
+      // flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+
+      .quoteText {
+        font-family: Outfit;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    .mainText {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 912px) {
+  .landing {
+    .mainText {
+      padding-left: 20px;
+    }
+    .stayImg {
+      font-size: 80px;
+    }
+    .quoteText {
+      font-size: 30px !important;
+      line-height: 30px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 498px) and (max-width: 558px) {
+  .landing {
+    .devicesImg {
+      width: 45rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1288px) and (max-width: 1448px) {
+  .landing {
+    .devicesImg {
+      width: 45rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 839px) and (max-width: 1193px) {
+
+  .deviceList{
+    padding: 3rem !important;
+    gap: 50px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar{
+      width: 0;
+    }
+.img{
+  width: 50px;
+}
+    .item{
+      width: 150px;
+      &:nth-child(3){
+        .img{
+          display: flex;
+          margin-bottom: 10px;
+          justify-content: center;
+          align-self: center;
+            width: 80px !important;
+        }
+      }
+    }
+
+    .text{
+      line-height: 30px !important;
+    }
+  }
+  
 }

@@ -54,10 +54,10 @@ const Network = () => {
         <div className={styles.landing}>
           <Header />
           <div className={styles.textContainer}>
-            <span className={styles.landingText}>
+            <h2 className={styles.landingText}>
               Creating Private Network Solutions for industries, organisation
               and agencies.
-            </span>
+            </h2>
           </div>
         </div>
 
@@ -77,9 +77,9 @@ const Network = () => {
                 <div className={styles.featureIcon}>
                   <Image src={inteligenceImg} alt="inteligence" />
                 </div>
-                <div className={styles.featureText}>
+                <h5 className={styles.featureText}>
                   Decentralised Intelligence
-                </div>
+                </h5>
               </li>
               <li className={styles.featureItem}>
                 <div className={styles.featureIcon}>
@@ -88,25 +88,25 @@ const Network = () => {
                     alt="coordinating devices"
                   />
                 </div>
-                <div className={styles.featureText}>
+                <h5 className={styles.featureText}>
                   Co-ordinating untrusted devices
-                </div>
+                </h5>
               </li>
               <li className={styles.featureItem}>
                 <div className={styles.featureIcon}>
                   <Image src={governanceImg} alt="governance" />
                 </div>
-                <div className={styles.featureText}>
+                <h5 className={styles.featureText}>
                   Central Oracle and governance
-                </div>
+                </h5>
               </li>
               <li className={styles.featureItem}>
                 <div className={styles.featureIcon}>
                   <Image src={privecyImg} alt="privecy" />
                 </div>
-                <div className={styles.featureText}>
+                <h5 className={styles.featureText}>
                   Privacy perserving personalisation
-                </div>
+                </h5>
               </li>
             </ul>
           </div>
@@ -120,8 +120,8 @@ const Network = () => {
                 <Image src={card.imageUrl} alt="card image" />
               </div>
               <div className={styles.platformTextContainer}>
-                <div className={styles.platformCardHading}>{card.heading}</div>
-                <div className={styles.platformCardText}>{card.text}</div>
+                <h3 className={styles.platformCardHading}>{card.heading}</h3>
+                <p className={styles.platformCardText}>{card.text}</p>
               </div>
             </div>
           ))}
@@ -176,9 +176,9 @@ const Network = () => {
           </div>
           <div className={styles.networkTextContainer}>
             <div>
-              <div className={styles.networkHeading}>
+              <h2 className={styles.networkHeading}>
                 Start using the Network today.
-              </div>
+              </h2>
 
               <p className={styles.networkText}>
                 Bolster activity tracking and monitoring of your organisation

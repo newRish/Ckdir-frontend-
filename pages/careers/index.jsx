@@ -15,7 +15,7 @@ const career = ({ openRoles }) => {
         <div className={styles.landingContainer}>
           <Header />
           <div className={styles.landingPage}>
-            <div className={styles.heading1}>Jobs at Happymonk</div>
+            <h2 className={styles.heading1}>Jobs at Happymonk</h2>
             <p className={styles.landingText}>
               Like building revolutionary products? Do your fingers type faster
               than your brains? Then, This is the right place for you.
@@ -25,7 +25,7 @@ const career = ({ openRoles }) => {
 
         {/* Roles */}
         <div className={styles.roles}>
-          <div className={styles.heading1}>Open Roles</div>
+          <h2 className={styles.heading1}>Open Roles</h2>
           {openRoles.map((e, i) => (
             <ul className={styles.roleList} key={i}>
               <li className={styles.boldText}>{e.field}</li>
@@ -33,8 +33,8 @@ const career = ({ openRoles }) => {
                 <React.Fragment key={`${i}-${ri}`}>
                   <li className={styles.roleItem}>
                     <LongCard url="careers/job-description">
-                      <div className={styles.boldText}>{role.name}</div>
-                      <div className={styles.grayText}>{role.exp}</div>
+                      <h4 className={styles.boldText}>{role.name}</h4>
+                      <h5 className={styles.grayText}>{role.exp}</h5>
                     </LongCard>
                   </li>
                 </React.Fragment>

@@ -21,7 +21,7 @@ const AlternateSection = ({
       </div>
 
       <div className={styles.text}>
-        <div className={styles.heading}>{heading}</div>
+        <h2 className={styles.heading}>{heading}</h2>
         <div className={styles.para}>{text}</div>
         {btnText && (
           <div className={styles.readMoreText}>

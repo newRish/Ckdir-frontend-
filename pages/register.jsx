@@ -18,7 +18,7 @@ import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDown
 import outlineFlag from "../public/icons/flag-outline.png";
 import Head from "next/head";
 
-const SelfRegistrationForm = () => {
+const SelfRegistrationForm = ({setRegType}) => {
   const [selfRegForm, setSelfRegForm] = useState(0);
 
   return selfRegForm === 0 ? (
@@ -31,7 +31,7 @@ const SelfRegistrationForm = () => {
           <div className={styles.formHeader}>
             <div className={styles.title}>Registration Form</div>
             <div className={styles.selectBox}>
-              <SelectBox />
+              <SelectBox selected={(value) => setRegType(value)} />
             </div>
           </div>
           <div className={styles.label}>Personal information</div>
@@ -129,7 +129,7 @@ const SelfRegistrationForm = () => {
           <div className={styles.formHeader}>
             <div className={styles.title}>Registration Form</div>
             <div className={styles.selectBox}>
-              <SelectBox />
+            <SelectBox selected={(type) => setRegType(type)} />
             </div>
           </div>
           <div className={styles.label}>Personal information</div>
@@ -236,7 +236,7 @@ const Register = () => {
       </Head>
 
       {regType === "self" ? (
-        <SelfRegistrationForm />
+        <SelfRegistrationForm setRegType={setRegType} />
       ) : (
         <div className={styles.container}>
           <div className={styles.form}>
@@ -247,7 +247,7 @@ const Register = () => {
               <div className={styles.formHeader}>
                 <div className={styles.title}>Registration Form</div>
                 <div className={styles.selectBox}>
-                  <SelectBox />
+                <SelectBox selected={(value) => {setRegType(value)}} />
                 </div>
               </div>
               <div className={styles.label}>Personal information</div>
@@ -286,12 +286,16 @@ const Register = () => {
                       getValue={() => {}}
                     />
                   </div>
-                  <FilledBtn title="Next" url="/" />
+                  <div>
+                    <FilledBtn title="Next" url="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div className={styles.info}>
+            {/* 
+            // NO content
             <div className={styles.text}>
               <div className={styles.heading}>Flagship Features</div>
               <div className={styles.para}>
@@ -299,7 +303,7 @@ const Register = () => {
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi.
               </div>
-            </div>
+            </div> */}
             <div className={styles.img}>
               <Image src={iMacImg} alt={"desktop"} />
             </div>
