@@ -173,6 +173,7 @@
     height: 100px;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
   }
 }
 
@@ -398,6 +399,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .readMoreText {
@@ -509,6 +511,8 @@
   display: none;
 }
 
+
+
 @media screen and (max-width: 1032px) {
   .landingBreak {
     display: block;
@@ -565,6 +569,10 @@
     .balckBoxIconList {
       // flex-direction: column;
 
+        .backBoxListText {
+          font-size: 14px;
+        }
+
       .blackBoxIcon {
         &:first-child {
           .balckBoxIconImg {
@@ -581,8 +589,7 @@
         margin-bottom: 10px;
       }
       width: unset;
-      // align-items: flex-end;
-      // padding-left: 4rem;
+
       overflow-x: scroll;
       &::-webkit-scrollbar {
         width: 2px;
@@ -593,8 +600,7 @@
 
   .revolutionCard {
     padding: 1rem 1rem;
-    // width: 100% !important;
-    // margin: unset !important;
+
     margin: 0 1rem;
 
     .readMoreText {
@@ -610,7 +616,6 @@
     padding: 10rem 6rem !important;
     gap: 5rem;
     justify-content: flex-start;
-    // flex-wrap: wrap;
     overflow-x: auto;
     &::-webkit-scrollbar {
       width: 2px;
@@ -655,7 +660,6 @@
   .networkingContainer {
     .networkingText {
       width: 75%;
-    
     }
     .networking {
       flex-direction: column;
@@ -686,7 +690,6 @@
         width: unset;
         height: unset;
         font-weight: 500;
-        // float: left;
       }
     }
     .networkingText {
@@ -705,14 +708,12 @@
     }
     .networkingImg {
       width: 25rem;
-      // height: 75.5rem;
       overflow: hidden;
     }
   }
 
   .protokolloContiner {
-
-    .heading3{
+    .heading3 {
       font-size: 16px;
     }
     .protokolloBg1 {
@@ -838,26 +839,17 @@
   }
 }
 
-// @media screen and (max-width: 550px) {
-//   .networkingContainer {
-//     .networking {
-//       flex-direction: column;
-//       min-height: 100vh;
+@media screen and (min-width: 773px) and (max-width: 1328px) {
+  .balckBoxContainer {
+    .heading1 {
+      width: 70%;
+      font-size: 55px;
+    }
 
-//       .readMore {
-//         width: unset;
-//         height: unset;
-//         float: left;
-//       }
-//     }
-//     .networkingText {
-//       flex: 0.2;
-//       height: fit-content;
-
-//       .globeBg {
-//         background-size: contain;
-//       }
-//     }
-
-//   }
-// }
+    .balckBoxIconList {
+      .backBoxListText {
+        font-size: 25px;
+      }
+    }
+  }
+}

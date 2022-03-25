@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useClickOutSide } from "../hooks/useClickOutSide";
 import styles from "../styles/componentsStyle/Selectbox.module.scss";
 import { Icons } from "../utils/icons";
@@ -8,7 +8,11 @@ import Image from "next/image";
 
 const SelectBox = ({ options, selected }) => {
   const [drop, setDrop] = useState(false);
-  const [value, setValue] = useState("Organisation");
+  const [value, setValue] = useState("self");
+
+  useEffect(() => {
+    selected && selected(value);
+  }, [value]);
 
   //close drop when click outside the component container
   let dropNodeRef = useClickOutSide(() => {
@@ -37,14 +41,14 @@ const SelectBox = ({ options, selected }) => {
         className={`${styles.options} ${drop ? "" : styles.hideDrop}`}
         ref={parentRef}
       >
-        <div className={styles.option} onClick={() => setValue("Organisation")}>
-        <div className={styles.optionIcon}>
+        <div className={styles.option} onClick={() => setValue("organisation")}>
+          <div className={styles.optionIcon}>
             <Image src={orgImg} alt="icon" />
           </div>
           Organisation
         </div>
-        <div className={styles.option} onClick={() => setValue("Self")}>
-        <div className={styles.optionIcon}>
+        <div className={styles.option} onClick={() => setValue("self")}>
+          <div className={styles.optionIcon}>
             <Image src={selfImg} alt="icon" />
           </div>
           Self

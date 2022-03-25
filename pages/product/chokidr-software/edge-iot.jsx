@@ -17,134 +17,144 @@ import wfImg from "../../../public/mob-ph-sharing.png";
 import digitalIdentityImg from "../../../public/senior-woman-using-her-phone-park.png";
 import greenEarthImg from "../../../public/freen-earth.png";
 import edgeStyle from "../../../styles/EdgeIoT.module.scss";
-import raysImg from "../../../public/bg-colorfull-rays.png"
+// import raysImg from "../../../public/bg-colorfull-rays.png";
+import Head from 'next/head'
 
 const EdgeIot = () => {
   return (
-    <div>
-      <div className={`${styles.landing} ${edgeStyle.landing}`}>
-        <Header />
-        {/* <div className={styles.glowCircle}></div> */}
-        <div className={`${styles.container} ${edgeStyle.textContainer}`}>
-        <div className={`${styles.textContainer} ${edgeStyle.mainText}`}>
-            <div className={styles.landingText}>Edge IOT</div>
-            <div className={`${styles.para} ${edgeStyle.para}`}>
-              Go Offline, Get reliable.
+    <>
+      <Head>
+        <title>Edge IOT - Happymonk</title>
+        <meta
+          property="og:title"
+          content="Edge IOT"
+          key="title"
+        />
+      </Head>
+      <div>
+        <div className={`${styles.landing} ${edgeStyle.landing}`}>
+          <Header />
+          {/* <div className={styles.glowCircle}></div> */}
+          <div className={`${styles.container} ${edgeStyle.textContainer}`}>
+            <div className={`${styles.textContainer} ${edgeStyle.mainText}`}>
+              <h2 className={styles.landingText}>Edge IOT</h2>
+              <p className={`${styles.para} ${edgeStyle.para}`}>
+                Go Offline, Get reliable.
+              </p>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className={styles.alterList}>
-        <div className={styles.list1}>
-          {/* <div className={styles.glow}></div> */}
-          <AlternateSection
-            // isImageLast={true}
-            heading={"RetroFit"}
-            text={
-              <div className={styles.container}>
-                <div className={styles.label}>
-                  Retrofit your existing infrastructure sensors, cctv cameras,
-                  through dhar to enable Autonomous edge intelligence, private
-                  ground to ground communication across fleet and warehouse
+        <div className={styles.alterList}>
+          <div className={styles.list1}>
+            {/* <div className={styles.glow}></div> */}
+            <AlternateSection
+              // isImageLast={true}
+              heading={"RetroFit"}
+              text={
+                <div className={styles.container}>
+                  <p className={styles.label}>
+                    Retrofit your existing infrastructure sensors, cctv cameras,
+                    through dhar to enable Autonomous edge intelligence, private
+                    ground to ground communication across fleet and warehouse
+                  </p>
                 </div>
-              </div>
-            }
-            image={<Image src={retriImg} alt={"image"} />}
-          />
-        </div>
-        <div className={styles.list2}>
-          {/* <div className={styles.glow}></div> */}
-          <AlternateSection
-            isImageLast={true}
-            heading={"Infinite Opportunities from Infinite Data "}
-            text={
-              <div className={styles.container}>
-                <div className={styles.label}>
-                  Combining the real and digital worlds becomes possible with
-                  our comprehensive Digital Twin approach. It enables
-                  integration of the entire product lifecycle with the factory
-                  and plant life cycle, along with performance data. The result
-                  is a continuous loop of optimization, both for the product and
-                  the production.
+              }
+              image={<Image src={retriImg} alt={"image"} />}
+            />
+          </div>
+          <div className={styles.list2}>
+            {/* <div className={styles.glow}></div> */}
+            <AlternateSection
+              isImageLast={true}
+              heading={"Infinite Opportunities from Infinite Data "}
+              text={
+                <div className={styles.container}>
+                  <p className={styles.label}>
+                    Combining the real and digital worlds becomes possible with
+                    our comprehensive Digital Twin approach. It enables
+                    integration of the entire product lifecycle with the factory
+                    and plant life cycle, along with performance data. The
+                    result is a continuous loop of optimization, both for the
+                    product and the production.
+                  </p>
                 </div>
-              </div>
-            }
-            image={<Image src={futureInteImg} alt={"image"} />}
-          />
-        </div>
-        <div className={styles.list3}>
-          {/* <div className={styles.glow}></div> */}
-          <AlternateSection
-            // isImageLast={true}
-            heading={"Private Ground Network"}
-            text={
-              <div className={styles.container}>
-                <div className={styles.label}>
-                  LoRa Powered Systems allows sensors and devices to communicate
-                  real-time data ground to ground over private decentralized
-                  network.
+              }
+              image={<Image src={futureInteImg} alt={"image"} />}
+            />
+          </div>
+          <div className={styles.list3}>
+            {/* <div className={styles.glow}></div> */}
+            <AlternateSection
+              // isImageLast={true}
+              heading={"Private Ground Network"}
+              text={
+                <div className={styles.container}>
+                  <p className={styles.label}>
+                    LoRa Powered Systems allows sensors and devices to
+                    communicate real-time data ground to ground over private
+                    decentralized network.
+                  </p>
                 </div>
-              </div>
-            }
-            image={<Image src={privateGroImg} alt={"image"} />}
-          />
-        </div>
-        <div className={styles.list3}>
-          {/* <div className={styles.glow}></div> */}
-          <AlternateSection
-            isImageLast={true}
-            heading={"Scale Horizontally"}
-            text={
-              <div className={styles.container}>
-                <div className={styles.label}>
-                  Real-Time Track & Trace through digital twins across all the
-                  warehouse, devices and fleets in one command and control
-                  center.
+              }
+              image={<Image src={privateGroImg} alt={"image"} />}
+            />
+          </div>
+          <div className={styles.list3}>
+            {/* <div className={styles.glow}></div> */}
+            <AlternateSection
+              isImageLast={true}
+              heading={"Scale Horizontally"}
+              text={
+                <div className={styles.container}>
+                  <p className={styles.label}>
+                    Real-Time Track & Trace through digital twins across all the
+                    warehouse, devices and fleets in one command and control
+                    center.
+                  </p>
                 </div>
-              </div>
-            }
-            image={<Image src={workOfflineImg} alt={"image"} />}
-          />
-        </div>
-        <div className={styles.list3}>
-          {/* <div className={styles.glow}></div> */}
-          <AlternateSection
-            isImageLast={false}
-            heading={"Works Offline"}
-            text={
-              <div className={styles.container}>
-                <div className={styles.label}>
-                  Detects, identifies, stores and Sync Data with the network in
-                  case the systems face any network issue. center.
+              }
+              image={<Image src={workOfflineImg} alt={"image"} />}
+            />
+          </div>
+          <div className={styles.list3}>
+            {/* <div className={styles.glow}></div> */}
+            <AlternateSection
+              isImageLast={false}
+              heading={"Works Offline"}
+              text={
+                <div className={styles.container}>
+                  <p className={styles.label}>
+                    Detects, identifies, stores and Sync Data with the network
+                    in case the systems face any network issue. center.
+                  </p>
                 </div>
-              </div>
-            }
-            image={<Image src={wfImg} alt={"image"} />}
-          />
-        </div>
-        <div className={styles.list3}>
-          {/* <div className={styles.glow}></div> */}
-          <AlternateSection
-            isImageLast={true}
-            heading={"Prevent DDoS Attacks "}
-            text={
-              <div className={styles.container}>
-                <div className={styles.label}>
-                  Common Edge IoT systems are prone to DDos Attacks across the
-                  systems. Our Consensus mechanism prevents any DDoS, allowing
-                  you to keep your data on premise without compromising.F
+              }
+              image={<Image src={wfImg} alt={"image"} />}
+            />
+          </div>
+          <div className={styles.list3}>
+            {/* <div className={styles.glow}></div> */}
+            <AlternateSection
+              isImageLast={true}
+              heading={"Prevent DDoS Attacks "}
+              text={
+                <div className={styles.container}>
+                  <p className={styles.label}>
+                    Common Edge IoT systems are prone to DDos Attacks across the
+                    systems. Our Consensus mechanism prevents any DDoS, allowing
+                    you to keep your data on premise without compromising.F
+                  </p>
                 </div>
-              </div>
-            }
-            image={<Image src={ddsImg} alt={"image"} />}
-          />
+              }
+              image={<Image src={ddsImg} alt={"image"} />}
+            />
+          </div>
         </div>
-      </div>
 
-      {/* commented due to no content */}
-      {/* <CaseStudySection /> */}
-      {/* <ConnectNetworkSection
+        {/* commented due to no content */}
+        {/* <CaseStudySection /> */}
+        {/* <ConnectNetworkSection
       img={raysImg?.src}
         heading={"Loreum ipsum"}
         text={
@@ -154,7 +164,8 @@ const EdgeIot = () => {
         btnText={"Get Invited"}
         isActive={true}
       /> */}
-    </div>
+      </div>
+    </>
   );
 };
 
